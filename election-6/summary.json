@@ -1,0 +1,170 @@
+[
+  {
+    "region": "Addis Ababa",
+    "registered_voters": 1819343,
+    "percent_voted": 99,
+    "total_seats_hopr": 23,
+
+    "results_june14": {
+      "constituencies_elected": 23,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 22 },
+        {
+          "party_or_candidate": "Deacon Daniel Kibret (Independent)",
+          "seats_won": 1
+        }
+      ],
+      "recounting_constituencies": 0,
+      "reelection_constituencies": 0
+    },
+
+    "results_sep30": null
+  },
+  {
+    "region": "Afar",
+    "registered_voters": 1696016,
+    "percent_voted": 97,
+    "total_seats_hopr": 8,
+
+    "results_june14": {
+      "constituencies_elected": 6,
+      "results": [{ "party_or_candidate": "Prosperity Party", "seats_won": 6 }],
+      "recounting_constituencies": 0,
+      "reelection_constituencies": 0
+    },
+
+    "results_sep30": null
+  },
+  {
+    "region": "Amhara",
+    "registered_voters": 7122516,
+    "percent_voted": 94,
+    "total_seats_hopr": 138,
+
+    "results_june14": {
+      "constituencies_elected": 125,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 114 },
+        {
+          "party_or_candidate": "National Movement of Amhara (NAMA)",
+          "seats_won": 5
+        }
+      ],
+      "recounting_constituencies": 1,
+      "reelection_constituencies": 5
+    },
+
+    "results_sep30": null
+  },
+  {
+    "region": "Oromia",
+    "registered_voters": 15330596,
+    "percent_voted": 96,
+    "total_seats_hopr": 178,
+
+    "results_june14": {
+      "constituencies_elected": 170,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 167 },
+        { "party_or_candidate": "Dima Negawo (Independent)", "seats_won": 1 },
+        { "party_or_candidate": "Kamil Shemsu (Independent)", "seats_won": 1 },
+        { "party_or_candidate": "Galasa Dilbo (Independent)", "seats_won": 1 }
+      ],
+      "recounting_constituencies": 0,
+      "reelection_constituencies": 0
+    },
+
+    "results_sep30": null
+  },
+  {
+    "region": "Sidama",
+    "registered_voters": 1886248,
+    "percent_voted": 88.7,
+    "total_seats_hopr": 19,
+
+    "results_june14": {
+      "constituencies_elected": 19,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 19 }
+      ],
+      "recounting_constituencies": 0,
+      "reelection_constituencies": 0
+    },
+
+    "results_sep30": null
+  },
+  {
+    "region": "SNNPR",
+    "registered_voters": 5321990,
+    "percent_voted": 91,
+    "total_seats_hopr": 104,
+
+    "results_june14": {
+      "constituencies_elected": 85,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 75 },
+        {
+          "party_or_candidate": "Ethiopian Citizens for Social Justice (EZEMA)",
+          "seats_won": 4
+        },
+        {
+          "party_or_candidate": "Gedeo People's Democratic Organization",
+          "seats_won": 2
+        }
+      ],
+      "recounting_constituencies": 1,
+      "reelection_constituencies": 3
+    },
+
+    "results_sep30": {
+      "registered_voters_voted": 1014260,
+      "percent_voted": 79,
+      "constituencies_elected": 22,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 19 }
+      ],
+      "constituencies_with_complaints": 3
+    }
+  },
+  {
+    "region": "Somali",
+    "registered_voters": 5150394,
+    "percent_voted": 93,
+    "total_seats_hopr": 23,
+
+    "results_june14": {
+      "constituencies_elected": 23,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 23 }
+      ],
+      "recounting_constituencies": 0,
+      "reelection_constituencies": 0
+    },
+
+    "results_sep30": {
+      "registered_voters_voted": 4796399,
+      "percent_voted": 93,
+      "constituencies_elected": 23,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 23 }
+      ],
+      "constituencies_with_complaints": 0
+    }
+  },
+  {
+    "region": "Harari",
+    "registered_voters": 123926,
+    "percent_voted": 84,
+    "total_seats_hopr": 2,
+
+    "results_june14": null,
+
+    "results_sep30": {
+      "registered_voters_voted": 104011,
+      "percent_voted": 84,
+      "constituencies_elected": 2,
+      "results": [{ "party_or_candidate": "Prosperity Party", "seats_won": 2 }],
+      "constituencies_with_complaints": 0
+    }
+  }
+]
