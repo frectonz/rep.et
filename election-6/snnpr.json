@@ -575,5 +575,145 @@
     "candidate": "Abyou Desalegn Yirkayo",
     "gender": "Male",
     "votes": 30415
+  },
+  {
+    "location": "Basketo Liyu",
+    "party": "Prosperity Party",
+    "candidate": "Tseganesh Gamato Gamo",
+    "gender": "Female",
+    "votes": 6653
+  },
+  {
+    "location": "Bita Gesha",
+    "party": "Prosperity Party",
+    "candidate": "Tesfayenesh Weldemariam Angi",
+    "gender": "Female",
+    "votes": 92193
+  },
+  {
+    "location": "Boloso sore 2",
+    "party": "Prosperity Party",
+    "candidate": "Shewit Shanka Shashigo",
+    "gender": "Female",
+    "votes": 39313
+  },
+  {
+    "location": "Boloso sore 3",
+    "party": "Prosperity Party",
+    "candidate": "Tekleweled Atnafu Ambula",
+    "gender": "Male",
+    "votes": 59705
+  },
+  {
+    "location": "Damot weyde 1",
+    "party": "Prosperity Party",
+    "candidate": "Aregash Tekle Tantu",
+    "gender": "Female",
+    "votes": 47696
+  },
+  {
+    "location": "Dezi Liyu",
+    "party": "Prosperity Party",
+    "candidate": "Eshetu Gebremariam Gol",
+    "gender": "Male",
+    "votes": 11454
+  },
+  {
+    "location": "Hamer Liyu",
+    "party": "Prosperity Party",
+    "candidate": "Goyeti Wancho Ayke",
+    "gender": "Female",
+    "votes": 24449
+  },
+  {
+    "location": "Key Afer Medebegna",
+    "party": "Prosperity Party",
+    "candidate": "Agu Deban Gesso",
+    "gender": "Male",
+    "votes": 42780
+  },
+  {
+    "location": "Kindo Koyesha 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Aselefech Kuche Goa",
+    "gender": "Female",
+    "votes": 44020
+  },
+  {
+    "location": "Konteb 1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Kidist Gebrehana Mergode",
+    "gender": "Female",
+    "votes": 17108
+  },
+  {
+    "location": "Konteb 2",
+    "party": "Prosperity Party",
+    "candidate": "Desalegn Erso Haseso",
+    "gender": "Male",
+    "votes": 34389
+  },
+  {
+    "location": "Loma Bosa",
+    "party": "Prosperity Party",
+    "candidate": "Aster Keftaw Dachu",
+    "gender": "Female",
+    "votes": 58199
+  },
+  {
+    "location": "Majet Medebegna",
+    "party": "Prosperity Party",
+    "candidate": "Aregash Kifle Karba",
+    "gender": "Female",
+    "votes": 12388
+  },
+  {
+    "location": "Masha",
+    "party": "Prosperity Party",
+    "candidate": "Azemera Andemo Kelo",
+    "gender": "Male",
+    "votes": 29408
+  },
+  {
+    "location": "Meanit Liyu",
+    "party": "Prosperity Party",
+    "candidate": "Fekadu Bedelu Bolja",
+    "gender": "Male",
+    "votes": 62025
+  },
+  {
+    "location": "Sheko Liyu",
+    "party": "Prosperity Party",
+    "candidate": "Zemu Tesfaye Bandi",
+    "gender": "Female",
+    "votes": 13854
+  },
+  {
+    "location": "Sodo Zuriya 1",
+    "party": "Prosperity Party",
+    "candidate": "Tesfatsion Shuka Dagana",
+    "gender": "Male",
+    "votes": 60045
+  },
+  {
+    "location": "Sodo Zuriya 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Berhanetsehay Teklewelde",
+    "gender": "Male",
+    "votes": 48065
+  },
+  {
+    "location": "Surma Liyu",
+    "party": "Prosperity Party",
+    "candidate": "Tedenek Guldu",
+    "gender": "Female",
+    "votes": 5356
+  },
+  {
+    "location": "Tepi",
+    "party": "Prosperity Party",
+    "candidate": "Wendemu Girma Tamrasha",
+    "gender": "Male",
+    "votes": 38713
   }
 ]
