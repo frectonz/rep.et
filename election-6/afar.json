@@ -1,0 +1,44 @@
+[
+  {
+    "location": "Amibara",
+    "party": "Prosperity Party",
+    "candidate": "Qabdu Cuseen Macammad",
+    "gender": "Male",
+    "votes": 88487
+  },
+  {
+    "location": "Dubti",
+    "party": "Prosperity Party",
+    "candidate": "Asiya Qabdulkadir Barakat",
+    "gender": "Female",
+    "votes": 229194
+  },
+  {
+    "location": "Abala",
+    "party": "Prosperity Party",
+    "candidate": "Ingineer Qeysha Macammad Muusa",
+    "gender": "Female",
+    "votes": 366268
+  },
+  {
+    "location": "Awash Fentale",
+    "party": "Prosperity Party",
+    "candidate": "Faatuma Qali Ibrahim",
+    "gender": "Female",
+    "votes": 68403
+  },
+  {
+    "location": "Aysaita",
+    "party": "Prosperity Party",
+    "candidate": "Casna Canfare Macammad",
+    "gender": "Female",
+    "votes": 185278
+  },
+  {
+    "location": "Gulina",
+    "party": "Prosperity Party",
+    "candidate": "Cammadu Gaqas Macammad",
+    "gender": "Male",
+    "votes": 248204
+  }
+]

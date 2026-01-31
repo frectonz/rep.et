@@ -29,7 +29,7 @@
   },
   {
     "location": "Constituency 28",
-    "party": "Independent Candidate",
+    "party": null,
     "candidate": "Deacon Daniel Kibret",
     "gender": "Male",
     "votes": 51760
