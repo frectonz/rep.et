@@ -177,5 +177,22 @@
       "recounting_constituencies": 0,
       "reelection_constituencies": 0
     }
+  },
+  {
+    "region": "Gambella",
+    "registered_voters": 415899,
+    "percent_voted": 89,
+    "total_seats_hopr": 3,
+
+    "results_june14": null,
+
+    "results_june14": {
+      "constituencies_elected": 3,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 3 }
+      ],
+      "recounting_constituencies": 0,
+      "reelection_constituencies": 0
+    }
   }
 ]
