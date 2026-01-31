@@ -1,0 +1,163 @@
+[
+  {
+    "location": "Aysha",
+    "party": "Prosperity Party",
+    "candidate": "Fatiya Ahmed Shire",
+    "gender": "Female",
+    "votes": 55349
+  },
+  {
+    "location": "Arabi",
+    "party": "Prosperity Party",
+    "candidate": "Kamal Hashi Mohamud",
+    "gender": "Male",
+    "votes": 357048
+  },
+  {
+    "location": "Aware",
+    "party": "Prosperity Party",
+    "candidate": "Mohamed Musa Gure",
+    "gender": "Male",
+    "votes": 192683
+  },
+  {
+    "location": "Bohdanot",
+    "party": "Prosperity Party",
+    "candidate": "Zamzam Ahmed Jama",
+    "gender": "Female",
+    "votes": 56669
+  },
+  {
+    "location": "Chereti",
+    "party": "Prosperity Party",
+    "candidate": "Ahmed Shide Mohamed",
+    "gender": "Male",
+    "votes": 249588
+  },
+  {
+    "location": "Degahabur",
+    "party": "Prosperity Party",
+    "candidate": "Hasan Muhumed Mo'alin",
+    "gender": "Male",
+    "votes": 233738
+  },
+  {
+    "location": "Degahmedo",
+    "party": "Prosperity Party",
+    "candidate": "Ifrah Towfik Adan",
+    "gender": "Female",
+    "votes": 60846
+  },
+  {
+    "location": "Elkere",
+    "party": "Prosperity Party",
+    "candidate": "Hasan Sheik Yusuf",
+    "gender": "Male",
+    "votes": 182697
+  },
+  {
+    "location": "Erer",
+    "party": "Prosperity Party",
+    "candidate": "Eng. Farah Mohamed Farah",
+    "gender": "Male",
+    "votes": 193798
+  },
+  {
+    "location": "Fik",
+    "party": "Prosperity Party",
+    "candidate": "Hasan Abdi Wali",
+    "gender": "Male",
+    "votes": 281710
+  },
+  {
+    "location": "Feltu",
+    "party": "Prosperity Party",
+    "candidate": "Ikram Mahad Adan",
+    "gender": "Female",
+    "votes": 572697
+  },
+  {
+    "location": "Geladin",
+    "party": "Prosperity Party",
+    "candidate": "Abdulahi Mohamed Musa",
+    "gender": "Male",
+    "votes": 28805
+  },
+  {
+    "location": "Gashamo",
+    "party": "Prosperity Party",
+    "candidate": "Halimo Mahamed Abdi",
+    "gender": "Female",
+    "votes": 76440
+  },
+  {
+    "location": "Gode",
+    "party": "Prosperity Party",
+    "candidate": "Feysal Odowa Abdi",
+    "gender": "Male",
+    "votes": 327257
+  },
+  {
+    "location": "Hargele",
+    "party": "Prosperity Party",
+    "candidate": "Guled Ahmed Ali",
+    "gender": "Male",
+    "votes": 198221
+  },
+  {
+    "location": "Jigjiga 1",
+    "party": "Prosperity Party",
+    "candidate": "Abdirashid Abdulahi Ahmed",
+    "gender": "Male",
+    "votes": 160293
+  },
+  {
+    "location": "Jigjiga 2",
+    "party": "Prosperity Party",
+    "candidate": "Halimo Hasan Mohamed",
+    "gender": "Female",
+    "votes": 129792
+  },
+  {
+    "location": "Kebri Dehar",
+    "party": "Prosperity Party",
+    "candidate": "Abdulkerim Akib Adan",
+    "gender": "Male",
+    "votes": 237852
+  },
+  {
+    "location": "Kebri Beyah",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Abdiwasa Abdulahi Bade",
+    "gender": "Male",
+    "votes": 498493
+  },
+  {
+    "location": "Kelafo",
+    "party": "Prosperity Party",
+    "candidate": "Munira Husein Hasan",
+    "gender": "Female",
+    "votes": 147103
+  },
+  {
+    "location": "Segeg",
+    "party": "Prosperity Party",
+    "candidate": "Usame Mohamed Muhumed",
+    "gender": "Male",
+    "votes": 237415
+  },
+  {
+    "location": "Shenle",
+    "party": "Prosperity Party",
+    "candidate": "Ayan Ali Musa",
+    "gender": "Female",
+    "votes": 74968
+  },
+  {
+    "location": "Warder",
+    "party": "Prosperity Party",
+    "candidate": "Mahamud Yusuf Mo’alin",
+    "gender": "Male",
+    "votes": 64042
+  }
+]
