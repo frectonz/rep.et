@@ -194,5 +194,22 @@
       "recounting_constituencies": 0,
       "reelection_constituencies": 0
     }
+  },
+  {
+    "region": "Dire Dawa",
+    "registered_voters": 208213,
+    "percent_voted": 95,
+    "total_seats_hopr": 2,
+
+    "results_june14": null,
+
+    "results_june14": {
+      "constituencies_elected": 2,
+      "results": [
+        { "party_or_candidate": "Prosperity Party", "seats_won": 2 }
+      ],
+      "recounting_constituencies": 0,
+      "reelection_constituencies": 0
+    }
   }
 ]
