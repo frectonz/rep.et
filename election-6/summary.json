@@ -132,14 +132,7 @@
     "percent_voted": 93,
     "total_seats_hopr": 23,
 
-    "results_june14": {
-      "constituencies_elected": 23,
-      "results": [
-        { "party_or_candidate": "Prosperity Party", "seats_won": 23 }
-      ],
-      "recounting_constituencies": 0,
-      "reelection_constituencies": 0
-    },
+    "results_june14": null,
 
     "results_sep30": {
       "registered_voters_voted": 4796399,
