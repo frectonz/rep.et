@@ -1,0 +1,1199 @@
+[
+  {
+    "location": "Nono",
+    "party": "Prosperity Party",
+    "candidate": "Taganee Raggaasaa Lubaa",
+    "gender": "Male",
+    "votes": 68680
+  },
+  {
+    "location": "Komona",
+    "party": "Prosperity Party",
+    "candidate": "Fatiyaa Ahimad Abraahim",
+    "gender": "Female",
+    "votes": 150829
+  },
+  {
+    "location": "Shambu",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Garramuu Hulluqaa Amanuu",
+    "gender": "Male",
+    "votes": 49011
+  },
+  {
+    "location": "Nunu",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Eebbaa Miijanaa Nagaroo",
+    "gender": "Male",
+    "votes": 39401
+  },
+  {
+    "location": "Degem",
+    "party": "Prosperity Party",
+    "candidate": "Salamoon Kuchuu Roobii",
+    "gender": "Male",
+    "votes": 46528
+  },
+  {
+    "location": "Goma 1",
+    "party": "Prosperity Party",
+    "candidate": "Moggaa Abbaabulguu Abbaakaabee",
+    "gender": "Male",
+    "votes": 64935
+  },
+  {
+    "location": "Boreda",
+    "party": "Prosperity Party",
+    "candidate": "Saadiq Adam Umar",
+    "gender": "Male",
+    "votes": 94092
+  },
+  {
+    "location": "Gimbi",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Namarraa Gabayyoo Maammoo",
+    "gender": "Male",
+    "votes": 65650
+  },
+  {
+    "location": "Adis Alem",
+    "party": "Prosperity Party",
+    "candidate": "Galaanee Biqilaa Woyeechaa",
+    "gender": "Female",
+    "votes": 32561
+  },
+  {
+    "location": "Kersa 1",
+    "party": "Prosperity Party",
+    "candidate": "Jannatii Abraahim Yuuyyaa",
+    "gender": "Female",
+    "votes": 80120
+  },
+  {
+    "location": "Wenchi",
+    "party": "Prosperity Party",
+    "candidate": "Naggasee Baayisaa Dubbiiwaaq",
+    "gender": "Female",
+    "votes": 21625
+  },
+  {
+    "location": "Bilonopa",
+    "party": "Prosperity Party",
+    "candidate": "Ittafaa Obsaa Dureessoo",
+    "gender": "Male",
+    "votes": 48079
+  },
+  {
+    "location": "Gechi Borecha",
+    "party": "Prosperity Party",
+    "candidate": "Liidiyaa Caalii Argataa",
+    "gender": "Female",
+    "votes": 81106
+  },
+  {
+    "location": "Moyale",
+    "party": "Prosperity Party",
+    "candidate": "Abdulqaadir Galgaloo Boruu",
+    "gender": "Male",
+    "votes": 191809
+  },
+  {
+    "location": "Micheta",
+    "party": "Prosperity Party",
+    "candidate": "Ammee Abdallaa Umaree",
+    "gender": "Male",
+    "votes": 280178
+  },
+  {
+    "location": "Yabelo",
+    "party": "Prosperity Party",
+    "candidate": "Tiyyaa Miyoo Arsawaa",
+    "gender": "Female",
+    "votes": 158134
+  },
+  {
+    "location": "Bedesa",
+    "party": "Prosperity Party",
+    "candidate": "Amiiraa Mohaammad Ahimad",
+    "gender": "Female",
+    "votes": 130660
+  },
+  {
+    "location": "Dugda Meki",
+    "party": "Prosperity Party",
+    "candidate": "Loomii Badhoo Qumbii",
+    "gender": "Female",
+    "votes": 71479
+  },
+  {
+    "location": "Mana",
+    "party": "Prosperity Party",
+    "candidate": "Fu'aad A/Fiixaa A/Bulguu",
+    "gender": "Male",
+    "votes": 82195
+  },
+
+  {
+    "location": "Robe",
+    "party": "Prosperity Party",
+    "candidate": "Ababuu Damissee Kaamsuur",
+    "gender": "Male",
+    "votes": 78996
+  },
+  {
+    "location": "Meta Robbie",
+    "party": "Prosperity Party",
+    "candidate": "Warqinash Birruu Badhaasaa",
+    "gender": "Female",
+    "votes": 46703
+  },
+  {
+    "location": "Alem Gena 1",
+    "party": "Prosperity Party",
+    "candidate": "Masarat Asaffaa Godanaa",
+    "gender": "Female",
+    "votes": 46891
+  },
+  {
+    "location": "Dembi",
+    "party": "Prosperity Party",
+    "candidate": "Dr Abdusamad Huseen Abboo",
+    "gender": "Male",
+    "votes": 80394
+  },
+  {
+    "location": "Miesso",
+    "party": "Prosperity Party",
+    "candidate": "Hayat Yuusuf Mohammed",
+    "gender": "Female",
+    "votes": 103950
+  },
+  {
+    "location": "Kuyu",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Birhaanuu Magarsaa Leenjisoo",
+    "gender": "Male",
+    "votes": 61186
+  },
+  {
+    "location": "Dodola",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Leencoo Ayyalaa Baatii",
+    "gender": "Male",
+    "votes": 85523
+  },
+  {
+    "location": "Omo Nada 1",
+    "party": "Prosperity Party",
+    "candidate": "Joon Ahmad Abbaamilkii",
+    "gender": "Male",
+    "votes": 71412
+  },
+  {
+    "location": "Kofele-1",
+    "party": "Prosperity Party",
+    "candidate": "Ambaasaaddar Suleeymaan Dadafoo Woshee",
+    "gender": "Male",
+    "votes": 102914
+  },
+  {
+    "location": "Akaki Gimbchu",
+    "party": "Prosperity Party",
+    "candidate": "Shifara Talila Sanbatu",
+    "gender": "Male",
+    "votes": 92467
+  },
+  {
+    "location": "Sibu Sire",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Dirribaa Galatii Caalii",
+    "gender": "Male",
+    "votes": 48605
+  },
+  {
+    "location": "Yayu",
+    "party": "Prosperity Party",
+    "candidate": "Jihaad Naasir Abduu",
+    "gender": "Male",
+    "votes": 47779
+  },
+  {
+    "location": "Lalo",
+    "party": "Prosperity Party",
+    "candidate": "Ayyalee Nagarii Giiboo",
+    "gender": "Male",
+    "votes": 80740
+  },
+  {
+    "location": "Ambo 2",
+    "party": "Prosperity Party",
+    "candidate": "Taaffasech Mul'ataa Teessoo",
+    "gender": "Female",
+    "votes": 41120
+  },
+  {
+    "location": "Agarfa Gasera",
+    "party": "Prosperity Party",
+    "candidate": "Saadiyaa Usmaan Sheekaa",
+    "gender": "Female",
+    "votes": 84935
+  },
+  {
+    "location": "Kombolcha 1",
+    "party": "Prosperity Party",
+    "candidate": "Najahaa Ahimad Abdullaahii",
+    "gender": "Female",
+    "votes": 84935
+  },
+  {
+    "location": "Nejo",
+    "party": "Prosperity Party",
+    "candidate": "Dabalee Qaabataa Huursaa",
+    "gender": "Male",
+    "votes": 67565
+  },
+  {
+    "location": "Bele",
+    "party": "Prosperity Party",
+    "candidate": "Mabraat Baacaa Waaqjiraa",
+    "gender": "Female",
+    "votes": 125413
+  },
+  {
+    "location": "Seka Chekorsa 1",
+    "party": "Prosperity Party",
+    "candidate": "Laxiifaa A/Tamaam A/Gissaa",
+    "gender": "Female",
+    "votes": 91383
+  },
+  {
+    "location": "Tejo",
+    "party": "Prosperity Party",
+    "candidate": "Prof. Miratuu Shaanqoo Giddii",
+    "gender": "Male",
+    "votes": 116979
+  },
+  {
+    "location": "Dimtu",
+    "party": "Prosperity Party",
+    "candidate": "Sulxaan Ibraahim Abbaagissaa",
+    "gender": "Male",
+    "votes": 79185
+  },
+  {
+    "location": "Kokosa",
+    "party": "Prosperity Party",
+    "candidate": "Jamiilaa Simbiruu Tusaa",
+    "gender": "Female",
+    "votes": 132884
+  },
+  {
+    "location": "Chancho",
+    "party": "Prosperity Party",
+    "candidate": "Issaa Boruu Tolaa",
+    "gender": "Male",
+    "votes": 78732
+  },
+
+  {
+    "location": "Jara",
+    "party": "Prosperity Party",
+    "candidate": "Saadiyyaa Amaan Garaadoo",
+    "gender": "Female",
+    "votes": 110525
+  },
+  {
+    "location": "Nole Keba 1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Kabbadaa Gannatii Fayisaa",
+    "gender": "Male",
+    "votes": 38102
+  },
+  {
+    "location": "Aseko",
+    "party": "Prosperity Party",
+    "candidate": "Caaltuu Warjii Tuukee",
+    "gender": "Female",
+    "votes": 56986
+  },
+  {
+    "location": "Goba",
+    "party": "Prosperity Party",
+    "candidate": "Sheek Kaamil Aliyyii Qaasim",
+    "gender": "Male",
+    "votes": 36293
+  },
+  {
+    "location": "Hirna",
+    "party": "Prosperity Party",
+    "candidate": "Aashaa Yaayaa Saalaa",
+    "gender": "Female",
+    "votes": 116788
+  },
+  {
+    "location": "Omo Nada 2",
+    "party": "Prosperity Party",
+    "candidate": "Fayimaa Sh/ Jamaal Abbaa Maccaa",
+    "gender": "Female",
+    "votes": 78682
+  },
+  {
+    "location": "Abomsa",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Alamuu Simee Fayyisaa",
+    "gender": "Male",
+    "votes": 64702
+  },
+  {
+    "location": "Itaya",
+    "party": "Prosperity Party",
+    "candidate": "Diittaa Nuuraa Teroo",
+    "gender": "Male",
+    "votes": 75535
+  },
+  {
+    "location": "Goma 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Abiyyi Ahimad Alii",
+    "gender": "Male",
+    "votes": 76892
+  },
+  {
+    "location": "Kimbbit",
+    "party": "Prosperity Party",
+    "candidate": "Faanos Hayiluu Adaraa",
+    "gender": "Female",
+    "votes": 71316
+  },
+  {
+    "location": "Haremaya 1",
+    "party": "Prosperity Party",
+    "candidate": "Roza Umar Ahmed",
+    "gender": "Female",
+    "votes": 97495
+  },
+  {
+    "location": "Chiro-1",
+    "party": "Prosperity Party",
+    "candidate": "Addunyaa Ahimed Ussoo",
+    "gender": "Female",
+    "votes": 131121
+  },
+  {
+    "location": "Bedele",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Indaaluu Mulaatuu Lammii",
+    "gender": "Male",
+    "votes": 114702
+  },
+  {
+    "location": "Shrika",
+    "party": "Prosperity Party",
+    "candidate": "Mardiyaa Amaan Guyyee",
+    "gender": "Female",
+    "votes": 76912
+  },
+  {
+    "location": "Bereh Aleltu",
+    "party": "Prosperity Party",
+    "candidate": "Fiqaaduu Tulluu Katamaa",
+    "gender": "Male",
+    "votes": 83805
+  },
+  {
+    "location": "Habro 1",
+    "party": "Prosperity Party",
+    "candidate": "Kimiyaa Jundii Hamdoo",
+    "gender": "Female",
+    "votes": 77266
+  },
+  {
+    "location": "Alem Gena 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr Isheetu Tamasgeen Galaan",
+    "gender": "Male",
+    "votes": 71046
+  },
+  {
+    "location": "Bedeno",
+    "party": "Prosperity Party",
+    "candidate": "Biiftuu Hassan Jibroo",
+    "gender": "Female",
+    "votes": 168104
+  },
+  {
+    "location": "Kofele-2",
+    "party": "Prosperity Party",
+    "candidate": "Shurrubbee Gammadii Nunaa",
+    "gender": "Female",
+    "votes": 76830
+  },
+  {
+    "location": "Bako Tibe",
+    "party": "Prosperity Party",
+    "candidate": "Raaheel Nagaroo Guutuu",
+    "gender": "Female",
+    "votes": 45802
+  },
+  {
+    "location": "Chelenko 1",
+    "party": "Prosperity Party",
+    "candidate": "Iskinder Aliyii Abdullaa",
+    "gender": "Male",
+    "votes": 104526
+  },
+  {
+    "location": "Chelya 1",
+    "party": "Prosperity Party",
+    "candidate": "Zara Mohamed Adana",
+    "gender": "Female",
+    "votes": 46141
+  },
+  {
+    "location": "Chelenko 2",
+    "party": "Prosperity Party",
+    "candidate": "Mohammad Ahmad Muussaa",
+    "gender": "Male",
+    "votes": 55730
+  },
+
+  {
+    "location": "Kersa",
+    "party": "Prosperity Party",
+    "candidate": "Maartaa Lammaa Tusuu",
+    "gender": "Female",
+    "votes": 95915
+  },
+  {
+    "location": "Dedo-1",
+    "party": "Prosperity Party",
+    "candidate": "Ayishaa Sh/Shifaa Abdurahamaan",
+    "gender": "Female",
+    "votes": 79953
+  },
+  {
+    "location": "Gui Genet",
+    "party": "Prosperity Party",
+    "candidate": "Tolaa Haayiluu Hundee",
+    "gender": "Male",
+    "votes": 39166
+  },
+  {
+    "location": "Enango Bila",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Xannaa Goobanaa Fufaa",
+    "gender": "Male",
+    "votes": 49353
+  },
+  {
+    "location": "Diga Kolobo",
+    "party": "Prosperity Party",
+    "candidate": "Taarikee Dhaabaa Booboo",
+    "gender": "Female",
+    "votes": 71162
+  },
+  {
+    "location": "Limu Seka",
+    "party": "Prosperity Party",
+    "candidate": "Miiraaj Zakiyyii Jamaal",
+    "gender": "Female",
+    "votes": 98404
+  },
+  {
+    "location": "Shashemene 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr Qaasiim Kimoo Qaabaloo",
+    "gender": "Male",
+    "votes": 65791
+  },
+  {
+    "location": "Seka Chekorsa 2",
+    "party": "Prosperity Party",
+    "candidate": "Kaaliid Abbaa Maccaa Hajii",
+    "gender": "Male",
+    "votes": 95286
+  },
+  {
+    "location": "Kake",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Nagarii Leencoo Bultum",
+    "gender": "Male",
+    "votes": 55248
+  },
+  {
+    "location": "Alem Tena",
+    "party": "Prosperity Party",
+    "candidate": "Caalaa Lammii Argannee",
+    "gender": "Male",
+    "votes": 70236
+  },
+  {
+    "location": "Adaba",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Fatoo Ismoo Bariisoo",
+    "gender": "Male",
+    "votes": 94204
+  },
+  {
+    "location": "Agulicho",
+    "party": "Prosperity Party",
+    "candidate": "Zaaraa Biiftuu Nabii",
+    "gender": "Female",
+    "votes": 69043
+  },
+  {
+    "location": "Gatira",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Nuurazamaan Jibriil Nagawoo",
+    "gender": "Male",
+    "votes": 115974
+  },
+  {
+    "location": "Nole Keba 2",
+    "party": "Prosperity Party",
+    "candidate": "Dastaa Bafaqaaduu Naga'oo",
+    "gender": "Female",
+    "votes": 39399
+  },
+  {
+    "location": "Dedo-2",
+    "party": "Prosperity Party",
+    "candidate": "Caaltuu Mohaammed Abdurahmaan",
+    "gender": "Female",
+    "votes": 83014
+  },
+  {
+    "location": "Jeldu",
+    "party": "Prosperity Party",
+    "candidate": "Guddataa Galaalchaa Saffisaa",
+    "gender": "Male",
+    "votes": 61617
+  },
+  {
+    "location": "Wara Jarso",
+    "party": "Prosperity Party",
+    "candidate": "Miiliyoon Baqqalaa Damissee",
+    "gender": "Female",
+    "votes": 64794
+  },
+  {
+    "location": "Nekemte",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Iyyoob Takkaalliny Tolinaa",
+    "gender": "Male",
+    "votes": 94833
+  },
+  {
+    "location": "Dera",
+    "party": "Prosperity Party",
+    "candidate": "Na'imaa Usmaan Adam",
+    "gender": "Female",
+    "votes": 115838
+  },
+  {
+    "location": "Siraro 2",
+    "party": "Prosperity Party",
+    "candidate": "Obbo Guutaa Laachoree Caakkee",
+    "gender": "Male",
+    "votes": 91333
+  },
+  {
+    "location": "Adama 1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Tashoomaa Abdoo Sanyii",
+    "gender": "Male",
+    "votes": 109893
+  },
+  {
+    "location": "Adama 2",
+    "party": "Prosperity Party",
+    "candidate": "Kumalee Gaaddisaa Obsee",
+    "gender": "Female",
+    "votes": 58860
+  },
+  {
+    "location": "Adama 3",
+    "party": "Prosperity Party",
+    "candidate": "Kadir Gannaa A/Qaadiir",
+    "gender": "Male",
+    "votes": 31395
+  },
+
+  {
+    "location": "Boko",
+    "party": "Prosperity Party",
+    "candidate": "Fahimii Alii Mahaammad",
+    "gender": "Male",
+    "votes": 114015
+  },
+  {
+    "location": "Harewecha",
+    "party": null,
+    "candidate": "Galaasaa Dilboo Goljaa",
+    "gender": "Male",
+    "votes": 247657
+  },
+  {
+    "location": "Dembi Dolo",
+    "party": "Prosperity Party",
+    "candidate": "Lataa Tasfaayee Juulee",
+    "gender": "Male",
+    "votes": 60701
+  },
+  {
+    "location": "Dandi 1",
+    "party": "Prosperity Party",
+    "candidate": "Araaree Moosisaa Ittisaa",
+    "gender": "Female",
+    "votes": 51436
+  },
+  {
+    "location": "Deder 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Eliyaas Ahimad Saadiq",
+    "gender": "Male",
+    "votes": 70697
+  },
+  {
+    "location": "Limu Kosa 1",
+    "party": "Prosperity Party",
+    "candidate": "Muslima Rashiid A/Giddi",
+    "gender": "Female",
+    "votes": 73461
+  },
+  {
+    "location": "Batu / Zway",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Usheexoo Hobbichoo Dabbaloo",
+    "gender": "Male",
+    "votes": 103283
+  },
+  {
+    "location": "Gore",
+    "party": null,
+    "candidate": "Dr. Diimaa Naga'oo Sarboo",
+    "gender": "Male",
+    "votes": 54225
+  },
+  {
+    "location": "Doba",
+    "party": "Prosperity Party",
+    "candidate": "Juhaar Mohaamed Abdullaa",
+    "gender": "Male",
+    "votes": 100690
+  },
+  {
+    "location": "Darimu",
+    "party": "Prosperity Party",
+    "candidate": "Addaamuu Qana'aa Dhaabaa",
+    "gender": "Male",
+    "votes": 73545
+  },
+  {
+    "location": "Goro",
+    "party": "Prosperity Party",
+    "candidate": "Ibraahim Umar Aliyyii",
+    "gender": "Male",
+    "votes": 205087
+  },
+  {
+    "location": "Gute",
+    "party": "Prosperity Party",
+    "candidate": "Ayyaantuu Guuttataa Fiixee",
+    "gender": "Female",
+    "votes": 57349
+  },
+  {
+    "location": "Dandi 2",
+    "party": "Prosperity Party",
+    "candidate": "Kafanaa Ifaa Dalasaa",
+    "gender": "Male",
+    "votes": 40914
+  },
+  {
+    "location": "Wolen Chiti",
+    "party": "Prosperity Party",
+    "candidate": "Shuumii Ayyaanoo Guutoo",
+    "gender": "Male",
+    "votes": 109342
+  },
+  {
+    "location": "Mendy",
+    "party": "Prosperity Party",
+    "candidate": "Beetel Malkaamuu Abdiisaa",
+    "gender": "Female",
+    "votes": 62682
+  },
+  {
+    "location": "Siraro 1",
+    "party": "Prosperity Party",
+    "candidate": "Ruuqiyaa Argoo Waariyoo",
+    "gender": "Female",
+    "votes": 83711
+  },
+  {
+    "location": "Deder 1",
+    "party": "Prosperity Party",
+    "candidate": "Fariidaa Shamshadiin Mohaammad",
+    "gender": "Female",
+    "votes": 78794
+  },
+  {
+    "location": "Limu Kosa 2",
+    "party": "Prosperity Party",
+    "candidate": "Kasaahun Joobir Guddataa",
+    "gender": "Male",
+    "votes": 71016
+  },
+  {
+    "location": "Chelya 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Cimdoo Hancaalaa Bulchaa",
+    "gender": "Male",
+    "votes": 44910
+  },
+  {
+    "location": "Becho",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Fiqaaduu Mangistuu Ashamii",
+    "gender": "Male",
+    "votes": 73805
+  },
+  {
+    "location": "Sinana",
+    "party": "Prosperity Party",
+    "candidate": "Gannat Katamaa Baqqalaa",
+    "gender": "Female",
+    "votes": 69507
+  },
+  {
+    "location": "Ayra Guliso",
+    "party": "Prosperity Party",
+    "candidate": "Efireem Tasammaa Tarreessaa",
+    "gender": "Male",
+    "votes": 81166
+  },
+  {
+    "location": "Lume / Mojo",
+    "party": "Prosperity Party",
+    "candidate": "Addis Alamaayyoo Qumbii",
+    "gender": "Female",
+    "votes": 67685
+  },
+
+  {
+    "location": "Metu",
+    "party": "Prosperity Party",
+    "candidate": "Kaamil Shamsuu Siraaj",
+    "gender": "Male",
+    "votes": 37705
+  },
+  {
+    "location": "Meko Sachi",
+    "party": "Prosperity Party",
+    "candidate": "Fiqaaduu Moosisaa Gammadaa",
+    "gender": "Male",
+    "votes": 40919
+  },
+  {
+    "location": "Kurfa Chele",
+    "party": "Prosperity Party",
+    "candidate": "Kuulanii Mahammad Abdullaa",
+    "gender": "Female",
+    "votes": 42155
+  },
+  {
+    "location": "Yaya Gulele And Debre Libanos",
+    "party": "Prosperity Party",
+    "candidate": "Birqee Bahaaruu Mi'íraaf",
+    "gender": "Female",
+    "votes": 50441
+  },
+  {
+    "location": "Jimma Kersa",
+    "party": "Prosperity Party",
+    "candidate": "Dr Amiinaa Abdurrahiman Abbaa Goojjaam",
+    "gender": "Female",
+    "votes": 93900
+  },
+  {
+    "location": "Chora",
+    "party": "Prosperity Party",
+    "candidate": "Alamnash Biraanuu Obsaa",
+    "gender": "Female",
+    "votes": 68181
+  },
+  {
+    "location": "Wolmera",
+    "party": "Prosperity Party",
+    "candidate": "Addisuwaa Asaffaa Damissee",
+    "gender": "Female",
+    "votes": 116968
+  },
+  {
+    "location": "Lemon",
+    "party": "Prosperity Party",
+    "candidate": "Itoophiyaa Shaambal Damboobaa",
+    "gender": "Female",
+    "votes": 38958
+  },
+  {
+    "location": "Ada'a 1",
+    "party": "Prosperity Party",
+    "candidate": "Lammaa Aberraa Hirphoo",
+    "gender": "Male",
+    "votes": 64308
+  },
+  {
+    "location": "Gedeb Hasasa",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Ruuqiyaa Aliyyii Kawoo",
+    "gender": "Female",
+    "votes": 98858
+  },
+  {
+    "location": "Girar Jarso",
+    "party": "Prosperity Party",
+    "candidate": "Masarat Shifarraaw Yaadatee",
+    "gender": "Female",
+    "votes": 44330
+  },
+  {
+    "location": "Qebe",
+    "party": "Prosperity Party",
+    "candidate": "Baayyush Birhaanuu Karoorsaa",
+    "gender": "Female",
+    "votes": 67776
+  },
+  {
+    "location": "Kula",
+    "party": "Prosperity Party",
+    "candidate": "Zeeynaba Nuura Baati",
+    "gender": "Female",
+    "votes": 79911
+  },
+  {
+    "location": "Fungan Bira",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Hangaasaa Ahimad Abrahim",
+    "gender": "Male",
+    "votes": 316438
+  },
+  {
+    "location": "Shashemene 1",
+    "party": "Prosperity Party",
+    "candidate": "Wogee Kufaa Buutee",
+    "gender": "Male",
+    "votes": 143836
+  },
+  {
+    "location": "Melka Soda",
+    "party": "Prosperity Party",
+    "candidate": "Adaalee Odaa Tooduwaa",
+    "gender": "Male",
+    "votes": 130320
+  },
+  {
+    "location": "Sagure",
+    "party": "Prosperity Party",
+    "candidate": "Umer Huseen Obaa",
+    "gender": "Male",
+    "votes": 74650
+  },
+  {
+    "location": "Ambo 1",
+    "party": "Prosperity Party",
+    "candidate": "Saahiluu Dirribsaa Moosisaa",
+    "gender": "Male",
+    "votes": 67031
+  },
+  {
+    "location": "Ada Berga",
+    "party": "Prosperity Party",
+    "candidate": "Maskaram Hayiluu Aluulaa",
+    "gender": "Female",
+    "votes": 36273
+  },
+  {
+    "location": "Hagere Mariam",
+    "party": "Prosperity Party",
+    "candidate": "Ashuu Goloolchaa Odaa",
+    "gender": "Male",
+    "votes": 94330
+  },
+  {
+    "location": "Ticho",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Hajjii Kadiir Abdullee",
+    "gender": "Male",
+    "votes": 71615
+  },
+  {
+    "location": "Chole",
+    "party": "Prosperity Party",
+    "candidate": "Zawudinash Tulluu Gaashee",
+    "gender": "Female",
+    "votes": 71509
+  },
+  {
+    "location": "Ano",
+    "party": "Prosperity Party",
+    "candidate": "Gannat Wagaaaarii Fiixee",
+    "gender": "Female",
+    "votes": 62142
+  },
+
+  {
+    "location": "Jimma Arjo",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Buzaayyoo Daggafaa Wandee",
+    "gender": "Male",
+    "votes": 40513
+  },
+  {
+    "location": "Dano",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Alamuu Gonfaa Roobii",
+    "gender": "Male",
+    "votes": 37938
+  },
+  {
+    "location": "Asela",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Dhugumaa Adduunyaa Dabalee",
+    "gender": "Male",
+    "votes": 83212
+  },
+  {
+    "location": "Yubdo",
+    "party": "Prosperity Party",
+    "candidate": "Darajjee Dabalaa Sanbatoo",
+    "gender": "Male",
+    "votes": 45994
+  },
+  {
+    "location": "Teji",
+    "party": "Prosperity Party",
+    "candidate": "Warquu Gaachanaa Nagarraa",
+    "gender": "Male",
+    "votes": 52147
+  },
+  {
+    "location": "Delo Mana",
+    "party": "Prosperity Party",
+    "candidate": "Prof., Dr. Engr. Muhaammad H/Abdoo Tukoo",
+    "gender": "Male",
+    "votes": 146723
+  },
+  {
+    "location": "Kibre Mengset",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Gushaa Balakoo Birbirsaa",
+    "gender": "Male",
+    "votes": 210935
+  },
+  {
+    "location": "Tikur Enechini",
+    "party": "Prosperity Party",
+    "candidate": "Hayiluu Gonfaa Iddoosaa",
+    "gender": "Male",
+    "votes": 59425
+  },
+  {
+    "location": "Girawa",
+    "party": "Prosperity Party",
+    "candidate": "Mahamad Ahamad Aliyye",
+    "gender": "Male",
+    "votes": 270560
+  },
+  {
+    "location": "Haremaya 2",
+    "party": "Prosperity Party",
+    "candidate": "Ibsaa Yusuuf Hassen",
+    "gender": "Male",
+    "votes": 74354
+  },
+  {
+    "location": "Bekoji 2",
+    "party": "Prosperity Party",
+    "candidate": "Sintaayyoo Xilaahuun Abbabbaa",
+    "gender": "Male",
+    "votes": 60736
+  },
+  {
+    "location": "Wuchalena Jido",
+    "party": "Prosperity Party",
+    "candidate": "Birhaanuu Fayyisaa Xilaa",
+    "gender": "Male",
+    "votes": 71982
+  },
+  {
+    "location": "Habro 2",
+    "party": "Prosperity Party",
+    "candidate": "Magartuu Mahaammad Amaan",
+    "gender": "Female",
+    "votes": 50245
+  },
+  {
+    "location": "Qercha",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Caalaa Waataa Darasoo",
+    "gender": "Male",
+    "votes": 162706
+  },
+  {
+    "location": "Bekoji 1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Iluubbaaboor Buunnoo Teekoo",
+    "gender": "Male",
+    "votes": 60293
+  },
+  {
+    "location": "Uraga",
+    "party": "Prosperity Party",
+    "candidate": "Firaa'ool Udessaa Gelchuu",
+    "gender": "Male",
+    "votes": 176130
+  },
+  {
+    "location": "Arboye",
+    "party": "Prosperity Party",
+    "candidate": "Jamaal Abasoo Ebuu",
+    "gender": "Male",
+    "votes": 72694
+  },
+  {
+    "location": "Arsi Negele",
+    "party": "Prosperity Party",
+    "candidate": "Jamaanesh W/Mika'el Wogee",
+    "gender": "Male",
+    "votes": 101662
+  },
+  {
+    "location": "Jimma Ketema",
+    "party": "Prosperity Party",
+    "candidate": "Laxiifaa A/Saambii A/Goojjaam",
+    "gender": "Female",
+    "votes": 84032
+  },
+  {
+    "location": "Kersa 2",
+    "party": "Prosperity Party",
+    "candidate": "Abdulfattaah Abduremaan Muummed",
+    "gender": "Male",
+    "votes": 59914
+  },
+  {
+    "location": "Uka",
+    "party": "Prosperity Party",
+    "candidate": "Itaageeny Isheetuu Guddataa",
+    "gender": "Female",
+    "votes": 64471
+  },
+  {
+    "location": "Gera",
+    "party": "Prosperity Party",
+    "candidate": "Neziif Zinaab A/Luleessaa",
+    "gender": "Male",
+    "votes": 72540
+  },
+  {
+    "location": "Gallo",
+    "party": "Prosperity Party",
+    "candidate": "Elsaabeex Ijjiguu Qana'aa",
+    "gender": "Female",
+    "votes": 41746
+  },
+
+  {
+    "location": "Fincha'a",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Addunyaa Dabalaa Botee",
+    "gender": "Male",
+    "votes": 80882
+  },
+  {
+    "location": "Woliso 1",
+    "party": "Prosperity Party",
+    "candidate": "Kaabbaa Maabraatuu Daanyee",
+    "gender": "Female",
+    "votes": 37805
+  },
+  {
+    "location": "Chiro-3",
+    "party": "Prosperity Party",
+    "candidate": "Nasraddiin Abdumuusiin Shazalii",
+    "gender": "Male",
+    "votes": 54803
+  },
+  {
+    "location": "Woliso 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Milkiyaas Ayyalaa Tafarraa",
+    "gender": "Male",
+    "votes": 44545
+  },
+  {
+    "location": "Bore",
+    "party": "Prosperity Party",
+    "candidate": "Duubee Jiloo Mideduu",
+    "gender": "Male",
+    "votes": 104782
+  },
+  {
+    "location": "Chiro-2",
+    "party": "Prosperity Party",
+    "candidate": "Mahaammadnuur Ahimad Muusaa",
+    "gender": "Male",
+    "votes": 62501
+  },
+  {
+    "location": "Mesela",
+    "party": "Prosperity Party",
+    "candidate": "Jamaal Aliyyii Muummad",
+    "gender": "Male",
+    "votes": 107130
+  },
+  {
+    "location": "Ada'a 2",
+    "party": "Prosperity Party",
+    "candidate": "Almaaz Wadaajo Adimoo",
+    "gender": "Female",
+    "votes": 79633
+  },
+  {
+    "location": "Abote Dera",
+    "party": "Prosperity Party",
+    "candidate": "Lammaa Tasammaa Yimaree",
+    "gender": "Male",
+    "votes": 116420
+  },
+  {
+    "location": "Ginir",
+    "party": "Prosperity Party",
+    "candidate": "Faantaaye Laggasaa Waldagiyoorgis",
+    "gender": "Female",
+    "votes": 146304
+  },
+  {
+    "location": "Sekoru",
+    "party": "Prosperity Party",
+    "candidate": "Fayid Sheraab Sheriif",
+    "gender": "Male",
+    "votes": 71898
+  },
+  {
+    "location": "Sululta And Mulo",
+    "party": "Prosperity Party",
+    "candidate": "Tsiggee Danboobaa Ayyaanoo",
+    "gender": "Female",
+    "votes": 91875
+  },
+  {
+    "location": "Negele",
+    "party": "Prosperity Party",
+    "candidate": "Nagaash Bullaallaa Abbaawaltaa",
+    "gender": "Male",
+    "votes": 136618
+  }
+]
