@@ -139,7 +139,6 @@
     "gender": "Male",
     "votes": 8575
   },
-
   {
     "location": "Zege Meshenti",
     "party": "Prosperity Party",
@@ -210,7 +209,6 @@
     "gender": "Male",
     "votes": 47483
   },
-
   {
     "location": "Sekela",
     "party": "Prosperity Party",
@@ -260,7 +258,531 @@
     "gender": "Male",
     "votes": 21486
   },
-
+  {
+    "location": "Rebel",
+    "party": "Prosperity Party",
+    "candidate": "Alemu Damtew Ashenafi",
+    "gender": "Male",
+    "votes": 13264
+  },
+  {
+    "location": "Metema",
+    "party": "Prosperity Party",
+    "candidate": "Tesfahun Sisay Mengistu",
+    "gender": "Male",
+    "votes": 32864
+  },
+  {
+    "location": "Zukula Agew",
+    "party": "Prosperity Party",
+    "candidate": "Tsehaynesh Gebre W/Michael",
+    "gender": "Female",
+    "votes": 30702
+  },
+  {
+    "location": "Debresina -1",
+    "party": "Prosperity Party",
+    "candidate": "Sumeya Desalew Molla",
+    "gender": "Female",
+    "votes": 39066
+  },
+  {
+    "location": "Habru",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Seid Nuru Alli",
+    "gender": "Male",
+    "votes": 58295
+  },
+  {
+    "location": "Dawa Chefa",
+    "party": "Prosperity Party",
+    "candidate": "Kedija Yasin Mohamod",
+    "gender": "Female",
+    "votes": 108229
+  },
+  {
+    "location": "Debre Elias",
+    "party": "Prosperity Party",
+    "candidate": "Asemahegn Asires Bante",
+    "gender": "Male",
+    "votes": 6793
+  },
+  {
+    "location": "Delanta",
+    "party": "Prosperity Party",
+    "candidate": "Gedu Andargachew Alene",
+    "gender": "Male",
+    "votes": 35528
+  },
+  {
+    "location": "Bichena",
+    "party": "Prosperity Party",
+    "candidate": "Aschale Alamere Melese",
+    "gender": "Male",
+    "votes": 15138
+  },
+  {
+    "location": "Farta 3",
+    "party": "Prosperity Party",
+    "candidate": "Yohannies Mesfin Gebeyew",
+    "gender": "Male",
+    "votes": 9442
+  },
+  {
+    "location": "Dera 2",
+    "party": "Prosperity Party",
+    "candidate": "Tewbo Mihiret Mola",
+    "gender": "Male",
+    "votes": 12582
+  },
+  {
+    "location": "Tenta",
+    "party": "Prosperity Party",
+    "candidate": "Habtemariyam Mekonin Alli",
+    "gender": "Male",
+    "votes": 60443
+  },
+  {
+    "location": "Qalu-2",
+    "party": "Prosperity Party",
+    "candidate": "Mohamod Hasen Abu",
+    "gender": "Male",
+    "votes": 54704
+  },
+  {
+    "location": "Qalu-1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Eng. Kemal Mohamod Zeynu",
+    "gender": "Male",
+    "votes": 46965
+  },
+  {
+    "location": "Wereilu",
+    "party": "Prosperity Party",
+    "candidate": "Debebe Adimassu Yilma",
+    "gender": "Male",
+    "votes": 30315
+  },
+  {
+    "location": "Simada 2",
+    "party": "Prosperity Party",
+    "candidate": "Gashaw Dagnew Lakew",
+    "gender": "Male",
+    "votes": 21378
+  },
+  {
+    "location": "Fogera 1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Balew Baye Asefa",
+    "gender": "Male",
+    "votes": 25293
+  },
+  {
+    "location": "Kutaber",
+    "party": "Prosperity Party",
+    "candidate": "Jemal Abegaz Adem",
+    "gender": "Male",
+    "votes": 31343
+  },
+  {
+    "location": "Qilaj",
+    "party": "Prosperity Party",
+    "candidate": "Abune Alem Temesgen",
+    "gender": "Female",
+    "votes": 20279
+  },
+  {
+    "location": "Dabat",
+    "party": "Prosperity Party",
+    "candidate": "Atsede Mamo Tamyalew",
+    "gender": "Female",
+    "votes": 28785
+  },
+  {
+    "location": "Arerete",
+    "party": "Prosperity Party",
+    "candidate": "Begashaw Tekilu Alemayehu",
+    "gender": "Male",
+    "votes": 20342
+  },
+  {
+    "location": "Chefa Robit",
+    "party": "Prosperity Party",
+    "candidate": "Ahmed Hasen Mohamod",
+    "gender": "Male",
+    "votes": 84927
+  },
+  {
+    "location": "Gubalafto",
+    "party": "Prosperity Party",
+    "candidate": "Alemu Getahun Sisay",
+    "gender": "Male",
+    "votes": 48105
+  },
+  {
+    "location": "Dehana",
+    "party": "Prosperity Party",
+    "candidate": "Workesemu Mamo Mekonin",
+    "gender": "Female",
+    "votes": 52453
+  },
+  {
+    "location": "Bure",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Zegeye Muluye Asires",
+    "gender": "Male",
+    "votes": 14828
+  },
+  {
+    "location": "Saynt 2",
+    "party": "Prosperity Party",
+    "candidate": "Alemu Jenberu Ayalew",
+    "gender": "Male",
+    "votes": 11737
+  },
+  {
+    "location": "Gozamin",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Mastewal Mekonin Seyeneh",
+    "gender": "Female",
+    "votes": 6430
+  },
+  {
+    "location": "Gondar Ketema 2",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Meseret Zelalem Tadese",
+    "gender": "Female",
+    "votes": 31265
+  },
+  {
+    "location": "Meqdela",
+    "party": "Prosperity Party",
+    "candidate": "Lubaba Seid Legas",
+    "gender": "Female",
+    "votes": 52337
+  },
+  {
+    "location": "Dera 1",
+    "party": "Prosperity Party",
+    "candidate": "Tadese Getu Alemu",
+    "gender": "Male",
+    "votes": 24412
+  },
+  {
+    "location": "Bugna",
+    "party": "Prosperity Party",
+    "candidate": "Kidist Areaya Tassew",
+    "gender": "Female",
+    "votes": 44124
+  },
+  {
+    "location": "Gonj",
+    "party": "Prosperity Party",
+    "candidate": "Destaye Tilaye Misikir",
+    "gender": "Female",
+    "votes": 11121
+  },
+  {
+    "location": "Dessie Zuria 2",
+    "party": "Prosperity Party",
+    "candidate": "Seid Mohamod Husien",
+    "gender": "Male",
+    "votes": 54294
+  },
+  {
+    "location": "Enewari",
+    "party": "Prosperity Party",
+    "candidate": "Talef Fitawork Endashaw",
+    "gender": "Female",
+    "votes": 14783
+  },
+  {
+    "location": "Farta 1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Hirut Kassaw Wendim",
+    "gender": "Female",
+    "votes": 20890
+  },
+  {
+    "location": "Merawi",
+    "party": "Prosperity Party",
+    "candidate": "Tewachew Abebe Yimer",
+    "gender": "Male",
+    "votes": 17523
+  },
+  {
+    "location": "Yechereqa",
+    "party": "Prosperity Party",
+    "candidate": "Tesfahun Bogale Jember",
+    "gender": "Male",
+    "votes": 31186
+  },
+  {
+    "location": "Durbete",
+    "party": "Prosperity Party",
+    "candidate": "Mulat Telayneh Asirate",
+    "gender": "Male",
+    "votes": 17307
+  },
+  {
+    "location": "Wogera 1",
+    "party": "Prosperity Party",
+    "candidate": "Mesfin Erkabe Mirach",
+    "gender": "Male",
+    "votes": 22580
+  },
+  {
+    "location": "Kemekem 1",
+    "party": "Prosperity Party",
+    "candidate": "Yemengist Tsegaw Walelign",
+    "gender": "Female",
+    "votes": 42300
+  },
+  {
+    "location": "Yejuba",
+    "party": "Prosperity Party",
+    "candidate": "Zelalem Tadesse Ayalew",
+    "gender": "Female",
+    "votes": 17344
+  },
+  {
+    "location": "Wogera 2",
+    "party": "Prosperity Party",
+    "candidate": "Yezina Mulat Zeleke",
+    "gender": "Female",
+    "votes": 17242
+  },
+  {
+    "location": "Legambo",
+    "party": "Prosperity Party",
+    "candidate": "Abate Arega Atalay",
+    "gender": "Male",
+    "votes": 62517
+  },
+  {
+    "location": "Farta 2",
+    "party": "Prosperity Party",
+    "candidate": "Meseret Mola Kassahun",
+    "gender": "Male",
+    "votes": 19228
+  },
+  {
+    "location": "Tach Armachho-2",
+    "party": "Prosperity Party",
+    "candidate": "Tilahun Tamirat Mulu",
+    "gender": "Male",
+    "votes": 12679
+  },
+  {
+    "location": "Sede",
+    "party": "Prosperity Party",
+    "candidate": "Wudalat Muniye Bayih",
+    "gender": "Female",
+    "votes": 25894
+  },
+  {
+    "location": "Dejen",
+    "party": "Prosperity Party",
+    "candidate": "Muluken Adimasu Emiru",
+    "gender": "Male",
+    "votes": 14791
+  },
+  {
+    "location": "Meranga",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Zewdu Tadese Wondimkun",
+    "gender": "Male",
+    "votes": 21340
+  },
+  {
+    "location": "Koso Ber",
+    "party": "Prosperity Party",
+    "candidate": "Almaw Mengist Ambaye",
+    "gender": "Male",
+    "votes": 33642
+  },
+  {
+    "location": "Ebnat 1",
+    "party": "Prosperity Party",
+    "candidate": "Hilina Akelew Tadesse",
+    "gender": "Female",
+    "votes": 22528
+  },
+  {
+    "location": "Dembecha",
+    "party": "Prosperity Party",
+    "candidate": "Molla Feleke Desta",
+    "gender": "Male",
+    "votes": 14386
+  },
+  {
+    "location": "Ginde Weyn",
+    "party": "Prosperity Party",
+    "candidate": "Adane Teshome Getahun",
+    "gender": "Male",
+    "votes": 17843
+  },
+  {
+    "location": "Degwa Tsyon",
+    "party": "Prosperity Party",
+    "candidate": "Wubete Tadege Nibret",
+    "gender": "Female",
+    "votes": 13106
+  },
+  {
+    "location": "Quarit",
+    "party": "National Movement of Amhara",
+    "candidate": "Dr. Christian Tadesse Tsegaye",
+    "gender": "Male",
+    "votes": 10256
+  },
+  {
+    "location": "Wemberma",
+    "party": "Prosperity Party",
+    "candidate": "Agumasie Anteneh Wube",
+    "gender": "Male",
+    "votes": 10955
+  },
+  {
+    "location": "Gondar Zuria 4",
+    "party": "Prosperity Party",
+    "candidate": "Tesfanesh Tefera Asires",
+    "gender": "Female",
+    "votes": 7183
+  },
+  {
+    "location": "Debresina",
+    "party": "Prosperity Party",
+    "candidate": "Meseret Haile Masiresha",
+    "gender": "Female",
+    "votes": 23030
+  },
+  {
+    "location": "Lay Gaynt 2",
+    "party": "Prosperity Party",
+    "candidate": "Alimaw Tigabu Melese",
+    "gender": "Male",
+    "votes": 24484
+  },
+  {
+    "location": "Gidan",
+    "party": "Prosperity Party",
+    "candidate": "Etaferahu Zegeye Ambaw",
+    "gender": "Female",
+    "votes": 30273
+  },
+  {
+    "location": "Gondar Zuria 3",
+    "party": "Prosperity Party",
+    "candidate": "Tesfahun Simegn Kebede",
+    "gender": "Male",
+    "votes": 12744
+  },
+  {
+    "location": "AlefaTakusa2",
+    "party": "Prosperity Party",
+    "candidate": "Adane Mande Damtew",
+    "gender": "Male",
+    "votes": 33605
+  },
+  {
+    "location": "Amber",
+    "party": "Prosperity Party",
+    "candidate": "Teshome Wale Gesese",
+    "gender": "Male",
+    "votes": 13460
+  },
+  {
+    "location": "Lumame",
+    "party": "Prosperity Party",
+    "candidate": "Simegnish Sahilu Tium",
+    "gender": "Female",
+    "votes": 16455
+  },
+  {
+    "location": "Gimja Bet",
+    "party": "Prosperity Party",
+    "candidate": "Prof. Getinet Tadele Tefera",
+    "gender": "Male",
+    "votes": 61633
+  },
+  {
+    "location": "Dil Ybza",
+    "party": "Prosperity Party",
+    "candidate": "Amsal Mengistu Alemu",
+    "gender": "Female",
+    "votes": 57167
+  },
+  {
+    "location": "Liben",
+    "party": "Prosperity Party",
+    "candidate": "Getahun Limenih Abegaz",
+    "gender": "Male",
+    "votes": 20139
+  },
+  {
+    "location": "Debre Werq",
+    "party": "Prosperity Party",
+    "candidate": "Sewasew Tizazu Abate",
+    "gender": "Female",
+    "votes": 19733
+  },
+  {
+    "location": "Esite 1",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Destaw Mekuanint Mazengiya",
+    "gender": "Male",
+    "votes": 18459
+  },
+  {
+    "location": "Dessie Zuria 1",
+    "party": "Prosperity Party",
+    "candidate": "Rahimet Awol Mohamod",
+    "gender": "Female",
+    "votes": 31919
+  },
+  {
+    "location": "Ebnat 2",
+    "party": "Prosperity Party",
+    "candidate": "Esubalew Mebrat Tesema",
+    "gender": "Male",
+    "votes": 19681
+  },
+  {
+    "location": "Esite 2",
+    "party": "Prosperity Party",
+    "candidate": "Almaz Temesgen Sisay",
+    "gender": "Female",
+    "votes": 8528
+  },
+  {
+    "location": "Chacha",
+    "party": "Prosperity Party",
+    "candidate": "Zinaye Negash Zewdu",
+    "gender": "Male",
+    "votes": 31815
+  },
+  {
+    "location": "Debresina -2",
+    "party": "Prosperity Party",
+    "candidate": "Aynalem Nigusie Alli",
+    "gender": "Female",
+    "votes": 41389
+  },
+  {
+    "location": "Wein Amba",
+    "party": "Prosperity Party",
+    "candidate": "Meaza Asefa Ergete",
+    "gender": "Female",
+    "votes": 30475
+  },
+  {
+    "location": "Alem Ketema",
+    "party": "Prosperity Party",
+    "candidate": "Dr. Ayele Teshome Gonche",
+    "gender": "Male",
+    "votes": 23793
+  },
   {
     "location": "Tilili",
     "party": "Prosperity Party",
