@@ -119,9 +119,10 @@
     "results_sep30": {
       "registered_voters_voted": 1014260,
       "percent_voted": 79,
-      "constituencies_elected": 22,
+      "constituencies_elected": 23,
       "results": [
-        { "party_or_candidate": "Prosperity Party", "seats_won": 19 }
+        { "party_or_candidate": "Prosperity Party", "seats_won": 19 },
+        { "party_or_candidate": "Kucha People Democratic Party", "seats_won": 1 }
       ],
       "constituencies_with_complaints": 3
     }
