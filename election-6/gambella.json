@@ -1,0 +1,23 @@
+[
+  {
+    "location": "Gambela",
+    "party": "Prosperity Party",
+    "candidate": "Alemitu Oumud Ujulu",
+    "gender": "Female",
+    "votes": 38633
+  },
+  {
+    "location": "Godere",
+    "party": "Prosperity Party",
+    "candidate": "Ashne Asten Titeok",
+    "gender": "Male",
+    "votes": 18382
+  },
+  {
+    "location": "Lare",
+    "party": "Prosperity Party",
+    "candidate": "Thomas Tut Puk",
+    "gender": "Male",
+    "votes": 211867
+  }
+]
