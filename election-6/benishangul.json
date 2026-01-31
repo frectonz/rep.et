@@ -1,0 +1,23 @@
+[
+  {
+    "location": "Sherkole",
+    "party": "Prosperity Party",
+    "candidate": "Mubark Elias Mestefa",
+    "gender": "Male",
+    "votes": 24510
+  },
+  {
+    "location": "Mao Komo Liyu",
+    "party": "Prosperity Party",
+    "candidate": "Abosh Mustefa Musa",
+    "gender": "Male",
+    "votes": 18389
+  },
+  {
+    "location": "Bambasi",
+    "party": "Prosperity Party",
+    "candidate": "Nefisa Almahid Alaqib",
+    "gender": "Female",
+    "votes": 12269
+  }
+]
