@@ -170,8 +170,6 @@
     "percent_voted": 55,
     "total_seats_hopr": 9,
 
-    "results_june14": null,
-
     "results_june14": {
       "constituencies_elected": 3,
       "results": [{ "party_or_candidate": "Prosperity Party", "seats_won": 3 }],
@@ -185,8 +183,6 @@
     "percent_voted": 89,
     "total_seats_hopr": 3,
 
-    "results_june14": null,
-
     "results_june14": {
       "constituencies_elected": 3,
       "results": [{ "party_or_candidate": "Prosperity Party", "seats_won": 3 }],
@@ -199,8 +195,6 @@
     "registered_voters": 208213,
     "percent_voted": 95,
     "total_seats_hopr": 2,
-
-    "results_june14": null,
 
     "results_june14": {
       "constituencies_elected": 2,
