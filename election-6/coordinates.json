@@ -347,7 +347,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 12747,
-    "lat": 10.11,
+    "lat": 10.065,
     "lng": 39.5,
     "geocode_source": "manual_approx"
   },
@@ -402,7 +402,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 22121,
-    "lat": 11.07,
+    "lat": 11.025,
     "lng": 38.73,
     "geocode_source": "manual"
   },
@@ -413,8 +413,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 22258,
-    "lat": 11.86184088,
-    "lng": 38.41312621,
+    "lat": 11.816841,
+    "lng": 38.413126,
     "geocode_source": "hdx"
   },
   {
@@ -435,7 +435,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 16577,
-    "lat": 12.25,
+    "lat": 12.205,
     "lng": 36.33333,
     "geocode_source": "wikidata"
   },
@@ -479,7 +479,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 24035,
-    "lat": 12.610368,
+    "lat": 12.565368,
     "lng": 37.466766,
     "geocode_source": "nominatim_retry"
   },
@@ -688,7 +688,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 17127,
-    "lat": 11.5,
+    "lat": 11.455,
     "lng": 38.25,
     "geocode_source": "wikidata"
   },
@@ -699,8 +699,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 14226,
-    "lat": 11.9492305,
-    "lng": 37.5859406,
+    "lat": 11.904231,
+    "lng": 37.585941,
     "geocode_source": "nominatim"
   },
   {
@@ -710,7 +710,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 20949,
-    "lat": 11.7695712,
+    "lat": 11.724571,
     "lng": 38.73556,
     "geocode_source": "nominatim"
   },
@@ -721,7 +721,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 21486,
-    "lat": 11.7695712,
+    "lat": 11.814571,
     "lng": 38.73556,
     "geocode_source": "nominatim"
   },
@@ -765,8 +765,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 39066,
-    "lat": 9.846372,
-    "lng": 39.7620384,
+    "lat": 9.801372,
+    "lng": 39.762038,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -831,7 +831,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 9442,
-    "lat": 12,
+    "lat": 11.955,
     "lng": 38,
     "geocode_source": "wikidata"
   },
@@ -842,8 +842,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 12582,
-    "lat": 8.6779377,
-    "lng": 39.5332698,
+    "lat": 8.632938,
+    "lng": 39.53327,
     "geocode_source": "nominatim"
   },
   {
@@ -864,8 +864,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 54704,
-    "lat": 9.0721796,
-    "lng": 38.7073017,
+    "lat": 9.02718,
+    "lng": 38.707302,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -875,8 +875,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 46965,
-    "lat": 9.0721796,
-    "lng": 38.7073017,
+    "lat": 9.11718,
+    "lng": 38.707302,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -897,7 +897,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 21378,
-    "lat": 11.5,
+    "lat": 11.545,
     "lng": 38.25,
     "geocode_source": "wikidata"
   },
@@ -908,8 +908,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 25293,
-    "lat": 11.9492305,
-    "lng": 37.5859406,
+    "lat": 11.994231,
+    "lng": 37.585941,
     "geocode_source": "nominatim"
   },
   {
@@ -1007,7 +1007,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 11737,
-    "lat": 11.07,
+    "lat": 11.115,
     "lng": 38.73,
     "geocode_source": "manual"
   },
@@ -1029,8 +1029,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 31265,
-    "lat": 12.610368,
-    "lng": 37.466766,
+    "lat": 12.632868,
+    "lng": 37.505737,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -1051,8 +1051,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 24412,
-    "lat": 8.6779377,
-    "lng": 39.5332698,
+    "lat": 8.722938,
+    "lng": 39.53327,
     "geocode_source": "nominatim"
   },
   {
@@ -1084,7 +1084,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 54294,
-    "lat": 11.122604,
+    "lat": 11.077604,
     "lng": 39.634982,
     "geocode_source": "nominatim_retry"
   },
@@ -1095,7 +1095,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 14783,
-    "lat": 10.11,
+    "lat": 10.155,
     "lng": 39.5,
     "geocode_source": "manual"
   },
@@ -1106,8 +1106,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 20890,
-    "lat": 12,
-    "lng": 38,
+    "lat": 12.0225,
+    "lng": 38.038971,
     "geocode_source": "wikidata"
   },
   {
@@ -1150,7 +1150,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 22580,
-    "lat": 12.79,
+    "lat": 12.745,
     "lng": 37.69,
     "geocode_source": "manual"
   },
@@ -1161,7 +1161,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 42300,
-    "lat": 12.3333,
+    "lat": 12.2883,
     "lng": 37.6667,
     "geocode_source": "wikidata"
   },
@@ -1183,7 +1183,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 17242,
-    "lat": 12.79,
+    "lat": 12.835,
     "lng": 37.69,
     "geocode_source": "manual"
   },
@@ -1205,8 +1205,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 19228,
-    "lat": 12,
-    "lng": 38,
+    "lat": 12.0225,
+    "lng": 37.961029,
     "geocode_source": "wikidata"
   },
   {
@@ -1271,7 +1271,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 22528,
-    "lat": 12.25,
+    "lat": 12.205,
     "lng": 38.13,
     "geocode_source": "manual"
   },
@@ -1359,8 +1359,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 24484,
-    "lat": 11.86184088,
-    "lng": 38.41312621,
+    "lat": 11.906841,
+    "lng": 38.413126,
     "geocode_source": "hdx"
   },
   {
@@ -1381,8 +1381,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 12744,
-    "lat": 12.610368,
-    "lng": 37.466766,
+    "lat": 12.632868,
+    "lng": 37.427795,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -1392,7 +1392,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 33605,
-    "lat": 12.25,
+    "lat": 12.295,
     "lng": 36.33333,
     "geocode_source": "wikidata"
   },
@@ -1480,7 +1480,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 31919,
-    "lat": 11.122604,
+    "lat": 11.167604,
     "lng": 39.634982,
     "geocode_source": "nominatim_retry"
   },
@@ -1491,7 +1491,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 19681,
-    "lat": 12.25,
+    "lat": 12.295,
     "lng": 38.13,
     "geocode_source": "manual"
   },
@@ -1524,8 +1524,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 41389,
-    "lat": 9.846372,
-    "lng": 39.7620384,
+    "lat": 9.891372,
+    "lng": 39.762038,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -1568,7 +1568,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 49341,
-    "lat": 12.3333,
+    "lat": 12.3783,
     "lng": 37.6667,
     "geocode_source": "wikidata"
   },
@@ -1689,7 +1689,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 64935,
-    "lat": 7.85,
+    "lat": 7.805,
     "lng": 36.43333,
     "geocode_source": "nominatim"
   },
@@ -1733,7 +1733,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 80120,
-    "lat": 9.455,
+    "lat": 9.41,
     "lng": 41.86639,
     "geocode_source": "nominatim"
   },
@@ -1865,8 +1865,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 46891,
-    "lat": 8.9355248,
-    "lng": 38.6612727,
+    "lat": 8.890525,
+    "lng": 38.661273,
     "geocode_source": "nominatim"
   },
   {
@@ -1920,7 +1920,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 71412,
-    "lat": 7.5,
+    "lat": 7.455,
     "lng": 37.25,
     "geocode_source": "wikidata"
   },
@@ -1931,7 +1931,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 102914,
-    "lat": 9.75,
+    "lat": 9.705,
     "lng": 36.38333,
     "geocode_source": "nominatim"
   },
@@ -1986,8 +1986,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 41120,
-    "lat": 8.982104,
-    "lng": 37.8554406,
+    "lat": 8.937104,
+    "lng": 37.855441,
     "geocode_source": "nominatim"
   },
   {
@@ -2041,8 +2041,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 91383,
-    "lat": 7.6,
-    "lng": 36.733333333,
+    "lat": 7.555,
+    "lng": 36.733333,
     "geocode_source": "wikidata"
   },
   {
@@ -2107,8 +2107,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 38102,
-    "lat": 8.82031721,
-    "lng": 35.78335868,
+    "lat": 8.775317,
+    "lng": 35.783359,
     "geocode_source": "hdx"
   },
   {
@@ -2151,7 +2151,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 78682,
-    "lat": 7.5,
+    "lat": 7.545,
     "lng": 37.25,
     "geocode_source": "wikidata"
   },
@@ -2184,7 +2184,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 76892,
-    "lat": 7.85,
+    "lat": 7.895,
     "lng": 36.43333,
     "geocode_source": "nominatim"
   },
@@ -2217,8 +2217,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 131121,
-    "lat": 9.0870642,
-    "lng": 40.8675244,
+    "lat": 9.042064,
+    "lng": 40.867524,
     "geocode_source": "nominatim"
   },
   {
@@ -2261,7 +2261,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 77266,
-    "lat": 8.86667,
+    "lat": 8.82167,
     "lng": 40.51667,
     "geocode_source": "nominatim"
   },
@@ -2272,8 +2272,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 71046,
-    "lat": 8.9355248,
-    "lng": 38.6612727,
+    "lat": 8.980525,
+    "lng": 38.661273,
     "geocode_source": "nominatim"
   },
   {
@@ -2294,7 +2294,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 76830,
-    "lat": 9.75,
+    "lat": 9.795,
     "lng": 36.38333,
     "geocode_source": "nominatim"
   },
@@ -2316,7 +2316,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 104526,
-    "lat": 9.3966258,
+    "lat": 9.351626,
     "lng": 41.560351,
     "geocode_source": "nominatim"
   },
@@ -2327,8 +2327,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 46141,
-    "lat": 9.0388347,
-    "lng": 37.4242817,
+    "lat": 8.993835,
+    "lng": 37.424282,
     "geocode_source": "nominatim"
   },
   {
@@ -2338,7 +2338,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 55730,
-    "lat": 9.3966258,
+    "lat": 9.441626,
     "lng": 41.560351,
     "geocode_source": "nominatim"
   },
@@ -2349,8 +2349,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 95915,
-    "lat": 9.455,
-    "lng": 41.86639,
+    "lat": 9.4775,
+    "lng": 41.905361,
     "geocode_source": "nominatim"
   },
   {
@@ -2360,7 +2360,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 79953,
-    "lat": 7.416666666,
+    "lat": 7.371667,
     "lng": 37,
     "geocode_source": "wikidata"
   },
@@ -2415,7 +2415,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 65791,
-    "lat": 8.78333,
+    "lat": 8.73833,
     "lng": 38.71667,
     "geocode_source": "nominatim"
   },
@@ -2426,8 +2426,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 95286,
-    "lat": 7.6,
-    "lng": 36.733333333,
+    "lat": 7.645,
+    "lng": 36.733333,
     "geocode_source": "wikidata"
   },
   {
@@ -2492,8 +2492,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 39399,
-    "lat": 8.82031721,
-    "lng": 35.78335868,
+    "lat": 8.865317,
+    "lng": 35.783359,
     "geocode_source": "hdx"
   },
   {
@@ -2503,7 +2503,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 83014,
-    "lat": 7.416666666,
+    "lat": 7.461667,
     "lng": 37,
     "geocode_source": "wikidata"
   },
@@ -2558,8 +2558,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 91333,
-    "lat": 7.166666666,
-    "lng": 38.166666666,
+    "lat": 7.121667,
+    "lng": 38.166667,
     "geocode_source": "wikidata"
   },
   {
@@ -2569,8 +2569,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 109893,
-    "lat": 8.5410261,
-    "lng": 39.2705461,
+    "lat": 8.496026,
+    "lng": 39.270546,
     "geocode_source": "nominatim"
   },
   {
@@ -2580,8 +2580,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 58860,
-    "lat": 8.5410261,
-    "lng": 39.2705461,
+    "lat": 8.563526,
+    "lng": 39.309517,
     "geocode_source": "nominatim"
   },
   {
@@ -2591,8 +2591,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 31395,
-    "lat": 8.5410261,
-    "lng": 39.2705461,
+    "lat": 8.563526,
+    "lng": 39.231575,
     "geocode_source": "nominatim"
   },
   {
@@ -2635,7 +2635,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 51436,
-    "lat": 9.6787166,
+    "lat": 9.633717,
     "lng": 35.296575,
     "geocode_source": "nominatim"
   },
@@ -2646,7 +2646,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 70697,
-    "lat": 9.312287,
+    "lat": 9.267287,
     "lng": 41.442772,
     "geocode_source": "nominatim"
   },
@@ -2657,8 +2657,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 73461,
-    "lat": 8.0339122,
-    "lng": 36.94777331,
+    "lat": 7.988912,
+    "lng": 36.947773,
     "geocode_source": "hdx"
   },
   {
@@ -2734,7 +2734,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 40914,
-    "lat": 9.6787166,
+    "lat": 9.723717,
     "lng": 35.296575,
     "geocode_source": "nominatim"
   },
@@ -2767,8 +2767,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 83711,
-    "lat": 7.166666666,
-    "lng": 38.166666666,
+    "lat": 7.211667,
+    "lng": 38.166667,
     "geocode_source": "wikidata"
   },
   {
@@ -2778,7 +2778,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 78794,
-    "lat": 9.312287,
+    "lat": 9.357287,
     "lng": 41.442772,
     "geocode_source": "nominatim"
   },
@@ -2789,8 +2789,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 71016,
-    "lat": 8.0339122,
-    "lng": 36.94777331,
+    "lat": 8.078912,
+    "lng": 36.947773,
     "geocode_source": "hdx"
   },
   {
@@ -2800,8 +2800,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 44910,
-    "lat": 9.0388347,
-    "lng": 37.4242817,
+    "lat": 9.083835,
+    "lng": 37.424282,
     "geocode_source": "nominatim"
   },
   {
@@ -2943,7 +2943,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 64308,
-    "lat": 8.8,
+    "lat": 8.755,
     "lng": 38.96667,
     "geocode_source": "nominatim"
   },
@@ -3009,7 +3009,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 143836,
-    "lat": 8.78333,
+    "lat": 8.82833,
     "lng": 38.71667,
     "geocode_source": "nominatim"
   },
@@ -3042,8 +3042,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 67031,
-    "lat": 8.982104,
-    "lng": 37.8554406,
+    "lat": 9.027104,
+    "lng": 37.855441,
     "geocode_source": "nominatim"
   },
   {
@@ -3218,7 +3218,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 60736,
-    "lat": 7.53333,
+    "lat": 7.48833,
     "lng": 39.25,
     "geocode_source": "nominatim"
   },
@@ -3240,7 +3240,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 50245,
-    "lat": 8.86667,
+    "lat": 8.91167,
     "lng": 40.51667,
     "geocode_source": "nominatim"
   },
@@ -3262,7 +3262,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 60293,
-    "lat": 7.53333,
+    "lat": 7.57833,
     "lng": 39.25,
     "geocode_source": "nominatim"
   },
@@ -3317,8 +3317,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 59914,
-    "lat": 9.455,
-    "lng": 41.86639,
+    "lat": 9.4775,
+    "lng": 41.827419,
     "geocode_source": "nominatim"
   },
   {
@@ -3372,7 +3372,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 37805,
-    "lat": 8.5506266,
+    "lat": 8.505627,
     "lng": 37.978662,
     "geocode_source": "nominatim"
   },
@@ -3383,8 +3383,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 54803,
-    "lat": 9.0870642,
-    "lng": 40.8675244,
+    "lat": 9.109564,
+    "lng": 40.906496,
     "geocode_source": "nominatim"
   },
   {
@@ -3394,7 +3394,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 44545,
-    "lat": 8.5506266,
+    "lat": 8.595627,
     "lng": 37.978662,
     "geocode_source": "nominatim"
   },
@@ -3416,8 +3416,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 62501,
-    "lat": 9.0870642,
-    "lng": 40.8675244,
+    "lat": 9.109564,
+    "lng": 40.828553,
     "geocode_source": "nominatim"
   },
   {
@@ -3438,7 +3438,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 79633,
-    "lat": 8.8,
+    "lat": 8.845,
     "lng": 38.96667,
     "geocode_source": "nominatim"
   },
@@ -3735,8 +3735,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 32162,
-    "lat": 7.3489865,
-    "lng": 37.8627044,
+    "lat": 7.303986,
+    "lng": 37.862704,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -3768,7 +3768,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 44788,
-    "lat": 7.68333,
+    "lat": 7.63833,
     "lng": 37.78333,
     "geocode_source": "nominatim_retry"
   },
@@ -3801,8 +3801,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 18368,
-    "lat": 6.3162435,
-    "lng": 38.2554691,
+    "lat": 6.271243,
+    "lng": 38.255469,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -3812,7 +3812,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 38847,
-    "lat": 7.266666666,
+    "lat": 7.221667,
     "lng": 37.95,
     "geocode_source": "wikidata"
   },
@@ -3834,7 +3834,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 22338,
-    "lat": 7.266666666,
+    "lat": 7.311667,
     "lng": 37.95,
     "geocode_source": "wikidata"
   },
@@ -3867,8 +3867,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 26927,
-    "lat": 7.3489865,
-    "lng": 37.8627044,
+    "lat": 7.393986,
+    "lng": 37.862704,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -3878,7 +3878,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 35942,
-    "lat": 7.95,
+    "lat": 7.905,
     "lng": 38.26,
     "geocode_source": "manual"
   },
@@ -3900,7 +3900,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 18519,
-    "lat": 6.06667,
+    "lat": 6.02167,
     "lng": 37.08333,
     "geocode_source": "nominatim_retry"
   },
@@ -3955,8 +3955,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 26733,
-    "lat": 6.3162435,
-    "lng": 38.2554691,
+    "lat": 6.361243,
+    "lng": 38.255469,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4087,8 +4087,8 @@
     "party": "Gedio People Democratic Organization",
     "gender": "Male",
     "votes": 28230,
-    "lat": 6.1558604,
-    "lng": 38.2028538,
+    "lat": 6.11086,
+    "lng": 38.202854,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4109,8 +4109,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 48098,
-    "lat": 7.5,
-    "lng": 37.583333333,
+    "lat": 7.455,
+    "lng": 37.583333,
     "geocode_source": "wikidata"
   },
   {
@@ -4175,7 +4175,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 31884,
-    "lat": 6.966666666,
+    "lat": 6.921667,
     "lng": 37.9,
     "geocode_source": "wikidata"
   },
@@ -4186,7 +4186,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 32972,
-    "lat": 6.06667,
+    "lat": 6.11167,
     "lng": 37.08333,
     "geocode_source": "nominatim_retry"
   },
@@ -4197,8 +4197,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 9872,
-    "lat": 8.0261018,
-    "lng": 37.7613252,
+    "lat": 7.981102,
+    "lng": 37.761325,
     "geocode_source": "hdx"
   },
   {
@@ -4252,8 +4252,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 105207,
-    "lat": 7.3130289,
-    "lng": 38.0878776,
+    "lat": 7.268029,
+    "lng": 38.087878,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4263,8 +4263,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 104078,
-    "lat": 7.3130289,
-    "lng": 38.0878776,
+    "lat": 7.358029,
+    "lng": 38.087878,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4274,8 +4274,8 @@
     "party": "Ethiopian Citizens for Social Justice (EZEMA)",
     "gender": "Male",
     "votes": 11788,
-    "lat": 8.15,
-    "lng": 37.983333333,
+    "lat": 8.105,
+    "lng": 37.983333,
     "geocode_source": "wikidata"
   },
   {
@@ -4351,7 +4351,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 43320,
-    "lat": 6.966666666,
+    "lat": 7.011667,
     "lng": 37.9,
     "geocode_source": "wikidata"
   },
@@ -4384,7 +4384,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 28421,
-    "lat": 7.95,
+    "lat": 7.995,
     "lng": 38.26,
     "geocode_source": "manual"
   },
@@ -4439,8 +4439,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 19703,
-    "lat": 7.0634189,
-    "lng": 37.7086404,
+    "lat": 7.018419,
+    "lng": 37.70864,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4450,7 +4450,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 32957,
-    "lat": 6.83333,
+    "lat": 6.78833,
     "lng": 38,
     "geocode_source": "wikidata"
   },
@@ -4461,8 +4461,8 @@
     "party": "Ethiopian Citizens for Social Justice (EZEMA)",
     "gender": "Male",
     "votes": 12914,
-    "lat": 8.15,
-    "lng": 37.983333333,
+    "lat": 8.195,
+    "lng": 37.983333,
     "geocode_source": "wikidata"
   },
   {
@@ -4472,8 +4472,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 10731,
-    "lat": 6.1558604,
-    "lng": 38.2028538,
+    "lat": 6.20086,
+    "lng": 38.202854,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4494,8 +4494,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 80823,
-    "lat": 7.5,
-    "lng": 37.583333333,
+    "lat": 7.545,
+    "lng": 37.583333,
     "geocode_source": "wikidata"
   },
   {
@@ -4505,8 +4505,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 21359,
-    "lat": 8.0261018,
-    "lng": 37.7613252,
+    "lat": 8.071102,
+    "lng": 37.761325,
     "geocode_source": "hdx"
   },
   {
@@ -4582,7 +4582,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 62160,
-    "lat": 5.902605,
+    "lat": 5.857605,
     "lng": 36.577359,
     "geocode_source": "nominatim_retry"
   },
@@ -4593,7 +4593,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 30415,
-    "lat": 5.902605,
+    "lat": 5.947605,
     "lng": 36.577359,
     "geocode_source": "nominatim_retry"
   },
@@ -4626,8 +4626,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 39313,
-    "lat": 7.0634189,
-    "lng": 37.7086404,
+    "lat": 7.085919,
+    "lng": 37.747612,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4637,8 +4637,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 59705,
-    "lat": 7.0634189,
-    "lng": 37.7086404,
+    "lat": 7.085919,
+    "lng": 37.669669,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4648,7 +4648,7 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 47696,
-    "lat": 6.83333,
+    "lat": 6.87833,
     "lng": 38,
     "geocode_source": "wikidata"
   },
@@ -4703,8 +4703,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 17108,
-    "lat": 7.68333,
-    "lng": 37.78333,
+    "lat": 7.70583,
+    "lng": 37.822301,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4714,8 +4714,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 34389,
-    "lat": 7.68333,
-    "lng": 37.78333,
+    "lat": 7.70583,
+    "lng": 37.744359,
     "geocode_source": "nominatim_retry"
   },
   {
@@ -4780,7 +4780,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 60045,
-    "lat": 6.86,
+    "lat": 6.815,
     "lng": 37.76,
     "geocode_source": "wikidata"
   },
@@ -4791,7 +4791,7 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 48065,
-    "lat": 6.86,
+    "lat": 6.905,
     "lng": 37.76,
     "geocode_source": "wikidata"
   },
@@ -4989,8 +4989,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 160293,
-    "lat": 9.3508526,
-    "lng": 42.8003788,
+    "lat": 9.305853,
+    "lng": 42.800379,
     "geocode_source": "nominatim"
   },
   {
@@ -5000,8 +5000,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 129792,
-    "lat": 9.3508526,
-    "lng": 42.8003788,
+    "lat": 9.395853,
+    "lng": 42.800379,
     "geocode_source": "nominatim"
   },
   {
@@ -5132,8 +5132,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 74251,
-    "lat": 9.591323,
-    "lng": 41.8566341,
+    "lat": 9.546323,
+    "lng": 41.856634,
     "geocode_source": "nominatim"
   },
   {
@@ -5143,8 +5143,8 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 89192,
-    "lat": 9.591323,
-    "lng": 41.8566341,
+    "lat": 9.636323,
+    "lng": 41.856634,
     "geocode_source": "nominatim"
   },
   {
