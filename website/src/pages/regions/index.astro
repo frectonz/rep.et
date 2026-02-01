@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { Users, Vote } from "@lucide/astro";
 import { regions, getRegionStats } from "../../lib/data";
 
 const stats = regions.map(getRegionStats);
@@ -22,8 +23,8 @@ const stats = regions.map(getRegionStats);
             {s.name}
           </h2>
           <div class="flex gap-4 mt-2 text-sm text-text-muted">
-            <span>{s.seats} seats</span>
-            <span>{s.totalVotes.toLocaleString()} votes</span>
+            <span class="inline-flex items-center gap-1"><Users class="w-3.5 h-3.5" /> {s.seats} seats</span>
+            <span class="inline-flex items-center gap-1"><Vote class="w-3.5 h-3.5" /> {s.totalVotes.toLocaleString()} votes</span>
           </div>
         </a>
       ))}

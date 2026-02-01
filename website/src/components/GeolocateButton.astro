@@ -1,5 +1,6 @@
 ---
 import { representatives } from "../lib/data";
+import { MapPin } from "@lucide/astro";
 
 const coordsJson = JSON.stringify(
   representatives.map((r) => ({
@@ -16,8 +17,9 @@ const coordsJson = JSON.stringify(
 <div id="geolocate-widget">
   <button
     id="locate-btn"
-    class="w-full sm:w-auto px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors text-lg cursor-pointer"
+    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors text-lg cursor-pointer"
   >
+    <MapPin class="w-5 h-5" />
     Use My Location
   </button>
 

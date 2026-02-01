@@ -1,10 +1,12 @@
 ---
+import { Users, Globe, Landmark, Map, Info, Menu } from "@lucide/astro";
+
 const navLinks = [
-  { href: "/representatives", label: "Representatives" },
-  { href: "/regions", label: "Regions" },
-  { href: "/parties", label: "Parties" },
-  { href: "/map", label: "Map" },
-  { href: "/about", label: "About" },
+  { href: "/representatives", label: "Representatives", icon: Users },
+  { href: "/regions", label: "Regions", icon: Globe },
+  { href: "/parties", label: "Parties", icon: Landmark },
+  { href: "/map", label: "Map", icon: Map },
+  { href: "/about", label: "About", icon: Info },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -23,9 +25,7 @@ const currentPath = Astro.url.pathname;
       aria-label="Toggle menu"
       aria-expanded="false"
     >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+      <Menu class="w-6 h-6" />
     </button>
 
     <nav id="nav-menu" class="hidden md:flex items-center gap-6">
@@ -33,12 +33,13 @@ const currentPath = Astro.url.pathname;
         <a
           href={link.href}
           class:list={[
-            "text-sm transition-colors",
+            "text-sm transition-colors inline-flex items-center gap-1.5",
             currentPath.startsWith(link.href)
               ? "text-accent font-semibold"
               : "text-white/80 hover:text-white",
           ]}
         >
+          <link.icon class="w-4 h-4" />
           {link.label}
         </a>
       ))}
@@ -51,12 +52,13 @@ const currentPath = Astro.url.pathname;
         <a
           href={link.href}
           class:list={[
-            "text-sm py-2 transition-colors",
+            "text-sm py-2 transition-colors inline-flex items-center gap-2",
             currentPath.startsWith(link.href)
               ? "text-accent font-semibold"
               : "text-white/80 hover:text-white",
           ]}
         >
+          <link.icon class="w-4 h-4" />
           {link.label}
         </a>
       ))}
