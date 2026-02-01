@@ -18,7 +18,7 @@ if (!rep) {
 }
 ---
 
-<Layout title={`${rep.candidate} — rep.et`}>
+<Layout title={`${rep.candidate} — rep.et`} description={`${rep.candidate}, representative for ${rep.location} in ${rep.region}. ${rep.party}.`}>
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: rep.candidate }]} />
 

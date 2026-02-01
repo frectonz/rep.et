@@ -7,12 +7,20 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
+  canonicalPath?: string;
 }
 
 const {
   title = "rep.et — Find Your Representative",
   description = "Find your HOPR representative in Ethiopia. Browse 471 elected members by region, party, or location.",
+  ogImage,
+  canonicalPath,
 } = Astro.props;
+
+const siteUrl = "https://rep.et";
+const canonicalUrl = canonicalPath ? new URL(canonicalPath, siteUrl).href : new URL(Astro.url.pathname, siteUrl).href;
+const ogImageUrl = ogImage ? new URL(ogImage, siteUrl).href : undefined;
 ---
 
 <!doctype html>
@@ -21,9 +29,26 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalUrl} />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#3d2b1f" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="rep.et" />
+    <meta property="og:locale" content="en_ET" />
+    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
