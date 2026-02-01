@@ -17,7 +17,9 @@ const {
 } = Astro.props;
 
 const siteUrl = "https://rep.et";
-const canonicalUrl = canonicalPath ? new URL(canonicalPath, siteUrl).href : new URL(Astro.url.pathname, siteUrl).href;
+const canonicalUrl = canonicalPath
+  ? new URL(canonicalPath, siteUrl).href
+  : new URL(Astro.url.pathname, siteUrl).href;
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "index";
 const ogPath = pathname === "index" ? "/og/index.png" : `/og${pathname}.png`;
 const ogImageUrl = new URL(ogPath, siteUrl).href;

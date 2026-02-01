@@ -27,7 +27,7 @@ if (!regionName) {
 const reps = getByRegion(regionName);
 const stats = getRegionStats(regionName);
 const coordsJson = JSON.stringify(
-  reps.map((r) => ({ lat: r.lat, lng: r.lng, name: r.location, slug: r.slug }))
+  reps.map((r) => ({ lat: r.lat, lng: r.lng, name: r.location, slug: r.slug })),
 );
 ---
 

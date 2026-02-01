@@ -33,9 +33,7 @@ export const regions = [
   ...new Set(representatives.map((r) => r.region)),
 ].sort();
 
-export const parties = [
-  ...new Set(representatives.map((r) => r.party)),
-].sort();
+export const parties = [...new Set(representatives.map((r) => r.party))].sort();
 
 export function getBySlug(slug: string): Representative | undefined {
   return representatives.find((r) => r.slug === slug);
@@ -121,7 +119,4 @@ export function getPartyStats(party: string): PartyStats {
   };
 }
 
-export const totalVotes = representatives.reduce(
-  (sum, r) => sum + r.votes,
-  0,
-);
+export const totalVotes = representatives.reduce((sum, r) => sum + r.votes, 0);

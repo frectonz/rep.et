@@ -8,23 +8,69 @@ import {
 
 const pages = Object.fromEntries([
   // Static pages
-  ["index", { title: "rep.et — Find Your Representative", description: "Find your HOPR representative in Ethiopia. Browse 471 elected members by region, party, or location." }],
-  ["about", { title: "About — rep.et", description: "About rep.et — your guide to Ethiopia's House of Peoples' Representatives." }],
-  ["map", { title: "Map — rep.et", description: "Interactive map of Ethiopia's 471 elected representatives." }],
-  ["parties", { title: "Parties — rep.et", description: "Political parties in Ethiopia's House of Peoples' Representatives." }],
-  ["regions", { title: "Regions — rep.et", description: "Browse representatives by region across Ethiopia." }],
-  ["representatives", { title: "All Representatives — rep.et", description: "All 471 elected members of Ethiopia's House of Peoples' Representatives." }],
+  [
+    "index",
+    {
+      title: "rep.et — Find Your Representative",
+      description:
+        "Find your HOPR representative in Ethiopia. Browse 471 elected members by region, party, or location.",
+    },
+  ],
+  [
+    "about",
+    {
+      title: "About — rep.et",
+      description:
+        "About rep.et — your guide to Ethiopia's House of Peoples' Representatives.",
+    },
+  ],
+  [
+    "map",
+    {
+      title: "Map — rep.et",
+      description: "Interactive map of Ethiopia's 471 elected representatives.",
+    },
+  ],
+  [
+    "parties",
+    {
+      title: "Parties — rep.et",
+      description:
+        "Political parties in Ethiopia's House of Peoples' Representatives.",
+    },
+  ],
+  [
+    "regions",
+    {
+      title: "Regions — rep.et",
+      description: "Browse representatives by region across Ethiopia.",
+    },
+  ],
+  [
+    "representatives",
+    {
+      title: "All Representatives — rep.et",
+      description:
+        "All 471 elected members of Ethiopia's House of Peoples' Representatives.",
+    },
+  ],
 
   // Dynamic: each representative
   ...representatives.map((r) => [
     `representatives/${r.slug}`,
-    { title: r.candidate, description: `${r.location} · ${r.region} · ${r.party}` },
+    {
+      title: r.candidate,
+      description: `${r.location} · ${r.region} · ${r.party}`,
+    },
   ]),
 
   // Dynamic: each region
   ...regions.map((region) => [
     `regions/${regionSlug(region)}`,
-    { title: region, description: `${getByRegion(region).length} seats in ${region}` },
+    {
+      title: region,
+      description: `${getByRegion(region).length} seats in ${region}`,
+    },
   ]),
 ]);
 
