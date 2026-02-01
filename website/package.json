@@ -13,6 +13,8 @@
     "@lucide/astro": "^0.563.0",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
+    "astro-og-canvas": "^0.10.1",
+    "canvaskit-wasm": "^0.40.0",
     "tailwindcss": "^4.1.18"
   }
 }
