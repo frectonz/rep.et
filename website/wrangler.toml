@@ -1,0 +1,3 @@
+name = "rep-et"
+compatibility_date = "2026-02-01"
+pages_build_output_dir = "./dist"
