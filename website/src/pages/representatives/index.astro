@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Search from "../../components/Search.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+---
+
+<Layout title="All Representatives — rep.et">
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives" }]} />
+
+    <h1 class="text-2xl md:text-3xl font-bold mb-6">Representatives</h1>
+
+    <Search />
+  </div>
+</Layout>

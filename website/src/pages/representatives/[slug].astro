@@ -1,0 +1,102 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { representatives, getBySlug, regionSlug } from "../../lib/data";
+
+export function getStaticPaths() {
+  return representatives.map((rep) => ({
+    params: { slug: rep.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const rep = getBySlug(slug);
+
+if (!rep) {
+  return Astro.redirect("/representatives");
+}
+---
+
+<Layout title={`${rep.candidate} — rep.et`}>
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: rep.candidate }]} />
+
+    <div class="bg-card rounded-lg border border-border p-6 md:p-8">
+      <h1 class="text-2xl md:text-3xl font-bold mb-6">{rep.candidate}</h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="space-y-1">
+          <span class="text-xs uppercase tracking-wider text-text-muted">Constituency</span>
+          <p class="font-medium">{rep.location}</p>
+        </div>
+
+        <div class="space-y-1">
+          <span class="text-xs uppercase tracking-wider text-text-muted">Region</span>
+          <p>
+            <a href={`/regions/${regionSlug(rep.region)}`} class="font-medium hover:text-accent">
+              {rep.region}
+            </a>
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <span class="text-xs uppercase tracking-wider text-text-muted">Party</span>
+          <p class="font-medium flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-olive inline-block"></span>
+            {rep.party}
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <span class="text-xs uppercase tracking-wider text-text-muted">Gender</span>
+          <p class="font-medium">{rep.gender}</p>
+        </div>
+
+        <div class="space-y-1">
+          <span class="text-xs uppercase tracking-wider text-text-muted">Votes</span>
+          <p class="font-medium text-lg">{rep.votes.toLocaleString()}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-card rounded-lg border border-border overflow-hidden">
+      <div class="p-4 border-b border-border">
+        <h2 class="text-lg font-bold">Location</h2>
+      </div>
+      <div
+        id="rep-map"
+        class="h-64 md:h-80"
+        data-lat={rep.lat}
+        data-lng={rep.lng}
+        data-name={rep.location}
+      ></div>
+    </div>
+  </div>
+</Layout>
+
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+
+<script>
+  import maplibregl from "maplibre-gl";
+
+  const container = document.getElementById("rep-map");
+  if (container) {
+    const lat = parseFloat(container.dataset.lat!);
+    const lng = parseFloat(container.dataset.lng!);
+    const name = container.dataset.name!;
+
+    const map = new maplibregl.Map({
+      container,
+      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+      center: [lng, lat],
+      zoom: 10,
+    });
+
+    new maplibregl.Marker({ color: "#c8962d" })
+      .setLngLat([lng, lat])
+      .setPopup(new maplibregl.Popup().setText(name))
+      .addTo(map);
+
+    map.addControl(new maplibregl.NavigationControl(), "top-right");
+  }
+</script>

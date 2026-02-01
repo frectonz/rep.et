@@ -1,0 +1,134 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import RepCard from "../../components/RepCard.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import {
+  regions,
+  regionSlug,
+  getRegionBySlug,
+  getByRegion,
+  getRegionStats,
+} from "../../lib/data";
+
+export function getStaticPaths() {
+  return regions.map((region) => ({
+    params: { region: regionSlug(region) },
+  }));
+}
+
+const { region: regionParam } = Astro.params;
+const regionName = getRegionBySlug(regionParam);
+
+if (!regionName) {
+  return Astro.redirect("/regions");
+}
+
+const reps = getByRegion(regionName);
+const stats = getRegionStats(regionName);
+const coordsJson = JSON.stringify(
+  reps.map((r) => ({ lat: r.lat, lng: r.lng, name: r.location, slug: r.slug }))
+);
+---
+
+<Layout title={`${regionName} — rep.et`}>
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Regions", href: "/regions" }, { label: regionName }]} />
+
+    <h1 class="text-2xl md:text-3xl font-bold mb-6">{regionName}</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <p class="text-xl font-bold font-heading text-primary">{stats.seats}</p>
+        <p class="text-xs text-text-muted">Seats</p>
+      </div>
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <p class="text-xl font-bold font-heading text-primary">{stats.totalVotes.toLocaleString()}</p>
+        <p class="text-xs text-text-muted">Total Votes</p>
+      </div>
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <p class="text-xl font-bold font-heading text-primary">{stats.genderSplit.female}</p>
+        <p class="text-xs text-text-muted">Women</p>
+      </div>
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <p class="text-xl font-bold font-heading text-primary">{stats.parties.length}</p>
+        <p class="text-xs text-text-muted">Parties</p>
+      </div>
+    </div>
+
+    {stats.parties.length > 1 && (
+      <div class="bg-card rounded-lg border border-border p-5 mb-8">
+        <h2 class="text-lg font-bold mb-3">Party Breakdown</h2>
+        <div class="space-y-2">
+          {stats.parties.map((p) => (
+            <div class="flex items-center gap-3">
+              <span class="text-sm min-w-[140px] truncate">{p.name}</span>
+              <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+                <div
+                  class="h-full bg-olive rounded"
+                  style={`width: ${(p.seats / stats.seats) * 100}%`}
+                ></div>
+              </div>
+              <span class="text-sm text-text-muted w-8 text-right">{p.seats}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="bg-card rounded-lg border border-border overflow-hidden mb-8">
+      <div class="p-4 border-b border-border">
+        <h2 class="text-lg font-bold">Map</h2>
+      </div>
+      <div id="region-map" class="h-64 md:h-80" data-coords={coordsJson}></div>
+    </div>
+
+    <h2 class="text-lg font-bold mb-4">
+      Constituencies <span class="text-text-muted font-normal">({reps.length})</span>
+    </h2>
+    <div class="space-y-3">
+      {reps
+        .sort((a, b) => a.location.localeCompare(b.location))
+        .map((rep) => (
+          <RepCard rep={rep} />
+        ))}
+    </div>
+  </div>
+</Layout>
+
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+
+<script>
+  import maplibregl from "maplibre-gl";
+
+  const container = document.getElementById("region-map");
+  if (container) {
+    const coords: { lat: number; lng: number; name: string; slug: string }[] = JSON.parse(
+      container.dataset.coords!
+    );
+
+    const bounds = new maplibregl.LngLatBounds();
+    coords.forEach((c) => bounds.extend([c.lng, c.lat]));
+
+    const map = new maplibregl.Map({
+      container,
+      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+      bounds,
+      fitBoundsOptions: { padding: 40 },
+    });
+
+    map.on("load", () => {
+      coords.forEach((c) => {
+        const marker = new maplibregl.Marker({ color: "#c8962d", scale: 0.7 })
+          .setLngLat([c.lng, c.lat])
+          .addTo(map);
+
+        marker.getElement().style.cursor = "pointer";
+        marker.getElement().addEventListener("click", () => {
+          window.location.href = `/representatives/${c.slug}`;
+        });
+      });
+    });
+
+    map.addControl(new maplibregl.NavigationControl(), "top-right");
+  }
+</script>

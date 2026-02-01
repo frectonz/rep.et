@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+---
+
+<Layout title="About — rep.et">
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "About" }]} />
+
+    <h1 class="text-2xl md:text-3xl font-bold mb-6">About rep.et</h1>
+
+    <div class="space-y-6">
+      <div class="bg-card rounded-lg border border-border p-6">
+        <h2 class="text-xl font-bold mb-3">What is HOPR?</h2>
+        <p class="text-text-muted leading-relaxed">
+          The House of Peoples' Representatives (HOPR) is the lower chamber of the Federal
+          Parliamentary Assembly of Ethiopia. It is the highest legislative body in the country,
+          with members directly elected by the people from 547 constituencies across Ethiopia's
+          regions. Representatives serve five-year terms and are responsible for enacting
+          legislation, approving the federal budget, and overseeing the executive branch.
+        </p>
+      </div>
+
+      <div class="bg-card rounded-lg border border-border p-6">
+        <h2 class="text-xl font-bold mb-3">What This Site Does</h2>
+        <p class="text-text-muted leading-relaxed">
+          rep.et helps citizens find their elected representative in the House of Peoples'
+          Representatives. You can use your device's location to find the nearest constituency,
+          search by name or location, or browse representatives by region and party. The site
+          covers the 471 constituency results from the 6th National Election.
+        </p>
+      </div>
+
+      <div class="bg-card rounded-lg border border-border p-6">
+        <h2 class="text-xl font-bold mb-3">Data Source</h2>
+        <div class="space-y-3 text-text-muted leading-relaxed">
+          <p>
+            The data presented on this site was collected from the official 6th National Election
+            results published by the National Election Board of Ethiopia (NEBE).
+          </p>
+          <p>
+            The geographic coordinates for each constituency were geocoded from constituency names.
+            These are approximate point locations, not official boundary data. As a result, the
+            "find your representative" feature uses a nearest-point approximation and may not be
+            perfectly accurate at constituency borders.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-callout-bg border-l-4 border-callout-border rounded-r-lg p-6">
+        <h2 class="text-xl font-bold mb-3 text-primary">Disclaimer</h2>
+        <div class="space-y-3 text-text-muted leading-relaxed">
+          <p>
+            This is an independent, unofficial project. It is not affiliated with or endorsed by
+            the Ethiopian government, the National Election Board of Ethiopia (NEBE), or any
+            political party.
+          </p>
+          <p>
+            This is an open-source civic experiment, not an official government service. The data
+            is provided as-is for informational purposes. While we strive for accuracy, we cannot
+            guarantee that all information is complete or error-free.
+          </p>
+          <p>
+            The geolocation feature provides an approximation based on nearest-point distance. For
+            official constituency information, please refer to NEBE directly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

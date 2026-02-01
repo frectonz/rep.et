@@ -1,0 +1,75 @@
+---
+const navLinks = [
+  { href: "/representatives", label: "Representatives" },
+  { href: "/regions", label: "Regions" },
+  { href: "/parties", label: "Parties" },
+  { href: "/map", label: "Map" },
+  { href: "/about", label: "About" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="bg-primary text-white">
+  <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/" class="flex flex-col leading-tight text-white hover:text-accent">
+      <span class="text-xl font-bold font-heading tracking-tight">rep.et</span>
+      <span class="text-xs opacity-60 -mt-1" style="font-family: 'Nyala', serif;">ተወካዮች</span>
+    </a>
+
+    <button
+      id="menu-toggle"
+      class="md:hidden p-2 text-white"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <nav id="nav-menu" class="hidden md:flex items-center gap-6">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            "text-sm transition-colors",
+            currentPath.startsWith(link.href)
+              ? "text-accent font-semibold"
+              : "text-white/80 hover:text-white",
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+
+  <nav id="mobile-menu" class="hidden md:hidden border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-4 py-2 flex flex-col gap-2">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            "text-sm py-2 transition-colors",
+            currentPath.startsWith(link.href)
+              ? "text-accent font-semibold"
+              : "text-white/80 hover:text-white",
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+  toggle?.addEventListener("click", () => {
+    const expanded = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!expanded));
+    menu?.classList.toggle("hidden");
+  });
+</script>

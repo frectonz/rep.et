@@ -1,0 +1,84 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { parties, getPartyStats, representatives } from "../../lib/data";
+
+const stats = parties.map(getPartyStats).sort((a, b) => b.seats - a.seats);
+const totalSeats = representatives.length;
+---
+
+<Layout title="Parties — rep.et">
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Parties" }]} />
+
+    <h1 class="text-2xl md:text-3xl font-bold mb-6">Party Breakdown</h1>
+
+    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <h2 class="text-lg font-bold mb-4">Seat Distribution</h2>
+      <div class="flex rounded overflow-hidden h-8 mb-4">
+        {stats.map((p, i) => {
+          const colors = [
+            "#5a6e3c", "#c8962d", "#8b5e3c", "#3d2b1f", "#a87b24",
+            "#5c4033", "#7a6b60", "#d9cfc5", "#2c1810", "#f0e8de",
+          ];
+          const color = colors[i % colors.length];
+          const width = (p.seats / totalSeats) * 100;
+          return width > 1 ? (
+            <div
+              style={`width: ${width}%; background-color: ${color};`}
+              title={`${p.name}: ${p.seats} seats`}
+            ></div>
+          ) : null;
+        })}
+      </div>
+      <div class="flex flex-wrap gap-3 text-xs">
+        {stats.slice(0, 6).map((p, i) => {
+          const colors = [
+            "#5a6e3c", "#c8962d", "#8b5e3c", "#3d2b1f", "#a87b24",
+            "#5c4033",
+          ];
+          return (
+            <span class="flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-sm inline-block" style={`background-color: ${colors[i]};`}></span>
+              {p.name}
+            </span>
+          );
+        })}
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      {stats.map((p) => (
+        <div class="bg-card rounded-lg border border-border p-5">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <div>
+              <h2 class="text-lg font-bold text-primary">{p.name}</h2>
+              <div class="flex gap-4 mt-1 text-sm text-text-muted">
+                <span>{p.seats} seats ({((p.seats / totalSeats) * 100).toFixed(1)}%)</span>
+                <span>{p.totalVotes.toLocaleString()} votes</span>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-bold font-heading text-primary">{p.seats}</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 mb-3">
+            <div class="flex-1 h-4 bg-callout-bg rounded overflow-hidden">
+              <div
+                class="h-full bg-olive rounded"
+                style={`width: ${(p.seats / totalSeats) * 100}%`}
+              ></div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3 text-xs text-text-muted">
+            <span>Women: {p.genderSplit.female}</span>
+            <span>Men: {p.genderSplit.male}</span>
+            <span>Regions: {p.regions.length}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>
