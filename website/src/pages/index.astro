@@ -16,8 +16,15 @@ import { Users, MapPinned, Vote, Search, Globe, Landmark, Map } from "@lucide/as
       </p>
     </div>
 
-    <div class="text-center">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
       <GeolocateButton />
+      <a
+        href="/map"
+        class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-primary hover:bg-primary-light text-white font-semibold rounded-lg transition-colors text-lg"
+      >
+        <Map class="w-5 h-5" />
+        Explore the Map
+      </a>
     </div>
   </section>
 

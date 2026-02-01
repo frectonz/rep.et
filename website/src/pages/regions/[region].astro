@@ -100,40 +100,48 @@ const coordsJson = JSON.stringify(
   </div>
 </Layout>
 
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline></script>
+<script is:inline>
+  (function() {
+    var container = document.getElementById('region-map');
+    if (!container) return;
+    var coords = JSON.parse(container.dataset.coords);
 
-<script>
-  import maplibregl from "maplibre-gl";
+    var bounds = new maplibregl.LngLatBounds();
+    coords.forEach(function(c) { bounds.extend([c.lng, c.lat]); });
 
-  const container = document.getElementById("region-map");
-  if (container) {
-    const coords: { lat: number; lng: number; name: string; slug: string }[] = JSON.parse(
-      container.dataset.coords!
-    );
-
-    const bounds = new maplibregl.LngLatBounds();
-    coords.forEach((c) => bounds.extend([c.lng, c.lat]));
-
-    const map = new maplibregl.Map({
-      container,
-      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
-      bounds,
-      fitBoundsOptions: { padding: 40 },
+    var map = new maplibregl.Map({
+      container: container,
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: 'raster',
+            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            tileSize: 256,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          }
+        },
+        layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+      },
+      bounds: bounds,
+      fitBoundsOptions: { padding: 40 }
     });
 
-    map.on("load", () => {
-      coords.forEach((c) => {
-        const marker = new maplibregl.Marker({ color: "#c8962d", scale: 0.7 })
+    map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+    map.on('load', function() {
+      coords.forEach(function(c) {
+        var marker = new maplibregl.Marker({ color: '#c8962d', scale: 0.7 })
           .setLngLat([c.lng, c.lat])
           .addTo(map);
 
-        marker.getElement().style.cursor = "pointer";
-        marker.getElement().addEventListener("click", () => {
-          window.location.href = `/representatives/${c.slug}`;
+        marker.getElement().style.cursor = 'pointer';
+        marker.getElement().addEventListener('click', function() {
+          window.location.href = '/representatives/' + c.slug;
         });
       });
     });
-
-    map.addControl(new maplibregl.NavigationControl(), "top-right");
-  }
+  })();
 </script>

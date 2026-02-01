@@ -87,29 +87,39 @@ if (!rep) {
   </div>
 </Layout>
 
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline></script>
+<script is:inline>
+  (function() {
+    var container = document.getElementById('rep-map');
+    if (!container) return;
+    var lat = parseFloat(container.dataset.lat);
+    var lng = parseFloat(container.dataset.lng);
+    var name = container.dataset.name;
 
-<script>
-  import maplibregl from "maplibre-gl";
-
-  const container = document.getElementById("rep-map");
-  if (container) {
-    const lat = parseFloat(container.dataset.lat!);
-    const lng = parseFloat(container.dataset.lng!);
-    const name = container.dataset.name!;
-
-    const map = new maplibregl.Map({
-      container,
-      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+    var map = new maplibregl.Map({
+      container: container,
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: 'raster',
+            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            tileSize: 256,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          }
+        },
+        layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+      },
       center: [lng, lat],
-      zoom: 10,
+      zoom: 10
     });
 
-    new maplibregl.Marker({ color: "#c8962d" })
+    new maplibregl.Marker({ color: '#c8962d' })
       .setLngLat([lng, lat])
       .setPopup(new maplibregl.Popup().setText(name))
       .addTo(map);
 
-    map.addControl(new maplibregl.NavigationControl(), "top-right");
-  }
+    map.addControl(new maplibregl.NavigationControl(), 'top-right');
+  })();
 </script>

@@ -19,89 +19,124 @@ const geojson = JSON.stringify({
     },
   })),
 });
+
+const PARTY_COLORS: Record<string, string> = {
+  'Prosperity Party': '#1a9641',
+  'Ethiopian Citizens for Social Justice (EZEMA)': '#7b3294',
+  'National Movement of Amhara': '#2b83ba',
+  'Gedio People Democratic Organization': '#fdae61',
+  'Kucha People Democratic Party': '#abd9e9',
+  'Independent': '#9e9e9e',
+};
+const partyColorsJson = JSON.stringify(PARTY_COLORS);
 ---
 
-<div id="full-map" class="w-full" style="height: calc(100vh - 56px);" data-geojson={geojson}></div>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
-
-<script>
-  import maplibregl from "maplibre-gl";
-
-  const container = document.getElementById("full-map");
-  if (container) {
-    const geojson = JSON.parse(container.dataset.geojson!);
-
-    const map = new maplibregl.Map({
-      container,
-      style: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
-      center: [39.5, 8.5],
-      zoom: 5.5,
-    });
-
-    map.addControl(new maplibregl.NavigationControl(), "top-right");
-
-    map.on("load", () => {
-      map.addSource("constituencies", {
-        type: "geojson",
-        data: geojson,
-      });
-
-      map.addLayer({
-        id: "constituency-dots",
-        type: "circle",
-        source: "constituencies",
-        paint: {
-          "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 4, 10, 8],
-          "circle-color": "#c8962d",
-          "circle-stroke-width": 1.5,
-          "circle-stroke-color": "#3d2b1f",
-          "circle-opacity": 0.85,
-        },
-      });
-
-      map.on("click", "constituency-dots", (e) => {
-        if (e.features && e.features.length > 0) {
-          const props = e.features[0].properties;
-          const slug = props.slug;
-          window.location.href = `/representatives/${slug}`;
-        }
-      });
-
-      map.on("mouseenter", "constituency-dots", () => {
-        map.getCanvas().style.cursor = "pointer";
-      });
-
-      map.on("mouseleave", "constituency-dots", () => {
-        map.getCanvas().style.cursor = "";
-      });
-
-      // Show popup on hover
-      const popup = new maplibregl.Popup({
-        closeButton: false,
-        closeOnClick: false,
-      });
-
-      map.on("mousemove", "constituency-dots", (e) => {
-        if (e.features && e.features.length > 0) {
-          const props = e.features[0].properties;
-          const coords = (e.features[0].geometry as GeoJSON.Point).coordinates.slice() as [number, number];
-          popup
-            .setLngLat(coords)
-            .setHTML(
-              `<div style="font-family: Inter, sans-serif; font-size: 13px; line-height: 1.4;">
-                <strong>${props.candidate}</strong><br/>
-                <span style="color: #7a6b60;">${props.location}, ${props.region}</span><br/>
-                <span style="color: #5a6e3c;">${props.party}</span>
-              </div>`
-            )
-            .addTo(map);
-        }
-      });
-
-      map.on("mouseleave", "constituency-dots", () => {
-        popup.remove();
-      });
-    });
+<style>
+  .maplibregl-popup-content {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 13px;
+    line-height: 1.5;
+    min-width: 180px;
+    padding: 10px 12px;
+    border-radius: 8px;
   }
+  .popup-location { font-weight: bold; color: #3d2b1f; }
+  .popup-region { color: #7a6b60; }
+  .popup-hr { margin: 4px 0; border: none; border-top: 1px solid #d9cfc5; }
+  .popup-candidate { font-weight: bold; color: #3d2b1f; }
+  .popup-party-dot {
+    display: inline-block; width: 8px; height: 8px;
+    border-radius: 50%; margin-right: 4px;
+  }
+</style>
+
+<div id="map-wrapper" style="position:relative;width:100%;height:calc(100vh - 56px);">
+  <div id="full-map" style="position:absolute;top:0;left:0;right:0;bottom:0;"></div>
+  <div id="legend" style="position:absolute;bottom:45px;right:10px;background:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,0.3);font-size:13px;line-height:1.6;z-index:1;"></div>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline></script>
+<script is:inline define:vars={{ geojson, partyColorsJson }}>
+  var DATA = JSON.parse(geojson);
+  var PARTY_COLORS = JSON.parse(partyColorsJson);
+
+  var map = new maplibregl.Map({
+    container: 'full-map',
+    style: {
+      version: 8,
+      sources: {
+        osm: {
+          type: 'raster',
+          tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+          tileSize: 256,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }
+      },
+      layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+    },
+    center: [39.5, 9.0],
+    zoom: 5.5
+  });
+
+  map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+  map.on('load', function() {
+    map.addSource('constituencies', { type: 'geojson', data: DATA });
+
+    var colorMatch = ['match', ['get', 'party']];
+    Object.keys(PARTY_COLORS).forEach(function(party) {
+      colorMatch.push(party, PARTY_COLORS[party]);
+    });
+    colorMatch.push('#9e9e9e');
+
+    map.addLayer({
+      id: 'constituency-dots',
+      type: 'circle',
+      source: 'constituencies',
+      paint: {
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 5, 5, 10, 9],
+        'circle-color': colorMatch,
+        'circle-stroke-color': '#fff',
+        'circle-stroke-width': 1.5,
+        'circle-opacity': 0.85
+      }
+    });
+
+    map.on('click', 'constituency-dots', function(e) {
+      var f = e.features[0];
+      var p = f.properties;
+      var color = PARTY_COLORS[p.party] || '#9e9e9e';
+      var votes = p.votes != null ? Number(p.votes).toLocaleString() : 'N/A';
+      new maplibregl.Popup()
+        .setLngLat(f.geometry.coordinates)
+        .setHTML(
+          '<div class="popup-location">' + p.location + '</div>' +
+          '<div class="popup-region">' + p.region + '</div>' +
+          '<hr class="popup-hr">' +
+          '<div class="popup-candidate">' + p.candidate + '</div>' +
+          '<div><span class="popup-party-dot" style="background:' + color + '"></span>' + p.party + '</div>' +
+          '<div>Votes: <strong>' + votes + '</strong></div>' +
+          '<div style="margin-top:6px"><a href="/representatives/' + p.slug + '" style="color:#c8962d;font-weight:600;">View profile &rarr;</a></div>'
+        )
+        .addTo(map);
+    });
+
+    map.on('mouseenter', 'constituency-dots', function() {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'constituency-dots', function() {
+      map.getCanvas().style.cursor = '';
+    });
+  });
+
+  var legendEl = document.getElementById('legend');
+  legendEl.innerHTML = '<h4 style="margin:0 0 6px;font-weight:bold;color:#3d2b1f;">Parties</h4>';
+  Object.keys(PARTY_COLORS).forEach(function(party) {
+    legendEl.innerHTML +=
+      '<div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;">' +
+      '<span style="width:12px;height:12px;border-radius:50%;background:' + PARTY_COLORS[party] + ';flex-shrink:0;"></span>' +
+      '<span style="color:#2c1810;">' + party + '</span></div>';
+  });
 </script>
