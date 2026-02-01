@@ -1,7 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import { MapPinned, Globe, Landmark, User, Vote } from "@lucide/astro";
+import {
+  MapPinned,
+  Globe,
+  Landmark,
+  User,
+  Vote,
+  Share2,
+  X,
+} from "@lucide/astro";
 import { representatives, getBySlug, regionSlug } from "../../lib/data";
 
 export function getStaticPaths() {
@@ -21,6 +29,26 @@ if (!rep) {
 <Layout title={`${rep.candidate} — rep.et`} description={`${rep.candidate}, representative for ${rep.location} in ${rep.region}. ${rep.party}.`}>
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: rep.candidate }]} />
+
+    <div id="share-card" class="relative bg-callout-bg rounded-lg border border-callout-border px-4 py-4 mb-6 flex items-center justify-between gap-4">
+      <button id="share-dismiss" class="absolute -top-2 -right-2 bg-callout-bg border border-callout-border rounded-full text-text-muted hover:text-text cursor-pointer p-0.5">
+        <X class="w-3.5 h-3.5" />
+      </button>
+      <div>
+        <p class="font-medium">Is this your representative?</p>
+        <p class="text-sm text-text-muted">Share how you found out!</p>
+      </div>
+      <button
+        id="share-btn"
+        data-name={rep.candidate}
+        data-location={rep.location}
+        data-region={rep.region}
+        class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-5 py-2.5 rounded-lg transition-colors cursor-pointer shrink-0"
+      >
+        <Share2 class="w-4 h-4" />
+        Share
+      </button>
+    </div>
 
     <div class="bg-card rounded-lg border border-border p-6 md:p-8">
       <h1 class="text-2xl md:text-3xl font-bold mb-6">{rep.candidate}</h1>
@@ -86,6 +114,36 @@ if (!rep) {
     </div>
   </div>
 </Layout>
+
+<script is:inline>
+  (function() {
+    var card = document.getElementById('share-card');
+    var btn = document.getElementById('share-btn');
+    var dismiss = document.getElementById('share-dismiss');
+    if (!card || !btn) return;
+
+    if (!navigator.share) {
+      card.style.display = 'none';
+      return;
+    }
+
+    dismiss.addEventListener('click', function() {
+      card.remove();
+    });
+
+    btn.addEventListener('click', function() {
+      var name = btn.dataset.name;
+      var location = btn.dataset.location;
+      var region = btn.dataset.region;
+
+      navigator.share({
+        title: name + ' — rep.et',
+        text: 'I just found out that my representative is ' + name + ' from ' + location + ', ' + region + '! Find yours at rep.et',
+        url: window.location.href
+      });
+    });
+  })();
+</script>
 
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline></script>
