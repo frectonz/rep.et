@@ -74,7 +74,12 @@ async function fetchWikidataPlaces(): Promise<WikidataPlace[]> {
 
   const places: WikidataPlace[] = [];
   for (const [, v] of itemMap) {
-    places.push({ name: v.name, lat: v.lat, lng: v.lng, aliases: [...v.aliases] });
+    places.push({
+      name: v.name,
+      lat: v.lat,
+      lng: v.lng,
+      aliases: [...v.aliases],
+    });
   }
 
   console.log(`Fetched ${places.length} places from Wikidata\n`);
@@ -221,7 +226,12 @@ async function main() {
   let stillFailed = 0;
 
   for (const entry of failed) {
-    const match = findMatch(entry.location, entry.region, places, normalizedIndex);
+    const match = findMatch(
+      entry.location,
+      entry.region,
+      places,
+      normalizedIndex,
+    );
     if (match) {
       entry.lat = match.lat;
       entry.lng = match.lng;

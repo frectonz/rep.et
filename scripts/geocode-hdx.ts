@@ -155,9 +155,7 @@ async function main() {
 
       // First try same region
       const regionMatch = candidates.find((c) =>
-        allowedRegions.some(
-          (r) => r.toLowerCase() === c.region.toLowerCase(),
-        ),
+        allowedRegions.some((r) => r.toLowerCase() === c.region.toLowerCase()),
       );
       if (regionMatch) {
         bestMatch = regionMatch;
