@@ -19,6 +19,10 @@
   --color-callout-border: #c8962d;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 @layer base {
   html {
     font-family: var(--font-heading);
