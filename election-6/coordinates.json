@@ -3548,9 +3548,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 77616,
-    "lat": 13.6497295,
-    "lng": 39.1728696,
-    "geocode_source": "nominatim_retry"
+    "lat": 6.483,
+    "lng": 38.517,
+    "geocode_source": "manual_map"
   },
   {
     "region": "Sidama",
