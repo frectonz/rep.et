@@ -292,9 +292,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 68403,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9.1,
+    "lng": 40.0333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Afar",
@@ -314,9 +314,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 248204,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12.25,
+    "lng": 40,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -380,9 +380,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 21904,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 11.25716,
+    "lng": 36.84118,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -435,9 +435,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 16577,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12.25,
+    "lng": 36.33333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -468,9 +468,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 16506,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 11.8333,
+    "lng": 38.8333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -545,9 +545,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 12253,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 11.7,
+    "lng": 37.33333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -688,9 +688,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 17127,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 11.5,
+    "lng": 38.25,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -809,9 +809,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 35528,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 11.5932,
+    "lng": 39.2125,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -831,9 +831,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 9442,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12,
+    "lng": 38,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -897,9 +897,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 21378,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 11.5,
+    "lng": 38.25,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -919,9 +919,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 31343,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 11.3333,
+    "lng": 39.25,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1018,9 +1018,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 6430,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 10.5,
+    "lng": 37.5,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1062,9 +1062,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 44124,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12.3333,
+    "lng": 38.75,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1106,9 +1106,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 20890,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12,
+    "lng": 38,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1161,9 +1161,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 42300,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12.3333,
+    "lng": 37.6667,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1205,9 +1205,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 19228,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12,
+    "lng": 38,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1326,9 +1326,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 10955,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 10.633333333,
+    "lng": 36.933333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1370,9 +1370,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 30273,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12.25,
+    "lng": 39.1667,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1392,9 +1392,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 33605,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12.25,
+    "lng": 36.33333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1568,9 +1568,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 49341,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 12.3333,
+    "lng": 37.6667,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1601,9 +1601,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 23349,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 10.6667,
+    "lng": 39.1667,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Amhara",
@@ -1766,9 +1766,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 81106,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.333333333,
+    "lng": 36.5,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -1821,9 +1821,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 71479,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.16667,
+    "lng": 38.8333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -1854,9 +1854,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 46703,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9.345555555,
+    "lng": 41.5075,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -1887,9 +1887,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 103950,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9.25,
+    "lng": 40.6334,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -1920,9 +1920,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 71412,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.5,
+    "lng": 37.25,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -1942,9 +1942,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 92467,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.75,
+    "lng": 38.833333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -1997,9 +1997,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 84935,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.25,
+    "lng": 39.75,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2041,9 +2041,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 91383,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.6,
+    "lng": 36.733333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2118,9 +2118,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 56986,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.416666666,
+    "lng": 40,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2151,9 +2151,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 78682,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.5,
+    "lng": 37.25,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2250,9 +2250,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 83805,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9.083333333,
+    "lng": 39,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2360,9 +2360,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 79953,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.416666666,
+    "lng": 37,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2393,9 +2393,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 71162,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9,
+    "lng": 36.333333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2426,9 +2426,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 95286,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.6,
+    "lng": 36.733333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2448,9 +2448,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 70236,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.3,
+    "lng": 38.95,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2503,9 +2503,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 83014,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.416666666,
+    "lng": 37,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2525,9 +2525,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 64794,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9.95,
+    "lng": 38.2,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2558,9 +2558,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 91333,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.166666666,
+    "lng": 38.166666666,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2767,9 +2767,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 83711,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.166666666,
+    "lng": 38.166666666,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2833,9 +2833,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 81166,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9,
+    "lng": 35.5,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2888,9 +2888,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 50441,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9.711944444,
+    "lng": 38.8475,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2899,9 +2899,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 93900,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.666666666,
+    "lng": 36.833333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2954,9 +2954,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 98858,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.166666666,
+    "lng": 39.166666666,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -2965,9 +2965,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 44330,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 9.833333333,
+    "lng": 38.766666666,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -3108,9 +3108,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 40513,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.666666666,
+    "lng": 36.5,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -3251,9 +3251,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 162706,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 5.783333333,
+    "lng": 38.4,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Oromia",
@@ -3570,9 +3570,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 71818,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.6,
+    "lng": 38.333333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Sidama",
@@ -3647,9 +3647,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 107887,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.666666666,
+    "lng": 38.75,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Sidama",
@@ -3757,9 +3757,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 47225,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.3,
+    "lng": 37.1,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -3790,9 +3790,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 79135,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.16667,
+    "lng": 37.1667,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -3812,9 +3812,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 38847,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.266666666,
+    "lng": 37.95,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -3834,9 +3834,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 22338,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.266666666,
+    "lng": 37.95,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4054,9 +4054,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 29924,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8,
+    "lng": 38.533333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4109,9 +4109,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 48098,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.5,
+    "lng": 37.583333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4142,9 +4142,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 24061,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.833333333,
+    "lng": 37.5,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4164,9 +4164,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 63163,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.083333333,
+    "lng": 37.033333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4175,9 +4175,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 31884,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.966666666,
+    "lng": 37.9,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4208,9 +4208,9 @@
     "party": "Ethiopian Citizens for Social Justice (EZEMA)",
     "gender": "Male",
     "votes": 31035,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 5.833333333,
+    "lng": 37.833333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4274,9 +4274,9 @@
     "party": "Ethiopian Citizens for Social Justice (EZEMA)",
     "gender": "Male",
     "votes": 11788,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.15,
+    "lng": 37.983333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4329,9 +4329,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 36294,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8,
+    "lng": 38.2,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4351,9 +4351,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 43320,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.966666666,
+    "lng": 37.9,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4373,9 +4373,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 5806,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.2,
+    "lng": 36.8,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4450,9 +4450,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 32957,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.83333,
+    "lng": 38,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4461,9 +4461,9 @@
     "party": "Ethiopian Citizens for Social Justice (EZEMA)",
     "gender": "Male",
     "votes": 12914,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.15,
+    "lng": 37.983333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4494,9 +4494,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 80823,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.5,
+    "lng": 37.583333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4538,9 +4538,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 34143,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.333333333,
+    "lng": 38.333333333,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4615,9 +4615,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 92193,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.383333333,
+    "lng": 35.666666666,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4648,9 +4648,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 47696,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.83333,
+    "lng": 38,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4725,9 +4725,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 58199,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.916666666,
+    "lng": 37.25,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4780,9 +4780,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 60045,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.86,
+    "lng": 37.76,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4791,9 +4791,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 48065,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.86,
+    "lng": 37.76,
+    "geocode_source": "wikidata"
   },
   {
     "region": "SNNPR",
@@ -4934,9 +4934,9 @@
     "party": "Prosperity Party",
     "gender": "Female",
     "votes": 572697,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 5.166666666,
+    "lng": 41,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Somali",
@@ -4945,9 +4945,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 28805,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 6.970833333,
+    "lng": 46.416666666,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Somali",
@@ -5165,9 +5165,9 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 18382,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 7.266666666,
+    "lng": 35.316666666,
+    "geocode_source": "wikidata"
   },
   {
     "region": "Gambella",
@@ -5176,8 +5176,8 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 211867,
-    "lat": null,
-    "lng": null,
-    "geocode_source": "failed"
+    "lat": 8.316666666,
+    "lng": 33.933333333,
+    "geocode_source": "wikidata"
   }
 ]
