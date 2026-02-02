@@ -30,7 +30,7 @@
 
 | Rank | Constituency | Region | Candidate | Party | Votes |
 |------|-------------|--------|-----------|-------|------:|
-| 471 | Zeyse Liyu | SNNPR | Tsegaye Chama Chilo | Ethiopian Citizens for Social Justice (EZEMA) | 3,680 |
+| 471 | Zeyse Liyu | SNNPR | Tsegaye Chama Chilo | Ethiopian Citizens for Social Justice | 3,680 |
 | 470 | Dita | SNNPR | Gizachew Girma | Prosperity Party | 5,218 |
 | 469 | Mierab Eshitie | Amhara | Aschenaki Damtie | National Movement of Amhara | 5,500 |
 | 468 | Lasta | Amhara | Tesfahun Abi Yibeltal | National Movement of Amhara | 5,860 |
@@ -49,7 +49,7 @@
 | Independent | 4 | 391,347 | 97,837 |
 | Gedio People Democratic Organization | 2 | 84,312 | 42,156 |
 | National Movement of Amhara | 5 | 81,200 | 16,240 |
-| Ethiopian Citizens for Social Justice (EZEMA) | 4 | 59,417 | 14,854 |
+| Ethiopian Citizens for Social Justice | 4 | 59,417 | 14,854 |
 | Kucha People Democratic Party | 1 | 19,816 | 19,816 |
 
 Prosperity Party won 455 out of 471 seats (96.6%).
