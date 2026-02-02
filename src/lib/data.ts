@@ -77,6 +77,14 @@ export function getRegionBySlug(slug: string): string | undefined {
   return regions.find((r) => regionSlug(r) === slug);
 }
 
+export function partySlug(party: string): string {
+  return generateSlug(party);
+}
+
+export function getPartyBySlug(slug: string): string | undefined {
+  return parties.find((p) => partySlug(p) === slug);
+}
+
 export interface RegionStats {
   name: string;
   slug: string;
@@ -112,6 +120,7 @@ export function getRegionStats(region: string): RegionStats {
 
 export interface PartyStats {
   name: string;
+  slug: string;
   seats: number;
   totalVotes: number;
   regions: { name: string; seats: number }[];
@@ -132,6 +141,7 @@ export function getPartyStats(party: string): PartyStats {
 
   return {
     name: party,
+    slug: partySlug(party),
     seats: reps.length,
     totalVotes: reps.reduce((sum, r) => sum + r.votes, 0),
     regions: [...regionCounts.entries()]

@@ -4,6 +4,9 @@ import {
   regions,
   regionSlug,
   getByRegion,
+  parties,
+  partySlug,
+  getPartyStats,
 } from "../../lib/data";
 
 const pages = Object.fromEntries([
@@ -72,6 +75,18 @@ const pages = Object.fromEntries([
       description: `${getByRegion(region).length} seats in ${region}`,
     },
   ]),
+
+  // Dynamic: each party
+  ...parties.map((party) => {
+    const stats = getPartyStats(party);
+    return [
+      `parties/${partySlug(party)}`,
+      {
+        title: party,
+        description: `${stats.seats} seats across ${stats.regions.length} regions`,
+      },
+    ];
+  }),
 ]);
 
 export const { getStaticPaths, GET } = await OGImageRoute({

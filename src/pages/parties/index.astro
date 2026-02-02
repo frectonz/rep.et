@@ -1,7 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
-import { parties, getPartyStats, representatives } from "../../lib/data";
+import {
+  parties,
+  getPartyStats,
+  partySlug,
+  representatives,
+} from "../../lib/data";
 
 const stats = parties.map(getPartyStats).sort((a, b) => b.seats - a.seats);
 const totalSeats = representatives.length;
@@ -52,7 +57,7 @@ const totalSeats = representatives.length;
         <div class="bg-card rounded-lg border border-border p-5">
           <div class="flex items-start justify-between gap-4 mb-3">
             <div>
-              <h2 class="text-lg font-bold text-primary">{p.name}</h2>
+              <h2 class="text-lg font-bold text-primary"><a href={`/parties/${partySlug(p.name)}`} class="hover:text-accent transition-colors">{p.name}</a></h2>
               <div class="flex gap-4 mt-1 text-sm text-text-muted">
                 <span>{p.seats} seats ({((p.seats / totalSeats) * 100).toFixed(1)}%)</span>
                 <span>{p.totalVotes.toLocaleString()} votes</span>
