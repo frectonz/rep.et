@@ -1,0 +1,231 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import {
+  Users,
+  Vote,
+  UserRound,
+  TrendingUp,
+  Trophy,
+  ArrowDown,
+  Hash,
+  Globe,
+} from "@lucide/astro";
+import {
+  representatives,
+  getOverallStats,
+  regionSlug,
+  partySlug,
+} from "../lib/data";
+
+const stats = getOverallStats();
+const femalePercent = ((stats.totalFemale / stats.totalSeats) * 100).toFixed(1);
+
+const sortedByVotes = [...representatives].sort((a, b) => b.votes - a.votes);
+const top5 = sortedByVotes.slice(0, 5);
+const bottom5 = sortedByVotes.slice(-5).reverse();
+
+const partyReach = stats.partyStats
+  .map((p) => ({
+    name: p.name,
+    slug: p.slug,
+    regionCount: p.regions.length,
+  }))
+  .sort((a, b) => b.regionCount - a.regionCount);
+
+const totalRegions = stats.regionStats.length;
+---
+
+<Layout title="Statistics — rep.et" description="Charts and statistics about Ethiopia's House of Peoples' Representatives.">
+  <div class="max-w-3xl mx-auto px-4 py-8">
+    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Stats" }]} />
+
+    <h1 class="text-2xl md:text-3xl font-bold mb-6">Statistics</h1>
+
+    <!-- Section 1: Summary Cards -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <Users class="w-4 h-4 mx-auto mb-1 text-accent" />
+        <p class="text-xl font-bold font-heading text-primary">{stats.totalSeats}</p>
+        <p class="text-xs text-text-muted">Representatives</p>
+      </div>
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <Vote class="w-4 h-4 mx-auto mb-1 text-accent" />
+        <p class="text-xl font-bold font-heading text-primary">{stats.totalVotes.toLocaleString()}</p>
+        <p class="text-xs text-text-muted">Total Votes</p>
+      </div>
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <UserRound class="w-4 h-4 mx-auto mb-1 text-accent" />
+        <p class="text-xl font-bold font-heading text-primary">{stats.totalFemale}</p>
+        <p class="text-xs text-text-muted">Women ({femalePercent}%)</p>
+      </div>
+      <div class="bg-card rounded-lg border border-border p-4 text-center">
+        <TrendingUp class="w-4 h-4 mx-auto mb-1 text-accent" />
+        <p class="text-xl font-bold font-heading text-primary">{stats.avgVotesPerSeat.toLocaleString()}</p>
+        <p class="text-xs text-text-muted">Avg Votes / Seat</p>
+      </div>
+    </div>
+
+    <!-- Section 2: Seats by Region -->
+    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
+      <div class="space-y-2">
+        {stats.regionStats.map((r) => (
+          <div class="flex items-center gap-3">
+            <a href={`/regions/${r.slug}`} class="text-sm min-w-[140px] truncate hover:text-accent transition-colors">{r.name}</a>
+            <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+              <div
+                class="h-full bg-olive rounded"
+                style={`width: ${(r.seats / stats.totalSeats) * 100}%`}
+              ></div>
+            </div>
+            <span class="text-sm text-text-muted w-8 text-right">{r.seats}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Section 3: Seats by Party -->
+    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
+      <div class="space-y-2">
+        {stats.partyStats.map((p) => (
+          <div class="flex items-center gap-3">
+            <a href={`/parties/${p.slug}`} class="text-sm min-w-[140px] truncate hover:text-accent transition-colors">{p.name}</a>
+            <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+              <div
+                class="h-full bg-olive rounded"
+                style={`width: ${(p.seats / stats.totalSeats) * 100}%`}
+              ></div>
+            </div>
+            <span class="text-sm text-text-muted w-8 text-right">{p.seats}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Section 4: Gender Representation -->
+    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <h2 class="text-lg font-bold mb-4">Gender Representation</h2>
+
+      <h3 class="text-sm font-semibold text-text-muted mb-2">By Party</h3>
+      <div class="space-y-2 mb-6">
+        {stats.femaleByParty.map((p) => {
+          const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
+          return (
+            <div class="flex items-center gap-3">
+              <span class="text-sm min-w-[140px] truncate">{p.name}</span>
+              <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+                <div
+                  class="h-full bg-accent rounded"
+                  style={`width: ${pct}%`}
+                ></div>
+              </div>
+              <span class="text-sm text-text-muted w-16 text-right">{p.female}/{p.total}</span>
+            </div>
+          );
+        })}
+      </div>
+
+      <h3 class="text-sm font-semibold text-text-muted mb-2">By Region</h3>
+      <div class="space-y-2">
+        {stats.femaleByRegion.map((r) => {
+          const pct = r.total > 0 ? (r.female / r.total) * 100 : 0;
+          return (
+            <div class="flex items-center gap-3">
+              <span class="text-sm min-w-[140px] truncate">{r.name}</span>
+              <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+                <div
+                  class="h-full bg-accent rounded"
+                  style={`width: ${pct}%`}
+                ></div>
+              </div>
+              <span class="text-sm text-text-muted w-16 text-right">{r.female}/{r.total}</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Section 5: Vote Statistics -->
+    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <h2 class="text-lg font-bold mb-3">Vote Statistics</h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+        <div class="bg-callout-bg rounded-lg p-3 text-center">
+          <Trophy class="w-4 h-4 mx-auto mb-1 text-accent" />
+          <p class="text-lg font-bold font-heading text-primary">{stats.highestVote.votes.toLocaleString()}</p>
+          <p class="text-xs text-text-muted">Highest Vote</p>
+        </div>
+        <div class="bg-callout-bg rounded-lg p-3 text-center">
+          <ArrowDown class="w-4 h-4 mx-auto mb-1 text-accent" />
+          <p class="text-lg font-bold font-heading text-primary">{stats.lowestVote.votes.toLocaleString()}</p>
+          <p class="text-xs text-text-muted">Lowest Vote</p>
+        </div>
+        <div class="bg-callout-bg rounded-lg p-3 text-center">
+          <Hash class="w-4 h-4 mx-auto mb-1 text-accent" />
+          <p class="text-lg font-bold font-heading text-primary">{stats.medianVotes.toLocaleString()}</p>
+          <p class="text-xs text-text-muted">Median Vote</p>
+        </div>
+        <div class="bg-callout-bg rounded-lg p-3 text-center">
+          <TrendingUp class="w-4 h-4 mx-auto mb-1 text-accent" />
+          <p class="text-lg font-bold font-heading text-primary">{stats.avgVotesPerSeat.toLocaleString()}</p>
+          <p class="text-xs text-text-muted">Average Vote</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-sm font-semibold text-text-muted mb-2">Top 5 Highest Votes</h3>
+          <ol class="space-y-2">
+            {top5.map((rep, i) => (
+              <li class="flex items-start gap-2">
+                <span class="text-xs font-bold text-accent mt-0.5">{i + 1}.</span>
+                <div class="min-w-0">
+                  <a href={`/representatives/${rep.slug}`} class="text-sm font-medium hover:text-accent transition-colors truncate block">{rep.candidate}</a>
+                  <p class="text-xs text-text-muted">{rep.location}, {rep.region}</p>
+                  <p class="text-xs font-semibold text-primary">{rep.votes.toLocaleString()} votes</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-text-muted mb-2">Bottom 5 Lowest Votes</h3>
+          <ol class="space-y-2">
+            {bottom5.map((rep, i) => (
+              <li class="flex items-start gap-2">
+                <span class="text-xs font-bold text-accent mt-0.5">{i + 1}.</span>
+                <div class="min-w-0">
+                  <a href={`/representatives/${rep.slug}`} class="text-sm font-medium hover:text-accent transition-colors truncate block">{rep.candidate}</a>
+                  <p class="text-xs text-text-muted">{rep.location}, {rep.region}</p>
+                  <p class="text-xs font-semibold text-primary">{rep.votes.toLocaleString()} votes</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6: Party Reach -->
+    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <h2 class="text-lg font-bold mb-3">Party Reach</h2>
+      <p class="text-sm text-text-muted mb-3">Regions where each party holds seats (out of {totalRegions})</p>
+      <div class="space-y-2">
+        {partyReach.map((p) => (
+          <div class="flex items-center gap-3">
+            <a href={`/parties/${p.slug}`} class="text-sm min-w-[140px] truncate hover:text-accent transition-colors">{p.name}</a>
+            <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+              <div
+                class="h-full bg-olive rounded"
+                style={`width: ${(p.regionCount / totalRegions) * 100}%`}
+              ></div>
+            </div>
+            <span class="text-sm text-text-muted w-12 text-right">{p.regionCount}/{totalRegions}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>

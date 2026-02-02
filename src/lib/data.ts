@@ -152,3 +152,63 @@ export function getPartyStats(party: string): PartyStats {
 }
 
 export const totalVotes = representatives.reduce((sum, r) => sum + r.votes, 0);
+
+export interface OverallStats {
+  totalSeats: number;
+  totalVotes: number;
+  totalFemale: number;
+  totalMale: number;
+  avgVotesPerSeat: number;
+  medianVotes: number;
+  highestVote: Representative;
+  lowestVote: Representative;
+  regionStats: RegionStats[];
+  partyStats: PartyStats[];
+  femaleByParty: { name: string; female: number; total: number }[];
+  femaleByRegion: { name: string; female: number; total: number }[];
+}
+
+export function getOverallStats(): OverallStats {
+  const allRegionStats = regions
+    .map((r) => getRegionStats(r))
+    .sort((a, b) => b.seats - a.seats);
+
+  const allPartyStats = parties
+    .map((p) => getPartyStats(p))
+    .sort((a, b) => b.seats - a.seats);
+
+  const sorted = [...representatives].sort((a, b) => a.votes - b.votes);
+  const mid = Math.floor(sorted.length / 2);
+  const medianVotes =
+    sorted.length % 2 !== 0
+      ? sorted[mid].votes
+      : Math.round((sorted[mid - 1].votes + sorted[mid].votes) / 2);
+
+  const totalFemale = representatives.filter(
+    (r) => r.gender === "Female",
+  ).length;
+  const totalMale = representatives.length - totalFemale;
+
+  return {
+    totalSeats: representatives.length,
+    totalVotes,
+    totalFemale,
+    totalMale,
+    avgVotesPerSeat: Math.round(totalVotes / representatives.length),
+    medianVotes,
+    highestVote: sorted[sorted.length - 1],
+    lowestVote: sorted[0],
+    regionStats: allRegionStats,
+    partyStats: allPartyStats,
+    femaleByParty: allPartyStats.map((p) => ({
+      name: p.name,
+      female: p.genderSplit.female,
+      total: p.seats,
+    })),
+    femaleByRegion: allRegionStats.map((r) => ({
+      name: r.name,
+      female: r.genderSplit.female,
+      total: r.seats,
+    })),
+  };
+}

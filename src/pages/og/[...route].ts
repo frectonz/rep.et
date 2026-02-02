@@ -57,6 +57,14 @@ const pages = Object.fromEntries([
         "All 471 elected members of Ethiopia's House of Peoples' Representatives.",
     },
   ],
+  [
+    "stats",
+    {
+      title: "Statistics — rep.et",
+      description:
+        "Charts and statistics about Ethiopia's House of Peoples' Representatives.",
+    },
+  ],
 
   // Dynamic: each representative
   ...representatives.map((r) => [
