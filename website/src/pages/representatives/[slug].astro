@@ -38,7 +38,7 @@ const place = formatPlace(rep);
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: rep.candidate }]} />
 
-    <div id="share-card" class="relative bg-callout-bg rounded-lg border border-callout-border px-4 py-4 mb-6 flex items-center justify-between gap-4">
+    <div id="share-card" class="relative bg-callout-bg rounded-lg border border-callout-border px-4 py-4 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <button id="share-dismiss" class="absolute -top-2 -right-2 bg-callout-bg border border-callout-border rounded-full text-text-muted hover:text-text cursor-pointer p-0.5">
         <X class="w-3.5 h-3.5" />
       </button>
@@ -51,7 +51,7 @@ const place = formatPlace(rep);
         data-name={rep.candidate}
         data-location={rep.location}
         data-region={rep.region}
-        class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-5 py-2.5 rounded-lg transition-colors cursor-pointer shrink-0"
+        class="self-end inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-5 py-2.5 rounded-lg transition-colors cursor-pointer shrink-0"
       >
         <Share2 class="w-4 h-4" />
         Share
