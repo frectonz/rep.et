@@ -14,7 +14,7 @@ const pages = Object.fromEntries([
   [
     "index",
     {
-      title: "rep.et — Find Your Representative",
+      title: "Find Your Representative",
       description:
         "Find your HOPR representative in Ethiopia. Browse 471 elected members by region, party, or location.",
     },
@@ -22,22 +22,22 @@ const pages = Object.fromEntries([
   [
     "about",
     {
-      title: "About — rep.et",
+      title: "About",
       description:
-        "About rep.et — your guide to Ethiopia's House of Peoples' Representatives.",
+        "Your guide to Ethiopia's House of Peoples' Representatives.",
     },
   ],
   [
     "map",
     {
-      title: "Map — rep.et",
+      title: "Map",
       description: "Interactive map of Ethiopia's 471 elected representatives.",
     },
   ],
   [
     "parties",
     {
-      title: "Parties — rep.et",
+      title: "Parties",
       description:
         "Political parties in Ethiopia's House of Peoples' Representatives.",
     },
@@ -45,14 +45,14 @@ const pages = Object.fromEntries([
   [
     "regions",
     {
-      title: "Regions — rep.et",
+      title: "Regions",
       description: "Browse representatives by region across Ethiopia.",
     },
   ],
   [
     "representatives",
     {
-      title: "All Representatives — rep.et",
+      title: "All Representatives",
       description:
         "All 471 elected members of Ethiopia's House of Peoples' Representatives.",
     },
@@ -60,7 +60,7 @@ const pages = Object.fromEntries([
   [
     "stats",
     {
-      title: "Statistics — rep.et",
+      title: "Statistics",
       description:
         "Charts and statistics about Ethiopia's House of Peoples' Representatives.",
     },
