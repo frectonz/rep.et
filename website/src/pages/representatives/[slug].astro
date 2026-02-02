@@ -62,57 +62,57 @@ const place = formatPlace(rep);
       <h1 class="text-2xl md:text-3xl font-bold mb-6">{rep.candidate}</h1>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div class="flex items-start gap-3">
-          <MapPinned class="w-4 h-4 mt-0.5 text-accent shrink-0" />
-          <div>
+        <div>
+          <div class="flex items-center gap-2">
+            <MapPinned class="w-4 h-4 text-accent shrink-0" />
             <span class="text-xs uppercase tracking-wider text-text-muted">Constituency</span>
-            <p class="font-medium">{rep.location}</p>
           </div>
+          <p class="font-medium pl-6">{rep.location}</p>
         </div>
 
-        <div class="flex items-start gap-3">
-          <Globe class="w-4 h-4 mt-0.5 text-accent shrink-0" />
-          <div>
+        <div>
+          <div class="flex items-center gap-2">
+            <Globe class="w-4 h-4 text-accent shrink-0" />
             <span class="text-xs uppercase tracking-wider text-text-muted">Region</span>
-            <p>
-              <a href={`/regions/${regionSlug(rep.region)}`} class="font-medium hover:text-accent">
-                {rep.region}
-              </a>
-            </p>
           </div>
+          <p class="pl-6">
+            <a href={`/regions/${regionSlug(rep.region)}`} class="font-medium hover:text-accent">
+              {rep.region}
+            </a>
+          </p>
         </div>
 
-        <div class="flex items-start gap-3">
-          <Landmark class="w-4 h-4 mt-0.5 text-accent shrink-0" />
-          <div>
+        <div>
+          <div class="flex items-center gap-2">
+            <Landmark class="w-4 h-4 text-accent shrink-0" />
             <span class="text-xs uppercase tracking-wider text-text-muted">Party</span>
-            <p class="font-medium">{rep.party}</p>
           </div>
+          <p class="font-medium pl-6">{rep.party}</p>
         </div>
 
-        <div class="flex items-start gap-3">
-          <User class="w-4 h-4 mt-0.5 text-accent shrink-0" />
-          <div>
+        <div>
+          <div class="flex items-center gap-2">
+            <User class="w-4 h-4 text-accent shrink-0" />
             <span class="text-xs uppercase tracking-wider text-text-muted">Gender</span>
-            <p class="font-medium">{rep.gender}</p>
           </div>
+          <p class="font-medium pl-6">{rep.gender}</p>
         </div>
 
-        <div class="flex items-start gap-3">
-          <Vote class="w-4 h-4 mt-0.5 text-accent shrink-0" />
-          <div>
+        <div>
+          <div class="flex items-center gap-2">
+            <Vote class="w-4 h-4 text-accent shrink-0" />
             <span class="text-xs uppercase tracking-wider text-text-muted">Votes</span>
-            <p class="font-medium text-lg">{rep.votes.toLocaleString()}</p>
           </div>
+          <p class="font-medium text-lg pl-6">{rep.votes.toLocaleString()}</p>
         </div>
 
         {place && (
-          <div class="flex items-start gap-3">
-            <MapPin class="w-4 h-4 mt-0.5 text-accent shrink-0" />
-            <div>
+          <div>
+            <div class="flex items-center gap-2">
+              <MapPin class="w-4 h-4 text-accent shrink-0" />
               <span class="text-xs uppercase tracking-wider text-text-muted">Location</span>
-              <p class="font-medium">{place}</p>
             </div>
+            <p class="font-medium pl-6">{place}</p>
           </div>
         )}
       </div>
