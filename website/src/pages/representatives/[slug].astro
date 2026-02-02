@@ -34,7 +34,7 @@ if (!rep) {
 const place = formatPlace(rep);
 ---
 
-<Layout title={`${rep.candidate} — rep.et`} description={`${rep.candidate}, representative for ${rep.location} in ${rep.region}. ${rep.party}.`}>
+<Layout title={`${rep.candidate}`} description={`${rep.candidate}, representative for ${rep.location} in ${rep.region}. ${rep.party}.`}>
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: rep.candidate }]} />
 
