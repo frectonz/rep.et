@@ -155,8 +155,8 @@ const place = formatPlace(rep);
       var region = btn.dataset.region;
 
       navigator.share({
-        title: name + ' — rep.et',
-        text: 'I just found out that my representative is ' + name + ' from ' + location + ', ' + region + '! Find yours at rep.et',
+        title: name,
+        text: 'I just found out that my representative in the HoPR is ' + name + ' from ' + location + ', ' + region + '!\nFind yours at rep.et\n',
         url: window.location.href
       });
     });
