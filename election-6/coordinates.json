@@ -8,7 +8,12 @@
     "votes": 41120,
     "lat": 9.035,
     "lng": 38.725,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Addis Ketema",
+    "district": "Addis Ketema (AA)"
   },
   {
     "region": "Addis Ababa",
@@ -19,7 +24,12 @@
     "votes": 31278,
     "lat": 8.995,
     "lng": 38.755,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Kirkos",
+    "district": "Woreda 04"
   },
   {
     "region": "Addis Ababa",
@@ -30,7 +40,12 @@
     "votes": 94272,
     "lat": 8.93,
     "lng": 38.77,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Akaki Kaliti",
+    "district": "Akaki - Kalit"
   },
   {
     "region": "Addis Ababa",
@@ -41,7 +56,12 @@
     "votes": 90416,
     "lat": 8.92,
     "lng": 38.81,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Akaki Kaliti",
+    "district": "Akaki - Kalit"
   },
   {
     "region": "Addis Ababa",
@@ -52,7 +72,12 @@
     "votes": 51760,
     "lat": 9.03,
     "lng": 38.84,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Yeka",
+    "district": "Woreda 11"
   },
   {
     "region": "Addis Ababa",
@@ -63,7 +88,12 @@
     "votes": 14181,
     "lat": 9.03,
     "lng": 38.765,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Arada",
+    "district": "Arada"
   },
   {
     "region": "Addis Ababa",
@@ -74,7 +104,12 @@
     "votes": 88038,
     "lat": 9.01,
     "lng": 38.82,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Bole",
+    "district": "Woreda 07"
   },
   {
     "region": "Addis Ababa",
@@ -85,7 +120,12 @@
     "votes": 14983,
     "lat": 9.015,
     "lng": 38.765,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Kirkos",
+    "district": "Woreda 08"
   },
   {
     "region": "Addis Ababa",
@@ -96,7 +136,12 @@
     "votes": 25314,
     "lat": 9.05,
     "lng": 38.76,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Gulale",
+    "district": "Woreda 02"
   },
   {
     "region": "Addis Ababa",
@@ -107,7 +152,12 @@
     "votes": 15892,
     "lat": 9.035,
     "lng": 38.755,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Arada",
+    "district": "Arada"
   },
   {
     "region": "Addis Ababa",
@@ -118,7 +168,12 @@
     "votes": 17267,
     "lat": 9.025,
     "lng": 38.79,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Yeka",
+    "district": "Woreda 08"
   },
   {
     "region": "Addis Ababa",
@@ -129,7 +184,12 @@
     "votes": 13542,
     "lat": 9.035,
     "lng": 38.76,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Arada",
+    "district": "Arada"
   },
   {
     "region": "Addis Ababa",
@@ -140,7 +200,12 @@
     "votes": 15570,
     "lat": 9.03,
     "lng": 38.81,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Yeka",
+    "district": "Woreda 09"
   },
   {
     "region": "Addis Ababa",
@@ -151,7 +216,12 @@
     "votes": 15385,
     "lat": 9.02,
     "lng": 38.755,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Kirkos",
+    "district": "Woreda 07"
   },
   {
     "region": "Addis Ababa",
@@ -162,7 +232,12 @@
     "votes": 15963,
     "lat": 9.025,
     "lng": 38.75,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Lideta",
+    "district": "Woreda 01"
   },
   {
     "region": "Addis Ababa",
@@ -173,7 +248,12 @@
     "votes": 25660,
     "lat": 9.06,
     "lng": 38.815,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Yeka",
+    "district": "Woreda 10"
   },
   {
     "region": "Addis Ababa",
@@ -184,7 +264,12 @@
     "votes": 36756,
     "lat": 9.05,
     "lng": 38.8,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Yeka",
+    "district": "Woreda 03"
   },
   {
     "region": "Addis Ababa",
@@ -195,7 +280,12 @@
     "votes": 29859,
     "lat": 8.98,
     "lng": 38.755,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Nefas Silk",
+    "district": "Woreda 07"
   },
   {
     "region": "Addis Ababa",
@@ -206,7 +296,12 @@
     "votes": 81913,
     "lat": 9,
     "lng": 38.73,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Lideta",
+    "district": "Woreda 01"
   },
   {
     "region": "Addis Ababa",
@@ -217,7 +312,12 @@
     "votes": 25241,
     "lat": 9.065,
     "lng": 38.735,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Gulale",
+    "district": "Woreda 07"
   },
   {
     "region": "Addis Ababa",
@@ -228,7 +328,12 @@
     "votes": 19272,
     "lat": 9.035,
     "lng": 38.745,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Arada",
+    "district": "Arada"
   },
   {
     "region": "Addis Ababa",
@@ -239,7 +344,12 @@
     "votes": 27099,
     "lat": 9.02,
     "lng": 38.77,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Kirkos",
+    "district": "Woreda 06"
   },
   {
     "region": "Addis Ababa",
@@ -250,7 +360,12 @@
     "votes": 21147,
     "lat": 9.055,
     "lng": 38.79,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Yeka",
+    "district": "Woreda 02"
   },
   {
     "region": "Afar",
@@ -261,7 +376,12 @@
     "votes": 88487,
     "lat": 9.3325652,
     "lng": 40.1820611,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Afar",
+    "county": "Gabi",
+    "municipality": "Gabi",
+    "borough": "Gabi",
+    "district": "Amibara"
   },
   {
     "region": "Afar",
@@ -272,7 +392,12 @@
     "votes": 229194,
     "lat": 11.7368315,
     "lng": 41.0840355,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Afar",
+    "county": "Awusi",
+    "municipality": "Awusi",
+    "borough": "Awusi",
+    "district": "Dubti town"
   },
   {
     "region": "Afar",
@@ -283,7 +408,12 @@
     "votes": 366268,
     "lat": 13.3554875,
     "lng": 39.7549087,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Afar",
+    "county": "Kilbati",
+    "municipality": "Kilbati",
+    "borough": "Kilbati",
+    "district": "Abaala town"
   },
   {
     "region": "Afar",
@@ -294,7 +424,12 @@
     "votes": 68403,
     "lat": 9.1,
     "lng": 40.0333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Afar",
+    "county": "Gabi",
+    "municipality": "Gabi",
+    "borough": "Gabi",
+    "district": "Awash"
   },
   {
     "region": "Afar",
@@ -305,7 +440,12 @@
     "votes": 185278,
     "lat": 11.5653325,
     "lng": 41.4385892,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Afar",
+    "county": "Awusi",
+    "municipality": "Awusi",
+    "borough": "Awusi",
+    "district": "Asayita town"
   },
   {
     "region": "Afar",
@@ -316,7 +456,12 @@
     "votes": 248204,
     "lat": 12.25,
     "lng": 40,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Afar",
+    "county": "Fanti",
+    "municipality": "Fanti",
+    "borough": "Fanti",
+    "district": "Gulina"
   },
   {
     "region": "Amhara",
@@ -327,7 +472,12 @@
     "votes": 26183,
     "lat": 9.6752117,
     "lng": 39.5324899,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Debre Berhan town"
   },
   {
     "region": "Amhara",
@@ -338,7 +488,12 @@
     "votes": 12133,
     "lat": 10.6800221,
     "lng": 37.2601268,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Finote Selam town"
   },
   {
     "region": "Amhara",
@@ -349,7 +504,12 @@
     "votes": 12747,
     "lat": 10.065,
     "lng": 39.5,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Menze Lalo Midir"
   },
   {
     "region": "Amhara",
@@ -360,7 +520,12 @@
     "votes": 44919,
     "lat": 10.0584862,
     "lng": 38.9943182,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Aleme Ketma"
   },
   {
     "region": "Amhara",
@@ -371,7 +536,12 @@
     "votes": 12074,
     "lat": 11.633,
     "lng": 37.75,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Dera (AM)"
   },
   {
     "region": "Amhara",
@@ -382,7 +552,12 @@
     "votes": 21904,
     "lat": 11.25716,
     "lng": 36.84118,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "Awi",
+    "municipality": "Awi",
+    "borough": "Awi",
+    "district": "Dangila town"
   },
   {
     "region": "Amhara",
@@ -393,7 +568,12 @@
     "votes": 94088,
     "lat": 13.1585017,
     "lng": 37.8990358,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Gondar",
+    "municipality": "North Gondar",
+    "borough": "North Gondar",
+    "district": "Debark town"
   },
   {
     "region": "Amhara",
@@ -404,7 +584,12 @@
     "votes": 22121,
     "lat": 11.025,
     "lng": 38.73,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Sayint"
   },
   {
     "region": "Amhara",
@@ -415,7 +600,12 @@
     "votes": 22258,
     "lat": 11.816841,
     "lng": 38.413126,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Lay Gayint"
   },
   {
     "region": "Amhara",
@@ -426,7 +616,12 @@
     "votes": 23135,
     "lat": 11.54801409,
     "lng": 38.57866114,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Tach Gayint"
   },
   {
     "region": "Amhara",
@@ -437,7 +632,12 @@
     "votes": 16577,
     "lat": 12.205,
     "lng": 36.33333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "West Gondar",
+    "municipality": "West Gondar",
+    "borough": "West Gondar",
+    "district": "Quara"
   },
   {
     "region": "Amhara",
@@ -448,7 +648,12 @@
     "votes": 22381,
     "lat": 9.7619834,
     "lng": 39.1924826,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Siya Debirna Wayu"
   },
   {
     "region": "Amhara",
@@ -459,7 +664,12 @@
     "votes": 5637,
     "lat": 10.6766584,
     "lng": 37.3773131,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Jabi Tehnan"
   },
   {
     "region": "Amhara",
@@ -470,7 +680,12 @@
     "votes": 16506,
     "lat": 11.8333,
     "lng": 38.8333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "North Wollo",
+    "municipality": "North Wollo",
+    "borough": "North Wollo",
+    "district": "Meket"
   },
   {
     "region": "Amhara",
@@ -481,7 +696,12 @@
     "votes": 24035,
     "lat": 12.565368,
     "lng": 37.466766,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Gonder town"
   },
   {
     "region": "Amhara",
@@ -492,7 +712,12 @@
     "votes": 11211,
     "lat": 10.4392163,
     "lng": 37.5666575,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Michakel"
   },
   {
     "region": "Amhara",
@@ -503,7 +728,12 @@
     "votes": 58846,
     "lat": 13.05561265,
     "lng": 38.16660899,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "North Gondar",
+    "municipality": "North Gondar",
+    "borough": "North Gondar",
+    "district": "Janamora"
   },
   {
     "region": "Amhara",
@@ -514,7 +744,12 @@
     "votes": 11569,
     "lat": 10.87,
     "lng": 37.73,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Bibugn"
   },
   {
     "region": "Amhara",
@@ -525,7 +760,12 @@
     "votes": 35316,
     "lat": 10.9582874,
     "lng": 36.4989547,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "Awi",
+    "municipality": "Awi",
+    "borough": "Awi",
+    "district": "Chagni town"
   },
   {
     "region": "Amhara",
@@ -536,7 +776,12 @@
     "votes": 8575,
     "lat": 11.4878798,
     "lng": 37.5875677,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Bahirdar Zuria"
   },
   {
     "region": "Amhara",
@@ -547,7 +792,12 @@
     "votes": 12253,
     "lat": 11.7,
     "lng": 37.33333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Bahirdar Zuria"
   },
   {
     "region": "Amhara",
@@ -558,7 +808,12 @@
     "votes": 24723,
     "lat": 11.081414,
     "lng": 37.880986,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Mota Town"
   },
   {
     "region": "Amhara",
@@ -569,7 +824,12 @@
     "votes": 15082,
     "lat": 10.3358665,
     "lng": 37.7285604,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Debre Markos town"
   },
   {
     "region": "Amhara",
@@ -580,7 +840,12 @@
     "votes": 19986,
     "lat": 10.75,
     "lng": 37.16667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Jabi Tehnan"
   },
   {
     "region": "Amhara",
@@ -591,7 +856,12 @@
     "votes": 15817,
     "lat": 9.2,
     "lng": 39.42,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Hagere Mariam"
   },
   {
     "region": "Amhara",
@@ -602,7 +872,12 @@
     "votes": 24850,
     "lat": 11.08,
     "lng": 36.88,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "Awi",
+    "municipality": "Awi",
+    "borough": "Awi",
+    "district": "Fagta Lakoma"
   },
   {
     "region": "Amhara",
@@ -613,7 +888,12 @@
     "votes": 9249,
     "lat": 12.44,
     "lng": 38.67,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "Wag Himra",
+    "municipality": "Wag Himra",
+    "borough": "Wag Himra",
+    "district": "Dehana"
   },
   {
     "region": "Amhara",
@@ -624,7 +904,12 @@
     "votes": 36817,
     "lat": 13.2072236,
     "lng": 38.1397114,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Gondar",
+    "municipality": "North Gondar",
+    "borough": "North Gondar",
+    "district": "Janamora"
   },
   {
     "region": "Amhara",
@@ -635,7 +920,12 @@
     "votes": 41751,
     "lat": 10.58333,
     "lng": 39,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Kelela"
   },
   {
     "region": "Amhara",
@@ -646,7 +936,12 @@
     "votes": 47483,
     "lat": 11.5949663,
     "lng": 37.3882251,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Bahir Dar town"
   },
   {
     "region": "Amhara",
@@ -657,7 +952,12 @@
     "votes": 25908,
     "lat": 11.5758493,
     "lng": 39.6455792,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Wollo",
+    "municipality": "North Wollo",
+    "borough": "North Wollo",
+    "district": "Habru"
   },
   {
     "region": "Amhara",
@@ -668,7 +968,12 @@
     "votes": 14497,
     "lat": 9.99,
     "lng": 39.89,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Shoa Robit"
   },
   {
     "region": "Amhara",
@@ -679,7 +984,12 @@
     "votes": 27431,
     "lat": 10.82633556,
     "lng": 39.63645939,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Albuko"
   },
   {
     "region": "Amhara",
@@ -690,7 +1000,12 @@
     "votes": 17127,
     "lat": 11.455,
     "lng": 38.25,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Semada"
   },
   {
     "region": "Amhara",
@@ -701,7 +1016,12 @@
     "votes": 14226,
     "lat": 11.904231,
     "lng": 37.585941,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Fogera"
   },
   {
     "region": "Amhara",
@@ -712,7 +1032,12 @@
     "votes": 20949,
     "lat": 11.724571,
     "lng": 38.73556,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Wollo",
+    "municipality": "North Wollo",
+    "borough": "North Wollo",
+    "district": "Meket"
   },
   {
     "region": "Amhara",
@@ -723,7 +1048,12 @@
     "votes": 21486,
     "lat": 11.814571,
     "lng": 38.73556,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Wollo",
+    "municipality": "North Wollo",
+    "borough": "North Wollo",
+    "district": "Meket"
   },
   {
     "region": "Amhara",
@@ -734,7 +1064,12 @@
     "votes": 13264,
     "lat": 10.59,
     "lng": 39.6,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Gishe Rabel"
   },
   {
     "region": "Amhara",
@@ -745,7 +1080,12 @@
     "votes": 32864,
     "lat": 12.5512344,
     "lng": 37.4242955,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Gonder town"
   },
   {
     "region": "Amhara",
@@ -756,7 +1096,12 @@
     "votes": 30702,
     "lat": 12.84,
     "lng": 38.8,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "Wag Himra",
+    "municipality": "Wag Himra",
+    "borough": "Wag Himra",
+    "district": "Zequala"
   },
   {
     "region": "Amhara",
@@ -767,7 +1112,12 @@
     "votes": 39066,
     "lat": 9.801372,
     "lng": 39.762038,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Tarema Ber"
   },
   {
     "region": "Amhara",
@@ -778,7 +1128,12 @@
     "votes": 58295,
     "lat": 11.6,
     "lng": 39.76667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Wollo",
+    "municipality": "North Wollo",
+    "borough": "North Wollo",
+    "district": "Habru"
   },
   {
     "region": "Amhara",
@@ -789,7 +1144,12 @@
     "votes": 108229,
     "lat": 10.76,
     "lng": 39.83,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "Oromia",
+    "municipality": "Oromia",
+    "borough": "Oromia",
+    "district": "Dewa Cheffa"
   },
   {
     "region": "Amhara",
@@ -800,7 +1160,12 @@
     "votes": 6793,
     "lat": 10.2026211,
     "lng": 37.3442758,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Debre Elias"
   },
   {
     "region": "Amhara",
@@ -811,7 +1176,12 @@
     "votes": 35528,
     "lat": 11.5932,
     "lng": 39.2125,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Delanta"
   },
   {
     "region": "Amhara",
@@ -822,7 +1192,12 @@
     "votes": 15138,
     "lat": 10.4480558,
     "lng": 38.2017109,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Bechena Town"
   },
   {
     "region": "Amhara",
@@ -833,7 +1208,12 @@
     "votes": 9442,
     "lat": 11.955,
     "lng": 38,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Farta"
   },
   {
     "region": "Amhara",
@@ -844,7 +1224,12 @@
     "votes": 12582,
     "lat": 11.75,
     "lng": 37.5,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Dera (AM)"
   },
   {
     "region": "Amhara",
@@ -855,7 +1240,12 @@
     "votes": 60443,
     "lat": 11.31667,
     "lng": 39.25,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Tenta"
   },
   {
     "region": "Amhara",
@@ -866,7 +1256,12 @@
     "votes": 54704,
     "lat": 11,
     "lng": 39.833,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Kalu"
   },
   {
     "region": "Amhara",
@@ -877,7 +1272,12 @@
     "votes": 46965,
     "lat": 11.05,
     "lng": 39.833,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Kalu"
   },
   {
     "region": "Amhara",
@@ -888,7 +1288,12 @@
     "votes": 30315,
     "lat": 10.59090343,
     "lng": 39.43635266,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Wereilu town"
   },
   {
     "region": "Amhara",
@@ -899,7 +1304,12 @@
     "votes": 21378,
     "lat": 11.545,
     "lng": 38.25,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Semada"
   },
   {
     "region": "Amhara",
@@ -910,7 +1320,12 @@
     "votes": 25293,
     "lat": 11.994231,
     "lng": 37.585941,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Fogera"
   },
   {
     "region": "Amhara",
@@ -921,7 +1336,12 @@
     "votes": 31343,
     "lat": 11.3333,
     "lng": 39.25,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Tenta"
   },
   {
     "region": "Amhara",
@@ -932,7 +1352,12 @@
     "votes": 20279,
     "lat": 11.1,
     "lng": 39.89,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Kalu"
   },
   {
     "region": "Amhara",
@@ -943,7 +1368,12 @@
     "votes": 28785,
     "lat": 12.984055,
     "lng": 37.7651417,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Gondar",
+    "municipality": "North Gondar",
+    "borough": "North Gondar",
+    "district": "Dabat town"
   },
   {
     "region": "Amhara",
@@ -954,7 +1384,12 @@
     "votes": 20342,
     "lat": 8.93,
     "lng": 39.42,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Minjar Shenkora"
   },
   {
     "region": "Amhara",
@@ -965,7 +1400,12 @@
     "votes": 84927,
     "lat": 10.55,
     "lng": 39.93,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "Oromia",
+    "municipality": "Oromia",
+    "borough": "Oromia",
+    "district": "Artuma Fursi"
   },
   {
     "region": "Amhara",
@@ -976,7 +1416,12 @@
     "votes": 48105,
     "lat": 11.83,
     "lng": 39.68,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "North Wollo",
+    "municipality": "North Wollo",
+    "borough": "North Wollo",
+    "district": "Guba Lafto"
   },
   {
     "region": "Amhara",
@@ -987,7 +1432,12 @@
     "votes": 52453,
     "lat": 9.96667,
     "lng": 39.68333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Mojan Wedera"
   },
   {
     "region": "Amhara",
@@ -998,7 +1448,12 @@
     "votes": 14828,
     "lat": 10.7129931,
     "lng": 37.0668819,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Bure town"
   },
   {
     "region": "Amhara",
@@ -1009,7 +1464,12 @@
     "votes": 11737,
     "lat": 11.115,
     "lng": 38.73,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Sayint"
   },
   {
     "region": "Amhara",
@@ -1020,7 +1480,12 @@
     "votes": 6430,
     "lat": 10.5,
     "lng": 37.5,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Michakel"
   },
   {
     "region": "Amhara",
@@ -1031,7 +1496,12 @@
     "votes": 31265,
     "lat": 12.632868,
     "lng": 37.505737,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Gonder town"
   },
   {
     "region": "Amhara",
@@ -1042,7 +1512,12 @@
     "votes": 52337,
     "lat": 11.18022625,
     "lng": 38.99648066,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Mekdela"
   },
   {
     "region": "Amhara",
@@ -1053,7 +1528,12 @@
     "votes": 24412,
     "lat": 11.8,
     "lng": 37.5,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Dera (AM)"
   },
   {
     "region": "Amhara",
@@ -1064,7 +1544,12 @@
     "votes": 44124,
     "lat": 12.3333,
     "lng": 38.75,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "Wag Himra",
+    "municipality": "Wag Himra",
+    "borough": "Wag Himra",
+    "district": "Dehana"
   },
   {
     "region": "Amhara",
@@ -1075,7 +1560,12 @@
     "votes": 11121,
     "lat": 11.21667,
     "lng": 37.66667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Gonje"
   },
   {
     "region": "Amhara",
@@ -1086,7 +1576,12 @@
     "votes": 54294,
     "lat": 11.077604,
     "lng": 39.634982,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Dessie town"
   },
   {
     "region": "Amhara",
@@ -1097,7 +1592,12 @@
     "votes": 14783,
     "lat": 10.155,
     "lng": 39.5,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Menze Lalo Midir"
   },
   {
     "region": "Amhara",
@@ -1108,7 +1608,12 @@
     "votes": 20890,
     "lat": 12.0225,
     "lng": 38.038971,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Ebenat"
   },
   {
     "region": "Amhara",
@@ -1119,7 +1624,12 @@
     "votes": 17523,
     "lat": 11.41795,
     "lng": 37.16029,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Merawi town"
   },
   {
     "region": "Amhara",
@@ -1130,7 +1640,12 @@
     "votes": 31186,
     "lat": 10.2,
     "lng": 37.34,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Debre Elias"
   },
   {
     "region": "Amhara",
@@ -1141,7 +1656,12 @@
     "votes": 17307,
     "lat": 11.3565946,
     "lng": 36.9558744,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Debub Achefer"
   },
   {
     "region": "Amhara",
@@ -1152,7 +1672,12 @@
     "votes": 22580,
     "lat": 12.745,
     "lng": 37.69,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Wegera"
   },
   {
     "region": "Amhara",
@@ -1163,7 +1688,12 @@
     "votes": 42300,
     "lat": 12.2883,
     "lng": 37.6667,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Libokemekem"
   },
   {
     "region": "Amhara",
@@ -1174,7 +1704,12 @@
     "votes": 17344,
     "lat": 10.66,
     "lng": 37.17,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Jabi Tehnan"
   },
   {
     "region": "Amhara",
@@ -1185,7 +1720,12 @@
     "votes": 17242,
     "lat": 12.835,
     "lng": 37.69,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Wegera"
   },
   {
     "region": "Amhara",
@@ -1196,7 +1736,12 @@
     "votes": 62517,
     "lat": 10.95,
     "lng": 39.01667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Sayint"
   },
   {
     "region": "Amhara",
@@ -1207,7 +1752,12 @@
     "votes": 19228,
     "lat": 12.0225,
     "lng": 37.961029,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Fogera"
   },
   {
     "region": "Amhara",
@@ -1218,7 +1768,12 @@
     "votes": 12679,
     "lat": 13.02977782,
     "lng": 37.2923861,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Tach Armacho"
   },
   {
     "region": "Amhara",
@@ -1229,7 +1784,12 @@
     "votes": 25894,
     "lat": 11.16667,
     "lng": 38.03333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Hulet Ej Enese"
   },
   {
     "region": "Amhara",
@@ -1240,7 +1800,12 @@
     "votes": 14791,
     "lat": 10.1827327,
     "lng": 38.1915817,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Dejen"
   },
   {
     "region": "Amhara",
@@ -1251,7 +1816,12 @@
     "votes": 21340,
     "lat": 11.42,
     "lng": 37.16,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Merawi town"
   },
   {
     "region": "Amhara",
@@ -1262,7 +1832,12 @@
     "votes": 33642,
     "lat": 9.74,
     "lng": 39.45,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Basona Worena"
   },
   {
     "region": "Amhara",
@@ -1273,7 +1848,12 @@
     "votes": 22528,
     "lat": 12.205,
     "lng": 38.13,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Ebenat"
   },
   {
     "region": "Amhara",
@@ -1284,7 +1864,12 @@
     "votes": 14386,
     "lat": 10.5796641,
     "lng": 37.485538,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Denbecha town"
   },
   {
     "region": "Amhara",
@@ -1295,7 +1880,12 @@
     "votes": 17843,
     "lat": 10.925919,
     "lng": 38.0878785,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Goncha Siso Enebse"
   },
   {
     "region": "Amhara",
@@ -1306,7 +1896,12 @@
     "votes": 13106,
     "lat": 11.21,
     "lng": 39.23,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Tenta"
   },
   {
     "region": "Amhara",
@@ -1317,7 +1912,12 @@
     "votes": 10256,
     "lat": 11.0031768,
     "lng": 37.426011,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Quarit"
   },
   {
     "region": "Amhara",
@@ -1328,7 +1928,12 @@
     "votes": 10955,
     "lat": 10.633333333,
     "lng": 36.933333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Wemberma"
   },
   {
     "region": "Amhara",
@@ -1339,7 +1944,12 @@
     "votes": 7183,
     "lat": 12.5936443,
     "lng": 37.4439914,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Gonder town"
   },
   {
     "region": "Amhara",
@@ -1350,7 +1960,12 @@
     "votes": 23030,
     "lat": 9.8457456,
     "lng": 39.7618396,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Tarema Ber"
   },
   {
     "region": "Amhara",
@@ -1361,7 +1976,12 @@
     "votes": 24484,
     "lat": 11.906841,
     "lng": 38.413126,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Lay Gayint"
   },
   {
     "region": "Amhara",
@@ -1372,7 +1992,12 @@
     "votes": 30273,
     "lat": 12.25,
     "lng": 39.1667,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "Wag Himra",
+    "municipality": "Wag Himra",
+    "borough": "Wag Himra",
+    "district": "Gaz Gibla"
   },
   {
     "region": "Amhara",
@@ -1383,7 +2008,12 @@
     "votes": 12744,
     "lat": 12.632868,
     "lng": 37.427795,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Gonder town"
   },
   {
     "region": "Amhara",
@@ -1394,7 +2024,12 @@
     "votes": 33605,
     "lat": 12.295,
     "lng": 36.33333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "West Gondar",
+    "municipality": "West Gondar",
+    "borough": "West Gondar",
+    "district": "Quara"
   },
   {
     "region": "Amhara",
@@ -1405,7 +2040,12 @@
     "votes": 13460,
     "lat": 10.2526202,
     "lng": 37.8421873,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Aneded"
   },
   {
     "region": "Amhara",
@@ -1416,7 +2056,12 @@
     "votes": 16455,
     "lat": 10.2518284,
     "lng": 37.9389212,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Awabel"
   },
   {
     "region": "Amhara",
@@ -1427,7 +2072,12 @@
     "votes": 61633,
     "lat": 10.8531579,
     "lng": 36.8935673,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "Awi",
+    "municipality": "Awi",
+    "borough": "Awi",
+    "district": "Ayehu Guwagusa"
   },
   {
     "region": "Amhara",
@@ -1438,7 +2088,12 @@
     "votes": 57167,
     "lat": 13.1504563,
     "lng": 38.4368525,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Gondar",
+    "municipality": "North Gondar",
+    "borough": "North Gondar",
+    "district": "Beyeda"
   },
   {
     "region": "Amhara",
@@ -1449,7 +2104,12 @@
     "votes": 20139,
     "lat": 11.697058,
     "lng": 36.9415489,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "West Gojam",
+    "municipality": "West Gojam",
+    "borough": "West Gojam",
+    "district": "Semen Achefer"
   },
   {
     "region": "Amhara",
@@ -1460,7 +2120,12 @@
     "votes": 19733,
     "lat": 10.6578447,
     "lng": 38.1645042,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "East Gojam",
+    "municipality": "East Gojam",
+    "borough": "East Gojam",
+    "district": "Enarj Enawga"
   },
   {
     "region": "Amhara",
@@ -1471,7 +2136,12 @@
     "votes": 18459,
     "lat": 11.44371792,
     "lng": 38.06784323,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "East Esite"
   },
   {
     "region": "Amhara",
@@ -1482,7 +2152,12 @@
     "votes": 31919,
     "lat": 11.167604,
     "lng": 39.634982,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Dessie town"
   },
   {
     "region": "Amhara",
@@ -1493,7 +2168,12 @@
     "votes": 19681,
     "lat": 12.295,
     "lng": 38.13,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Ebenat"
   },
   {
     "region": "Amhara",
@@ -1504,7 +2184,12 @@
     "votes": 8528,
     "lat": 11.38,
     "lng": 37.9,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "West Esite"
   },
   {
     "region": "Amhara",
@@ -1515,7 +2200,12 @@
     "votes": 31815,
     "lat": 10.01667,
     "lng": 39.3,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Moretna Jiru"
   },
   {
     "region": "Amhara",
@@ -1526,7 +2216,12 @@
     "votes": 41389,
     "lat": 9.891372,
     "lng": 39.762038,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Tarema Ber"
   },
   {
     "region": "Amhara",
@@ -1537,7 +2232,12 @@
     "votes": 30475,
     "lat": 11.38,
     "lng": 38.5,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "South Gondar",
+    "municipality": "South Gondar",
+    "borough": "South Gondar",
+    "district": "Sede Muja"
   },
   {
     "region": "Amhara",
@@ -1548,7 +2248,12 @@
     "votes": 23793,
     "lat": 10.0581137,
     "lng": 38.9961561,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Aleme Ketma"
   },
   {
     "region": "Amhara",
@@ -1559,7 +2264,12 @@
     "votes": 10918,
     "lat": 10.8533479,
     "lng": 37.0220375,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "Awi",
+    "municipality": "Awi",
+    "borough": "Awi",
+    "district": "Guagusa Shikudad"
   },
   {
     "region": "Amhara",
@@ -1570,7 +2280,12 @@
     "votes": 49341,
     "lat": 12.3783,
     "lng": 37.6667,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Gonder Zuria"
   },
   {
     "region": "Amhara",
@@ -1581,7 +2296,12 @@
     "votes": 45401,
     "lat": 11.45,
     "lng": 39.91,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Worebabu"
   },
   {
     "region": "Amhara",
@@ -1592,7 +2312,12 @@
     "votes": 23669,
     "lat": 12.5,
     "lng": 35.75,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "West Gondar",
+    "municipality": "West Gondar",
+    "borough": "West Gondar",
+    "district": "Quara"
   },
   {
     "region": "Amhara",
@@ -1603,7 +2328,12 @@
     "votes": 23349,
     "lat": 10.6667,
     "lng": 39.1667,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Amhara",
+    "county": "South Wollo",
+    "municipality": "South Wollo",
+    "borough": "South Wollo",
+    "district": "Kelela"
   },
   {
     "region": "Amhara",
@@ -1614,7 +2344,12 @@
     "votes": 30684,
     "lat": 12.667,
     "lng": 37.167,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Amhara",
+    "county": "Central Gondar",
+    "municipality": "Central Gondar",
+    "borough": "Central Gondar",
+    "district": "Chilga 1"
   },
   {
     "region": "Amhara",
@@ -1625,7 +2360,12 @@
     "votes": 34560,
     "lat": 10.3121852,
     "lng": 39.6579844,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Amhara",
+    "county": "North Shewa (AM)",
+    "municipality": "North Shewa (AM)",
+    "borough": "North Shewa (AM)",
+    "district": "Mehale Meda town"
   },
   {
     "region": "Oromia",
@@ -1636,7 +2376,12 @@
     "votes": 68680,
     "lat": 8.4832563,
     "lng": 37.4417171,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Nono"
   },
   {
     "region": "Oromia",
@@ -1647,7 +2392,12 @@
     "votes": 150829,
     "lat": 8.9506511,
     "lng": 40.5558198,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Goba Koricha"
   },
   {
     "region": "Oromia",
@@ -1658,7 +2408,12 @@
     "votes": 49011,
     "lat": 9.566686,
     "lng": 37.1006968,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Horo Guduru",
+    "municipality": "Horo Guduru",
+    "borough": "Horo Guduru",
+    "district": "Shambu town"
   },
   {
     "region": "Oromia",
@@ -1669,7 +2424,12 @@
     "votes": 39401,
     "lat": 8.7647115,
     "lng": 36.639893,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Nunu Kumba"
   },
   {
     "region": "Oromia",
@@ -1680,7 +2440,12 @@
     "votes": 46528,
     "lat": 9.8135619,
     "lng": 38.6328601,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Degem"
   },
   {
     "region": "Oromia",
@@ -1691,7 +2456,12 @@
     "votes": 64935,
     "lat": 7.805,
     "lng": 36.43333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Gera"
   },
   {
     "region": "Oromia",
@@ -1702,7 +2472,12 @@
     "votes": 94092,
     "lat": 9.3336959,
     "lng": 41.2901403,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Goro Gutu"
   },
   {
     "region": "Oromia",
@@ -1713,7 +2488,12 @@
     "votes": 65650,
     "lat": 8.8061916,
     "lng": 37.7881259,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Toke Kutaye"
   },
   {
     "region": "Oromia",
@@ -1724,7 +2504,8 @@
     "votes": 32561,
     "lat": 8.931952,
     "lng": 38.662407,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -1735,7 +2516,12 @@
     "votes": 80120,
     "lat": 9.41,
     "lng": 41.86639,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Kersa (East Hararge)"
   },
   {
     "region": "Oromia",
@@ -1746,7 +2532,12 @@
     "votes": 21625,
     "lat": 8.7948903,
     "lng": 37.8910436,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "South West Shewa",
+    "municipality": "South West Shewa",
+    "borough": "South West Shewa",
+    "district": "Wenchi"
   },
   {
     "region": "Oromia",
@@ -1757,7 +2548,12 @@
     "votes": 48079,
     "lat": 8.42,
     "lng": 35.54,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Ilubabor",
+    "municipality": "Ilubabor",
+    "borough": "Ilubabor",
+    "district": "Bilo Nopha"
   },
   {
     "region": "Oromia",
@@ -1768,7 +2564,12 @@
     "votes": 81106,
     "lat": 8.333333333,
     "lng": 36.5,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Buno Bedele",
+    "municipality": "Buno Bedele",
+    "borough": "Buno Bedele",
+    "district": "Gechi"
   },
   {
     "region": "Oromia",
@@ -1790,7 +2591,12 @@
     "votes": 280178,
     "lat": 8.5727564,
     "lng": 40.3173456,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Daro Lebu"
   },
   {
     "region": "Oromia",
@@ -1801,7 +2607,12 @@
     "votes": 158134,
     "lat": 4.892569,
     "lng": 38.094989,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Borena",
+    "municipality": "Borena",
+    "borough": "Borena",
+    "district": "Yabelo town"
   },
   {
     "region": "Oromia",
@@ -1812,7 +2623,12 @@
     "votes": 130660,
     "lat": 8.9032186,
     "lng": 40.7764864,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Bedesa"
   },
   {
     "region": "Oromia",
@@ -1823,7 +2639,12 @@
     "votes": 71479,
     "lat": 8.16667,
     "lng": 38.8333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Dugda"
   },
   {
     "region": "Oromia",
@@ -1834,7 +2655,12 @@
     "votes": 82195,
     "lat": 6.93333,
     "lng": 40.65,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Goro (Bale)"
   },
   {
     "region": "Oromia",
@@ -1845,7 +2671,12 @@
     "votes": 78996,
     "lat": 7.1242676,
     "lng": 40.0080973,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Robe Town"
   },
   {
     "region": "Oromia",
@@ -1856,7 +2687,12 @@
     "votes": 46703,
     "lat": 9.345555555,
     "lng": 41.5075,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Deder"
   },
   {
     "region": "Oromia",
@@ -1867,7 +2703,8 @@
     "votes": 46891,
     "lat": 8.890525,
     "lng": 38.661273,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -1878,7 +2715,12 @@
     "votes": 80394,
     "lat": 8.08089,
     "lng": 36.462738,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Buno Bedele",
+    "municipality": "Buno Bedele",
+    "borough": "Buno Bedele",
+    "district": "Dedesa"
   },
   {
     "region": "Oromia",
@@ -1889,7 +2731,12 @@
     "votes": 103950,
     "lat": 9.25,
     "lng": 40.6334,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Mieso"
   },
   {
     "region": "Oromia",
@@ -1900,7 +2747,12 @@
     "votes": 61186,
     "lat": 9.86667,
     "lng": 38.35,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Kuyu"
   },
   {
     "region": "Oromia",
@@ -1911,7 +2763,12 @@
     "votes": 85523,
     "lat": 6.9751165,
     "lng": 39.1812984,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Dodola town"
   },
   {
     "region": "Oromia",
@@ -1922,7 +2779,12 @@
     "votes": 71412,
     "lat": 7.455,
     "lng": 37.25,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Omo Beyam"
   },
   {
     "region": "Oromia",
@@ -1933,7 +2795,12 @@
     "votes": 102914,
     "lat": 9.705,
     "lng": 36.38333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Limu (OR)"
   },
   {
     "region": "Oromia",
@@ -1944,7 +2811,8 @@
     "votes": 92467,
     "lat": 8.75,
     "lng": 38.833333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -1955,7 +2823,12 @@
     "votes": 48605,
     "lat": 9.1494264,
     "lng": 36.8249758,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Sibu Sire"
   },
   {
     "region": "Oromia",
@@ -1966,7 +2839,12 @@
     "votes": 47779,
     "lat": 8.341488,
     "lng": 35.8122397,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Ilubabor",
+    "municipality": "Ilubabor",
+    "borough": "Ilubabor",
+    "district": "Yayu"
   },
   {
     "region": "Oromia",
@@ -1977,7 +2855,12 @@
     "votes": 80740,
     "lat": 9.85,
     "lng": 37.13333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Horo Guduru",
+    "municipality": "Horo Guduru",
+    "borough": "Horo Guduru",
+    "district": "Jarte Jardega"
   },
   {
     "region": "Oromia",
@@ -1988,7 +2871,12 @@
     "votes": 41120,
     "lat": 8.937104,
     "lng": 37.855441,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Ambo Zuria"
   },
   {
     "region": "Oromia",
@@ -1999,7 +2887,12 @@
     "votes": 84935,
     "lat": 7.25,
     "lng": 39.75,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Agarfa"
   },
   {
     "region": "Oromia",
@@ -2010,7 +2903,8 @@
     "votes": 84935,
     "lat": 8.8305486,
     "lng": 38.8523187,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -2021,7 +2915,12 @@
     "votes": 67565,
     "lat": 9.5038669,
     "lng": 35.5064141,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Nejo town"
   },
   {
     "region": "Oromia",
@@ -2032,7 +2931,12 @@
     "votes": 125413,
     "lat": 6.8258421,
     "lng": 40.2915209,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Berbere"
   },
   {
     "region": "Oromia",
@@ -2043,7 +2947,12 @@
     "votes": 91383,
     "lat": 7.555,
     "lng": 36.733333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Seka Chekorsa"
   },
   {
     "region": "Oromia",
@@ -2054,7 +2963,12 @@
     "votes": 116979,
     "lat": 8.7746074,
     "lng": 34.8276848,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Kelem",
+    "municipality": "Kelem",
+    "borough": "Kelem",
+    "district": "Yama Logi Welel"
   },
   {
     "region": "Oromia",
@@ -2065,7 +2979,12 @@
     "votes": 79185,
     "lat": 8.58333,
     "lng": 37.86667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "South West Shewa",
+    "municipality": "South West Shewa",
+    "borough": "South West Shewa",
+    "district": "Wenchi"
   },
   {
     "region": "Oromia",
@@ -2076,7 +2995,12 @@
     "votes": 132884,
     "lat": 6.739353,
     "lng": 38.791187,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Kokosa"
   },
   {
     "region": "Oromia",
@@ -2087,7 +3011,8 @@
     "votes": 78732,
     "lat": 9.3038762,
     "lng": 38.7513994,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -2098,7 +3023,12 @@
     "votes": 110525,
     "lat": 7.3679396,
     "lng": 40.498317,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Bale",
+    "municipality": "East Bale",
+    "borough": "East Bale",
+    "district": "Gololcha Bale"
   },
   {
     "region": "Oromia",
@@ -2109,7 +3039,12 @@
     "votes": 38102,
     "lat": 8.775317,
     "lng": 35.783359,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Nole Kaba"
   },
   {
     "region": "Oromia",
@@ -2120,7 +3055,12 @@
     "votes": 56986,
     "lat": 8.416666666,
     "lng": 40,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Aseko"
   },
   {
     "region": "Oromia",
@@ -2131,7 +3071,12 @@
     "votes": 36293,
     "lat": 7.0073251,
     "lng": 39.9694204,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Goba town"
   },
   {
     "region": "Oromia",
@@ -2142,7 +3087,12 @@
     "votes": 116788,
     "lat": 9.217435,
     "lng": 41.101796,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Tulo (OR)"
   },
   {
     "region": "Oromia",
@@ -2153,7 +3103,12 @@
     "votes": 78682,
     "lat": 7.545,
     "lng": 37.25,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Omo Beyam"
   },
   {
     "region": "Oromia",
@@ -2164,7 +3119,12 @@
     "votes": 64702,
     "lat": 8.4891492,
     "lng": 39.834127,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Merti"
   },
   {
     "region": "Oromia",
@@ -2175,7 +3135,12 @@
     "votes": 75535,
     "lat": 9.65,
     "lng": 38.9,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Debre Libanos"
   },
   {
     "region": "Oromia",
@@ -2186,7 +3151,12 @@
     "votes": 76892,
     "lat": 7.895,
     "lng": 36.43333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Gumay"
   },
   {
     "region": "Oromia",
@@ -2197,7 +3167,12 @@
     "votes": 71316,
     "lat": 9.38,
     "lng": 39.19,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Kimbibit"
   },
   {
     "region": "Oromia",
@@ -2208,7 +3183,12 @@
     "votes": 97495,
     "lat": 9.3963158,
     "lng": 42.0098261,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Haromaya town"
   },
   {
     "region": "Oromia",
@@ -2219,7 +3199,12 @@
     "votes": 131121,
     "lat": 9.042064,
     "lng": 40.867524,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Chiro Zuria"
   },
   {
     "region": "Oromia",
@@ -2230,7 +3215,12 @@
     "votes": 114702,
     "lat": 8.455645,
     "lng": 36.352545,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Buno Bedele",
+    "municipality": "Buno Bedele",
+    "borough": "Buno Bedele",
+    "district": "Bedele town"
   },
   {
     "region": "Oromia",
@@ -2241,7 +3231,12 @@
     "votes": 76912,
     "lat": 7.59,
     "lng": 39.54,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Shirka"
   },
   {
     "region": "Oromia",
@@ -2252,7 +3247,8 @@
     "votes": 83805,
     "lat": 9.083333333,
     "lng": 39,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -2263,7 +3259,12 @@
     "votes": 77266,
     "lat": 8.82167,
     "lng": 40.51667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Habro"
   },
   {
     "region": "Oromia",
@@ -2274,7 +3275,12 @@
     "votes": 71046,
     "lat": 8.980525,
     "lng": 38.661273,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Addis Ababa",
+    "county": "Addis Ababa",
+    "municipality": "Addis Ababa",
+    "borough": "Kolfe Keranio",
+    "district": "Woreda 03"
   },
   {
     "region": "Oromia",
@@ -2285,7 +3291,12 @@
     "votes": 168104,
     "lat": 9.113093,
     "lng": 41.6342783,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Bedeno"
   },
   {
     "region": "Oromia",
@@ -2296,7 +3307,12 @@
     "votes": 76830,
     "lat": 9.795,
     "lng": 36.38333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Limu (OR)"
   },
   {
     "region": "Oromia",
@@ -2307,7 +3323,12 @@
     "votes": 45802,
     "lat": 9.0661568,
     "lng": 37.1560435,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Bako Tibe"
   },
   {
     "region": "Oromia",
@@ -2318,7 +3339,12 @@
     "votes": 104526,
     "lat": 9.351626,
     "lng": 41.560351,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Meta"
   },
   {
     "region": "Oromia",
@@ -2329,7 +3355,12 @@
     "votes": 46141,
     "lat": 8.993835,
     "lng": 37.424282,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Cheliya"
   },
   {
     "region": "Oromia",
@@ -2340,7 +3371,12 @@
     "votes": 55730,
     "lat": 9.441626,
     "lng": 41.560351,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Meta"
   },
   {
     "region": "Oromia",
@@ -2351,7 +3387,12 @@
     "votes": 95915,
     "lat": 9.4775,
     "lng": 41.905361,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Dire Dawa",
+    "county": "Dire Dawa rural",
+    "municipality": "Dire Dawa rural",
+    "borough": "Dire Dawa rural",
+    "district": "Wahil"
   },
   {
     "region": "Oromia",
@@ -2362,7 +3403,12 @@
     "votes": 79953,
     "lat": 7.371667,
     "lng": 37,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Mancho"
   },
   {
     "region": "Oromia",
@@ -2373,7 +3419,12 @@
     "votes": 39166,
     "lat": 7.69,
     "lng": 36.25,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Gera"
   },
   {
     "region": "Oromia",
@@ -2384,7 +3435,12 @@
     "votes": 49353,
     "lat": 9.34,
     "lng": 36.94,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Bila Seyo"
   },
   {
     "region": "Oromia",
@@ -2395,7 +3451,12 @@
     "votes": 71162,
     "lat": 9,
     "lng": 36.333333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Diga"
   },
   {
     "region": "Oromia",
@@ -2406,7 +3467,12 @@
     "votes": 98404,
     "lat": 8.3852134,
     "lng": 36.91429144,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Limu Seka"
   },
   {
     "region": "Oromia",
@@ -2417,7 +3483,8 @@
     "votes": 65791,
     "lat": 8.73833,
     "lng": 38.71667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -2428,7 +3495,12 @@
     "votes": 95286,
     "lat": 7.645,
     "lng": 36.733333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Seka Chekorsa"
   },
   {
     "region": "Oromia",
@@ -2439,7 +3511,12 @@
     "votes": 55248,
     "lat": 8.9282426,
     "lng": 35.0502575,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Kelem",
+    "municipality": "Kelem",
+    "borough": "Kelem",
+    "district": "Dale Wabera"
   },
   {
     "region": "Oromia",
@@ -2450,7 +3527,12 @@
     "votes": 70236,
     "lat": 8.3,
     "lng": 38.95,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Bora (OR)"
   },
   {
     "region": "Oromia",
@@ -2461,7 +3543,12 @@
     "votes": 94204,
     "lat": 7.0072505,
     "lng": 39.3917175,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Adaba"
   },
   {
     "region": "Oromia",
@@ -2472,7 +3559,12 @@
     "votes": 69043,
     "lat": 7,
     "lng": 38.86,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Kofele"
   },
   {
     "region": "Oromia",
@@ -2483,7 +3575,12 @@
     "votes": 115974,
     "lat": 8.0424398,
     "lng": 36.3410514,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Setema"
   },
   {
     "region": "Oromia",
@@ -2494,7 +3591,12 @@
     "votes": 39399,
     "lat": 8.865317,
     "lng": 35.783359,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Nole Kaba"
   },
   {
     "region": "Oromia",
@@ -2505,7 +3607,12 @@
     "votes": 83014,
     "lat": 7.461667,
     "lng": 37,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Mancho"
   },
   {
     "region": "Oromia",
@@ -2516,7 +3623,12 @@
     "votes": 61617,
     "lat": 9.3067938,
     "lng": 37.9384066,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Cobi"
   },
   {
     "region": "Oromia",
@@ -2527,7 +3639,12 @@
     "votes": 64794,
     "lat": 9.95,
     "lng": 38.2,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Wara Jarso"
   },
   {
     "region": "Oromia",
@@ -2538,7 +3655,12 @@
     "votes": 94833,
     "lat": 9.0905237,
     "lng": 36.5481573,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Nekemte town"
   },
   {
     "region": "Oromia",
@@ -2549,7 +3671,12 @@
     "votes": 115838,
     "lat": 8.3309499,
     "lng": 39.3180527,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Dodota"
   },
   {
     "region": "Oromia",
@@ -2560,7 +3687,12 @@
     "votes": 91333,
     "lat": 7.121667,
     "lng": 38.166667,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Siraro"
   },
   {
     "region": "Oromia",
@@ -2571,7 +3703,12 @@
     "votes": 109893,
     "lat": 8.496026,
     "lng": 39.270546,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Adama town"
   },
   {
     "region": "Oromia",
@@ -2582,7 +3719,12 @@
     "votes": 58860,
     "lat": 8.563526,
     "lng": 39.309517,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Adama"
   },
   {
     "region": "Oromia",
@@ -2593,7 +3735,12 @@
     "votes": 31395,
     "lat": 8.563526,
     "lng": 39.231575,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Lome (OR)"
   },
   {
     "region": "Oromia",
@@ -2604,7 +3751,12 @@
     "votes": 114015,
     "lat": 9.1355689,
     "lng": 42.0775779,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Fedis"
   },
   {
     "region": "Oromia",
@@ -2615,7 +3767,12 @@
     "votes": 247657,
     "lat": 9.08,
     "lng": 40.75,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Chiro Zuria"
   },
   {
     "region": "Oromia",
@@ -2626,7 +3783,12 @@
     "votes": 60701,
     "lat": 8.53,
     "lng": 34.8,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Kelem",
+    "municipality": "Kelem",
+    "borough": "Kelem",
+    "district": "Denbi Dollo town"
   },
   {
     "region": "Oromia",
@@ -2637,7 +3799,12 @@
     "votes": 51436,
     "lat": 9.633717,
     "lng": 35.296575,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Leta Sibu"
   },
   {
     "region": "Oromia",
@@ -2648,7 +3815,12 @@
     "votes": 70697,
     "lat": 9.267287,
     "lng": 41.442772,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Deder"
   },
   {
     "region": "Oromia",
@@ -2659,7 +3831,12 @@
     "votes": 73461,
     "lat": 7.988912,
     "lng": 36.947773,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Limu Kosa"
   },
   {
     "region": "Oromia",
@@ -2670,7 +3847,12 @@
     "votes": 103283,
     "lat": 7.9358063,
     "lng": 38.7164929,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Adama Tulu Jido Kombolcha"
   },
   {
     "region": "Oromia",
@@ -2681,7 +3863,12 @@
     "votes": 54225,
     "lat": 8.1525979,
     "lng": 35.5371154,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Ilubabor",
+    "municipality": "Ilubabor",
+    "borough": "Ilubabor",
+    "district": "Ale"
   },
   {
     "region": "Oromia",
@@ -2692,7 +3879,12 @@
     "votes": 100690,
     "lat": 9.2857119,
     "lng": 41.0914119,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Doba"
   },
   {
     "region": "Oromia",
@@ -2703,7 +3895,12 @@
     "votes": 73545,
     "lat": 9.48333,
     "lng": 38.98333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Wuchale"
   },
   {
     "region": "Oromia",
@@ -2714,7 +3911,12 @@
     "votes": 205087,
     "lat": 6.991394,
     "lng": 40.479935,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Goro (Bale)"
   },
   {
     "region": "Oromia",
@@ -2725,7 +3927,12 @@
     "votes": 57349,
     "lat": 9.0475203,
     "lng": 36.730081,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Sibu Sire"
   },
   {
     "region": "Oromia",
@@ -2736,7 +3943,12 @@
     "votes": 40914,
     "lat": 9.723717,
     "lng": 35.296575,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Kiltu Kara"
   },
   {
     "region": "Oromia",
@@ -2747,7 +3959,12 @@
     "votes": 109342,
     "lat": 8.79,
     "lng": 37.66,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Tikur Enchini"
   },
   {
     "region": "Oromia",
@@ -2758,7 +3975,12 @@
     "votes": 62682,
     "lat": 9.8,
     "lng": 35.11,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Mendi town"
   },
   {
     "region": "Oromia",
@@ -2769,7 +3991,12 @@
     "votes": 83711,
     "lat": 7.211667,
     "lng": 38.166667,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Siraro"
   },
   {
     "region": "Oromia",
@@ -2780,7 +4007,12 @@
     "votes": 78794,
     "lat": 9.357287,
     "lng": 41.442772,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Deder"
   },
   {
     "region": "Oromia",
@@ -2791,7 +4023,12 @@
     "votes": 71016,
     "lat": 8.078912,
     "lng": 36.947773,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Limu Kosa"
   },
   {
     "region": "Oromia",
@@ -2802,7 +4039,12 @@
     "votes": 44910,
     "lat": 9.083835,
     "lng": 37.424282,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Cheliya"
   },
   {
     "region": "Oromia",
@@ -2813,7 +4055,8 @@
     "votes": 73805,
     "lat": 9.36667,
     "lng": 38.68333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -2824,7 +4067,12 @@
     "votes": 69507,
     "lat": 7.08333,
     "lng": 40.2,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Sinana"
   },
   {
     "region": "Oromia",
@@ -2835,7 +4083,12 @@
     "votes": 81166,
     "lat": 9,
     "lng": 35.5,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Yubdo"
   },
   {
     "region": "Oromia",
@@ -2846,7 +4099,12 @@
     "votes": 67685,
     "lat": 8.5976785,
     "lng": 39.1265417,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Mojo Town"
   },
   {
     "region": "Oromia",
@@ -2857,7 +4115,12 @@
     "votes": 37705,
     "lat": 8.2956473,
     "lng": 35.5834319,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Ilubabor",
+    "municipality": "Ilubabor",
+    "borough": "Ilubabor",
+    "district": "Metu town"
   },
   {
     "region": "Oromia",
@@ -2868,7 +4131,12 @@
     "votes": 40919,
     "lat": 8.73840726,
     "lng": 36.01431783,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "Buno Bedele",
+    "municipality": "Buno Bedele",
+    "borough": "Buno Bedele",
+    "district": "Meko"
   },
   {
     "region": "Oromia",
@@ -2879,7 +4147,12 @@
     "votes": 42155,
     "lat": 9.2376494,
     "lng": 41.8247376,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Kurfa Chele"
   },
   {
     "region": "Oromia",
@@ -2890,7 +4163,12 @@
     "votes": 50441,
     "lat": 9.711944444,
     "lng": 38.8475,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Debre Libanos"
   },
   {
     "region": "Oromia",
@@ -2901,7 +4179,12 @@
     "votes": 93900,
     "lat": 7.666666666,
     "lng": 36.833333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Jimma town"
   },
   {
     "region": "Oromia",
@@ -2912,7 +4195,12 @@
     "votes": 68181,
     "lat": 8.3711292,
     "lng": 36.1129444,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Buno Bedele",
+    "municipality": "Buno Bedele",
+    "borough": "Buno Bedele",
+    "district": "Chora (Buno Bedele)"
   },
   {
     "region": "Oromia",
@@ -2923,7 +4211,8 @@
     "votes": 116968,
     "lat": 9.05,
     "lng": 38.55,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -2934,7 +4223,12 @@
     "votes": 38958,
     "lat": 8.39,
     "lng": 36.91,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Limu Seka"
   },
   {
     "region": "Oromia",
@@ -2945,7 +4239,12 @@
     "votes": 64308,
     "lat": 8.755,
     "lng": 38.96667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Bishoftu town"
   },
   {
     "region": "Oromia",
@@ -2956,7 +4255,12 @@
     "votes": 98858,
     "lat": 7.166666666,
     "lng": 39.166666666,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Gedeb Asasa"
   },
   {
     "region": "Oromia",
@@ -2967,7 +4271,12 @@
     "votes": 44330,
     "lat": 9.833333333,
     "lng": 38.766666666,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Gerar Jarso"
   },
   {
     "region": "Oromia",
@@ -2978,7 +4287,12 @@
     "votes": 67776,
     "lat": 9.14,
     "lng": 34.92,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Kelem",
+    "municipality": "Kelem",
+    "borough": "Kelem",
+    "district": "Gawo Kebe"
   },
   {
     "region": "Oromia",
@@ -2989,7 +4303,12 @@
     "votes": 79911,
     "lat": 7.978316,
     "lng": 39.688106,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Sude"
   },
   {
     "region": "Oromia",
@@ -3000,7 +4319,12 @@
     "votes": 316438,
     "lat": 8.43,
     "lng": 35.54,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Ilubabor",
+    "municipality": "Ilubabor",
+    "borough": "Ilubabor",
+    "district": "Bilo Nopha"
   },
   {
     "region": "Oromia",
@@ -3011,7 +4335,8 @@
     "votes": 143836,
     "lat": 8.82833,
     "lng": 38.71667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -3022,7 +4347,12 @@
     "votes": 130320,
     "lat": 5.4894624,
     "lng": 38.6127762,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Gujii",
+    "municipality": "West Gujii",
+    "borough": "West Gujii",
+    "district": "Melka Soda"
   },
   {
     "region": "Oromia",
@@ -3033,7 +4363,12 @@
     "votes": 74650,
     "lat": 7.751176,
     "lng": 39.156385,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Degeluna Tijo"
   },
   {
     "region": "Oromia",
@@ -3044,7 +4379,12 @@
     "votes": 67031,
     "lat": 9.027104,
     "lng": 37.855441,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Ambo Zuria"
   },
   {
     "region": "Oromia",
@@ -3055,7 +4395,12 @@
     "votes": 36273,
     "lat": 9.4029278,
     "lng": 38.41927546,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Adda Berga"
   },
   {
     "region": "Oromia",
@@ -3066,7 +4411,12 @@
     "votes": 94330,
     "lat": 5.6399545,
     "lng": 38.2393711,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Gujii",
+    "municipality": "West Gujii",
+    "borough": "West Gujii",
+    "district": "Bule Hora town"
   },
   {
     "region": "Oromia",
@@ -3077,7 +4427,12 @@
     "votes": 71615,
     "lat": 7.8077639,
     "lng": 39.5166571,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Tena"
   },
   {
     "region": "Oromia",
@@ -3088,7 +4443,12 @@
     "votes": 71509,
     "lat": 8.2490388,
     "lng": 39.8921496,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Guna"
   },
   {
     "region": "Oromia",
@@ -3099,7 +4459,12 @@
     "votes": 62142,
     "lat": 9.0921997,
     "lng": 36.9581413,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Gobu Seyo"
   },
   {
     "region": "Oromia",
@@ -3110,7 +4475,12 @@
     "votes": 40513,
     "lat": 8.666666666,
     "lng": 36.5,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "East Wellega",
+    "municipality": "East Wellega",
+    "borough": "East Wellega",
+    "district": "Jimma Arjo"
   },
   {
     "region": "Oromia",
@@ -3121,7 +4491,12 @@
     "votes": 37938,
     "lat": 8.7387192,
     "lng": 37.2943289,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Dano"
   },
   {
     "region": "Oromia",
@@ -3132,7 +4507,12 @@
     "votes": 83212,
     "lat": 7.95,
     "lng": 39.13333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Asela town"
   },
   {
     "region": "Oromia",
@@ -3143,7 +4523,12 @@
     "votes": 45994,
     "lat": 8.9545809,
     "lng": 35.4512273,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Wellega",
+    "municipality": "West Wellega",
+    "borough": "West Wellega",
+    "district": "Yubdo"
   },
   {
     "region": "Oromia",
@@ -3154,7 +4539,12 @@
     "votes": 52147,
     "lat": 8.8390369,
     "lng": 38.3796431,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "South West Shewa",
+    "municipality": "South West Shewa",
+    "borough": "South West Shewa",
+    "district": "Ilu"
   },
   {
     "region": "Oromia",
@@ -3165,7 +4555,12 @@
     "votes": 146723,
     "lat": 6.29,
     "lng": 40.01,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Mena (Bale)"
   },
   {
     "region": "Oromia",
@@ -3176,7 +4571,12 @@
     "votes": 210935,
     "lat": 6.94,
     "lng": 40.47,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "Bale",
+    "municipality": "Bale",
+    "borough": "Bale",
+    "district": "Goro (Bale)"
   },
   {
     "region": "Oromia",
@@ -3187,7 +4587,12 @@
     "votes": 59425,
     "lat": 8.78958466,
     "lng": 37.66447661,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "West Shewa",
+    "municipality": "West Shewa",
+    "borough": "West Shewa",
+    "district": "Tikur Enchini"
   },
   {
     "region": "Oromia",
@@ -3198,7 +4603,12 @@
     "votes": 270560,
     "lat": 9.1379442,
     "lng": 41.83568,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Girawa"
   },
   {
     "region": "Oromia",
@@ -3209,7 +4619,12 @@
     "votes": 74354,
     "lat": 9.3964261,
     "lng": 42.0093171,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Hararge",
+    "municipality": "East Hararge",
+    "borough": "East Hararge",
+    "district": "Haromaya town"
   },
   {
     "region": "Oromia",
@@ -3220,7 +4635,12 @@
     "votes": 60736,
     "lat": 7.48833,
     "lng": 39.25,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Limu Bilbilo"
   },
   {
     "region": "Oromia",
@@ -3231,7 +4651,12 @@
     "votes": 71982,
     "lat": 9.6,
     "lng": 39.02,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Wuchale"
   },
   {
     "region": "Oromia",
@@ -3242,7 +4667,12 @@
     "votes": 50245,
     "lat": 8.91167,
     "lng": 40.51667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Goba Koricha"
   },
   {
     "region": "Oromia",
@@ -3253,7 +4683,12 @@
     "votes": 162706,
     "lat": 5.783333333,
     "lng": 38.4,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Oromia",
+    "county": "West Gujii",
+    "municipality": "West Gujii",
+    "borough": "West Gujii",
+    "district": "Kercha"
   },
   {
     "region": "Oromia",
@@ -3264,7 +4699,12 @@
     "votes": 60293,
     "lat": 7.57833,
     "lng": 39.25,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Limu Bilbilo"
   },
   {
     "region": "Oromia",
@@ -3275,7 +4715,12 @@
     "votes": 176130,
     "lat": 6.06138497,
     "lng": 38.61126561,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Oromia",
+    "county": "Gujii",
+    "municipality": "Gujii",
+    "borough": "Gujii",
+    "district": "Uraga"
   },
   {
     "region": "Oromia",
@@ -3286,7 +4731,12 @@
     "votes": 72694,
     "lat": 8.3823834,
     "lng": 39.6851958,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Arsi",
+    "municipality": "Arsi",
+    "borough": "Arsi",
+    "district": "Jeju"
   },
   {
     "region": "Oromia",
@@ -3297,7 +4747,12 @@
     "votes": 101662,
     "lat": 7.3935766,
     "lng": 38.7004121,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Arsi Negele"
   },
   {
     "region": "Oromia",
@@ -3308,7 +4763,12 @@
     "votes": 84032,
     "lat": 7.6756152,
     "lng": 36.8478779,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Jimma town"
   },
   {
     "region": "Oromia",
@@ -3319,7 +4779,12 @@
     "votes": 59914,
     "lat": 9.4775,
     "lng": 41.827419,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Dire Dawa",
+    "county": "Dire Dawa rural",
+    "municipality": "Dire Dawa rural",
+    "borough": "Dire Dawa rural",
+    "district": "Wahil"
   },
   {
     "region": "Oromia",
@@ -3330,7 +4795,12 @@
     "votes": 64471,
     "lat": 8.16667,
     "lng": 35.38333,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Ilubabor",
+    "municipality": "Ilubabor",
+    "borough": "Ilubabor",
+    "district": "Halu /Huka"
   },
   {
     "region": "Oromia",
@@ -3341,7 +4811,12 @@
     "votes": 72540,
     "lat": 7.7791122,
     "lng": 36.3386502,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Gera"
   },
   {
     "region": "Oromia",
@@ -3352,7 +4827,12 @@
     "votes": 41746,
     "lat": 8.4,
     "lng": 38.76667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "South West Shewa",
+    "municipality": "South West Shewa",
+    "borough": "South West Shewa",
+    "district": "Sodo Daci"
   },
   {
     "region": "Oromia",
@@ -3363,7 +4843,12 @@
     "votes": 80882,
     "lat": 9.5675319,
     "lng": 37.3613923,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Horo Guduru",
+    "municipality": "Horo Guduru",
+    "borough": "Horo Guduru",
+    "district": "Abay Chomen"
   },
   {
     "region": "Oromia",
@@ -3374,7 +4859,12 @@
     "votes": 37805,
     "lat": 8.505627,
     "lng": 37.978662,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "South West Shewa",
+    "municipality": "South West Shewa",
+    "borough": "South West Shewa",
+    "district": "Waliso"
   },
   {
     "region": "Oromia",
@@ -3385,7 +4875,12 @@
     "votes": 54803,
     "lat": 9.109564,
     "lng": 40.906496,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Chiro Zuria"
   },
   {
     "region": "Oromia",
@@ -3396,7 +4891,12 @@
     "votes": 44545,
     "lat": 8.595627,
     "lng": 37.978662,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "South West Shewa",
+    "municipality": "South West Shewa",
+    "borough": "South West Shewa",
+    "district": "Waliso"
   },
   {
     "region": "Oromia",
@@ -3407,7 +4907,12 @@
     "votes": 104782,
     "lat": 6.3595899,
     "lng": 38.6221632,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Gujii",
+    "municipality": "Gujii",
+    "borough": "Gujii",
+    "district": "Bore"
   },
   {
     "region": "Oromia",
@@ -3418,7 +4923,12 @@
     "votes": 62501,
     "lat": 9.109564,
     "lng": 40.828553,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Chiro Zuria"
   },
   {
     "region": "Oromia",
@@ -3429,7 +4939,12 @@
     "votes": 107130,
     "lat": 9.0799769,
     "lng": 41.1738637,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "West Hararge",
+    "municipality": "West Hararge",
+    "borough": "West Hararge",
+    "district": "Mesela"
   },
   {
     "region": "Oromia",
@@ -3440,7 +4955,12 @@
     "votes": 79633,
     "lat": 8.845,
     "lng": 38.96667,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Shewa",
+    "municipality": "East Shewa",
+    "borough": "East Shewa",
+    "district": "Ada'a"
   },
   {
     "region": "Oromia",
@@ -3451,7 +4971,12 @@
     "votes": 116420,
     "lat": 9.94,
     "lng": 38.49,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Oromia",
+    "county": "North Shewa (OR)",
+    "municipality": "North Shewa (OR)",
+    "borough": "North Shewa (OR)",
+    "district": "Hidabu Abote"
   },
   {
     "region": "Oromia",
@@ -3462,7 +4987,12 @@
     "votes": 146304,
     "lat": 7.1384162,
     "lng": 40.7117482,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "East Bale",
+    "municipality": "East Bale",
+    "borough": "East Bale",
+    "district": "Ginir town"
   },
   {
     "region": "Oromia",
@@ -3473,7 +5003,12 @@
     "votes": 71898,
     "lat": 7.9256841,
     "lng": 37.4179084,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Jimma",
+    "municipality": "Jimma",
+    "borough": "Jimma",
+    "district": "Sekoru"
   },
   {
     "region": "Oromia",
@@ -3484,7 +5019,8 @@
     "votes": 91875,
     "lat": 9.2893858,
     "lng": 38.8135595,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Oromia"
   },
   {
     "region": "Oromia",
@@ -3495,7 +5031,12 @@
     "votes": 136618,
     "lat": 5.3328174,
     "lng": 39.5806628,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Oromia",
+    "county": "Gujii",
+    "municipality": "Gujii",
+    "borough": "Gujii",
+    "district": "Negele town"
   },
   {
     "region": "Sidama",
@@ -3506,7 +5047,12 @@
     "votes": 96729,
     "lat": 6.75,
     "lng": 38.4,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Yirgalem town"
   },
   {
     "region": "Sidama",
@@ -3517,7 +5063,12 @@
     "votes": 77254,
     "lat": 6.2,
     "lng": 38.7,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Oromia",
+    "county": "Gujii",
+    "municipality": "Gujii",
+    "borough": "Gujii",
+    "district": "Ana Sora"
   },
   {
     "region": "Sidama",
@@ -3528,7 +5079,12 @@
     "votes": 96886,
     "lat": 6.41667,
     "lng": 39,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Aroresa"
   },
   {
     "region": "Sidama",
@@ -3539,7 +5095,12 @@
     "votes": 89034,
     "lat": 6.8769685,
     "lng": 38.5831153,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Gorche"
   },
   {
     "region": "Sidama",
@@ -3550,7 +5111,12 @@
     "votes": 77616,
     "lat": 6.483,
     "lng": 38.517,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Hulla"
   },
   {
     "region": "Sidama",
@@ -3561,7 +5127,12 @@
     "votes": 99050,
     "lat": 6.55,
     "lng": 38.4,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Aleta Wendo"
   },
   {
     "region": "Sidama",
@@ -3572,7 +5143,12 @@
     "votes": 71818,
     "lat": 6.6,
     "lng": 38.333333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Aleta Chuko"
   },
   {
     "region": "Sidama",
@@ -3583,7 +5159,12 @@
     "votes": 179834,
     "lat": 7.0481029,
     "lng": 38.47861,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Hawasa town"
   },
   {
     "region": "Sidama",
@@ -3594,7 +5175,12 @@
     "votes": 179877,
     "lat": 6.5259512,
     "lng": 38.8287693,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Daye town"
   },
   {
     "region": "Sidama",
@@ -3605,7 +5191,12 @@
     "votes": 59782,
     "lat": 6.5408632,
     "lng": 38.3853295,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Aleta Chuko"
   },
   {
     "region": "Sidama",
@@ -3616,7 +5207,12 @@
     "votes": 66105,
     "lat": 6.68,
     "lng": 38.63,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Shafamo"
   },
   {
     "region": "Sidama",
@@ -3627,7 +5223,12 @@
     "votes": 108128,
     "lat": 6.9587532,
     "lng": 38.4783566,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Hawasa town"
   },
   {
     "region": "Sidama",
@@ -3638,7 +5239,12 @@
     "votes": 64275,
     "lat": 6.58333,
     "lng": 38.6,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Bursa"
   },
   {
     "region": "Sidama",
@@ -3649,7 +5255,12 @@
     "votes": 107887,
     "lat": 6.666666666,
     "lng": 38.75,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Arbegona"
   },
   {
     "region": "Sidama",
@@ -3660,7 +5271,12 @@
     "votes": 65273,
     "lat": 6.8748617,
     "lng": 38.4417642,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Leku town"
   },
   {
     "region": "Sidama",
@@ -3671,7 +5287,12 @@
     "votes": 60513,
     "lat": 6.9859304,
     "lng": 38.7030041,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Malga"
   },
   {
     "region": "Sidama",
@@ -3682,7 +5303,12 @@
     "votes": 67837,
     "lat": 6.6037191,
     "lng": 38.4232728,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Aleta Wondo town"
   },
   {
     "region": "Sidama",
@@ -3693,7 +5319,12 @@
     "votes": 74303,
     "lat": 6.75,
     "lng": 38.45,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Wonosho"
   },
   {
     "region": "Sidama",
@@ -3704,7 +5335,12 @@
     "votes": 61534,
     "lat": 6.4350991,
     "lng": 38.2962141,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Dara"
   },
   {
     "region": "SNNPR",
@@ -3715,7 +5351,12 @@
     "votes": 23562,
     "lat": 7.7932492,
     "lng": 37.4871423,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Yem",
+    "municipality": "Yem",
+    "borough": "Yem",
+    "district": "Yem SP Woreda"
   },
   {
     "region": "SNNPR",
@@ -3726,7 +5367,12 @@
     "votes": 74941,
     "lat": 6.9952914,
     "lng": 35.5868945,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Bench Maji",
+    "municipality": "Bench Maji",
+    "borough": "Bench Maji",
+    "district": "Mizan Aman town"
   },
   {
     "region": "SNNPR",
@@ -3737,7 +5383,12 @@
     "votes": 32162,
     "lat": 7.303986,
     "lng": 37.862704,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Kembata Tembaro",
+    "municipality": "Kembata Tembaro",
+    "borough": "Kembata Tembaro",
+    "district": "Angacha"
   },
   {
     "region": "SNNPR",
@@ -3748,7 +5399,12 @@
     "votes": 9258,
     "lat": 8.1,
     "lng": 38.2,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Ezha"
   },
   {
     "region": "SNNPR",
@@ -3759,7 +5415,12 @@
     "votes": 47225,
     "lat": 6.3,
     "lng": 37.1,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Gofa",
+    "municipality": "Gofa",
+    "borough": "Gofa",
+    "district": "Zala"
   },
   {
     "region": "SNNPR",
@@ -3770,7 +5431,12 @@
     "votes": 44788,
     "lat": 7.63833,
     "lng": 37.78333,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Hadiya",
+    "municipality": "Hadiya",
+    "borough": "Hadiya",
+    "district": "Misha"
   },
   {
     "region": "SNNPR",
@@ -3781,7 +5447,12 @@
     "votes": 51545,
     "lat": 7.23,
     "lng": 37.78,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "Kembata Tembaro",
+    "municipality": "Kembata Tembaro",
+    "borough": "Kembata Tembaro",
+    "district": "Kacha Bira"
   },
   {
     "region": "SNNPR",
@@ -3792,7 +5463,12 @@
     "votes": 79135,
     "lat": 7.16667,
     "lng": 37.1667,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Dawro",
+    "municipality": "Dawro",
+    "borough": "Dawro",
+    "district": "Tercha Zuriya"
   },
   {
     "region": "SNNPR",
@@ -3803,7 +5479,12 @@
     "votes": 18368,
     "lat": 6.271243,
     "lng": 38.255469,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gedeo",
+    "municipality": "Gedeo",
+    "borough": "Gedeo",
+    "district": "Wenago"
   },
   {
     "region": "SNNPR",
@@ -3814,7 +5495,12 @@
     "votes": 38847,
     "lat": 7.221667,
     "lng": 37.95,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Kembata Tembaro",
+    "municipality": "Kembata Tembaro",
+    "borough": "Kembata Tembaro",
+    "district": "Adilo"
   },
   {
     "region": "SNNPR",
@@ -3825,7 +5511,12 @@
     "votes": 46823,
     "lat": 7.4156697,
     "lng": 36.2672255,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Keffa",
+    "municipality": "Keffa",
+    "borough": "Keffa",
+    "district": "Gimbo"
   },
   {
     "region": "SNNPR",
@@ -3836,7 +5527,12 @@
     "votes": 22338,
     "lat": 7.311667,
     "lng": 37.95,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Kembata Tembaro",
+    "municipality": "Kembata Tembaro",
+    "borough": "Kembata Tembaro",
+    "district": "Damboya"
   },
   {
     "region": "SNNPR",
@@ -3847,7 +5543,12 @@
     "votes": 33811,
     "lat": 4.71625953,
     "lng": 36.12448571,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "SNNPR",
+    "county": "South Omo",
+    "municipality": "South Omo",
+    "borough": "South Omo",
+    "district": "Dasenech /Kuraz"
   },
   {
     "region": "SNNPR",
@@ -3858,7 +5559,12 @@
     "votes": 66176,
     "lat": 6.0392458,
     "lng": 37.5733148,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Arba Minch town"
   },
   {
     "region": "SNNPR",
@@ -3869,7 +5575,12 @@
     "votes": 26927,
     "lat": 7.393986,
     "lng": 37.862704,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Kembata Tembaro",
+    "municipality": "Kembata Tembaro",
+    "borough": "Kembata Tembaro",
+    "district": "Angacha"
   },
   {
     "region": "SNNPR",
@@ -3880,7 +5591,12 @@
     "votes": 35942,
     "lat": 7.905,
     "lng": 38.26,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Silti"
   },
   {
     "region": "SNNPR",
@@ -3891,7 +5607,12 @@
     "votes": 10719,
     "lat": 5.38333,
     "lng": 37.93333,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Oromia",
+    "county": "West Gujii",
+    "municipality": "West Gujii",
+    "borough": "West Gujii",
+    "district": "Suro Berguda"
   },
   {
     "region": "SNNPR",
@@ -3902,7 +5623,12 @@
     "votes": 18519,
     "lat": 6.02167,
     "lng": 37.08333,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Kemba"
   },
   {
     "region": "SNNPR",
@@ -3913,7 +5639,12 @@
     "votes": 18515,
     "lat": 5.5623074,
     "lng": 37.4134825,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Derashe",
+    "municipality": "Derashe",
+    "borough": "Derashe",
+    "district": "Derashe Special"
   },
   {
     "region": "SNNPR",
@@ -3924,7 +5655,12 @@
     "votes": 18517,
     "lat": 7.26667,
     "lng": 37.3,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Dawro",
+    "municipality": "Dawro",
+    "borough": "Dawro",
+    "district": "Gena"
   },
   {
     "region": "SNNPR",
@@ -3935,7 +5671,12 @@
     "votes": 91380,
     "lat": 8.0265247,
     "lng": 38.3300949,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Kibet town"
   },
   {
     "region": "SNNPR",
@@ -3946,7 +5687,12 @@
     "votes": 8105,
     "lat": 5.38,
     "lng": 36.71,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "South Omo",
+    "municipality": "South Omo",
+    "borough": "South Omo",
+    "district": "Bena Tsemay"
   },
   {
     "region": "SNNPR",
@@ -3957,7 +5703,12 @@
     "votes": 26733,
     "lat": 6.361243,
     "lng": 38.255469,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Oromia",
+    "county": "West Gujii",
+    "municipality": "West Gujii",
+    "borough": "West Gujii",
+    "district": "Abaya"
   },
   {
     "region": "SNNPR",
@@ -3968,7 +5719,12 @@
     "votes": 81176,
     "lat": 7.1500582,
     "lng": 35.8166977,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Keffa",
+    "municipality": "Keffa",
+    "borough": "Keffa",
+    "district": "Wacha"
   },
   {
     "region": "SNNPR",
@@ -3979,7 +5735,12 @@
     "votes": 5706,
     "lat": 5.21667,
     "lng": 37.01667,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Konso",
+    "municipality": "Konso",
+    "borough": "Konso",
+    "district": "Kena"
   },
   {
     "region": "SNNPR",
@@ -3990,7 +5751,12 @@
     "votes": 25421,
     "lat": 5.95,
     "lng": 37,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Garda Marta"
   },
   {
     "region": "SNNPR",
@@ -4001,7 +5767,12 @@
     "votes": 54600,
     "lat": 6.8941256,
     "lng": 36.6064376,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Konta",
+    "municipality": "Konta",
+    "borough": "Konta",
+    "district": "Konta"
   },
   {
     "region": "SNNPR",
@@ -4012,7 +5783,12 @@
     "votes": 25610,
     "lat": 6.864163,
     "lng": 37.762762,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Sodo Town"
   },
   {
     "region": "SNNPR",
@@ -4023,7 +5799,12 @@
     "votes": 54129,
     "lat": 5.3398227,
     "lng": 37.442368,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Konso",
+    "municipality": "Konso",
+    "borough": "Konso",
+    "district": "Karat town"
   },
   {
     "region": "SNNPR",
@@ -4034,7 +5815,12 @@
     "votes": 49516,
     "lat": 7.3143698,
     "lng": 37.8588272,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Kembata Tembaro",
+    "municipality": "Kembata Tembaro",
+    "borough": "Kembata Tembaro",
+    "district": "Angacha"
   },
   {
     "region": "SNNPR",
@@ -4045,7 +5831,12 @@
     "votes": 44714,
     "lat": 6.7084469,
     "lng": 37.7716251,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Tebela town"
   },
   {
     "region": "SNNPR",
@@ -4056,7 +5847,12 @@
     "votes": 29924,
     "lat": 8,
     "lng": 38.533333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Mareko"
   },
   {
     "region": "SNNPR",
@@ -4067,7 +5863,12 @@
     "votes": 11720,
     "lat": 6.07281897,
     "lng": 36.88874859,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "SNNPR",
+    "county": "Gofa",
+    "municipality": "Gofa",
+    "borough": "Gofa",
+    "district": "Uba Debre Tsehay"
   },
   {
     "region": "SNNPR",
@@ -4078,7 +5879,12 @@
     "votes": 3680,
     "lat": 5.8204906,
     "lng": 37.32371,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Arba Minch Zuria"
   },
   {
     "region": "SNNPR",
@@ -4089,7 +5895,12 @@
     "votes": 28230,
     "lat": 6.11086,
     "lng": 38.202854,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gedeo",
+    "municipality": "Gedeo",
+    "borough": "Gedeo",
+    "district": "Yirgachefe"
   },
   {
     "region": "SNNPR",
@@ -4100,7 +5911,12 @@
     "votes": 4054,
     "lat": 6.4696674,
     "lng": 36.5890839,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gofa",
+    "municipality": "Gofa",
+    "borough": "Gofa",
+    "district": "Melekoza"
   },
   {
     "region": "SNNPR",
@@ -4111,7 +5927,12 @@
     "votes": 48098,
     "lat": 7.455,
     "lng": 37.583333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Hadiya",
+    "municipality": "Hadiya",
+    "borough": "Hadiya",
+    "district": "Soro"
   },
   {
     "region": "SNNPR",
@@ -4122,7 +5943,12 @@
     "votes": 34440,
     "lat": 5.88070557,
     "lng": 37.27110027,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Gerese"
   },
   {
     "region": "SNNPR",
@@ -4133,7 +5959,12 @@
     "votes": 43889,
     "lat": 7.85,
     "lng": 38.37,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Lanfero"
   },
   {
     "region": "SNNPR",
@@ -4144,7 +5975,12 @@
     "votes": 24061,
     "lat": 6.833333333,
     "lng": 37.5,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Kawo Koisha"
   },
   {
     "region": "SNNPR",
@@ -4155,7 +5991,12 @@
     "votes": 67056,
     "lat": 6.91068789,
     "lng": 35.73992482,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "SNNPR",
+    "county": "Bench Maji",
+    "municipality": "Bench Maji",
+    "borough": "Bench Maji",
+    "district": "Shay Bench"
   },
   {
     "region": "SNNPR",
@@ -4166,7 +6007,12 @@
     "votes": 63163,
     "lat": 7.083333333,
     "lng": 37.033333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Dawro",
+    "municipality": "Dawro",
+    "borough": "Dawro",
+    "district": "Tocha"
   },
   {
     "region": "SNNPR",
@@ -4177,7 +6023,12 @@
     "votes": 31884,
     "lat": 6.921667,
     "lng": 37.9,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Damot Woide"
   },
   {
     "region": "SNNPR",
@@ -4188,7 +6039,12 @@
     "votes": 32972,
     "lat": 6.11167,
     "lng": 37.08333,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Kemba"
   },
   {
     "region": "SNNPR",
@@ -4199,7 +6055,12 @@
     "votes": 9872,
     "lat": 7.981102,
     "lng": 37.761325,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Enor Ener"
   },
   {
     "region": "SNNPR",
@@ -4210,7 +6071,12 @@
     "votes": 31035,
     "lat": 5.833333333,
     "lng": 37.833333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Amaro",
+    "municipality": "Amaro",
+    "borough": "Amaro",
+    "district": "Amaro"
   },
   {
     "region": "SNNPR",
@@ -4221,7 +6087,12 @@
     "votes": 8623,
     "lat": 5.6505459,
     "lng": 37.3660534,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Derashe",
+    "municipality": "Derashe",
+    "borough": "Derashe",
+    "district": "Derashe Special"
   },
   {
     "region": "SNNPR",
@@ -4232,7 +6103,12 @@
     "votes": 75964,
     "lat": 7.3999294,
     "lng": 36.232169,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Keffa",
+    "municipality": "Keffa",
+    "borough": "Keffa",
+    "district": "Gimbo"
   },
   {
     "region": "SNNPR",
@@ -4243,7 +6119,12 @@
     "votes": 31443,
     "lat": 7.76,
     "lng": 37.93,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Mierab Azenet Berbere"
   },
   {
     "region": "SNNPR",
@@ -4254,7 +6135,12 @@
     "votes": 105207,
     "lat": 7.268029,
     "lng": 38.087878,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Alaba",
+    "municipality": "Alaba",
+    "borough": "Alaba",
+    "district": "Wera"
   },
   {
     "region": "SNNPR",
@@ -4265,7 +6151,12 @@
     "votes": 104078,
     "lat": 7.358029,
     "lng": 38.087878,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Alaba",
+    "municipality": "Alaba",
+    "borough": "Alaba",
+    "district": "Wera"
   },
   {
     "region": "SNNPR",
@@ -4276,7 +6167,12 @@
     "votes": 11788,
     "lat": 8.105,
     "lng": 37.983333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Cheha"
   },
   {
     "region": "SNNPR",
@@ -4287,7 +6183,12 @@
     "votes": 30731,
     "lat": 6.49,
     "lng": 36.58,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "Gofa",
+    "municipality": "Gofa",
+    "borough": "Gofa",
+    "district": "Melekoza"
   },
   {
     "region": "SNNPR",
@@ -4298,7 +6199,12 @@
     "votes": 16173,
     "lat": 7.93333,
     "lng": 38.11667,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Alicho Woriro"
   },
   {
     "region": "SNNPR",
@@ -4309,7 +6215,12 @@
     "votes": 17922,
     "lat": 5.43333,
     "lng": 37.23333,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Konso",
+    "municipality": "Konso",
+    "borough": "Konso",
+    "district": "Karat Zuria"
   },
   {
     "region": "SNNPR",
@@ -4320,7 +6231,12 @@
     "votes": 54121,
     "lat": 7.117159,
     "lng": 36.1882938,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Keffa",
+    "municipality": "Keffa",
+    "borough": "Keffa",
+    "district": "Decha"
   },
   {
     "region": "SNNPR",
@@ -4331,7 +6247,12 @@
     "votes": 36294,
     "lat": 8,
     "lng": 38.2,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Alicho Woriro"
   },
   {
     "region": "SNNPR",
@@ -4342,7 +6263,12 @@
     "votes": 50825,
     "lat": 7.28333,
     "lng": 36.56666,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Keffa",
+    "municipality": "Keffa",
+    "borough": "Keffa",
+    "district": "Adiyio"
   },
   {
     "region": "SNNPR",
@@ -4353,7 +6279,12 @@
     "votes": 43320,
     "lat": 7.011667,
     "lng": 37.9,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Damot Gale"
   },
   {
     "region": "SNNPR",
@@ -4364,7 +6295,12 @@
     "votes": 65611,
     "lat": 8.286087,
     "lng": 37.781844,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Welkite town"
   },
   {
     "region": "SNNPR",
@@ -4375,7 +6311,12 @@
     "votes": 5806,
     "lat": 6.2,
     "lng": 36.8,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Gofa",
+    "municipality": "Gofa",
+    "borough": "Gofa",
+    "district": "O'yida"
   },
   {
     "region": "SNNPR",
@@ -4386,7 +6327,12 @@
     "votes": 28421,
     "lat": 7.995,
     "lng": 38.26,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Silti"
   },
   {
     "region": "SNNPR",
@@ -4397,7 +6343,12 @@
     "votes": 22586,
     "lat": 8.12,
     "lng": 37.92,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Emdebir town"
   },
   {
     "region": "SNNPR",
@@ -4408,7 +6359,12 @@
     "votes": 57379,
     "lat": 7.8,
     "lng": 38.01,
-    "geocode_source": "manual_approx"
+    "geocode_source": "manual_approx",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Misrak Azenet Berbere"
   },
   {
     "region": "SNNPR",
@@ -4419,7 +6375,12 @@
     "votes": 62927,
     "lat": 7.7898174,
     "lng": 38.2458043,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Silltie",
+    "municipality": "Silltie",
+    "borough": "Silltie",
+    "district": "Dalocha"
   },
   {
     "region": "SNNPR",
@@ -4430,7 +6391,12 @@
     "votes": 34041,
     "lat": 8.4,
     "lng": 38.23333,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Gedebano Gutazer Welene"
   },
   {
     "region": "SNNPR",
@@ -4441,7 +6407,12 @@
     "votes": 19703,
     "lat": 7.018419,
     "lng": 37.70864,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Boloso Sore"
   },
   {
     "region": "SNNPR",
@@ -4452,7 +6423,12 @@
     "votes": 32957,
     "lat": 6.78833,
     "lng": 38,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Hobicha Abaya"
   },
   {
     "region": "SNNPR",
@@ -4463,7 +6439,12 @@
     "votes": 12914,
     "lat": 8.195,
     "lng": 37.983333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Muhur Na Aklil"
   },
   {
     "region": "SNNPR",
@@ -4474,7 +6455,12 @@
     "votes": 10731,
     "lat": 6.20086,
     "lng": 38.202854,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gedeo",
+    "municipality": "Gedeo",
+    "borough": "Gedeo",
+    "district": "Yirgachefe"
   },
   {
     "region": "SNNPR",
@@ -4485,7 +6471,12 @@
     "votes": 43215,
     "lat": 6.0598479,
     "lng": 37.175464,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Kemba town"
   },
   {
     "region": "SNNPR",
@@ -4496,7 +6487,12 @@
     "votes": 80823,
     "lat": 7.545,
     "lng": 37.583333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Hadiya",
+    "municipality": "Hadiya",
+    "borough": "Hadiya",
+    "district": "Gombora"
   },
   {
     "region": "SNNPR",
@@ -4507,7 +6503,12 @@
     "votes": 21359,
     "lat": 8.071102,
     "lng": 37.761325,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "SNNPR",
+    "county": "Gurage",
+    "municipality": "Gurage",
+    "borough": "Gurage",
+    "district": "Enemor Ener"
   },
   {
     "region": "SNNPR",
@@ -4518,7 +6519,12 @@
     "votes": 21189,
     "lat": 6.251095,
     "lng": 37.572946,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Chencha"
   },
   {
     "region": "SNNPR",
@@ -4529,7 +6535,12 @@
     "votes": 56082,
     "lat": 7.04,
     "lng": 38.61,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Sidama",
+    "county": "Sidama",
+    "municipality": "Sidama",
+    "borough": "Sidama",
+    "district": "Wondo-Genet"
   },
   {
     "region": "SNNPR",
@@ -4540,7 +6551,12 @@
     "votes": 34143,
     "lat": 6.333333333,
     "lng": 38.333333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Gedeo",
+    "municipality": "Gedeo",
+    "borough": "Gedeo",
+    "district": "Dila Zuria"
   },
   {
     "region": "SNNPR",
@@ -4551,7 +6567,12 @@
     "votes": 48073,
     "lat": 7.68333,
     "lng": 37.96667,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Hadiya",
+    "municipality": "Hadiya",
+    "borough": "Hadiya",
+    "district": "Analemmo"
   },
   {
     "region": "SNNPR",
@@ -4562,7 +6583,12 @@
     "votes": 55022,
     "lat": 7.1333,
     "lng": 36.45,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Keffa",
+    "municipality": "Keffa",
+    "borough": "Keffa",
+    "district": "Tullo"
   },
   {
     "region": "SNNPR",
@@ -4573,7 +6599,12 @@
     "votes": 19816,
     "lat": 6.4723151,
     "lng": 37.4534515,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Gamo Gofa",
+    "municipality": "Gamo Gofa",
+    "borough": "Gamo Gofa",
+    "district": "Selamber town"
   },
   {
     "region": "SNNPR",
@@ -4584,7 +6615,12 @@
     "votes": 62160,
     "lat": 5.857605,
     "lng": 36.577359,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "South Omo",
+    "municipality": "South Omo",
+    "borough": "South Omo",
+    "district": "South Ari"
   },
   {
     "region": "SNNPR",
@@ -4595,7 +6631,12 @@
     "votes": 30415,
     "lat": 5.947605,
     "lng": 36.577359,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "South Omo",
+    "municipality": "South Omo",
+    "borough": "South Omo",
+    "district": "South Ari"
   },
   {
     "region": "SNNPR",
@@ -4606,7 +6647,12 @@
     "votes": 6653,
     "lat": 6.2659302,
     "lng": 36.5677664,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Basketo",
+    "municipality": "Basketo",
+    "borough": "Basketo",
+    "district": "Basketo SP Woreda"
   },
   {
     "region": "SNNPR",
@@ -4617,7 +6663,12 @@
     "votes": 92193,
     "lat": 7.383333333,
     "lng": 35.666666666,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Keffa",
+    "municipality": "Keffa",
+    "borough": "Keffa",
+    "district": "Bita"
   },
   {
     "region": "SNNPR",
@@ -4628,7 +6679,12 @@
     "votes": 39313,
     "lat": 7.085919,
     "lng": 37.747612,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Boloso Sore"
   },
   {
     "region": "SNNPR",
@@ -4639,7 +6695,12 @@
     "votes": 59705,
     "lat": 7.085919,
     "lng": 37.669669,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Boloso Sore"
   },
   {
     "region": "SNNPR",
@@ -4650,7 +6711,12 @@
     "votes": 47696,
     "lat": 6.87833,
     "lng": 38,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Damot Woide"
   },
   {
     "region": "SNNPR",
@@ -4661,7 +6727,12 @@
     "votes": 11454,
     "lat": 6.33,
     "lng": 35.19,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "West Omo",
+    "municipality": "West Omo",
+    "borough": "West Omo",
+    "district": "Bero"
   },
   {
     "region": "SNNPR",
@@ -4672,7 +6743,12 @@
     "votes": 24449,
     "lat": 6.0611436,
     "lng": 36.5884155,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "South Omo",
+    "municipality": "South Omo",
+    "borough": "South Omo",
+    "district": "Wub Ari"
   },
   {
     "region": "SNNPR",
@@ -4683,7 +6759,12 @@
     "votes": 42780,
     "lat": 5.5224107,
     "lng": 36.735446,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "South Omo",
+    "municipality": "South Omo",
+    "borough": "South Omo",
+    "district": "Bena Tsemay"
   },
   {
     "region": "SNNPR",
@@ -4694,7 +6775,12 @@
     "votes": 44020,
     "lat": 6.9334856,
     "lng": 37.51967562,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Kindo Koyesha"
   },
   {
     "region": "SNNPR",
@@ -4705,7 +6791,12 @@
     "votes": 17108,
     "lat": 7.70583,
     "lng": 37.822301,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Hadiya",
+    "municipality": "Hadiya",
+    "borough": "Hadiya",
+    "district": "Misha"
   },
   {
     "region": "SNNPR",
@@ -4716,7 +6807,12 @@
     "votes": 34389,
     "lat": 7.70583,
     "lng": 37.744359,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Hadiya",
+    "municipality": "Hadiya",
+    "borough": "Hadiya",
+    "district": "Gibe"
   },
   {
     "region": "SNNPR",
@@ -4727,7 +6823,12 @@
     "votes": 58199,
     "lat": 6.916666666,
     "lng": 37.25,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Dawro",
+    "municipality": "Dawro",
+    "borough": "Dawro",
+    "district": "Loma"
   },
   {
     "region": "SNNPR",
@@ -4738,7 +6839,12 @@
     "votes": 12388,
     "lat": 5.9,
     "lng": 35.72,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "West Omo",
+    "municipality": "West Omo",
+    "borough": "West Omo",
+    "district": "Maji"
   },
   {
     "region": "SNNPR",
@@ -4749,7 +6855,12 @@
     "votes": 29408,
     "lat": 7.747454,
     "lng": 35.475953,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Sheka",
+    "municipality": "Sheka",
+    "borough": "Sheka",
+    "district": "Anderacha"
   },
   {
     "region": "SNNPR",
@@ -4760,7 +6871,12 @@
     "votes": 62025,
     "lat": 6.84,
     "lng": 35.96,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "SNNPR",
+    "county": "West Omo",
+    "municipality": "West Omo",
+    "borough": "West Omo",
+    "district": "Menit Goldiye"
   },
   {
     "region": "SNNPR",
@@ -4771,7 +6887,12 @@
     "votes": 13854,
     "lat": 7.0667679,
     "lng": 35.6499252,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Bench Maji",
+    "municipality": "Bench Maji",
+    "borough": "Bench Maji",
+    "district": "Semen Bench"
   },
   {
     "region": "SNNPR",
@@ -4782,7 +6903,12 @@
     "votes": 60045,
     "lat": 6.815,
     "lng": 37.76,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Sodo Zuria"
   },
   {
     "region": "SNNPR",
@@ -4793,7 +6919,12 @@
     "votes": 48065,
     "lat": 6.905,
     "lng": 37.76,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "SNNPR",
+    "county": "Wolayita",
+    "municipality": "Wolayita",
+    "borough": "Wolayita",
+    "district": "Sodo Zuria"
   },
   {
     "region": "SNNPR",
@@ -4804,7 +6935,12 @@
     "votes": 5356,
     "lat": 6.58333,
     "lng": 35.33333,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "West Omo",
+    "municipality": "West Omo",
+    "borough": "West Omo",
+    "district": "Gori Gesha"
   },
   {
     "region": "SNNPR",
@@ -4815,7 +6951,12 @@
     "votes": 38713,
     "lat": 7.1970721,
     "lng": 35.4218171,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "SNNPR",
+    "county": "Sheka",
+    "municipality": "Sheka",
+    "borough": "Sheka",
+    "district": "Tepi"
   },
   {
     "region": "Somali",
@@ -4826,7 +6967,12 @@
     "votes": 55349,
     "lat": 10.7526758,
     "lng": 42.5715941,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Sitti",
+    "municipality": "Sitti",
+    "borough": "Sitti",
+    "district": "Ayisha"
   },
   {
     "region": "Somali",
@@ -4837,7 +6983,12 @@
     "votes": 357048,
     "lat": 9.93361,
     "lng": 42.7175,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Sitti",
+    "municipality": "Sitti",
+    "borough": "Sitti",
+    "district": "Dembel"
   },
   {
     "region": "Somali",
@@ -4848,7 +6999,12 @@
     "votes": 192683,
     "lat": 8.583,
     "lng": 44,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Somali",
+    "county": "Fafan",
+    "municipality": "Fafan",
+    "borough": "Fafan",
+    "district": "Harshin"
   },
   {
     "region": "Somali",
@@ -4859,7 +7015,12 @@
     "votes": 56669,
     "lat": 7.6,
     "lng": 46.5,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Somali",
+    "county": "Dollo",
+    "municipality": "Dollo",
+    "borough": "Dollo",
+    "district": "Bokh"
   },
   {
     "region": "Somali",
@@ -4870,7 +7031,12 @@
     "votes": 249588,
     "lat": 5.3370032,
     "lng": 41.8827508,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Afder",
+    "municipality": "Afder",
+    "borough": "Afder",
+    "district": "Charati"
   },
   {
     "region": "Somali",
@@ -4881,7 +7047,12 @@
     "votes": 233738,
     "lat": 8.22530918,
     "lng": 43.55551126,
-    "geocode_source": "hdx"
+    "geocode_source": "hdx",
+    "province": "Somali",
+    "county": "Jarar",
+    "municipality": "Jarar",
+    "borough": "Jarar",
+    "district": "Degahabur town"
   },
   {
     "region": "Somali",
@@ -4892,7 +7063,12 @@
     "votes": 60846,
     "lat": 8.06,
     "lng": 42.99,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Somali",
+    "county": "Jarar",
+    "municipality": "Jarar",
+    "borough": "Jarar",
+    "district": "Degehamedo"
   },
   {
     "region": "Somali",
@@ -4903,7 +7079,12 @@
     "votes": 182697,
     "lat": 5.8427044,
     "lng": 42.0987161,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Afder",
+    "municipality": "Afder",
+    "borough": "Afder",
+    "district": "Elkare /Serer"
   },
   {
     "region": "Somali",
@@ -4914,7 +7095,12 @@
     "votes": 193798,
     "lat": 8.4392817,
     "lng": 42.1142323,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Erer",
+    "municipality": "Erer",
+    "borough": "Erer",
+    "district": "Meyumuluka"
   },
   {
     "region": "Somali",
@@ -4925,7 +7111,12 @@
     "votes": 281710,
     "lat": 8.1384237,
     "lng": 42.2945585,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Erer",
+    "municipality": "Erer",
+    "borough": "Erer",
+    "district": "Fik"
   },
   {
     "region": "Somali",
@@ -4936,7 +7127,12 @@
     "votes": 572697,
     "lat": 5.166666666,
     "lng": 41,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Somali",
+    "county": "Liben",
+    "municipality": "Liben",
+    "borough": "Liben",
+    "district": "Filtu"
   },
   {
     "region": "Somali",
@@ -4947,7 +7143,12 @@
     "votes": 28805,
     "lat": 6.970833333,
     "lng": 46.416666666,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Somali",
+    "county": "Dollo",
+    "municipality": "Dollo",
+    "borough": "Dollo",
+    "district": "Galadi"
   },
   {
     "region": "Somali",
@@ -4958,7 +7159,12 @@
     "votes": 76440,
     "lat": 8.1171414,
     "lng": 45.3462839,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Jarar",
+    "municipality": "Jarar",
+    "borough": "Jarar",
+    "district": "Gashamo"
   },
   {
     "region": "Somali",
@@ -4969,7 +7175,12 @@
     "votes": 327257,
     "lat": 5.9526975,
     "lng": 43.5522312,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Shebelle",
+    "municipality": "Shebelle",
+    "borough": "Shebelle",
+    "district": "Godey town"
   },
   {
     "region": "Somali",
@@ -4980,7 +7191,12 @@
     "votes": 198221,
     "lat": 5.2217631,
     "lng": 42.1805282,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Afder",
+    "municipality": "Afder",
+    "borough": "Afder",
+    "district": "Hargele"
   },
   {
     "region": "Somali",
@@ -4991,7 +7207,12 @@
     "votes": 160293,
     "lat": 9.305853,
     "lng": 42.800379,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Fafan",
+    "municipality": "Fafan",
+    "borough": "Fafan",
+    "district": "Shabeeley"
   },
   {
     "region": "Somali",
@@ -5002,7 +7223,12 @@
     "votes": 129792,
     "lat": 9.395853,
     "lng": 42.800379,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Fafan",
+    "municipality": "Fafan",
+    "borough": "Fafan",
+    "district": "Jigjiga town"
   },
   {
     "region": "Somali",
@@ -5013,7 +7239,12 @@
     "votes": 237852,
     "lat": 6.7389461,
     "lng": 44.2804067,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Korahe",
+    "municipality": "Korahe",
+    "borough": "Korahe",
+    "district": "Kebridehar town"
   },
   {
     "region": "Somali",
@@ -5024,7 +7255,12 @@
     "votes": 498493,
     "lat": 9.1000628,
     "lng": 43.1786727,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Fafan",
+    "municipality": "Fafan",
+    "borough": "Fafan",
+    "district": "Kebribayah town"
   },
   {
     "region": "Somali",
@@ -5035,7 +7271,12 @@
     "votes": 147103,
     "lat": 5.6572136,
     "lng": 44.3496766,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Korahe",
+    "municipality": "Korahe",
+    "borough": "Korahe",
+    "district": "Higloley"
   },
   {
     "region": "Somali",
@@ -5046,7 +7287,12 @@
     "votes": 237415,
     "lat": 7.6820747,
     "lng": 42.8345745,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Nogob",
+    "municipality": "Nogob",
+    "borough": "Nogob",
+    "district": "Sagag"
   },
   {
     "region": "Somali",
@@ -5057,7 +7303,12 @@
     "votes": 74968,
     "lat": 9.9,
     "lng": 41.88,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Somali",
+    "county": "Sitti",
+    "municipality": "Sitti",
+    "borough": "Sitti",
+    "district": "Shinile"
   },
   {
     "region": "Somali",
@@ -5068,7 +7319,12 @@
     "votes": 64042,
     "lat": 7.5,
     "lng": 46,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Somali",
+    "county": "Dollo",
+    "municipality": "Dollo",
+    "borough": "Dollo",
+    "district": "Galadi"
   },
   {
     "region": "Harari",
@@ -5079,7 +7335,12 @@
     "votes": 9362,
     "lat": 9.314,
     "lng": 42.118,
-    "geocode_source": "manual_map"
+    "geocode_source": "manual_map",
+    "province": "Harari",
+    "county": "Harari",
+    "municipality": "Harari",
+    "borough": "Harari",
+    "district": "Abadir"
   },
   {
     "region": "Harari",
@@ -5090,7 +7351,12 @@
     "votes": 82853,
     "lat": 9.31,
     "lng": 42.12,
-    "geocode_source": "manual"
+    "geocode_source": "manual",
+    "province": "Harari",
+    "county": "Harari",
+    "municipality": "Harari",
+    "borough": "Harari",
+    "district": "Abadir"
   },
   {
     "region": "Benishangul Gumuz",
@@ -5101,7 +7367,12 @@
     "votes": 24510,
     "lat": 10.5969202,
     "lng": 34.7836509,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Benishangul Gumuz",
+    "county": "Asosa",
+    "municipality": "Asosa",
+    "borough": "Asosa",
+    "district": "Sherkole"
   },
   {
     "region": "Benishangul Gumuz",
@@ -5112,7 +7383,12 @@
     "votes": 18389,
     "lat": 9.3382943,
     "lng": 34.2897214,
-    "geocode_source": "nominatim_retry"
+    "geocode_source": "nominatim_retry",
+    "province": "Benishangul Gumuz",
+    "county": "Mao-Komo",
+    "municipality": "Mao-Komo",
+    "borough": "Mao-Komo",
+    "district": "Maokomo Special"
   },
   {
     "region": "Benishangul Gumuz",
@@ -5123,7 +7399,12 @@
     "votes": 12269,
     "lat": 9.7604225,
     "lng": 34.7298772,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Benishangul Gumuz",
+    "county": "Asosa",
+    "municipality": "Asosa",
+    "borough": "Asosa",
+    "district": "Bambasi"
   },
   {
     "region": "Dire Dawa",
@@ -5134,7 +7415,12 @@
     "votes": 74251,
     "lat": 9.546323,
     "lng": 41.856634,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Dire Dawa",
+    "county": "Dire Dawa rural",
+    "municipality": "Dire Dawa rural",
+    "borough": "Dire Dawa rural",
+    "district": "Wahil"
   },
   {
     "region": "Dire Dawa",
@@ -5145,7 +7431,12 @@
     "votes": 89192,
     "lat": 9.636323,
     "lng": 41.856634,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Dire Dawa",
+    "county": "Dire Dawa urban",
+    "municipality": "Dire Dawa urban",
+    "borough": "Dire Dawa urban",
+    "district": "Kazira"
   },
   {
     "region": "Gambella",
@@ -5156,7 +7447,12 @@
     "votes": 38633,
     "lat": 8.2503656,
     "lng": 34.5877344,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "province": "Gambela",
+    "county": "Agniwak",
+    "municipality": "Agniwak",
+    "borough": "Agniwak",
+    "district": "Gambela town"
   },
   {
     "region": "Gambella",
@@ -5167,7 +7463,12 @@
     "votes": 18382,
     "lat": 7.266666666,
     "lng": 35.316666666,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Gambela",
+    "county": "Majang",
+    "municipality": "Majang",
+    "borough": "Majang",
+    "district": "Godere"
   },
   {
     "region": "Gambella",
@@ -5178,6 +7479,11 @@
     "votes": 211867,
     "lat": 8.316666666,
     "lng": 33.933333333,
-    "geocode_source": "wikidata"
+    "geocode_source": "wikidata",
+    "province": "Gambela",
+    "county": "Nuer",
+    "municipality": "Nuer",
+    "borough": "Nuer",
+    "district": "Lare"
   }
 ]
