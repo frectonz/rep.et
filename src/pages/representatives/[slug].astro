@@ -156,8 +156,7 @@ const place = formatPlace(rep);
 
       navigator.share({
         title: name,
-        text: 'I just found out that my representative in the HoPR is ' + name + ' from ' + location + ', ' + region + '!\n\nFind yours at rep.et\n\n',
-        url: window.location.href
+        text: 'I just found out that my representative in the HoPR is ' + name + ' from ' + location + ', ' + region + '!\n\nFind yours at rep.et\n\n' + window.location.href
       });
     });
   })();
