@@ -69,10 +69,10 @@ const totalRegions = stats.regionStats.length;
     <!-- Section 2: Seats by Region -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
-      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
+      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {stats.regionStats.map((r) => (
           <>
-            <a href={`/regions/${r.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors">{r.name}</a>
+            <a href={`/regions/${r.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{r.name}</a>
             <div class="h-5 bg-callout-bg rounded overflow-hidden">
               <div
                 class="h-full bg-olive rounded"
@@ -88,10 +88,10 @@ const totalRegions = stats.regionStats.length;
     <!-- Section 3: Seats by Party -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
-      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
+      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {stats.partyStats.map((p) => (
           <>
-            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors">{p.name}</a>
+            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{p.name}</a>
             <div class="h-5 bg-callout-bg rounded overflow-hidden">
               <div
                 class="h-full bg-olive rounded"
@@ -109,12 +109,12 @@ const totalRegions = stats.regionStats.length;
       <h2 class="text-lg font-bold mb-4">Gender Representation</h2>
 
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Party</h3>
-      <div class="grid items-center gap-x-3 gap-y-2 mb-6" style="grid-template-columns: auto 1fr auto;">
+      <div class="grid items-center gap-x-3 gap-y-2 mb-6 progress-grid">
         {stats.femaleByParty.map((p) => {
           const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
           return (
             <>
-              <span class="text-sm whitespace-nowrap">{p.name}</span>
+              <span class="text-sm whitespace-nowrap progress-label">{p.name}</span>
               <div class="h-5 bg-callout-bg rounded overflow-hidden">
                 <div
                   class="h-full bg-accent rounded"
@@ -128,12 +128,12 @@ const totalRegions = stats.regionStats.length;
       </div>
 
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Region</h3>
-      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
+      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {stats.femaleByRegion.map((r) => {
           const pct = r.total > 0 ? (r.female / r.total) * 100 : 0;
           return (
             <>
-              <span class="text-sm whitespace-nowrap">{r.name}</span>
+              <span class="text-sm whitespace-nowrap progress-label">{r.name}</span>
               <div class="h-5 bg-callout-bg rounded overflow-hidden">
                 <div
                   class="h-full bg-accent rounded"
@@ -212,10 +212,10 @@ const totalRegions = stats.regionStats.length;
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Party Reach</h2>
       <p class="text-sm text-text-muted mb-3">Regions where each party holds seats (out of {totalRegions})</p>
-      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
+      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {partyReach.map((p) => (
           <>
-            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors">{p.name}</a>
+            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{p.name}</a>
             <div class="h-5 bg-callout-bg rounded overflow-hidden">
               <div
                 class="h-full bg-olive rounded"

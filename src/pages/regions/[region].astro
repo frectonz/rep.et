@@ -63,10 +63,10 @@ const coordsJson = JSON.stringify(
     {stats.parties.length > 1 && (
       <div class="bg-card rounded-lg border border-border p-5 mb-8">
         <h2 class="text-lg font-bold mb-3">Party Breakdown</h2>
-        <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
+        <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
           {stats.parties.map((p) => (
             <>
-              <span class="text-sm whitespace-nowrap">{p.name}</span>
+              <span class="text-sm whitespace-nowrap progress-label">{p.name}</span>
               <div class="h-5 bg-callout-bg rounded overflow-hidden">
                 <div
                   class="h-full bg-olive rounded"

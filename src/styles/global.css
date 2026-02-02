@@ -58,3 +58,21 @@
     color: var(--color-accent-hover);
   }
 }
+
+.progress-grid {
+  grid-template-columns: 1fr auto;
+}
+@media (min-width: 640px) {
+  .progress-grid {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
+.progress-label {
+  grid-column: 1 / -1;
+}
+@media (min-width: 640px) {
+  .progress-label {
+    grid-column: auto;
+  }
+}

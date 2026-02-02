@@ -64,10 +64,10 @@ const coordsJson = JSON.stringify(
     {stats.regions.length > 1 && (
       <div class="bg-card rounded-lg border border-border p-5 mb-8">
         <h2 class="text-lg font-bold mb-3">Region Breakdown</h2>
-        <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
+        <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
           {stats.regions.map((r) => (
             <>
-              <a href={`/regions/${regionSlug(r.name)}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors">{r.name}</a>
+              <a href={`/regions/${regionSlug(r.name)}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{r.name}</a>
               <div class="h-5 bg-callout-bg rounded overflow-hidden">
                 <div
                   class="h-full bg-olive rounded"
