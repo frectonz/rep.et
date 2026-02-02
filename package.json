@@ -6,18 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "astro build && wrangler pages deploy",
-    "cf-preview": "astro build && wrangler pages dev",
     "astro": "astro"
-  },
-  "devDependencies": {
-    "wrangler": "^4"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "sharp",
-      "workerd"
+      "sharp"
     ]
   },
   "dependencies": {
