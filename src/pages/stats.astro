@@ -69,18 +69,18 @@ const totalRegions = stats.regionStats.length;
     <!-- Section 2: Seats by Region -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
-      <div class="space-y-2">
+      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
         {stats.regionStats.map((r) => (
-          <div class="flex items-center gap-3">
-            <a href={`/regions/${r.slug}`} class="text-sm min-w-[140px] truncate hover:text-accent transition-colors">{r.name}</a>
-            <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+          <>
+            <a href={`/regions/${r.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors">{r.name}</a>
+            <div class="h-5 bg-callout-bg rounded overflow-hidden">
               <div
                 class="h-full bg-olive rounded"
                 style={`width: ${(r.seats / stats.totalSeats) * 100}%`}
               ></div>
             </div>
-            <span class="text-sm text-text-muted w-8 text-right">{r.seats}</span>
-          </div>
+            <span class="text-sm text-text-muted text-right">{r.seats}</span>
+          </>
         ))}
       </div>
     </div>
@@ -88,18 +88,18 @@ const totalRegions = stats.regionStats.length;
     <!-- Section 3: Seats by Party -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
-      <div class="space-y-2">
+      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
         {stats.partyStats.map((p) => (
-          <div class="flex items-center gap-3">
-            <a href={`/parties/${p.slug}`} class="text-sm min-w-[140px] truncate hover:text-accent transition-colors">{p.name}</a>
-            <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+          <>
+            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors">{p.name}</a>
+            <div class="h-5 bg-callout-bg rounded overflow-hidden">
               <div
                 class="h-full bg-olive rounded"
                 style={`width: ${(p.seats / stats.totalSeats) * 100}%`}
               ></div>
             </div>
-            <span class="text-sm text-text-muted w-8 text-right">{p.seats}</span>
-          </div>
+            <span class="text-sm text-text-muted text-right">{p.seats}</span>
+          </>
         ))}
       </div>
     </div>
@@ -109,39 +109,39 @@ const totalRegions = stats.regionStats.length;
       <h2 class="text-lg font-bold mb-4">Gender Representation</h2>
 
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Party</h3>
-      <div class="space-y-2 mb-6">
+      <div class="grid items-center gap-x-3 gap-y-2 mb-6" style="grid-template-columns: auto 1fr auto;">
         {stats.femaleByParty.map((p) => {
           const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
           return (
-            <div class="flex items-center gap-3">
-              <span class="text-sm min-w-[140px] truncate">{p.name}</span>
-              <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+            <>
+              <span class="text-sm whitespace-nowrap">{p.name}</span>
+              <div class="h-5 bg-callout-bg rounded overflow-hidden">
                 <div
                   class="h-full bg-accent rounded"
                   style={`width: ${pct}%`}
                 ></div>
               </div>
-              <span class="text-sm text-text-muted w-16 text-right">{p.female}/{p.total}</span>
-            </div>
+              <span class="text-sm text-text-muted text-right">{p.female}/{p.total}</span>
+            </>
           );
         })}
       </div>
 
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Region</h3>
-      <div class="space-y-2">
+      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
         {stats.femaleByRegion.map((r) => {
           const pct = r.total > 0 ? (r.female / r.total) * 100 : 0;
           return (
-            <div class="flex items-center gap-3">
-              <span class="text-sm min-w-[140px] truncate">{r.name}</span>
-              <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+            <>
+              <span class="text-sm whitespace-nowrap">{r.name}</span>
+              <div class="h-5 bg-callout-bg rounded overflow-hidden">
                 <div
                   class="h-full bg-accent rounded"
                   style={`width: ${pct}%`}
                 ></div>
               </div>
-              <span class="text-sm text-text-muted w-16 text-right">{r.female}/{r.total}</span>
-            </div>
+              <span class="text-sm text-text-muted text-right">{r.female}/{r.total}</span>
+            </>
           );
         })}
       </div>
@@ -212,18 +212,18 @@ const totalRegions = stats.regionStats.length;
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Party Reach</h2>
       <p class="text-sm text-text-muted mb-3">Regions where each party holds seats (out of {totalRegions})</p>
-      <div class="space-y-2">
+      <div class="grid items-center gap-x-3 gap-y-2" style="grid-template-columns: auto 1fr auto;">
         {partyReach.map((p) => (
-          <div class="flex items-center gap-3">
-            <a href={`/parties/${p.slug}`} class="text-sm min-w-[140px] truncate hover:text-accent transition-colors">{p.name}</a>
-            <div class="flex-1 h-5 bg-callout-bg rounded overflow-hidden">
+          <>
+            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors">{p.name}</a>
+            <div class="h-5 bg-callout-bg rounded overflow-hidden">
               <div
                 class="h-full bg-olive rounded"
                 style={`width: ${(p.regionCount / totalRegions) * 100}%`}
               ></div>
             </div>
-            <span class="text-sm text-text-muted w-12 text-right">{p.regionCount}/{totalRegions}</span>
-          </div>
+            <span class="text-sm text-text-muted text-right">{p.regionCount}/{totalRegions}</span>
+          </>
         ))}
       </div>
     </div>
