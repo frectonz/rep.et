@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#3d2b1f"/>
+      <stop offset="100%" stop-color="#2d1e14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.4" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#4a3628" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3d2b1f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Large Ethiopic characters - top area (subtler for text readability) -->
+  <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#5c4033">
+    <text x="60" y="110" font-size="90" opacity="0.13">ተ</text>
+    <text x="380" y="85" font-size="70" opacity="0.11">ወ</text>
+    <text x="720" y="125" font-size="80" opacity="0.12">ካ</text>
+    <text x="1020" y="95" font-size="75" opacity="0.11">ዮ</text>
+  </g>
+
+  <!-- Large Ethiopic characters - middle area (more visible) -->
+  <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#5c4033">
+    <text x="120" y="310" font-size="100" opacity="0.2">ሕ</text>
+    <text x="480" y="270" font-size="85" opacity="0.18">ዝ</text>
+    <text x="780" y="340" font-size="95" opacity="0.19">ብ</text>
+    <text x="1060" y="290" font-size="75" opacity="0.17">ች</text>
+  </g>
+
+  <!-- Large Ethiopic characters - bottom area (most visible) -->
+  <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#6b4e3a">
+    <text x="60" y="490" font-size="110" opacity="0.25">ኢ</text>
+    <text x="320" y="540" font-size="95" opacity="0.23">ት</text>
+    <text x="580" y="470" font-size="105" opacity="0.24">ዮ</text>
+    <text x="840" y="520" font-size="90" opacity="0.22">ጵ</text>
+    <text x="1060" y="490" font-size="100" opacity="0.23">ያ</text>
+  </g>
+
+  <!-- Smaller accent characters scattered -->
+  <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#5c4033">
+    <text x="240" y="195" font-size="40" opacity="0.16">ሀ</text>
+    <text x="560" y="175" font-size="36" opacity="0.14">ለ</text>
+    <text x="880" y="215" font-size="42" opacity="0.15">ሐ</text>
+    <text x="1140" y="165" font-size="32" opacity="0.13">መ</text>
+    <text x="40" y="400" font-size="38" opacity="0.2">ሠ</text>
+    <text x="400" y="420" font-size="44" opacity="0.19">ረ</text>
+    <text x="680" y="400" font-size="36" opacity="0.18">ሰ</text>
+    <text x="950" y="430" font-size="42" opacity="0.19">ቀ</text>
+    <text x="200" y="580" font-size="36" opacity="0.22">በ</text>
+    <text x="470" y="595" font-size="40" opacity="0.2">ነ</text>
+    <text x="730" y="575" font-size="44" opacity="0.21">አ</text>
+    <text x="960" y="595" font-size="38" opacity="0.2">ከ</text>
+  </g>
+
+  <!-- Ethiopian cross-inspired motifs -->
+  <g fill="none" stroke="#c8962d">
+    <!-- Cross 1 - right side upper -->
+    <g transform="translate(1100, 240)" opacity="0.2" stroke-width="1.5">
+      <circle r="12"/>
+      <circle r="20"/>
+      <line x1="0" y1="-26" x2="0" y2="26"/>
+      <line x1="-26" y1="0" x2="26" y2="0"/>
+    </g>
+    <!-- Cross 2 - center bottom -->
+    <g transform="translate(520, 460)" opacity="0.16" stroke-width="1">
+      <circle r="10"/>
+      <circle r="16"/>
+      <line x1="0" y1="-22" x2="0" y2="22"/>
+      <line x1="-22" y1="0" x2="22" y2="0"/>
+    </g>
+    <!-- Cross 3 - left bottom -->
+    <g transform="translate(280, 510)" opacity="0.18" stroke-width="1.5">
+      <circle r="8"/>
+      <circle r="14"/>
+      <line x1="0" y1="-18" x2="0" y2="18"/>
+      <line x1="-18" y1="0" x2="18" y2="0"/>
+    </g>
+    <!-- Cross 4 - right bottom -->
+    <g transform="translate(940, 370)" opacity="0.14" stroke-width="1">
+      <circle r="14"/>
+      <circle r="22"/>
+      <line x1="0" y1="-28" x2="0" y2="28"/>
+      <line x1="-28" y1="0" x2="28" y2="0"/>
+    </g>
+    <!-- Cross 5 - top area (subtle) -->
+    <g transform="translate(650, 150)" opacity="0.1" stroke-width="1">
+      <circle r="8"/>
+      <circle r="13"/>
+      <line x1="0" y1="-17" x2="0" y2="17"/>
+      <line x1="-17" y1="0" x2="17" y2="0"/>
+    </g>
+  </g>
+
+  <!-- Diamond/rhombus shapes -->
+  <g fill="none" stroke="#c8962d" stroke-width="1.2">
+    <path d="M750,490 l16,-16 l16,16 l-16,16 z" opacity="0.16"/>
+    <path d="M1000,160 l11,-11 l11,11 l-11,11 z" opacity="0.12"/>
+    <path d="M180,440 l13,-13 l13,13 l-13,13 z" opacity="0.15"/>
+    <path d="M420,370 l9,-9 l9,9 l-9,9 z" opacity="0.13"/>
+    <path d="M1130,470 l12,-12 l12,12 l-12,12 z" opacity="0.17"/>
+    <path d="M300,300 l10,-10 l10,10 l-10,10 z" opacity="0.11"/>
+    <path d="M850,280 l8,-8 l8,8 l-8,8 z" opacity="0.1"/>
+  </g>
+
+  <!-- Scattered gold dots -->
+  <g fill="#c8962d">
+    <circle cx="100" cy="350" r="2.5" opacity="0.2"/>
+    <circle cx="270" cy="395" r="2" opacity="0.17"/>
+    <circle cx="440" cy="495" r="3" opacity="0.18"/>
+    <circle cx="620" cy="345" r="2" opacity="0.16"/>
+    <circle cx="810" cy="445" r="2.5" opacity="0.19"/>
+    <circle cx="1000" cy="510" r="2" opacity="0.17"/>
+    <circle cx="1150" cy="370" r="3" opacity="0.15"/>
+    <circle cx="160" cy="545" r="2" opacity="0.18"/>
+    <circle cx="540" cy="555" r="2.5" opacity="0.16"/>
+    <circle cx="890" cy="555" r="2" opacity="0.17"/>
+    <circle cx="440" cy="145" r="2" opacity="0.1"/>
+    <circle cx="850" cy="125" r="2" opacity="0.09"/>
+    <circle cx="650" cy="205" r="2" opacity="0.1"/>
+    <circle cx="350" cy="250" r="2" opacity="0.12"/>
+    <circle cx="1080" cy="150" r="2" opacity="0.08"/>
+  </g>
+
+  <!-- Bottom gold accent line -->
+  <line x1="60" y1="565" x2="1140" y2="565" stroke="#c8962d" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Small decorative triangles along the accent line -->
+  <g fill="#c8962d" opacity="0.18">
+    <polygon points="60,565 67,555 74,565"/>
+    <polygon points="180,565 187,555 194,565"/>
+    <polygon points="300,565 307,555 314,565"/>
+    <polygon points="420,565 427,555 434,565"/>
+    <polygon points="540,565 547,555 554,565"/>
+    <polygon points="660,565 667,555 674,565"/>
+    <polygon points="780,565 787,555 794,565"/>
+    <polygon points="900,565 907,555 914,565"/>
+    <polygon points="1020,565 1027,555 1034,565"/>
+    <polygon points="1134,565 1141,555 1148,565"/>
+  </g>
+
+  <!-- Bottom branding -->
+  <text x="1140" y="605" text-anchor="end" font-family="Georgia, 'Playfair Display', serif" font-size="26" fill="#c8962d" opacity="0.45" font-weight="bold" letter-spacing="2">rep.et</text>
+  <text x="1042" y="605" text-anchor="end" font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" font-size="18" fill="#a08060" opacity="0.35">ተወካዮች</text>
+
+  <!-- Corner bracket decorations -->
+  <g stroke="#c8962d" stroke-width="1.5" fill="none" opacity="0.18">
+    <path d="M1158,48 L1158,28 L1138,28"/>
+    <path d="M1168,58 L1168,18 L1128,18"/>
+    <path d="M42,582 L42,602 L62,602"/>
+    <path d="M32,572 L32,612 L72,612"/>
+    <path d="M1158,582 L1158,602 L1138,602"/>
+    <path d="M1168,572 L1168,612 L1128,612"/>
+  </g>
+</svg>

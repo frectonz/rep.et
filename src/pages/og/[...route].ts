@@ -107,6 +107,11 @@ export const { getStaticPaths, GET } = await OGImageRoute({
       path: "./src/assets/og-bg.png",
       fit: "cover",
     },
+    logo: {
+      path: "./src/assets/og-logo.png",
+      size: [80],
+    },
+    padding: 70,
     fonts: [
       "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-400-normal.ttf",
       "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-700-normal.ttf",
