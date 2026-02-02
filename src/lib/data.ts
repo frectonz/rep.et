@@ -1,4 +1,4 @@
-import rawData from "../../../election-6/coordinates.json";
+import rawData from "../../election-6/coordinates.json";
 
 export interface Representative {
   region: string;
