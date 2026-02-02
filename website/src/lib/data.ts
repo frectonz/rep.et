@@ -10,6 +10,28 @@ export interface Representative {
   lat: number;
   lng: number;
   slug: string;
+  province?: string;
+  county?: string;
+  municipality?: string;
+  borough?: string;
+  district?: string;
+}
+
+export function formatPlace(rep: Representative): string | null {
+  const parts = [
+    rep.province,
+    rep.county,
+    rep.municipality,
+    rep.borough,
+    rep.district,
+  ];
+  const deduped: string[] = [];
+  for (const part of parts) {
+    if (part && part !== deduped[deduped.length - 1]) {
+      deduped.push(part);
+    }
+  }
+  return deduped.length > 0 ? deduped.join(", ") : null;
 }
 
 function generateSlug(location: string): string {

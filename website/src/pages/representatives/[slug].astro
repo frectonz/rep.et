@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import {
   MapPinned,
+  MapPin,
   Globe,
   Landmark,
   User,
@@ -10,7 +11,12 @@ import {
   Share2,
   X,
 } from "@lucide/astro";
-import { representatives, getBySlug, regionSlug } from "../../lib/data";
+import {
+  representatives,
+  getBySlug,
+  regionSlug,
+  formatPlace,
+} from "../../lib/data";
 
 export function getStaticPaths() {
   return representatives.map((rep) => ({
@@ -24,6 +30,8 @@ const rep = getBySlug(slug);
 if (!rep) {
   return Astro.redirect("/representatives");
 }
+
+const place = formatPlace(rep);
 ---
 
 <Layout title={`${rep.candidate} — rep.et`} description={`${rep.candidate}, representative for ${rep.location} in ${rep.region}. ${rep.party}.`}>
@@ -97,6 +105,16 @@ if (!rep) {
             <p class="font-medium text-lg">{rep.votes.toLocaleString()}</p>
           </div>
         </div>
+
+        {place && (
+          <div class="flex items-start gap-3">
+            <MapPin class="w-4 h-4 mt-0.5 text-accent shrink-0" />
+            <div>
+              <span class="text-xs uppercase tracking-wider text-text-muted">Location</span>
+              <p class="font-medium">{place}</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
 
