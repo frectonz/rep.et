@@ -22,19 +22,12 @@ const totalSeats = representatives.length;
       <h2 class="text-lg font-bold mb-4">Seat Distribution</h2>
 
       <!-- SVG Seat Chart -->
-      <div class="flex justify-center mb-6 overflow-x-auto">
-        <img
-          src="/hopr-seats.svg"
-          alt="Parliament seat distribution"
-          id="seat-chart-img"
-          class="max-w-full h-auto"
-          style="display: none;"
-        />
-        <div id="seat-chart-container" class="inline-block"></div>
+      <div class="flex justify-center mb-6">
+        <div id="seat-chart-container" class="w-full max-w-[550px]"></div>
       </div>
 
       <!-- Party Legend with Hover -->
-      <div class="flex flex-wrap gap-4 text-sm" id="party-legend">
+      <div class="flex flex-col items-start sm:flex-row sm:items-center sm:flex-wrap sm:justify-center gap-2 sm:gap-4 text-sm" id="party-legend">
         {stats.map((p, i) => {
           const colors = [
             "#5a6e3c", "#c8962d", "#8b5e3c", "#3d2b1f", "#a87b24",
@@ -61,7 +54,7 @@ const totalSeats = representatives.length;
           <span class="seat-count text-text-muted tabular-nums">(76)</span>
         </div>
         <div class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg border border-transparent cursor-default" data-party="reserve">
-          <span class="w-4 h-4 rounded-sm shrink-0" style="background-color: #E0E0E0;"></span>
+          <span class="w-4 h-4 rounded-sm shrink-0" style="background-color: #BDBDBD;"></span>
           <span class="font-medium text-text-muted">Reserve</span>
           <span class="seat-count text-text-muted tabular-nums">(39)</span>
         </div>
@@ -113,6 +106,10 @@ const totalSeats = representatives.length;
       container.innerHTML = svgText;
       var svg = container.querySelector('svg');
       if (!svg) return;
+
+      svg.setAttribute('width', '100%');
+      svg.setAttribute('height', 'auto');
+      svg.style.display = 'block';
 
       var legendItems = document.querySelectorAll('.party-legend-item');
       var allSeats = svg.querySelectorAll('.seat');
