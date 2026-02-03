@@ -30,8 +30,8 @@ const approxMap: Record<string, [number, number, string]> = {
   Yechereqa: [10.2, 37.34, "Debre Elias area, East Gojam"],
   // Yejuba - likely in West Gojam
   Yejuba: [10.66, 37.17, "Jabi Tehnan area, West Gojam"],
-  // Meranga - possibly near Merawi, West Gojam
-  Meranga: [11.42, 37.16, "Merawi area, West Gojam"],
+  // Merawi, West Gojam
+  Merawi: [11.42, 37.16, "Merawi, West Gojam"],
   // Degwa Tsyon - placing near Tenta, South Wello
   "Degwa Tsyon": [11.21, 39.23, "Tenta area, South Wello"],
   // Agulicho - placing in Arsi zone
