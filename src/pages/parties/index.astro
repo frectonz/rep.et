@@ -20,35 +20,51 @@ const totalSeats = representatives.length;
 
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-4">Seat Distribution</h2>
-      <div class="flex rounded overflow-hidden h-8 mb-4">
+
+      <!-- SVG Seat Chart -->
+      <div class="flex justify-center mb-6 overflow-x-auto">
+        <img
+          src="/hopr-seats.svg"
+          alt="Parliament seat distribution"
+          id="seat-chart-img"
+          class="max-w-full h-auto"
+          style="display: none;"
+        />
+        <div id="seat-chart-container" class="inline-block"></div>
+      </div>
+
+      <!-- Party Legend with Hover -->
+      <div class="flex flex-wrap gap-4 text-sm" id="party-legend">
         {stats.map((p, i) => {
           const colors = [
             "#5a6e3c", "#c8962d", "#8b5e3c", "#3d2b1f", "#a87b24",
             "#5c4033", "#7a6b60", "#d9cfc5", "#2c1810", "#f0e8de",
           ];
           const color = colors[i % colors.length];
-          const width = (p.seats / totalSeats) * 100;
-          return width > 1 ? (
-            <div
-              style={`width: ${width}%; background-color: ${color};`}
-              title={`${p.name}: ${p.seats} seats`}
-            ></div>
-          ) : null;
-        })}
-      </div>
-      <div class="flex flex-wrap gap-3 text-xs">
-        {stats.slice(0, 6).map((p, i) => {
-          const colors = [
-            "#5a6e3c", "#c8962d", "#8b5e3c", "#3d2b1f", "#a87b24",
-            "#5c4033",
-          ];
+          const slug = p.name.toLowerCase().replace(/ /g, "-").replace(/'/g, "");
           return (
-            <span class="flex items-center gap-1.5">
-              <span class="w-3 h-3 rounded-sm inline-block" style={`background-color: ${colors[i]};`}></span>
-              {p.name}
-            </span>
+            <button
+              type="button"
+              class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border"
+              data-party={p.name}
+              data-slug={slug}
+            >
+              <span class="w-4 h-4 rounded-sm shrink-0" style={`background-color: ${color};`}></span>
+              <span class="font-medium">{p.name}</span>
+              <span class="seat-count text-text-muted tabular-nums">({p.seats})</span>
+            </button>
           );
         })}
+        <div class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg border border-transparent cursor-default" data-party="unoccupied">
+          <span class="w-4 h-4 rounded-sm shrink-0" style="background-color: #78909C;"></span>
+          <span class="font-medium text-text-muted">Unoccupied</span>
+          <span class="seat-count text-text-muted tabular-nums">(76)</span>
+        </div>
+        <div class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg border border-transparent cursor-default" data-party="reserve">
+          <span class="w-4 h-4 rounded-sm shrink-0" style="background-color: #E0E0E0;"></span>
+          <span class="font-medium text-text-muted">Reserve</span>
+          <span class="seat-count text-text-muted tabular-nums">(39)</span>
+        </div>
       </div>
     </div>
 
@@ -87,3 +103,45 @@ const totalSeats = representatives.length;
     </div>
   </div>
 </Layout>
+
+<script is:inline>
+  (function() {
+    var container = document.getElementById('seat-chart-container');
+    if (!container) return;
+
+    fetch('/hopr-seats.svg').then(function(r) { return r.text(); }).then(function(svgText) {
+      container.innerHTML = svgText;
+      var svg = container.querySelector('svg');
+      if (!svg) return;
+
+      var legendItems = document.querySelectorAll('.party-legend-item');
+      var allSeats = svg.querySelectorAll('.seat');
+
+      legendItems.forEach(function(item) {
+        var partyName = item.getAttribute('data-party');
+
+        item.addEventListener('mouseenter', function() {
+          allSeats.forEach(function(seat) {
+            if (seat.getAttribute('data-party') === partyName) {
+              seat.classList.add('highlighted');
+              seat.classList.remove('dimmed');
+            } else {
+              seat.classList.add('dimmed');
+              seat.classList.remove('highlighted');
+            }
+          });
+          var countEl = item.querySelector('.seat-count');
+          if (countEl) countEl.classList.add('font-bold', 'text-primary');
+        });
+
+        item.addEventListener('mouseleave', function() {
+          allSeats.forEach(function(seat) {
+            seat.classList.remove('highlighted', 'dimmed');
+          });
+          var countEl = item.querySelector('.seat-count');
+          if (countEl) countEl.classList.remove('font-bold', 'text-primary');
+        });
+      });
+    });
+  })();
+</script>
