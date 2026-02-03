@@ -38,7 +38,7 @@ const totalSeats = representatives.length;
           return (
             <button
               type="button"
-              class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border"
+              class="party-legend-item flex items-center gap-2 p-1 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border"
               data-party={p.name}
               data-slug={slug}
             >
@@ -48,12 +48,18 @@ const totalSeats = representatives.length;
             </button>
           );
         })}
-        <div class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg border border-transparent cursor-default" data-party="unoccupied">
+        <div
+          class="party-legend-item flex items-center gap-2 p-1 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border"
+          data-party="unoccupied"
+        >
           <span class="w-4 h-4 rounded-sm shrink-0" style="background-color: #78909C;"></span>
           <span class="font-medium text-text-muted">Unoccupied</span>
           <span class="seat-count text-text-muted tabular-nums">(76)</span>
         </div>
-        <div class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg border border-transparent cursor-default" data-party="reserve">
+        <div
+          class="party-legend-item flex items-center gap-2 p-1 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border"
+          data-party="reserve"
+        >
           <span class="w-4 h-4 rounded-sm shrink-0" style="background-color: #BDBDBD;"></span>
           <span class="font-medium text-text-muted">Reserve</span>
           <span class="seat-count text-text-muted tabular-nums">(39)</span>
