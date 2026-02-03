@@ -13,7 +13,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Addis Ketema",
-    "district": "Addis Ketema (AA)"
+    "district": "Addis Ketema (AA)",
+    "image": "/members/Hon_Ambassador_Tawfik_Abdullahi_Ahmed.webp"
   },
   {
     "region": "Addis Ababa",
@@ -29,7 +30,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Kirkos",
-    "district": "Woreda 04"
+    "district": "Woreda 04",
+    "image": "/members/Hon_Dr_Dilamo_Otere_Frange.webp"
   },
   {
     "region": "Addis Ababa",
@@ -45,7 +47,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Akaki Kaliti",
-    "district": "Akaki - Kalit"
+    "district": "Akaki - Kalit",
+    "image": "/members/hon_Dr_TIGIST_WUHIB_TSEGA.webp"
   },
   {
     "region": "Addis Ababa",
@@ -61,7 +64,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Akaki Kaliti",
-    "district": "Akaki - Kalit"
+    "district": "Akaki - Kalit",
+    "image": "/members/HON_Pro_ENDALKACHEW_LELISA_DURESA.webp"
   },
   {
     "region": "Addis Ababa",
@@ -77,7 +81,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Yeka",
-    "district": "Woreda 11"
+    "district": "Woreda 11",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -93,7 +98,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Arada",
-    "district": "Arada"
+    "district": "Arada",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -109,7 +115,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Bole",
-    "district": "Woreda 07"
+    "district": "Woreda 07",
+    "image": "/members/Hon_D_r_SELESHI_BEKELE_AWLACHEW.webp"
   },
   {
     "region": "Addis Ababa",
@@ -125,7 +132,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Kirkos",
-    "district": "Woreda 08"
+    "district": "Woreda 08",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -141,7 +149,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Gulale",
-    "district": "Woreda 02"
+    "district": "Woreda 02",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -157,7 +166,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Arada",
-    "district": "Arada"
+    "district": "Arada",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -173,7 +183,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Yeka",
-    "district": "Woreda 08"
+    "district": "Woreda 08",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -189,7 +200,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Arada",
-    "district": "Arada"
+    "district": "Arada",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -205,14 +217,15 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Yeka",
-    "district": "Woreda 09"
+    "district": "Woreda 09",
+    "image": "/members/Hon_Engineer_HIWOT_MOSSISA_DERESSE.webp"
   },
   {
     "region": "Addis Ababa",
     "location": "Constituency 4",
     "candidate": "Mulu Yirga Sahle",
     "party": "Prosperity Party",
-    "gender": "Male",
+    "gender": "Female",
     "votes": 15385,
     "lat": 9.02,
     "lng": 38.755,
@@ -221,7 +234,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Kirkos",
-    "district": "Woreda 07"
+    "district": "Woreda 07",
+    "image": "/members/Hon_W_ro_Mulu_Yirga_Sahele.webp"
   },
   {
     "region": "Addis Ababa",
@@ -237,7 +251,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Lideta",
-    "district": "Woreda 01"
+    "district": "Woreda 01",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -253,7 +268,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Yeka",
-    "district": "Woreda 10"
+    "district": "Woreda 10",
+    "image": "/members/hon_Prof_HIRUT_W_MARIAM_TEKETEL.webp"
   },
   {
     "region": "Addis Ababa",
@@ -269,7 +285,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Yeka",
-    "district": "Woreda 03"
+    "district": "Woreda 03",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -285,7 +302,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Nefas Silk",
-    "district": "Woreda 07"
+    "district": "Woreda 07",
+    "image": "/members/Hon_Amb_DINA_MUFTI_LEDI.webp"
   },
   {
     "region": "Addis Ababa",
@@ -301,7 +319,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Lideta",
-    "district": "Woreda 01"
+    "district": "Woreda 01",
+    "image": "/members/Hon_Dr_KAIREDIN_TEZERA_ADERA.webp"
   },
   {
     "region": "Addis Ababa",
@@ -317,7 +336,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Gulale",
-    "district": "Woreda 07"
+    "district": "Woreda 07",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -333,7 +353,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Arada",
-    "district": "Arada"
+    "district": "Arada",
+    "image": "/members/Hon_Ato_MOHAMMED_MOHAMMEDKEMAL_ALI_AL_ARUSI.webp"
   },
   {
     "region": "Addis Ababa",
@@ -349,7 +370,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Kirkos",
-    "district": "Woreda 06"
+    "district": "Woreda 06",
+    "image": null
   },
   {
     "region": "Addis Ababa",
@@ -365,7 +387,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Yeka",
-    "district": "Woreda 02"
+    "district": "Woreda 02",
+    "image": "/members/Hon_D_r_Behelhem_Lakew_Sisay.webp"
   },
   {
     "region": "Afar",
@@ -381,7 +404,8 @@
     "county": "Gabi",
     "municipality": "Gabi",
     "borough": "Gabi",
-    "district": "Amibara"
+    "district": "Amibara",
+    "image": "/members/hon_Ato_Abdu_Hassan_Mohamed.webp"
   },
   {
     "region": "Afar",
@@ -397,7 +421,8 @@
     "county": "Awusi",
     "municipality": "Awusi",
     "borough": "Awusi",
-    "district": "Dubti town"
+    "district": "Dubti town",
+    "image": null
   },
   {
     "region": "Afar",
@@ -413,7 +438,8 @@
     "county": "Kilbati",
     "municipality": "Kilbati",
     "borough": "Kilbati",
-    "district": "Abaala town"
+    "district": "Abaala town",
+    "image": null
   },
   {
     "region": "Afar",
@@ -429,7 +455,8 @@
     "county": "Gabi",
     "municipality": "Gabi",
     "borough": "Gabi",
-    "district": "Awash"
+    "district": "Awash",
+    "image": "/members/Hon_W_ro_Fatuma_Ali_Ibrahim.webp"
   },
   {
     "region": "Afar",
@@ -445,7 +472,8 @@
     "county": "Awusi",
     "municipality": "Awusi",
     "borough": "Awusi",
-    "district": "Asayita town"
+    "district": "Asayita town",
+    "image": "/members/Hon_Eng_Hasna_Hanfere.webp"
   },
   {
     "region": "Afar",
@@ -461,14 +489,15 @@
     "county": "Fanti",
     "municipality": "Fanti",
     "borough": "Fanti",
-    "district": "Gulina"
+    "district": "Gulina",
+    "image": "/members/Hon_Ato_HAMEDU_GEAS_MOHAMMED.webp"
   },
   {
     "region": "Amhara",
     "location": "Debre Birhan",
     "candidate": "Genet Bete Gerawork",
     "party": "Prosperity Party",
-    "gender": "Male",
+    "gender": "Female",
     "votes": 26183,
     "lat": 9.6752117,
     "lng": 39.5324899,
@@ -477,7 +506,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Debre Berhan town"
+    "district": "Debre Berhan town",
+    "image": "/members/Hon_W_ro_Genet_Bete_Gerawork.webp"
   },
   {
     "region": "Amhara",
@@ -493,14 +523,15 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Finote Selam town"
+    "district": "Finote Selam town",
+    "image": null
   },
   {
     "region": "Amhara",
     "location": "Gerchech",
     "candidate": "Tiruaynet Temesgen Ayalew",
     "party": "Prosperity Party",
-    "gender": "Male",
+    "gender": "Female",
     "votes": 12747,
     "lat": 10.065,
     "lng": 39.5,
@@ -509,7 +540,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Menze Lalo Midir"
+    "district": "Menze Lalo Midir",
+    "image": "/members/Hon_W_ro_TIRUAYNET_TEMESGEN_AYALEW.webp"
   },
   {
     "region": "Amhara",
@@ -525,7 +557,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Aleme Ketma"
+    "district": "Aleme Ketma",
+    "image": "/members/Hon_Dr_Mahatme_Haile_Workeneh.webp"
   },
   {
     "region": "Amhara",
@@ -541,7 +574,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Dera (AM)"
+    "district": "Dera (AM)",
+    "image": "/members/Hon_Ato_ABERE_ADAMU_TEFERI.webp"
   },
   {
     "region": "Amhara",
@@ -557,7 +591,8 @@
     "county": "Awi",
     "municipality": "Awi",
     "borough": "Awi",
-    "district": "Dangila town"
+    "district": "Dangila town",
+    "image": "/members/Hon_w_r_YESHIHASAB_TSEGAW_WELELAW.webp"
   },
   {
     "region": "Amhara",
@@ -573,7 +608,8 @@
     "county": "North Gondar",
     "municipality": "North Gondar",
     "borough": "North Gondar",
-    "district": "Debark town"
+    "district": "Debark town",
+    "image": "/members/Hon_Ato_AMSAL_AMARE_ABATE.webp"
   },
   {
     "region": "Amhara",
@@ -589,7 +625,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Sayint"
+    "district": "Sayint",
+    "image": "/members/Hon_Ato_Ejigu_Melake_G_Meskel.webp"
   },
   {
     "region": "Amhara",
@@ -605,7 +642,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Lay Gayint"
+    "district": "Lay Gayint",
+    "image": "/members/Hon_Ato_EWNETE_ALENE_YALEW.webp"
   },
   {
     "region": "Amhara",
@@ -621,7 +659,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Tach Gayint"
+    "district": "Tach Gayint",
+    "image": "/members/Hon_W_ro_SENAIT_ASRADEW_KOKEBE.webp"
   },
   {
     "region": "Amhara",
@@ -637,7 +676,8 @@
     "county": "West Gondar",
     "municipality": "West Gondar",
     "borough": "West Gondar",
-    "district": "Quara"
+    "district": "Quara",
+    "image": "/members/Hon_W_ro_Sosna_Getahun_azene.webp"
   },
   {
     "region": "Amhara",
@@ -653,7 +693,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Siya Debirna Wayu"
+    "district": "Siya Debirna Wayu",
+    "image": "/members/Hon_D_r_DEREJE_TEKLEMARIAM_GEBREMESKEL.webp"
   },
   {
     "region": "Amhara",
@@ -669,7 +710,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Jabi Tehnan"
+    "district": "Jabi Tehnan",
+    "image": "/members/Hon_Dr_ABEBAW_DESALEW_BAYABL.webp"
   },
   {
     "region": "Amhara",
@@ -685,7 +727,8 @@
     "county": "North Wollo",
     "municipality": "North Wollo",
     "borough": "North Wollo",
-    "district": "Meket"
+    "district": "Meket",
+    "image": "/members/Hon_Ato_Temesgen_Ambachew_Biresaw.webp"
   },
   {
     "region": "Amhara",
@@ -701,7 +744,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Gonder town"
+    "district": "Gonder town",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -717,7 +761,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Michakel"
+    "district": "Michakel",
+    "image": "/members/Hon_Ass_Pro_Ababaw_Ayalew_Gal.webp"
   },
   {
     "region": "Amhara",
@@ -733,7 +778,8 @@
     "county": "North Gondar",
     "municipality": "North Gondar",
     "borough": "North Gondar",
-    "district": "Janamora"
+    "district": "Janamora",
+    "image": "/members/HON_ATO_BAYABL_MULATE_FITGU.webp"
   },
   {
     "region": "Amhara",
@@ -749,7 +795,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Bibugn"
+    "district": "Bibugn",
+    "image": "/members/Hon_W_ro_Maeza_Asmare_Abtew.webp"
   },
   {
     "region": "Amhara",
@@ -765,7 +812,8 @@
     "county": "Awi",
     "municipality": "Awi",
     "borough": "Awi",
-    "district": "Chagni town"
+    "district": "Chagni town",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -781,7 +829,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Bahirdar Zuria"
+    "district": "Bahirdar Zuria",
+    "image": "/members/Hon_Ato_Zemene_Hailu_Mekonnen.webp"
   },
   {
     "region": "Amhara",
@@ -797,7 +846,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Bahirdar Zuria"
+    "district": "Bahirdar Zuria",
+    "image": "/members/Hon_Ato_Zelalem_Melak_Bogale.webp"
   },
   {
     "region": "Amhara",
@@ -813,7 +863,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Mota Town"
+    "district": "Mota Town",
+    "image": "/members/Hon_Ato_MAMO_ESMEALEM_MIHRETU.webp"
   },
   {
     "region": "Amhara",
@@ -829,7 +880,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Debre Markos town"
+    "district": "Debre Markos town",
+    "image": "/members/HON_Dr_YESHIMEBET_DEMISE_SEWAGEGNEHU.webp"
   },
   {
     "region": "Amhara",
@@ -845,7 +897,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Jabi Tehnan"
+    "district": "Jabi Tehnan",
+    "image": "/members/Hon_Dr_Amb_Yeshimebrat_Mersha_kasa.webp"
   },
   {
     "region": "Amhara",
@@ -861,7 +914,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Hagere Mariam"
+    "district": "Hagere Mariam",
+    "image": "/members/Hon_Ato_Suwerk_Tafese_Goshu.webp"
   },
   {
     "region": "Amhara",
@@ -877,7 +931,8 @@
     "county": "Awi",
     "municipality": "Awi",
     "borough": "Awi",
-    "district": "Fagta Lakoma"
+    "district": "Fagta Lakoma",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -893,7 +948,8 @@
     "county": "Wag Himra",
     "municipality": "Wag Himra",
     "borough": "Wag Himra",
-    "district": "Dehana"
+    "district": "Dehana",
+    "image": "/members/Hon_Ato_Muluken_Assefa_Jenebere.webp"
   },
   {
     "region": "Amhara",
@@ -909,7 +965,8 @@
     "county": "North Gondar",
     "municipality": "North Gondar",
     "borough": "North Gondar",
-    "district": "Janamora"
+    "district": "Janamora",
+    "image": "/members/Hon_Jember_Ayalneh_Biru.webp"
   },
   {
     "region": "Amhara",
@@ -925,7 +982,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Kelela"
+    "district": "Kelela",
+    "image": "/members/Hon_Ato_Mesfin_Dagna_Tafesse.webp"
   },
   {
     "region": "Amhara",
@@ -941,7 +999,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Bahir Dar town"
+    "district": "Bahir Dar town",
+    "image": "/members/Hon_Dessalegn_Chanie_Dagnew_PhD.webp"
   },
   {
     "region": "Amhara",
@@ -957,7 +1016,8 @@
     "county": "North Wollo",
     "municipality": "North Wollo",
     "borough": "North Wollo",
-    "district": "Habru"
+    "district": "Habru",
+    "image": "/members/Hon_W_ro_Gezu_Manaye_Chakol.webp"
   },
   {
     "region": "Amhara",
@@ -973,7 +1033,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Shoa Robit"
+    "district": "Shoa Robit",
+    "image": "/members/Hon_Dr_Tadesse_Beza_G_Tsadik.webp"
   },
   {
     "region": "Amhara",
@@ -989,7 +1050,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Albuko"
+    "district": "Albuko",
+    "image": "/members/Hon_W_ro_Haregwoin_Yimer_Ahmed.webp"
   },
   {
     "region": "Amhara",
@@ -1005,7 +1067,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Semada"
+    "district": "Semada",
+    "image": "/members/Hon_Ato_Kindiya_Aycheluhm_Atalay.webp"
   },
   {
     "region": "Amhara",
@@ -1021,7 +1084,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Fogera"
+    "district": "Fogera",
+    "image": "/members/Hon_W_ro_Dejitnu_Alene_Zewde.webp"
   },
   {
     "region": "Amhara",
@@ -1037,7 +1101,8 @@
     "county": "North Wollo",
     "municipality": "North Wollo",
     "borough": "North Wollo",
-    "district": "Meket"
+    "district": "Meket",
+    "image": "/members/Hon_W_ro_Fikir_Abay_Anawt.webp"
   },
   {
     "region": "Amhara",
@@ -1053,7 +1118,8 @@
     "county": "North Wollo",
     "municipality": "North Wollo",
     "borough": "North Wollo",
-    "district": "Meket"
+    "district": "Meket",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1069,7 +1135,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Gishe Rabel"
+    "district": "Gishe Rabel",
+    "image": "/members/Hon_Ato_ALEMU_DAMTEW_ASHENAFI.webp"
   },
   {
     "region": "Amhara",
@@ -1085,7 +1152,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Gonder town"
+    "district": "Gonder town",
+    "image": "/members/Hon_Ato_Tesfahun_Sisay_Mengistu.webp"
   },
   {
     "region": "Amhara",
@@ -1101,7 +1169,8 @@
     "county": "Wag Himra",
     "municipality": "Wag Himra",
     "borough": "Wag Himra",
-    "district": "Zequala"
+    "district": "Zequala",
+    "image": "/members/Hon_W_ro_Tsehaynesh_Gebre_W_Michael.webp"
   },
   {
     "region": "Amhara",
@@ -1117,7 +1186,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Tarema Ber"
+    "district": "Tarema Ber",
+    "image": "/members/Hon_W_ro_SUMIYA_DESALEW_MOLA.webp"
   },
   {
     "region": "Amhara",
@@ -1133,7 +1203,8 @@
     "county": "North Wollo",
     "municipality": "North Wollo",
     "borough": "North Wollo",
-    "district": "Habru"
+    "district": "Habru",
+    "image": "/members/Hon_Dr_SEID_NURU_ALI.webp"
   },
   {
     "region": "Amhara",
@@ -1149,7 +1220,8 @@
     "county": "Oromia",
     "municipality": "Oromia",
     "borough": "Oromia",
-    "district": "Dewa Cheffa"
+    "district": "Dewa Cheffa",
+    "image": "/members/Hon_w_r_Kedja_Yassin_Mohammed.webp"
   },
   {
     "region": "Amhara",
@@ -1165,7 +1237,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Debre Elias"
+    "district": "Debre Elias",
+    "image": "/members/Hon_Ato_Asemahagn_Aseres.webp"
   },
   {
     "region": "Amhara",
@@ -1181,7 +1254,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Delanta"
+    "district": "Delanta",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1197,7 +1271,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Bechena Town"
+    "district": "Bechena Town",
+    "image": "/members/Hon_Ato_ASCHALE_ALAMERE_MELESSE.webp"
   },
   {
     "region": "Amhara",
@@ -1213,7 +1288,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Farta"
+    "district": "Farta",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1229,7 +1305,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Dera (AM)"
+    "district": "Dera (AM)",
+    "image": "/members/Hon_Ato_Tewbo_Mihereit_Molla.webp"
   },
   {
     "region": "Amhara",
@@ -1245,7 +1322,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Tenta"
+    "district": "Tenta",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1261,7 +1339,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Kalu"
+    "district": "Kalu",
+    "image": "/members/Hon_Ato_Mohammed_Hassan_Abu.webp"
   },
   {
     "region": "Amhara",
@@ -1277,7 +1356,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Kalu"
+    "district": "Kalu",
+    "image": "/members/Hon_Dr_Eng_Kemal_Mohammed_Zeynu.webp"
   },
   {
     "region": "Amhara",
@@ -1293,7 +1373,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Wereilu town"
+    "district": "Wereilu town",
+    "image": "/members/Hon_Ato_DEBEBE_ADMASU_YILMA.webp"
   },
   {
     "region": "Amhara",
@@ -1309,7 +1390,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Semada"
+    "district": "Semada",
+    "image": "/members/HON_ATO_GASHAW_DAGNEW_LAKEW.webp"
   },
   {
     "region": "Amhara",
@@ -1325,7 +1407,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Fogera"
+    "district": "Fogera",
+    "image": "/members/Hon_Dr_Balew_Baye_Assefa.webp"
   },
   {
     "region": "Amhara",
@@ -1341,7 +1424,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Tenta"
+    "district": "Tenta",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1357,7 +1441,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Kalu"
+    "district": "Kalu",
+    "image": "/members/Hon_W_ro_ABUNE_ALEM_TEMESGEN.webp"
   },
   {
     "region": "Amhara",
@@ -1373,7 +1458,8 @@
     "county": "North Gondar",
     "municipality": "North Gondar",
     "borough": "North Gondar",
-    "district": "Dabat town"
+    "district": "Dabat town",
+    "image": "/members/Hon_Teacher_Atsede_Mamo_Tamale.webp"
   },
   {
     "region": "Amhara",
@@ -1389,7 +1475,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Minjar Shenkora"
+    "district": "Minjar Shenkora",
+    "image": "/members/Hon_Ato_BEGASHAW_TEKLU_ALEMAYEHU.webp"
   },
   {
     "region": "Amhara",
@@ -1405,7 +1492,8 @@
     "county": "Oromia",
     "municipality": "Oromia",
     "borough": "Oromia",
-    "district": "Artuma Fursi"
+    "district": "Artuma Fursi",
+    "image": "/members/Hon_Ato_AHMED_HASSEN_MOHAMMED.webp"
   },
   {
     "region": "Amhara",
@@ -1421,7 +1509,8 @@
     "county": "North Wollo",
     "municipality": "North Wollo",
     "borough": "North Wollo",
-    "district": "Guba Lafto"
+    "district": "Guba Lafto",
+    "image": "/members/Hon_Ato_Alemu_Getahun_Sisay.webp"
   },
   {
     "region": "Amhara",
@@ -1437,7 +1526,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Mojan Wedera"
+    "district": "Mojan Wedera",
+    "image": "/members/Hon_w_r_WERKSEMU_MAMO_MEKONNEN.webp"
   },
   {
     "region": "Amhara",
@@ -1453,7 +1543,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Bure town"
+    "district": "Bure town",
+    "image": "/members/Hon_Dr_Zegeye_Muluye_Asres.webp"
   },
   {
     "region": "Amhara",
@@ -1469,7 +1560,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Sayint"
+    "district": "Sayint",
+    "image": "/members/Hon_Ato_Alemu_Jemberu_Ayalew.webp"
   },
   {
     "region": "Amhara",
@@ -1485,7 +1577,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Michakel"
+    "district": "Michakel",
+    "image": "/members/Hon_Dr_Mastewal_Mekonen_Siyeneh.webp"
   },
   {
     "region": "Amhara",
@@ -1501,7 +1594,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Gonder town"
+    "district": "Gonder town",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1517,7 +1611,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Mekdela"
+    "district": "Mekdela",
+    "image": "/members/Hon_W_ro_Lubaba_Seyidi_Legasi.webp"
   },
   {
     "region": "Amhara",
@@ -1533,7 +1628,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Dera (AM)"
+    "district": "Dera (AM)",
+    "image": "/members/Hon_Ato_Tadesse_Getu_Alemu.webp"
   },
   {
     "region": "Amhara",
@@ -1549,7 +1645,8 @@
     "county": "Wag Himra",
     "municipality": "Wag Himra",
     "borough": "Wag Himra",
-    "district": "Dehana"
+    "district": "Dehana",
+    "image": "/members/Hon_W_ro_KIDIST_ARAYA_TASEW.webp"
   },
   {
     "region": "Amhara",
@@ -1565,7 +1662,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Gonje"
+    "district": "Gonje",
+    "image": "/members/Hon_W_ro_Destaye_Tilahun_Misker.webp"
   },
   {
     "region": "Amhara",
@@ -1581,7 +1679,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Dessie town"
+    "district": "Dessie town",
+    "image": "/members/Hon_Ato_Seyid_Mohammed_Hussein.webp"
   },
   {
     "region": "Amhara",
@@ -1597,7 +1696,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Menze Lalo Midir"
+    "district": "Menze Lalo Midir",
+    "image": "/members/Hon_W_r_TALEF_FITIHAWEK_ENDESHAW.webp"
   },
   {
     "region": "Amhara",
@@ -1613,7 +1713,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Ebenat"
+    "district": "Ebenat",
+    "image": "/members/Hon_Dr_Hirut_Kassaw_Wondim.webp"
   },
   {
     "region": "Amhara",
@@ -1629,7 +1730,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Merawi town"
+    "district": "Merawi town",
+    "image": "/members/Hon_Ato_TEWACHEW_ABEBE_YIMER.webp"
   },
   {
     "region": "Amhara",
@@ -1645,7 +1747,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Debre Elias"
+    "district": "Debre Elias",
+    "image": "/members/Hon_Ato_TESFAHUN_BOGALE_JEMBER.webp"
   },
   {
     "region": "Amhara",
@@ -1661,7 +1764,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Debub Achefer"
+    "district": "Debub Achefer",
+    "image": "/members/Hon_Ato_MULAT_TELAYNEH_ASRATE.webp"
   },
   {
     "region": "Amhara",
@@ -1677,7 +1781,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Wegera"
+    "district": "Wegera",
+    "image": "/members/Hon_Ato_MESFIN_ERKABE_MIRACH.webp"
   },
   {
     "region": "Amhara",
@@ -1693,7 +1798,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Libokemekem"
+    "district": "Libokemekem",
+    "image": "/members/Hon_W_r_YEMENGIST_TSEGAW_WALELIGN.webp"
   },
   {
     "region": "Amhara",
@@ -1709,7 +1815,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Jabi Tehnan"
+    "district": "Jabi Tehnan",
+    "image": "/members/Hon_W_ro_ZELALEM_TADESSE_AYALEW.webp"
   },
   {
     "region": "Amhara",
@@ -1725,7 +1832,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Wegera"
+    "district": "Wegera",
+    "image": "/members/Hon_W_ro_yezina_mulati_zeleke.webp"
   },
   {
     "region": "Amhara",
@@ -1741,7 +1849,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Sayint"
+    "district": "Sayint",
+    "image": "/members/Hon_Ato_ABATE_AREGA_ATALAY.webp"
   },
   {
     "region": "Amhara",
@@ -1757,7 +1866,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Fogera"
+    "district": "Fogera",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1773,7 +1883,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Tach Armacho"
+    "district": "Tach Armacho",
+    "image": "/members/Hon_Ato_TILAHUN_TAMIRAT_MULU.webp"
   },
   {
     "region": "Amhara",
@@ -1789,7 +1900,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Hulet Ej Enese"
+    "district": "Hulet Ej Enese",
+    "image": "/members/Hon_W_r_WUDALAT_MINWUYE_BAYIH.webp"
   },
   {
     "region": "Amhara",
@@ -1805,7 +1917,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Dejen"
+    "district": "Dejen",
+    "image": "/members/Hon_Ato_Muluken_Admasu_Emru.webp"
   },
   {
     "region": "Amhara",
@@ -1821,7 +1934,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Merawi town"
+    "district": "Merawi town",
+    "image": "/members/Hon_Dr_Zewdu_Tadesse_Wondimkun.webp"
   },
   {
     "region": "Amhara",
@@ -1837,7 +1951,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Basona Worena"
+    "district": "Basona Worena",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1853,7 +1968,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Ebenat"
+    "district": "Ebenat",
+    "image": "/members/Hon_Dr_HELINA_AKELEW_TADESSE.webp"
   },
   {
     "region": "Amhara",
@@ -1869,7 +1985,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Denbecha town"
+    "district": "Denbecha town",
+    "image": "/members/Hon_Dr_Molla_Feleke_Desta.webp"
   },
   {
     "region": "Amhara",
@@ -1885,7 +2002,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Goncha Siso Enebse"
+    "district": "Goncha Siso Enebse",
+    "image": "/members/Hon_Ato_Adane_Teshome_Getahun.webp"
   },
   {
     "region": "Amhara",
@@ -1901,7 +2019,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Tenta"
+    "district": "Tenta",
+    "image": "/members/Hon_W_ro_Wubete_Tadege_Nibret.webp"
   },
   {
     "region": "Amhara",
@@ -1917,7 +2036,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Quarit"
+    "district": "Quarit",
+    "image": "/members/Hon_Dr_Christian_Tadele_Tsegaye.webp"
   },
   {
     "region": "Amhara",
@@ -1933,7 +2053,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Wemberma"
+    "district": "Wemberma",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -1949,7 +2070,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Gonder town"
+    "district": "Gonder town",
+    "image": "/members/Hon_W_r_Tesfanesh_Tefera_Asres.webp"
   },
   {
     "region": "Amhara",
@@ -1965,7 +2087,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Tarema Ber"
+    "district": "Tarema Ber",
+    "image": "/members/Hon_w_r_Meseret_Haile_Masresha.webp"
   },
   {
     "region": "Amhara",
@@ -1981,7 +2104,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Lay Gayint"
+    "district": "Lay Gayint",
+    "image": "/members/Hon_Ato_ALMAW_TIGABU_MELESSE.webp"
   },
   {
     "region": "Amhara",
@@ -1997,7 +2121,8 @@
     "county": "Wag Himra",
     "municipality": "Wag Himra",
     "borough": "Wag Himra",
-    "district": "Gaz Gibla"
+    "district": "Gaz Gibla",
+    "image": "/members/Hon_W_ro_ETAFERAHU_ZEGEYE_AMBAW.webp"
   },
   {
     "region": "Amhara",
@@ -2013,7 +2138,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Gonder town"
+    "district": "Gonder town",
+    "image": "/members/Hon_Ato_TESFAHUN_SIMEGN_KEBEDE.webp"
   },
   {
     "region": "Amhara",
@@ -2029,7 +2155,8 @@
     "county": "West Gondar",
     "municipality": "West Gondar",
     "borough": "West Gondar",
-    "district": "Quara"
+    "district": "Quara",
+    "image": "/members/Hon_Ato_ADANE_MANDE_DAMTEW.webp"
   },
   {
     "region": "Amhara",
@@ -2045,7 +2172,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Aneded"
+    "district": "Aneded",
+    "image": "/members/Hon_Ato_Teshome_Wale_Gesesse.webp"
   },
   {
     "region": "Amhara",
@@ -2061,7 +2189,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Awabel"
+    "district": "Awabel",
+    "image": "/members/Hon_W_ro_Simneshi_Sahlu_Teum.webp"
   },
   {
     "region": "Amhara",
@@ -2077,7 +2206,8 @@
     "county": "Awi",
     "municipality": "Awi",
     "borough": "Awi",
-    "district": "Ayehu Guwagusa"
+    "district": "Ayehu Guwagusa",
+    "image": "/members/Hon_Prof_GETNET_TADELE_TEFERA.webp"
   },
   {
     "region": "Amhara",
@@ -2093,7 +2223,8 @@
     "county": "North Gondar",
     "municipality": "North Gondar",
     "borough": "North Gondar",
-    "district": "Beyeda"
+    "district": "Beyeda",
+    "image": "/members/Hon_W_r_AMSAL_MENGISTU_ALEMU.webp"
   },
   {
     "region": "Amhara",
@@ -2109,7 +2240,8 @@
     "county": "West Gojam",
     "municipality": "West Gojam",
     "borough": "West Gojam",
-    "district": "Semen Achefer"
+    "district": "Semen Achefer",
+    "image": "/members/Hon_Ato_GETAHUN_LIMENH_ABEGAZ.webp"
   },
   {
     "region": "Amhara",
@@ -2125,7 +2257,8 @@
     "county": "East Gojam",
     "municipality": "East Gojam",
     "borough": "East Gojam",
-    "district": "Enarj Enawga"
+    "district": "Enarj Enawga",
+    "image": "/members/Hon_W_ro_Sewasewi_Tizazu_Abate.webp"
   },
   {
     "region": "Amhara",
@@ -2141,7 +2274,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "East Esite"
+    "district": "East Esite",
+    "image": "/members/Hon_D_r_DESTAW_MEKUANINT_MEZENGIYA.webp"
   },
   {
     "region": "Amhara",
@@ -2157,7 +2291,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Dessie town"
+    "district": "Dessie town",
+    "image": "/members/Hon_W_ro_Rahmet_Awel_Mohammed.webp"
   },
   {
     "region": "Amhara",
@@ -2173,7 +2308,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Ebenat"
+    "district": "Ebenat",
+    "image": "/members/HON_ATO_ESUBALEW_MEBRATE_TESEMA.webp"
   },
   {
     "region": "Amhara",
@@ -2189,7 +2325,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "West Esite"
+    "district": "West Esite",
+    "image": "/members/Hon_W_ro_Almaz_Temesgen_Sisay.webp"
   },
   {
     "region": "Amhara",
@@ -2205,7 +2342,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Moretna Jiru"
+    "district": "Moretna Jiru",
+    "image": "/members/Hon_Ato_ZINAYE_NEGASH_ZEMEDU.webp"
   },
   {
     "region": "Amhara",
@@ -2221,7 +2359,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Tarema Ber"
+    "district": "Tarema Ber",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -2237,7 +2376,8 @@
     "county": "South Gondar",
     "municipality": "South Gondar",
     "borough": "South Gondar",
-    "district": "Sede Muja"
+    "district": "Sede Muja",
+    "image": "/members/Hon_W_ro_Meaza_Assefa_Ergete.webp"
   },
   {
     "region": "Amhara",
@@ -2253,7 +2393,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Aleme Ketma"
+    "district": "Aleme Ketma",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -2269,7 +2410,8 @@
     "county": "Awi",
     "municipality": "Awi",
     "borough": "Awi",
-    "district": "Guagusa Shikudad"
+    "district": "Guagusa Shikudad",
+    "image": "/members/Hon_Dr_Nikuse_Mituku_Gelaw.webp"
   },
   {
     "region": "Amhara",
@@ -2285,7 +2427,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Gonder Zuria"
+    "district": "Gonder Zuria",
+    "image": "/members/Hon_W_ro_MEAZA_TIGABE_ALEMU.webp"
   },
   {
     "region": "Amhara",
@@ -2301,7 +2444,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Worebabu"
+    "district": "Worebabu",
+    "image": "/members/Hon_W_ro_LUBABA_IBRAHIM_HASSEN.webp"
   },
   {
     "region": "Amhara",
@@ -2317,7 +2461,8 @@
     "county": "West Gondar",
     "municipality": "West Gondar",
     "borough": "West Gondar",
-    "district": "Quara"
+    "district": "Quara",
+    "image": "/members/Hon_W_ro_YEZIBALEM_KASSE_YISMAW.webp"
   },
   {
     "region": "Amhara",
@@ -2333,7 +2478,8 @@
     "county": "South Wollo",
     "municipality": "South Wollo",
     "borough": "South Wollo",
-    "district": "Kelela"
+    "district": "Kelela",
+    "image": null
   },
   {
     "region": "Amhara",
@@ -2349,7 +2495,8 @@
     "county": "Central Gondar",
     "municipality": "Central Gondar",
     "borough": "Central Gondar",
-    "district": "Chilga 1"
+    "district": "Chilga 1",
+    "image": "/members/Hon_W_ro_DEBRITU_TADEGE_MENGESHA.webp"
   },
   {
     "region": "Amhara",
@@ -2365,7 +2512,8 @@
     "county": "North Shewa (AM)",
     "municipality": "North Shewa (AM)",
     "borough": "North Shewa (AM)",
-    "district": "Mehale Meda town"
+    "district": "Mehale Meda town",
+    "image": "/members/Hon_Ato_Wondwosen_Admase_Tadesse.webp"
   },
   {
     "region": "Oromia",
@@ -2381,7 +2529,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Nono"
+    "district": "Nono",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2397,7 +2546,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Goba Koricha"
+    "district": "Goba Koricha",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2413,7 +2563,8 @@
     "county": "Horo Guduru",
     "municipality": "Horo Guduru",
     "borough": "Horo Guduru",
-    "district": "Shambu town"
+    "district": "Shambu town",
+    "image": "/members/hon_Dr_GEREMU_HULUKA_AMANU.webp"
   },
   {
     "region": "Oromia",
@@ -2429,7 +2580,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Nunu Kumba"
+    "district": "Nunu Kumba",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2445,7 +2597,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Degem"
+    "district": "Degem",
+    "image": "/members/Hon_Ato_Solomon_Kuchu_Robi.webp"
   },
   {
     "region": "Oromia",
@@ -2461,7 +2614,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Gera"
+    "district": "Gera",
+    "image": "/members/Hon_Ato_MOGA_ABABULGU_ABAKEBE.webp"
   },
   {
     "region": "Oromia",
@@ -2477,7 +2631,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Goro Gutu"
+    "district": "Goro Gutu",
+    "image": "/members/Hon_Ato_Sadik_Adem_Umer.webp"
   },
   {
     "region": "Oromia",
@@ -2493,7 +2648,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Toke Kutaye"
+    "district": "Toke Kutaye",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2505,7 +2661,8 @@
     "lat": 8.931952,
     "lng": 38.662407,
     "geocode_source": "nominatim",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": "/members/Hon_W_ro_Gelane_Bikila_Woyecha.webp"
   },
   {
     "region": "Oromia",
@@ -2521,14 +2678,15 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Kersa (East Hararge)"
+    "district": "Kersa (East Hararge)",
+    "image": "/members/hon_W_ro_Genet_Abraham_yayu.webp"
   },
   {
     "region": "Oromia",
     "location": "Wenchi",
     "candidate": "Naggasee Baayisaa Dubbiiwaaq",
     "party": "Prosperity Party",
-    "gender": "Female",
+    "gender": "Male",
     "votes": 21625,
     "lat": 8.7948903,
     "lng": 37.8910436,
@@ -2537,7 +2695,8 @@
     "county": "South West Shewa",
     "municipality": "South West Shewa",
     "borough": "South West Shewa",
-    "district": "Wenchi"
+    "district": "Wenchi",
+    "image": "/members/Hon_Ato_Negasse_Bayissa_Dubiwak.webp"
   },
   {
     "region": "Oromia",
@@ -2553,7 +2712,8 @@
     "county": "Ilubabor",
     "municipality": "Ilubabor",
     "borough": "Ilubabor",
-    "district": "Bilo Nopha"
+    "district": "Bilo Nopha",
+    "image": "/members/Hon_Ato_Etefa_Obsa_Duresa.webp"
   },
   {
     "region": "Oromia",
@@ -2569,7 +2729,8 @@
     "county": "Buno Bedele",
     "municipality": "Buno Bedele",
     "borough": "Buno Bedele",
-    "district": "Gechi"
+    "district": "Gechi",
+    "image": "/members/Hon_W_r_LIDIA_CHALI_ARGETA.webp"
   },
   {
     "region": "Oromia",
@@ -2580,7 +2741,8 @@
     "votes": 191809,
     "lat": 3.5241898,
     "lng": 39.0512683,
-    "geocode_source": "nominatim"
+    "geocode_source": "nominatim",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2596,7 +2758,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Daro Lebu"
+    "district": "Daro Lebu",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2612,7 +2775,8 @@
     "county": "Borena",
     "municipality": "Borena",
     "borough": "Borena",
-    "district": "Yabelo town"
+    "district": "Yabelo town",
+    "image": "/members/Hon_W_r_Tia_Mio_Arsawa.webp"
   },
   {
     "region": "Oromia",
@@ -2628,7 +2792,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Bedesa"
+    "district": "Bedesa",
+    "image": "/members/Hon_S_r_AMIRA_MOHAMMED_AHMED.webp"
   },
   {
     "region": "Oromia",
@@ -2644,7 +2809,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Dugda"
+    "district": "Dugda",
+    "image": "/members/Hon_W_ro_Lomi_Bedo_Kumbi.webp"
   },
   {
     "region": "Oromia",
@@ -2660,7 +2826,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Goro (Bale)"
+    "district": "Goro (Bale)",
+    "image": "/members/hon_Ato_Fuad_Abafita_Ababulgo.webp"
   },
   {
     "region": "Oromia",
@@ -2676,7 +2843,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Robe Town"
+    "district": "Robe Town",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2692,7 +2860,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Deder"
+    "district": "Deder",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2704,7 +2873,8 @@
     "lat": 8.890525,
     "lng": 38.661273,
     "geocode_source": "nominatim",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": "/members/Hon_W_r_Meseret_Assefa_Godana.webp"
   },
   {
     "region": "Oromia",
@@ -2720,7 +2890,8 @@
     "county": "Buno Bedele",
     "municipality": "Buno Bedele",
     "borough": "Buno Bedele",
-    "district": "Dedesa"
+    "district": "Dedesa",
+    "image": "/members/Hon_D_r_ABDUSEMED_HUSSEN_ABO.webp"
   },
   {
     "region": "Oromia",
@@ -2736,7 +2907,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Mieso"
+    "district": "Mieso",
+    "image": "/members/Hon_W_ro_HAYAT_YUSUF_MOHAMMED.webp"
   },
   {
     "region": "Oromia",
@@ -2752,7 +2924,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Kuyu"
+    "district": "Kuyu",
+    "image": "/members/hon_Dr_BIRHANU_MEGERSA_LENJISO.webp"
   },
   {
     "region": "Oromia",
@@ -2768,7 +2941,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Dodola town"
+    "district": "Dodola town",
+    "image": "/members/Hon_Dr_Lencho_Ayala_Bati.webp"
   },
   {
     "region": "Oromia",
@@ -2784,7 +2958,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Omo Beyam"
+    "district": "Omo Beyam",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2800,7 +2975,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Limu (OR)"
+    "district": "Limu (OR)",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2812,7 +2988,8 @@
     "lat": 8.75,
     "lng": 38.833333333,
     "geocode_source": "wikidata",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": "/members/Hon_Ato_SHIFERA_TELILA_SENBETU.webp"
   },
   {
     "region": "Oromia",
@@ -2828,7 +3005,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Sibu Sire"
+    "district": "Sibu Sire",
+    "image": "/members/hon_Dr_Diriba_Galati_Chali.webp"
   },
   {
     "region": "Oromia",
@@ -2844,7 +3022,8 @@
     "county": "Ilubabor",
     "municipality": "Ilubabor",
     "borough": "Ilubabor",
-    "district": "Yayu"
+    "district": "Yayu",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2860,7 +3039,8 @@
     "county": "Horo Guduru",
     "municipality": "Horo Guduru",
     "borough": "Horo Guduru",
-    "district": "Jarte Jardega"
+    "district": "Jarte Jardega",
+    "image": "/members/Hon_Ato_Ayele_Negeri_Gibo.webp"
   },
   {
     "region": "Oromia",
@@ -2876,7 +3056,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Ambo Zuria"
+    "district": "Ambo Zuria",
+    "image": "/members/Hon_W_ro_Tafesse_Muleta_Tesso.webp"
   },
   {
     "region": "Oromia",
@@ -2892,7 +3073,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Agarfa"
+    "district": "Agarfa",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2904,7 +3086,8 @@
     "lat": 8.8305486,
     "lng": 38.8523187,
     "geocode_source": "nominatim",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2920,7 +3103,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Nejo town"
+    "district": "Nejo town",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -2936,7 +3120,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Berbere"
+    "district": "Berbere",
+    "image": "/members/Hon_W_r_MEBRAT_BACHA_WAKJIRA.webp"
   },
   {
     "region": "Oromia",
@@ -2952,7 +3137,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Seka Chekorsa"
+    "district": "Seka Chekorsa",
+    "image": "/members/Hon_W_ro_LATIFA_A_TEMAM_A_GISA.webp"
   },
   {
     "region": "Oromia",
@@ -2968,7 +3154,8 @@
     "county": "Kelem",
     "municipality": "Kelem",
     "borough": "Kelem",
-    "district": "Yama Logi Welel"
+    "district": "Yama Logi Welel",
+    "image": "/members/Hon_Prof_MIRETU_SHANKO_GIDI.webp"
   },
   {
     "region": "Oromia",
@@ -2984,7 +3171,8 @@
     "county": "South West Shewa",
     "municipality": "South West Shewa",
     "borough": "South West Shewa",
-    "district": "Wenchi"
+    "district": "Wenchi",
+    "image": "/members/Hon_Ato_Sultan_Ibrahim_Abagisa.webp"
   },
   {
     "region": "Oromia",
@@ -3000,7 +3188,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Kokosa"
+    "district": "Kokosa",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3012,7 +3201,8 @@
     "lat": 9.3038762,
     "lng": 38.7513994,
     "geocode_source": "nominatim",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": "/members/Hon_Ato_Essa_Boru_Tola.webp"
   },
   {
     "region": "Oromia",
@@ -3028,7 +3218,8 @@
     "county": "East Bale",
     "municipality": "East Bale",
     "borough": "East Bale",
-    "district": "Gololcha Bale"
+    "district": "Gololcha Bale",
+    "image": "/members/Hon_W_ro_SADIYA_AMAN_GERADO.webp"
   },
   {
     "region": "Oromia",
@@ -3044,7 +3235,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Nole Kaba"
+    "district": "Nole Kaba",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3060,7 +3252,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Aseko"
+    "district": "Aseko",
+    "image": "/members/Hon_W_r_Chaltu_Werje_Tuke.webp"
   },
   {
     "region": "Oromia",
@@ -3076,7 +3269,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Goba town"
+    "district": "Goba town",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3092,7 +3286,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Tulo (OR)"
+    "district": "Tulo (OR)",
+    "image": "/members/Hon_W_r_Asha_Yahya_salehi.webp"
   },
   {
     "region": "Oromia",
@@ -3108,7 +3303,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Omo Beyam"
+    "district": "Omo Beyam",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3124,7 +3320,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Merti"
+    "district": "Merti",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3140,7 +3337,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Debre Libanos"
+    "district": "Debre Libanos",
+    "image": "/members/Hon_Ato_Dita_Nura_Tero.webp"
   },
   {
     "region": "Oromia",
@@ -3156,7 +3354,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Gumay"
+    "district": "Gumay",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3172,7 +3371,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Kimbibit"
+    "district": "Kimbibit",
+    "image": "/members/Hon_W_ro_FANOS_HAILU_ADERA.webp"
   },
   {
     "region": "Oromia",
@@ -3188,7 +3388,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Haromaya town"
+    "district": "Haromaya town",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3204,7 +3405,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Chiro Zuria"
+    "district": "Chiro Zuria",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3220,7 +3422,8 @@
     "county": "Buno Bedele",
     "municipality": "Buno Bedele",
     "borough": "Buno Bedele",
-    "district": "Bedele town"
+    "district": "Bedele town",
+    "image": "/members/Hon_D_r_ENDALU_MULATU_LEMI.webp"
   },
   {
     "region": "Oromia",
@@ -3236,7 +3439,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Shirka"
+    "district": "Shirka",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3248,7 +3452,8 @@
     "lat": 9.083333333,
     "lng": 39,
     "geocode_source": "wikidata",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3264,7 +3469,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Habro"
+    "district": "Habro",
+    "image": "/members/Hon_W_r_Kimia_Jundi_Hamdo.webp"
   },
   {
     "region": "Oromia",
@@ -3280,7 +3486,8 @@
     "county": "Addis Ababa",
     "municipality": "Addis Ababa",
     "borough": "Kolfe Keranio",
-    "district": "Woreda 03"
+    "district": "Woreda 03",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3296,7 +3503,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Bedeno"
+    "district": "Bedeno",
+    "image": "/members/Hon_W_r_Biftu_Hassan_Jebero.webp"
   },
   {
     "region": "Oromia",
@@ -3312,7 +3520,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Limu (OR)"
+    "district": "Limu (OR)",
+    "image": "/members/Hon_W_ro_Shurube_Gemedi_Nuna.webp"
   },
   {
     "region": "Oromia",
@@ -3328,7 +3537,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Bako Tibe"
+    "district": "Bako Tibe",
+    "image": "/members/Hon_W_ro_RAHEL_NEGERO_GUTU.webp"
   },
   {
     "region": "Oromia",
@@ -3344,7 +3554,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Meta"
+    "district": "Meta",
+    "image": "/members/Hon_Ato_Eskinder_Aliye_Abdula.webp"
   },
   {
     "region": "Oromia",
@@ -3360,7 +3571,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Cheliya"
+    "district": "Cheliya",
+    "image": "/members/Hon_W_r_Zara_Mohammed_Adana.webp"
   },
   {
     "region": "Oromia",
@@ -3376,7 +3588,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Meta"
+    "district": "Meta",
+    "image": "/members/Hon_Ato_Mohammed_Ahmed_Musa.webp"
   },
   {
     "region": "Oromia",
@@ -3392,7 +3605,8 @@
     "county": "Dire Dawa rural",
     "municipality": "Dire Dawa rural",
     "borough": "Dire Dawa rural",
-    "district": "Wahil"
+    "district": "Wahil",
+    "image": "/members/Hon_W_r_Martha_Lema_Tulu.webp"
   },
   {
     "region": "Oromia",
@@ -3408,7 +3622,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Mancho"
+    "district": "Mancho",
+    "image": "/members/Hon_W_ro_Ayisha_Shehshifa_Abdurahaman.webp"
   },
   {
     "region": "Oromia",
@@ -3424,7 +3639,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Gera"
+    "district": "Gera",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3440,7 +3656,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Bila Seyo"
+    "district": "Bila Seyo",
+    "image": "/members/Hon_Dr_TANA_GOBENA_FUFA.webp"
   },
   {
     "region": "Oromia",
@@ -3456,7 +3673,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Diga"
+    "district": "Diga",
+    "image": "/members/Hon_W_ro_Tarke_Daba_Bobo.webp"
   },
   {
     "region": "Oromia",
@@ -3472,7 +3690,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Limu Seka"
+    "district": "Limu Seka",
+    "image": "/members/Hon_W_ro_MIRAJ_ZEKIYI_JEMAL.webp"
   },
   {
     "region": "Oromia",
@@ -3488,7 +3707,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Shashemene town"
+    "district": "Shashemene town",
+    "image": "/members/Hon_Dr_Qasim_Kimo_Kebelo.webp"
   },
   {
     "region": "Oromia",
@@ -3504,7 +3724,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Seka Chekorsa"
+    "district": "Seka Chekorsa",
+    "image": "/members/Hon_Ato_KALID_ABA_MECHA_HAJI.webp"
   },
   {
     "region": "Oromia",
@@ -3520,7 +3741,8 @@
     "county": "Kelem",
     "municipality": "Kelem",
     "borough": "Kelem",
-    "district": "Dale Wabera"
+    "district": "Dale Wabera",
+    "image": "/members/Hon_Dr_NEGERI_LENCHO_BULTUM.webp"
   },
   {
     "region": "Oromia",
@@ -3536,7 +3758,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Bora (OR)"
+    "district": "Bora (OR)",
+    "image": "/members/Hon_Ato_Chala_Lami_Argane.webp"
   },
   {
     "region": "Oromia",
@@ -3552,7 +3775,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Adaba"
+    "district": "Adaba",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3568,7 +3792,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Kofele"
+    "district": "Kofele",
+    "image": "/members/Hon_W_ro_Zara_Biftu_Nabi.webp"
   },
   {
     "region": "Oromia",
@@ -3584,7 +3809,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Setema"
+    "district": "Setema",
+    "image": "/members/Hon_Dr_NURZEMAN_JIBRIL_NEGEWO.webp"
   },
   {
     "region": "Oromia",
@@ -3600,7 +3826,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Nole Kaba"
+    "district": "Nole Kaba",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3616,7 +3843,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Mancho"
+    "district": "Mancho",
+    "image": "/members/Hon_W_ro_Chaltu_Mohommed_Abdurahmn.webp"
   },
   {
     "region": "Oromia",
@@ -3632,7 +3860,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Cobi"
+    "district": "Cobi",
+    "image": "/members/Hon_Ato_GUDETA_BELELCHA_SEFISA.webp"
   },
   {
     "region": "Oromia",
@@ -3648,7 +3877,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Wara Jarso"
+    "district": "Wara Jarso",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3664,7 +3894,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Nekemte town"
+    "district": "Nekemte town",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3680,7 +3911,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Dodota"
+    "district": "Dodota",
+    "image": "/members/Hon_W_ro_NEIMA_USMAN_ADEM.webp"
   },
   {
     "region": "Oromia",
@@ -3696,7 +3928,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Siraro"
+    "district": "Siraro",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3712,7 +3945,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Adama town"
+    "district": "Adama town",
+    "image": "/members/Hon_Dr_TESHOME_ABDO_SEGNI.webp"
   },
   {
     "region": "Oromia",
@@ -3728,7 +3962,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Adama"
+    "district": "Adama",
+    "image": "/members/Hon_W_r_Kumaale_Gadisa_Obse.webp"
   },
   {
     "region": "Oromia",
@@ -3744,7 +3979,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Lome (OR)"
+    "district": "Lome (OR)",
+    "image": "/members/Hon_Ato_Kedir_Gena_Abdulkadir.webp"
   },
   {
     "region": "Oromia",
@@ -3760,7 +3996,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Fedis"
+    "district": "Fedis",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3776,7 +4013,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Chiro Zuria"
+    "district": "Chiro Zuria",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -3792,7 +4030,8 @@
     "county": "Kelem",
     "municipality": "Kelem",
     "borough": "Kelem",
-    "district": "Denbi Dollo town"
+    "district": "Denbi Dollo town",
+    "image": "/members/Hon_Dr_Leta_Tesfaye_Jule.webp"
   },
   {
     "region": "Oromia",
@@ -3808,7 +4047,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Leta Sibu"
+    "district": "Leta Sibu",
+    "image": "/members/Hon_W_ro_Arare_Mosisa_Etisa.webp"
   },
   {
     "region": "Oromia",
@@ -3824,7 +4064,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Deder"
+    "district": "Deder",
+    "image": "/members/Hon_Dr_Eng_ELIAS_AHMED_SADIK.webp"
   },
   {
     "region": "Oromia",
@@ -3840,7 +4081,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Limu Kosa"
+    "district": "Limu Kosa",
+    "image": "/members/Hon_W_ro_Muslim_Rashid_A_Gidi.webp"
   },
   {
     "region": "Oromia",
@@ -3856,7 +4098,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Adama Tulu Jido Kombolcha"
+    "district": "Adama Tulu Jido Kombolcha",
+    "image": "/members/Hon_Dr_Usheto_Hobicho_Dabelo.webp"
   },
   {
     "region": "Oromia",
@@ -3872,7 +4115,8 @@
     "county": "Ilubabor",
     "municipality": "Ilubabor",
     "borough": "Ilubabor",
-    "district": "Ale"
+    "district": "Ale",
+    "image": "/members/Hon_Dr_Dima_Nogo_Serbo.webp"
   },
   {
     "region": "Oromia",
@@ -3888,7 +4132,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Doba"
+    "district": "Doba",
+    "image": "/members/Hon_Ato_Juhar_Mohammed.webp"
   },
   {
     "region": "Oromia",
@@ -3904,7 +4149,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Wuchale"
+    "district": "Wuchale",
+    "image": "/members/Hon_As_Prof_Adamu_Kenea_Daba.webp"
   },
   {
     "region": "Oromia",
@@ -3920,7 +4166,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Goro (Bale)"
+    "district": "Goro (Bale)",
+    "image": "/members/Hon_Ato_Ibrahim_Umar_Aliyi.webp"
   },
   {
     "region": "Oromia",
@@ -3936,7 +4183,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Sibu Sire"
+    "district": "Sibu Sire",
+    "image": "/members/Hon_W_r_AYANTU_GUTATA_FITE.webp"
   },
   {
     "region": "Oromia",
@@ -3952,7 +4200,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Kiltu Kara"
+    "district": "Kiltu Kara",
+    "image": "/members/Hon_Dr_Kefena_Ifa_Delesa.webp"
   },
   {
     "region": "Oromia",
@@ -3968,7 +4217,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Tikur Enchini"
+    "district": "Tikur Enchini",
+    "image": "/members/hon_Ato_Shumi_Ayano_Guto.webp"
   },
   {
     "region": "Oromia",
@@ -3984,7 +4234,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Mendi town"
+    "district": "Mendi town",
+    "image": "/members/Hon_W_ro_BETEL_MELAKUMU_ABDISA.webp"
   },
   {
     "region": "Oromia",
@@ -4000,7 +4251,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Siraro"
+    "district": "Siraro",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4016,7 +4268,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Deder"
+    "district": "Deder",
+    "image": "/members/Hon_W_ro_FERIDA_SHEMSEDIN_MOHAMMED.webp"
   },
   {
     "region": "Oromia",
@@ -4032,7 +4285,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Limu Kosa"
+    "district": "Limu Kosa",
+    "image": "/members/Hon_Ato_KASAHUN_JOBIR_GUDETA.webp"
   },
   {
     "region": "Oromia",
@@ -4048,7 +4302,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Cheliya"
+    "district": "Cheliya",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4060,7 +4315,8 @@
     "lat": 9.36667,
     "lng": 38.68333,
     "geocode_source": "nominatim",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": "/members/Hon_Dr_FIKADU_MENGISTU_ASHEMI.webp"
   },
   {
     "region": "Oromia",
@@ -4076,7 +4332,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Sinana"
+    "district": "Sinana",
+    "image": "/members/Hon_W_r_GENET_KETEMA_BEKELE.webp"
   },
   {
     "region": "Oromia",
@@ -4092,7 +4349,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Yubdo"
+    "district": "Yubdo",
+    "image": "/members/Hon_Ato_Ephrem_Tessema_Taressa.webp"
   },
   {
     "region": "Oromia",
@@ -4108,7 +4366,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Mojo Town"
+    "district": "Mojo Town",
+    "image": "/members/Hon_W_ro_ADDIS_ALEMAYEHU_QUMBI.webp"
   },
   {
     "region": "Oromia",
@@ -4124,7 +4383,8 @@
     "county": "Ilubabor",
     "municipality": "Ilubabor",
     "borough": "Ilubabor",
-    "district": "Metu town"
+    "district": "Metu town",
+    "image": "/members/Hon_Ato_KAMIL_SHEMSU_SIRAJ.webp"
   },
   {
     "region": "Oromia",
@@ -4140,7 +4400,8 @@
     "county": "Buno Bedele",
     "municipality": "Buno Bedele",
     "borough": "Buno Bedele",
-    "district": "Meko"
+    "district": "Meko",
+    "image": "/members/Hon_Ato_Fekadu_Mosisa_Gemeda.webp"
   },
   {
     "region": "Oromia",
@@ -4156,7 +4417,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Kurfa Chele"
+    "district": "Kurfa Chele",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4172,7 +4434,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Debre Libanos"
+    "district": "Debre Libanos",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4188,7 +4451,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Jimma town"
+    "district": "Jimma town",
+    "image": "/members/Hon_Dr_AMINA_ABDURAHMAN_Adem.webp"
   },
   {
     "region": "Oromia",
@@ -4204,7 +4468,8 @@
     "county": "Buno Bedele",
     "municipality": "Buno Bedele",
     "borough": "Buno Bedele",
-    "district": "Chora (Buno Bedele)"
+    "district": "Chora (Buno Bedele)",
+    "image": "/members/Hon_W_ro_Alemnesh_Berhanu_Obsa.webp"
   },
   {
     "region": "Oromia",
@@ -4216,7 +4481,8 @@
     "lat": 9.05,
     "lng": 38.55,
     "geocode_source": "manual",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4232,7 +4498,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Limu Seka"
+    "district": "Limu Seka",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4248,7 +4515,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Bishoftu town"
+    "district": "Bishoftu town",
+    "image": "/members/Hon_Dr_Lema_Abera_Hirpo.webp"
   },
   {
     "region": "Oromia",
@@ -4264,7 +4532,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Gedeb Asasa"
+    "district": "Gedeb Asasa",
+    "image": "/members/Hon_D_r_RUQIYA_ALI_KEWO.webp"
   },
   {
     "region": "Oromia",
@@ -4280,7 +4549,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Gerar Jarso"
+    "district": "Gerar Jarso",
+    "image": "/members/Hon_W_r_MESERET_SHIFERAW_YADETE.webp"
   },
   {
     "region": "Oromia",
@@ -4296,7 +4566,8 @@
     "county": "Kelem",
     "municipality": "Kelem",
     "borough": "Kelem",
-    "district": "Gawo Kebe"
+    "district": "Gawo Kebe",
+    "image": "/members/Hon_W_ro_BAYUSH_BIRHANU_KERORSA.webp"
   },
   {
     "region": "Oromia",
@@ -4312,7 +4583,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Sude"
+    "district": "Sude",
+    "image": "/members/Hon_W_ro_Zeineba_Nura_Bati.webp"
   },
   {
     "region": "Oromia",
@@ -4328,7 +4600,8 @@
     "county": "Ilubabor",
     "municipality": "Ilubabor",
     "borough": "Ilubabor",
-    "district": "Bilo Nopha"
+    "district": "Bilo Nopha",
+    "image": "/members/Hon_Dr_Hangasa_Ahmed_Ibrahim.webp"
   },
   {
     "region": "Oromia",
@@ -4344,7 +4617,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Shashemene town"
+    "district": "Shashemene town",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4360,7 +4634,8 @@
     "county": "West Gujii",
     "municipality": "West Gujii",
     "borough": "West Gujii",
-    "district": "Melka Soda"
+    "district": "Melka Soda",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4376,7 +4651,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Degeluna Tijo"
+    "district": "Degeluna Tijo",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4392,7 +4668,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Ambo Zuria"
+    "district": "Ambo Zuria",
+    "image": "/members/Hon_Ato_SAHLU_DIRIBSA_MOSISA.webp"
   },
   {
     "region": "Oromia",
@@ -4408,14 +4685,15 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Adda Berga"
+    "district": "Adda Berga",
+    "image": "/members/Hon_W_ro_MESKEREM_HAILU_ALULA.webp"
   },
   {
     "region": "Oromia",
     "location": "Hagere Mariam",
     "candidate": "Ashuu Goloolchaa Odaa",
     "party": "Prosperity Party",
-    "gender": "Male",
+    "gender": "Female",
     "votes": 94330,
     "lat": 5.6399545,
     "lng": 38.2393711,
@@ -4424,7 +4702,8 @@
     "county": "West Gujii",
     "municipality": "West Gujii",
     "borough": "West Gujii",
-    "district": "Bule Hora town"
+    "district": "Bule Hora town",
+    "image": "/members/Hon_W_ro_Ashu_Gololcha_Oda.webp"
   },
   {
     "region": "Oromia",
@@ -4440,7 +4719,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Tena"
+    "district": "Tena",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4456,7 +4736,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Guna"
+    "district": "Guna",
+    "image": "/members/Hon_W_ro_Zewdenesh_Tulu_Gashe.webp"
   },
   {
     "region": "Oromia",
@@ -4472,7 +4753,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Gobu Seyo"
+    "district": "Gobu Seyo",
+    "image": "/members/Hon_W_ro_Genet_Waqgari_Fitie.webp"
   },
   {
     "region": "Oromia",
@@ -4488,7 +4770,8 @@
     "county": "East Wellega",
     "municipality": "East Wellega",
     "borough": "East Wellega",
-    "district": "Jimma Arjo"
+    "district": "Jimma Arjo",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4504,7 +4787,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Dano"
+    "district": "Dano",
+    "image": "/members/Hon_Dr_Alemu_Gonfa_Robi.webp"
   },
   {
     "region": "Oromia",
@@ -4520,7 +4804,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Asela town"
+    "district": "Asela town",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4536,7 +4821,8 @@
     "county": "West Wellega",
     "municipality": "West Wellega",
     "borough": "West Wellega",
-    "district": "Yubdo"
+    "district": "Yubdo",
+    "image": "/members/Hon_Ato_Dereje_Debela_Senbeto.webp"
   },
   {
     "region": "Oromia",
@@ -4552,7 +4838,8 @@
     "county": "South West Shewa",
     "municipality": "South West Shewa",
     "borough": "South West Shewa",
-    "district": "Ilu"
+    "district": "Ilu",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4568,7 +4855,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Mena (Bale)"
+    "district": "Mena (Bale)",
+    "image": "/members/Hon_Prof_Dr_Engineer_Mohammed_Abdo.webp"
   },
   {
     "region": "Oromia",
@@ -4584,7 +4872,8 @@
     "county": "Bale",
     "municipality": "Bale",
     "borough": "Bale",
-    "district": "Goro (Bale)"
+    "district": "Goro (Bale)",
+    "image": "/members/HON_Dr_Gusha_Balko_Birbirsa.webp"
   },
   {
     "region": "Oromia",
@@ -4600,7 +4889,8 @@
     "county": "West Shewa",
     "municipality": "West Shewa",
     "borough": "West Shewa",
-    "district": "Tikur Enchini"
+    "district": "Tikur Enchini",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4616,7 +4906,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Girawa"
+    "district": "Girawa",
+    "image": "/members/Hon_Ato_Mohammed_Ahmed_Aliye.webp"
   },
   {
     "region": "Oromia",
@@ -4632,7 +4923,8 @@
     "county": "East Hararge",
     "municipality": "East Hararge",
     "borough": "East Hararge",
-    "district": "Haromaya town"
+    "district": "Haromaya town",
+    "image": "/members/Hon_Engineer_Ibsa_Yusuf_Hassan.webp"
   },
   {
     "region": "Oromia",
@@ -4648,7 +4940,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Limu Bilbilo"
+    "district": "Limu Bilbilo",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4664,7 +4957,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Wuchale"
+    "district": "Wuchale",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4680,7 +4974,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Goba Koricha"
+    "district": "Goba Koricha",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4696,7 +4991,8 @@
     "county": "West Gujii",
     "municipality": "West Gujii",
     "borough": "West Gujii",
-    "district": "Kercha"
+    "district": "Kercha",
+    "image": "/members/Hon_Dr_CHALA_WATA_DERES.webp"
   },
   {
     "region": "Oromia",
@@ -4712,7 +5008,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Limu Bilbilo"
+    "district": "Limu Bilbilo",
+    "image": "/members/Hon_Dr_Illubabor_Buno_Tesso.webp"
   },
   {
     "region": "Oromia",
@@ -4728,7 +5025,8 @@
     "county": "Gujii",
     "municipality": "Gujii",
     "borough": "Gujii",
-    "district": "Uraga"
+    "district": "Uraga",
+    "image": "/members/Hon_Ato_Fraol_Udessa_Gelchu.webp"
   },
   {
     "region": "Oromia",
@@ -4744,7 +5042,8 @@
     "county": "Arsi",
     "municipality": "Arsi",
     "borough": "Arsi",
-    "district": "Jeju"
+    "district": "Jeju",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4760,7 +5059,8 @@
     "county": "West Arsi",
     "municipality": "West Arsi",
     "borough": "West Arsi",
-    "district": "Arsi Negele"
+    "district": "Arsi Negele",
+    "image": "/members/Hon_W_r_Jemanesh_W_Michael_Wege.webp"
   },
   {
     "region": "Oromia",
@@ -4776,7 +5076,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Jimma town"
+    "district": "Jimma town",
+    "image": "/members/Hon_W_ro_LETIFA_A_SAMBI_A_GOJAM.webp"
   },
   {
     "region": "Oromia",
@@ -4792,7 +5093,8 @@
     "county": "Dire Dawa rural",
     "municipality": "Dire Dawa rural",
     "borough": "Dire Dawa rural",
-    "district": "Wahil"
+    "district": "Wahil",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4808,7 +5110,8 @@
     "county": "Ilubabor",
     "municipality": "Ilubabor",
     "borough": "Ilubabor",
-    "district": "Halu /Huka"
+    "district": "Halu /Huka",
+    "image": "/members/Hon_W_ro_ETAGEGNEHU_ESHETU_GUDETA.webp"
   },
   {
     "region": "Oromia",
@@ -4824,7 +5127,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Gera"
+    "district": "Gera",
+    "image": "/members/Hon_Ato_NEZIF_ZINAB_A_LULESSA.webp"
   },
   {
     "region": "Oromia",
@@ -4840,7 +5144,8 @@
     "county": "South West Shewa",
     "municipality": "South West Shewa",
     "borough": "South West Shewa",
-    "district": "Sodo Daci"
+    "district": "Sodo Daci",
+    "image": "/members/Hon_W_ro_ELSABETH_EJIGU_QENA_A.webp"
   },
   {
     "region": "Oromia",
@@ -4856,7 +5161,8 @@
     "county": "Horo Guduru",
     "municipality": "Horo Guduru",
     "borough": "Horo Guduru",
-    "district": "Abay Chomen"
+    "district": "Abay Chomen",
+    "image": "/members/Hon_Dr_ADUGNA_DEBELA_BOTE.webp"
   },
   {
     "region": "Oromia",
@@ -4872,7 +5178,8 @@
     "county": "South West Shewa",
     "municipality": "South West Shewa",
     "borough": "South West Shewa",
-    "district": "Waliso"
+    "district": "Waliso",
+    "image": "/members/hon_KABA_MEBRATU_DAGNE.webp"
   },
   {
     "region": "Oromia",
@@ -4888,7 +5195,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Chiro Zuria"
+    "district": "Chiro Zuria",
+    "image": "/members/Hon_Ato_Nesredin_Abduelmusin.webp"
   },
   {
     "region": "Oromia",
@@ -4904,7 +5212,8 @@
     "county": "South West Shewa",
     "municipality": "South West Shewa",
     "borough": "South West Shewa",
-    "district": "Waliso"
+    "district": "Waliso",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4920,7 +5229,8 @@
     "county": "Gujii",
     "municipality": "Gujii",
     "borough": "Gujii",
-    "district": "Bore"
+    "district": "Bore",
+    "image": "/members/Hon_Ato_Dube_Julo_Maaga.webp"
   },
   {
     "region": "Oromia",
@@ -4936,7 +5246,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Chiro Zuria"
+    "district": "Chiro Zuria",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4952,7 +5263,8 @@
     "county": "West Hararge",
     "municipality": "West Hararge",
     "borough": "West Hararge",
-    "district": "Mesela"
+    "district": "Mesela",
+    "image": null
   },
   {
     "region": "Oromia",
@@ -4968,7 +5280,8 @@
     "county": "East Shewa",
     "municipality": "East Shewa",
     "borough": "East Shewa",
-    "district": "Ada'a"
+    "district": "Ada'a",
+    "image": "/members/Hon_W_r_ALMAZ_WEDAJO_ADIMO.webp"
   },
   {
     "region": "Oromia",
@@ -4984,7 +5297,8 @@
     "county": "North Shewa (OR)",
     "municipality": "North Shewa (OR)",
     "borough": "North Shewa (OR)",
-    "district": "Hidabu Abote"
+    "district": "Hidabu Abote",
+    "image": "/members/Hon_Ato_Lema_Tessema_Yimere.webp"
   },
   {
     "region": "Oromia",
@@ -5000,7 +5314,8 @@
     "county": "East Bale",
     "municipality": "East Bale",
     "borough": "East Bale",
-    "district": "Ginir town"
+    "district": "Ginir town",
+    "image": "/members/Hon_W_r_FANTAYE_LEGESSE_WELDEGIORGIS.webp"
   },
   {
     "region": "Oromia",
@@ -5016,7 +5331,8 @@
     "county": "Jimma",
     "municipality": "Jimma",
     "borough": "Jimma",
-    "district": "Sekoru"
+    "district": "Sekoru",
+    "image": "/members/Hon_Ato_FEYID_SHERAB_SHERIF.webp"
   },
   {
     "region": "Oromia",
@@ -5028,7 +5344,8 @@
     "lat": 9.2893858,
     "lng": 38.8135595,
     "geocode_source": "nominatim_retry",
-    "province": "Oromia"
+    "province": "Oromia",
+    "image": "/members/Hon_W_r_Tsige_Denboba_Ayano.webp"
   },
   {
     "region": "Oromia",
@@ -5044,7 +5361,8 @@
     "county": "Gujii",
     "municipality": "Gujii",
     "borough": "Gujii",
-    "district": "Negele town"
+    "district": "Negele town",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5060,7 +5378,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Yirgalem town"
+    "district": "Yirgalem town",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5076,7 +5395,8 @@
     "county": "Gujii",
     "municipality": "Gujii",
     "borough": "Gujii",
-    "district": "Ana Sora"
+    "district": "Ana Sora",
+    "image": "/members/Hon_W_ro_ADANECH_NASHURA_SAMAGO.webp"
   },
   {
     "region": "Sidama",
@@ -5092,7 +5412,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Aroresa"
+    "district": "Aroresa",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5108,7 +5429,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Gorche"
+    "district": "Gorche",
+    "image": "/members/Hon_Ato_BIRHANU_HANKARA_HATIYA.webp"
   },
   {
     "region": "Sidama",
@@ -5124,7 +5446,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Hulla"
+    "district": "Hulla",
+    "image": "/members/Hon_W_ro_yeshi_muka_Wakaye.webp"
   },
   {
     "region": "Sidama",
@@ -5140,7 +5463,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Aleta Wendo"
+    "district": "Aleta Wendo",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5156,7 +5480,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Aleta Chuko"
+    "district": "Aleta Chuko",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5172,7 +5497,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Hawasa town"
+    "district": "Hawasa town",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5188,7 +5514,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Daye town"
+    "district": "Daye town",
+    "image": "/members/Hon_W_r_Zinash_Tsegaye_Kalo.webp"
   },
   {
     "region": "Sidama",
@@ -5204,7 +5531,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Aleta Chuko"
+    "district": "Aleta Chuko",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5220,7 +5548,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Shafamo"
+    "district": "Shafamo",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5236,7 +5565,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Hawasa town"
+    "district": "Hawasa town",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5252,7 +5582,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Bursa"
+    "district": "Bursa",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5268,7 +5599,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Arbegona"
+    "district": "Arbegona",
+    "image": null
   },
   {
     "region": "Sidama",
@@ -5284,7 +5616,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Leku town"
+    "district": "Leku town",
+    "image": "/members/Hon_Ato_ANESA_MELKO_HEBERO.webp"
   },
   {
     "region": "Sidama",
@@ -5300,7 +5633,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Malga"
+    "district": "Malga",
+    "image": "/members/Hon_Ato_Addisu_Kamiso_Garanba.webp"
   },
   {
     "region": "Sidama",
@@ -5316,7 +5650,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Aleta Wondo town"
+    "district": "Aleta Wondo town",
+    "image": "/members/Hon_w_ro_MESELECH_KEWISO_KAYE.webp"
   },
   {
     "region": "Sidama",
@@ -5332,7 +5667,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Wonosho"
+    "district": "Wonosho",
+    "image": "/members/Hon_Ato_Solomone_Lale_Kalo.webp"
   },
   {
     "region": "Sidama",
@@ -5348,7 +5684,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Dara"
+    "district": "Dara",
+    "image": "/members/Hon_W_ro_ALEMITU_ABEBE_ATISA.webp"
   },
   {
     "region": "SNNPR",
@@ -5364,7 +5701,8 @@
     "county": "Yem",
     "municipality": "Yem",
     "borough": "Yem",
-    "district": "Yem SP Woreda"
+    "district": "Yem SP Woreda",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5380,7 +5718,8 @@
     "county": "Bench Maji",
     "municipality": "Bench Maji",
     "borough": "Bench Maji",
-    "district": "Mizan Aman town"
+    "district": "Mizan Aman town",
+    "image": "/members/Hon_w_r_EYERUSALEM_LEWI_ESSEY.webp"
   },
   {
     "region": "SNNPR",
@@ -5396,7 +5735,8 @@
     "county": "Kembata Tembaro",
     "municipality": "Kembata Tembaro",
     "borough": "Kembata Tembaro",
-    "district": "Angacha"
+    "district": "Angacha",
+    "image": "/members/hon_Dr_Beza_teshome.webp"
   },
   {
     "region": "SNNPR",
@@ -5412,7 +5752,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Ezha"
+    "district": "Ezha",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5428,7 +5769,8 @@
     "county": "Gofa",
     "municipality": "Gofa",
     "borough": "Gofa",
-    "district": "Zala"
+    "district": "Zala",
+    "image": "/members/Hon_W_ro_MITIKNESH_CHELEKE_ATSERO.webp"
   },
   {
     "region": "SNNPR",
@@ -5444,7 +5786,8 @@
     "county": "Hadiya",
     "municipality": "Hadiya",
     "borough": "Hadiya",
-    "district": "Misha"
+    "district": "Misha",
+    "image": "/members/Hon_W_ro_Mulunesh_Lamore_Ushe.webp"
   },
   {
     "region": "SNNPR",
@@ -5460,7 +5803,8 @@
     "county": "Kembata Tembaro",
     "municipality": "Kembata Tembaro",
     "borough": "Kembata Tembaro",
-    "district": "Kacha Bira"
+    "district": "Kacha Bira",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5476,7 +5820,8 @@
     "county": "Dawro",
     "municipality": "Dawro",
     "borough": "Dawro",
-    "district": "Tercha Zuriya"
+    "district": "Tercha Zuriya",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5492,7 +5837,8 @@
     "county": "Gedeo",
     "municipality": "Gedeo",
     "borough": "Gedeo",
-    "district": "Wenago"
+    "district": "Wenago",
+    "image": "/members/Hon_Dr_Eng_Sileshi_Kore_Dube.webp"
   },
   {
     "region": "SNNPR",
@@ -5508,7 +5854,8 @@
     "county": "Kembata Tembaro",
     "municipality": "Kembata Tembaro",
     "borough": "Kembata Tembaro",
-    "district": "Adilo"
+    "district": "Adilo",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5524,7 +5871,8 @@
     "county": "Keffa",
     "municipality": "Keffa",
     "borough": "Keffa",
-    "district": "Gimbo"
+    "district": "Gimbo",
+    "image": "/members/hon_Ato_Melese_Mana_Gemeso.webp"
   },
   {
     "region": "SNNPR",
@@ -5540,7 +5888,8 @@
     "county": "Kembata Tembaro",
     "municipality": "Kembata Tembaro",
     "borough": "Kembata Tembaro",
-    "district": "Damboya"
+    "district": "Damboya",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5556,7 +5905,8 @@
     "county": "South Omo",
     "municipality": "South Omo",
     "borough": "South Omo",
-    "district": "Dasenech /Kuraz"
+    "district": "Dasenech /Kuraz",
+    "image": "/members/Hon_Lobele_Yhirano_Baskwa.webp"
   },
   {
     "region": "SNNPR",
@@ -5572,7 +5922,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Arba Minch town"
+    "district": "Arba Minch town",
+    "image": "/members/Hon_Ato_Tagese_Chafo.webp"
   },
   {
     "region": "SNNPR",
@@ -5588,7 +5939,8 @@
     "county": "Kembata Tembaro",
     "municipality": "Kembata Tembaro",
     "borough": "Kembata Tembaro",
-    "district": "Angacha"
+    "district": "Angacha",
+    "image": "/members/Hon_Dr_DEMEKE_ACHISO_HIRGETO.webp"
   },
   {
     "region": "SNNPR",
@@ -5604,7 +5956,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Silti"
+    "district": "Silti",
+    "image": "/members/HON_Dr_Abraham_Alemayehu.webp"
   },
   {
     "region": "SNNPR",
@@ -5620,7 +5973,8 @@
     "county": "West Gujii",
     "municipality": "West Gujii",
     "borough": "West Gujii",
-    "district": "Suro Berguda"
+    "district": "Suro Berguda",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5636,7 +5990,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Kemba"
+    "district": "Kemba",
+    "image": "/members/Hon_Dr_Tesfaye_Beljige_Dara.webp"
   },
   {
     "region": "SNNPR",
@@ -5652,7 +6007,8 @@
     "county": "Derashe",
     "municipality": "Derashe",
     "borough": "Derashe",
-    "district": "Derashe Special"
+    "district": "Derashe Special",
+    "image": "/members/Hon_Ato_Firew_Tesfaye_Odayte.webp"
   },
   {
     "region": "SNNPR",
@@ -5668,7 +6024,8 @@
     "county": "Dawro",
     "municipality": "Dawro",
     "borough": "Dawro",
-    "district": "Gena"
+    "district": "Gena",
+    "image": "/members/Hon_D_r_ADANE_ALTO_MENGESHA.webp"
   },
   {
     "region": "SNNPR",
@@ -5684,14 +6041,15 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Kibet town"
+    "district": "Kibet town",
+    "image": null
   },
   {
     "region": "SNNPR",
     "location": "Tsemai Liyu",
     "candidate": "Ale Belachew Bala",
     "party": "Prosperity Party",
-    "gender": "Male",
+    "gender": "Female",
     "votes": 8105,
     "lat": 5.38,
     "lng": 36.71,
@@ -5700,7 +6058,8 @@
     "county": "South Omo",
     "municipality": "South Omo",
     "borough": "South Omo",
-    "district": "Bena Tsemay"
+    "district": "Bena Tsemay",
+    "image": "/members/hon_W_ro_ALIE_BELACHEW_BALA.webp"
   },
   {
     "region": "SNNPR",
@@ -5716,7 +6075,8 @@
     "county": "West Gujii",
     "municipality": "West Gujii",
     "borough": "West Gujii",
-    "district": "Abaya"
+    "district": "Abaya",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5732,7 +6092,8 @@
     "county": "Keffa",
     "municipality": "Keffa",
     "borough": "Keffa",
-    "district": "Wacha"
+    "district": "Wacha",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5748,7 +6109,8 @@
     "county": "Konso",
     "municipality": "Konso",
     "borough": "Konso",
-    "district": "Kena"
+    "district": "Kena",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5764,7 +6126,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Garda Marta"
+    "district": "Garda Marta",
+    "image": "/members/hon_Ato_Aknaw_Kawza_malefiya.webp"
   },
   {
     "region": "SNNPR",
@@ -5780,7 +6143,8 @@
     "county": "Konta",
     "municipality": "Konta",
     "borough": "Konta",
-    "district": "Konta"
+    "district": "Konta",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5796,7 +6160,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Sodo Town"
+    "district": "Sodo Town",
+    "image": "/members/Hon_W_r_Etsegenet_Mengistu_Zeleke.webp"
   },
   {
     "region": "SNNPR",
@@ -5812,7 +6177,8 @@
     "county": "Konso",
     "municipality": "Konso",
     "borough": "Konso",
-    "district": "Karat town"
+    "district": "Karat town",
+    "image": "/members/Hon_Ato_Solomon_Soka_ginyarita.webp"
   },
   {
     "region": "SNNPR",
@@ -5828,7 +6194,8 @@
     "county": "Kembata Tembaro",
     "municipality": "Kembata Tembaro",
     "borough": "Kembata Tembaro",
-    "district": "Angacha"
+    "district": "Angacha",
+    "image": "/members/Hon_Ato_Tadele_Buraka_Bushasha_Phd.webp"
   },
   {
     "region": "SNNPR",
@@ -5844,7 +6211,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Tebela town"
+    "district": "Tebela town",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5860,7 +6228,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Mareko"
+    "district": "Mareko",
+    "image": "/members/Hon_W_ro_WERKINESH_JEMAL_ASFAW.webp"
   },
   {
     "region": "SNNPR",
@@ -5876,7 +6245,8 @@
     "county": "Gofa",
     "municipality": "Gofa",
     "borough": "Gofa",
-    "district": "Uba Debre Tsehay"
+    "district": "Uba Debre Tsehay",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5892,7 +6262,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Arba Minch Zuria"
+    "district": "Arba Minch Zuria",
+    "image": "/members/Hon_Ato_ABREHAM_AMOSHE_ASEMA.webp"
   },
   {
     "region": "SNNPR",
@@ -5908,7 +6279,8 @@
     "county": "Gedeo",
     "municipality": "Gedeo",
     "borough": "Gedeo",
-    "district": "Yirgachefe"
+    "district": "Yirgachefe",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -5924,7 +6296,8 @@
     "county": "Gofa",
     "municipality": "Gofa",
     "borough": "Gofa",
-    "district": "Melekoza"
+    "district": "Melekoza",
+    "image": "/members/Hon_Ato_Fikadu_Gawshalo_Memo.webp"
   },
   {
     "region": "SNNPR",
@@ -5940,7 +6313,8 @@
     "county": "Hadiya",
     "municipality": "Hadiya",
     "borough": "Hadiya",
-    "district": "Soro"
+    "district": "Soro",
+    "image": "/members/Hon_Ato_Ebenezer_Bekele_Amare.webp"
   },
   {
     "region": "SNNPR",
@@ -5956,7 +6330,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Gerese"
+    "district": "Gerese",
+    "image": "/members/Hon_W_r_ALEMITU_ASSEFA_TUNDURO.webp"
   },
   {
     "region": "SNNPR",
@@ -5972,7 +6347,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Lanfero"
+    "district": "Lanfero",
+    "image": "/members/Hon_Ato_USMAN_SURUR_SIRAJ.webp"
   },
   {
     "region": "SNNPR",
@@ -5988,7 +6364,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Kawo Koisha"
+    "district": "Kawo Koisha",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6004,7 +6381,8 @@
     "county": "Bench Maji",
     "municipality": "Bench Maji",
     "borough": "Bench Maji",
-    "district": "Shay Bench"
+    "district": "Shay Bench",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6020,7 +6398,8 @@
     "county": "Dawro",
     "municipality": "Dawro",
     "borough": "Dawro",
-    "district": "Tocha"
+    "district": "Tocha",
+    "image": "/members/Hon_Ato_Tesfaye_Bangu_Kacho.webp"
   },
   {
     "region": "SNNPR",
@@ -6036,7 +6415,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Damot Woide"
+    "district": "Damot Woide",
+    "image": "/members/hon_W_ro_MEKDES_DESTA_JAGARE.webp"
   },
   {
     "region": "SNNPR",
@@ -6052,7 +6432,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Kemba"
+    "district": "Kemba",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6068,7 +6449,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Enor Ener"
+    "district": "Enor Ener",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6084,7 +6466,8 @@
     "county": "Amaro",
     "municipality": "Amaro",
     "borough": "Amaro",
-    "district": "Amaro"
+    "district": "Amaro",
+    "image": "/members/Hon_Dr_Awoke_Amzaye_Assoma.webp"
   },
   {
     "region": "SNNPR",
@@ -6100,7 +6483,8 @@
     "county": "Derashe",
     "municipality": "Derashe",
     "borough": "Derashe",
-    "district": "Derashe Special"
+    "district": "Derashe Special",
+    "image": "/members/Hon_W_ro_Yiftu_Gudisa_Oshko.webp"
   },
   {
     "region": "SNNPR",
@@ -6116,7 +6500,8 @@
     "county": "Keffa",
     "municipality": "Keffa",
     "borough": "Keffa",
-    "district": "Gimbo"
+    "district": "Gimbo",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6132,7 +6517,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Mierab Azenet Berbere"
+    "district": "Mierab Azenet Berbere",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6148,7 +6534,8 @@
     "county": "Alaba",
     "municipality": "Alaba",
     "borough": "Alaba",
-    "district": "Wera"
+    "district": "Wera",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6164,7 +6551,8 @@
     "county": "Alaba",
     "municipality": "Alaba",
     "borough": "Alaba",
-    "district": "Wera"
+    "district": "Wera",
+    "image": "/members/Hon_w_r_Nejat_Girma_Waqjira.webp"
   },
   {
     "region": "SNNPR",
@@ -6180,7 +6568,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Cheha"
+    "district": "Cheha",
+    "image": "/members/Hon_Ato_BARTEMA_FIKADU_SIRAGA.webp"
   },
   {
     "region": "SNNPR",
@@ -6196,7 +6585,8 @@
     "county": "Gofa",
     "municipality": "Gofa",
     "borough": "Gofa",
-    "district": "Melekoza"
+    "district": "Melekoza",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6212,7 +6602,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Alicho Woriro"
+    "district": "Alicho Woriro",
+    "image": "/members/Hon_W_t_SITI_REDWAN_BIZA.webp"
   },
   {
     "region": "SNNPR",
@@ -6228,7 +6619,8 @@
     "county": "Konso",
     "municipality": "Konso",
     "borough": "Konso",
-    "district": "Karat Zuria"
+    "district": "Karat Zuria",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6244,7 +6636,8 @@
     "county": "Keffa",
     "municipality": "Keffa",
     "borough": "Keffa",
-    "district": "Decha"
+    "district": "Decha",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6260,7 +6653,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Alicho Woriro"
+    "district": "Alicho Woriro",
+    "image": "/members/Hon_Dr_MOHAMMED_SHIKUR_MUSSA.webp"
   },
   {
     "region": "SNNPR",
@@ -6276,7 +6670,8 @@
     "county": "Keffa",
     "municipality": "Keffa",
     "borough": "Keffa",
-    "district": "Adiyio"
+    "district": "Adiyio",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6292,7 +6687,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Damot Gale"
+    "district": "Damot Gale",
+    "image": "/members/hon_w_r_ETAFERAHU_MOTA_BOGALE.webp"
   },
   {
     "region": "SNNPR",
@@ -6308,7 +6704,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Welkite town"
+    "district": "Welkite town",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6324,7 +6721,8 @@
     "county": "Gofa",
     "municipality": "Gofa",
     "borough": "Gofa",
-    "district": "O'yida"
+    "district": "O'yida",
+    "image": "/members/Hon_W_t_BEYENECH_DEMEKE_ATO.webp"
   },
   {
     "region": "SNNPR",
@@ -6340,7 +6738,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Silti"
+    "district": "Silti",
+    "image": "/members/Hon_W_ro_Nebiyat_Tilahun_Chaemiso.webp"
   },
   {
     "region": "SNNPR",
@@ -6356,7 +6755,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Emdebir town"
+    "district": "Emdebir town",
+    "image": "/members/hon_Ato_FIKRU_WERKU_BIRSHE.webp"
   },
   {
     "region": "SNNPR",
@@ -6372,7 +6772,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Misrak Azenet Berbere"
+    "district": "Misrak Azenet Berbere",
+    "image": "/members/Hon_W_ro_MESERET_MADOLE_EBO.webp"
   },
   {
     "region": "SNNPR",
@@ -6388,7 +6789,8 @@
     "county": "Silltie",
     "municipality": "Silltie",
     "borough": "Silltie",
-    "district": "Dalocha"
+    "district": "Dalocha",
+    "image": "/members/Hon_W_r_ABEBA_SADIK_BUSER.webp"
   },
   {
     "region": "SNNPR",
@@ -6404,7 +6806,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Gedebano Gutazer Welene"
+    "district": "Gedebano Gutazer Welene",
+    "image": "/members/Hon_W_ro_SADIYA_TEMAM_SHIFA.webp"
   },
   {
     "region": "SNNPR",
@@ -6420,7 +6823,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Boloso Sore"
+    "district": "Boloso Sore",
+    "image": "/members/HON_Engine_Almaz_Asale_Ergado.webp"
   },
   {
     "region": "SNNPR",
@@ -6436,7 +6840,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Hobicha Abaya"
+    "district": "Hobicha Abaya",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6452,7 +6857,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Muhur Na Aklil"
+    "district": "Muhur Na Aklil",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6468,7 +6874,8 @@
     "county": "Gedeo",
     "municipality": "Gedeo",
     "borough": "Gedeo",
-    "district": "Yirgachefe"
+    "district": "Yirgachefe",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6484,7 +6891,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Kemba town"
+    "district": "Kemba town",
+    "image": "/members/Hon_W_ro_TSEHAY_BEKELE_TAFESSE.webp"
   },
   {
     "region": "SNNPR",
@@ -6500,7 +6908,8 @@
     "county": "Hadiya",
     "municipality": "Hadiya",
     "borough": "Hadiya",
-    "district": "Gombora"
+    "district": "Gombora",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6516,7 +6925,8 @@
     "county": "Gurage",
     "municipality": "Gurage",
     "borough": "Gurage",
-    "district": "Enemor Ener"
+    "district": "Enemor Ener",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6532,7 +6942,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Chencha"
+    "district": "Chencha",
+    "image": "/members/Hon_Ato_ENDALKACHEW_ASRAT_ZELEKE.webp"
   },
   {
     "region": "SNNPR",
@@ -6548,7 +6959,8 @@
     "county": "Sidama",
     "municipality": "Sidama",
     "borough": "Sidama",
-    "district": "Wondo-Genet"
+    "district": "Wondo-Genet",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6564,7 +6976,8 @@
     "county": "Gedeo",
     "municipality": "Gedeo",
     "borough": "Gedeo",
-    "district": "Dila Zuria"
+    "district": "Dila Zuria",
+    "image": "/members/Hon_W_ro_Aster_Beshir_Figa.webp"
   },
   {
     "region": "SNNPR",
@@ -6580,7 +6993,8 @@
     "county": "Hadiya",
     "municipality": "Hadiya",
     "borough": "Hadiya",
-    "district": "Analemmo"
+    "district": "Analemmo",
+    "image": "/members/Hon_W_t_Worknesh_Mohammed_Hebiso.webp"
   },
   {
     "region": "SNNPR",
@@ -6596,7 +7010,8 @@
     "county": "Keffa",
     "municipality": "Keffa",
     "borough": "Keffa",
-    "district": "Tullo"
+    "district": "Tullo",
+    "image": "/members/hon_Ato_Dawud_Mohammed_Nur.webp"
   },
   {
     "region": "SNNPR",
@@ -6612,7 +7027,8 @@
     "county": "Gamo Gofa",
     "municipality": "Gamo Gofa",
     "borough": "Gamo Gofa",
-    "district": "Selamber town"
+    "district": "Selamber town",
+    "image": "/members/Hon_Assistant_Professor_Genene_Gedebu_Feleha.webp"
   },
   {
     "region": "SNNPR",
@@ -6628,7 +7044,8 @@
     "county": "South Omo",
     "municipality": "South Omo",
     "borough": "South Omo",
-    "district": "South Ari"
+    "district": "South Ari",
+    "image": "/members/Hon_D_r_Woldeyes_Debebe_Delki.webp"
   },
   {
     "region": "SNNPR",
@@ -6644,7 +7061,8 @@
     "county": "South Omo",
     "municipality": "South Omo",
     "borough": "South Omo",
-    "district": "South Ari"
+    "district": "South Ari",
+    "image": "/members/Hon_W_ro_ABIYOT_DELEGN_YIRKAYO.webp"
   },
   {
     "region": "SNNPR",
@@ -6660,7 +7078,8 @@
     "county": "Basketo",
     "municipality": "Basketo",
     "borough": "Basketo",
-    "district": "Basketo SP Woreda"
+    "district": "Basketo SP Woreda",
+    "image": "/members/Hon_W_ro_Tseganesh_Gamato_Gamo.webp"
   },
   {
     "region": "SNNPR",
@@ -6676,7 +7095,8 @@
     "county": "Keffa",
     "municipality": "Keffa",
     "borough": "Keffa",
-    "district": "Bita"
+    "district": "Bita",
+    "image": "/members/Hon_W_ro_Tesfanesh_W_Mariam_Angi.webp"
   },
   {
     "region": "SNNPR",
@@ -6692,7 +7112,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Boloso Sore"
+    "district": "Boloso Sore",
+    "image": "/members/Hon_W_O_Shewit_Shanka.webp"
   },
   {
     "region": "SNNPR",
@@ -6708,7 +7129,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Boloso Sore"
+    "district": "Boloso Sore",
+    "image": null
   },
   {
     "region": "SNNPR",
@@ -6724,7 +7146,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Damot Woide"
+    "district": "Damot Woide",
+    "image": "/members/Hon_W_ro_Aregash_Tekile_Tantu.webp"
   },
   {
     "region": "SNNPR",
@@ -6740,7 +7163,8 @@
     "county": "West Omo",
     "municipality": "West Omo",
     "borough": "West Omo",
-    "district": "Bero"
+    "district": "Bero",
+    "image": "/members/Hon_Ato_Eshetu_G_Mariam_Gol.webp"
   },
   {
     "region": "SNNPR",
@@ -6756,7 +7180,8 @@
     "county": "South Omo",
     "municipality": "South Omo",
     "borough": "South Omo",
-    "district": "Wub Ari"
+    "district": "Wub Ari",
+    "image": "/members/Hon_Sr_Goiti_Wancho_OKE.webp"
   },
   {
     "region": "SNNPR",
@@ -6772,7 +7197,8 @@
     "county": "South Omo",
     "municipality": "South Omo",
     "borough": "South Omo",
-    "district": "Bena Tsemay"
+    "district": "Bena Tsemay",
+    "image": "/members/Hon_Ato_Agu_Deban_Gesso.webp"
   },
   {
     "region": "SNNPR",
@@ -6788,7 +7214,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Kindo Koyesha"
+    "district": "Kindo Koyesha",
+    "image": "/members/Hon_Dr_Aselefech_Kuche_Goa.webp"
   },
   {
     "region": "SNNPR",
@@ -6804,7 +7231,8 @@
     "county": "Hadiya",
     "municipality": "Hadiya",
     "borough": "Hadiya",
-    "district": "Misha"
+    "district": "Misha",
+    "image": "/members/Hon_Dr_Kidist_G_Hana_Mirgoye.webp"
   },
   {
     "region": "SNNPR",
@@ -6820,7 +7248,8 @@
     "county": "Hadiya",
     "municipality": "Hadiya",
     "borough": "Hadiya",
-    "district": "Gibe"
+    "district": "Gibe",
+    "image": "/members/Hon_Ato_Desalegn_Eriso_Hasiso.webp"
   },
   {
     "region": "SNNPR",
@@ -6836,7 +7265,8 @@
     "county": "Dawro",
     "municipality": "Dawro",
     "borough": "Dawro",
-    "district": "Loma"
+    "district": "Loma",
+    "image": "/members/Hon_W_r_Aster_Keftaw_Dachu.webp"
   },
   {
     "region": "SNNPR",
@@ -6852,7 +7282,8 @@
     "county": "West Omo",
     "municipality": "West Omo",
     "borough": "West Omo",
-    "district": "Maji"
+    "district": "Maji",
+    "image": "/members/Hon_W_ro_Aregash_kefle_karbo.webp"
   },
   {
     "region": "SNNPR",
@@ -6868,7 +7299,8 @@
     "county": "Sheka",
     "municipality": "Sheka",
     "borough": "Sheka",
-    "district": "Anderacha"
+    "district": "Anderacha",
+    "image": "/members/Hon_Ato_Azmera_Andemo_Kelo.webp"
   },
   {
     "region": "SNNPR",
@@ -6884,7 +7316,8 @@
     "county": "West Omo",
     "municipality": "West Omo",
     "borough": "West Omo",
-    "district": "Menit Goldiye"
+    "district": "Menit Goldiye",
+    "image": "/members/Hon_Ato_Fikadu_Bedilu_Bolja.webp"
   },
   {
     "region": "SNNPR",
@@ -6900,7 +7333,8 @@
     "county": "Bench Maji",
     "municipality": "Bench Maji",
     "borough": "Bench Maji",
-    "district": "Semen Bench"
+    "district": "Semen Bench",
+    "image": "/members/Hon_W_ro_Zemu_Tesfaye_Bendi.webp"
   },
   {
     "region": "SNNPR",
@@ -6916,7 +7350,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Sodo Zuria"
+    "district": "Sodo Zuria",
+    "image": "/members/Hon_Ato_Tesfatsion_Shuka_Gadana.webp"
   },
   {
     "region": "SNNPR",
@@ -6932,7 +7367,8 @@
     "county": "Wolayita",
     "municipality": "Wolayita",
     "borough": "Wolayita",
-    "district": "Sodo Zuria"
+    "district": "Sodo Zuria",
+    "image": "/members/Hon_Dr_Berhaneteshay_T_Wold.webp"
   },
   {
     "region": "SNNPR",
@@ -6948,7 +7384,8 @@
     "county": "West Omo",
     "municipality": "West Omo",
     "borough": "West Omo",
-    "district": "Gori Gesha"
+    "district": "Gori Gesha",
+    "image": "/members/Hon_W_ro_Tidenek_Guldu_Tsedeke.webp"
   },
   {
     "region": "SNNPR",
@@ -6964,7 +7401,8 @@
     "county": "Sheka",
     "municipality": "Sheka",
     "borough": "Sheka",
-    "district": "Tepi"
+    "district": "Tepi",
+    "image": null
   },
   {
     "region": "Somali",
@@ -6980,7 +7418,8 @@
     "county": "Sitti",
     "municipality": "Sitti",
     "borough": "Sitti",
-    "district": "Ayisha"
+    "district": "Ayisha",
+    "image": "/members/Hon_W_ro_Fetiya_Ahmed_Shire.webp"
   },
   {
     "region": "Somali",
@@ -6996,7 +7435,8 @@
     "county": "Sitti",
     "municipality": "Sitti",
     "borough": "Sitti",
-    "district": "Dembel"
+    "district": "Dembel",
+    "image": "/members/Hon_Ato_Kemal_Hashi_Mohamoud.webp"
   },
   {
     "region": "Somali",
@@ -7012,7 +7452,8 @@
     "county": "Fafan",
     "municipality": "Fafan",
     "borough": "Fafan",
-    "district": "Harshin"
+    "district": "Harshin",
+    "image": "/members/Hon_Ato_Mohamed_Musse.webp"
   },
   {
     "region": "Somali",
@@ -7028,7 +7469,8 @@
     "county": "Dollo",
     "municipality": "Dollo",
     "borough": "Dollo",
-    "district": "Bokh"
+    "district": "Bokh",
+    "image": "/members/Hon_W_ro_Zamzam_Ahmed_Jama.webp"
   },
   {
     "region": "Somali",
@@ -7044,7 +7486,8 @@
     "county": "Afder",
     "municipality": "Afder",
     "borough": "Afder",
-    "district": "Charati"
+    "district": "Charati",
+    "image": null
   },
   {
     "region": "Somali",
@@ -7060,7 +7503,8 @@
     "county": "Jarar",
     "municipality": "Jarar",
     "borough": "Jarar",
-    "district": "Degahabur town"
+    "district": "Degahabur town",
+    "image": null
   },
   {
     "region": "Somali",
@@ -7076,7 +7520,8 @@
     "county": "Jarar",
     "municipality": "Jarar",
     "borough": "Jarar",
-    "district": "Degehamedo"
+    "district": "Degehamedo",
+    "image": "/members/Hon_W_ro_Ifrah_Towfik_Aden.webp"
   },
   {
     "region": "Somali",
@@ -7092,7 +7537,8 @@
     "county": "Afder",
     "municipality": "Afder",
     "borough": "Afder",
-    "district": "Elkare /Serer"
+    "district": "Elkare /Serer",
+    "image": null
   },
   {
     "region": "Somali",
@@ -7108,7 +7554,8 @@
     "county": "Erer",
     "municipality": "Erer",
     "borough": "Erer",
-    "district": "Meyumuluka"
+    "district": "Meyumuluka",
+    "image": "/members/Hon_Eng_Farah_Mohamed_Farah.webp"
   },
   {
     "region": "Somali",
@@ -7124,7 +7571,8 @@
     "county": "Erer",
     "municipality": "Erer",
     "borough": "Erer",
-    "district": "Fik"
+    "district": "Fik",
+    "image": "/members/Hon_Ato_Hassen_Abdi_Wali.webp"
   },
   {
     "region": "Somali",
@@ -7140,7 +7588,8 @@
     "county": "Liben",
     "municipality": "Liben",
     "borough": "Liben",
-    "district": "Filtu"
+    "district": "Filtu",
+    "image": "/members/Hon_W_ro_Ikram_Maid_Adan.webp"
   },
   {
     "region": "Somali",
@@ -7156,7 +7605,8 @@
     "county": "Dollo",
     "municipality": "Dollo",
     "borough": "Dollo",
-    "district": "Galadi"
+    "district": "Galadi",
+    "image": "/members/Hon_Ato_Abdulahi_Mohammed_Muse.webp"
   },
   {
     "region": "Somali",
@@ -7172,7 +7622,8 @@
     "county": "Jarar",
     "municipality": "Jarar",
     "borough": "Jarar",
-    "district": "Gashamo"
+    "district": "Gashamo",
+    "image": "/members/Hon_W_ro_Halimo_Hassen_Mohamed.webp"
   },
   {
     "region": "Somali",
@@ -7188,7 +7639,8 @@
     "county": "Shebelle",
     "municipality": "Shebelle",
     "borough": "Shebelle",
-    "district": "Godey town"
+    "district": "Godey town",
+    "image": "/members/Hon_Ato_Faysal_Odwa_Abdi.webp"
   },
   {
     "region": "Somali",
@@ -7204,7 +7656,8 @@
     "county": "Afder",
     "municipality": "Afder",
     "borough": "Afder",
-    "district": "Hargele"
+    "district": "Hargele",
+    "image": null
   },
   {
     "region": "Somali",
@@ -7220,7 +7673,8 @@
     "county": "Fafan",
     "municipality": "Fafan",
     "borough": "Fafan",
-    "district": "Shabeeley"
+    "district": "Shabeeley",
+    "image": "/members/Hon_Ato_Abdurashed_Abdilahi_Ahmed.webp"
   },
   {
     "region": "Somali",
@@ -7236,7 +7690,8 @@
     "county": "Fafan",
     "municipality": "Fafan",
     "borough": "Fafan",
-    "district": "Jigjiga town"
+    "district": "Jigjiga town",
+    "image": "/members/Hon_W_ro_Halimo_Hassen_Mohamed.webp"
   },
   {
     "region": "Somali",
@@ -7252,7 +7707,8 @@
     "county": "Korahe",
     "municipality": "Korahe",
     "borough": "Korahe",
-    "district": "Kebridehar town"
+    "district": "Kebridehar town",
+    "image": "/members/Hon_Ato_Abdikarim_Akib_Aden.webp"
   },
   {
     "region": "Somali",
@@ -7268,7 +7724,8 @@
     "county": "Fafan",
     "municipality": "Fafan",
     "borough": "Fafan",
-    "district": "Kebribayah town"
+    "district": "Kebribayah town",
+    "image": null
   },
   {
     "region": "Somali",
@@ -7284,7 +7741,8 @@
     "county": "Korahe",
     "municipality": "Korahe",
     "borough": "Korahe",
-    "district": "Higloley"
+    "district": "Higloley",
+    "image": "/members/Hon_W_ro_Munira_Hussen_Hassen.webp"
   },
   {
     "region": "Somali",
@@ -7300,7 +7758,8 @@
     "county": "Nogob",
     "municipality": "Nogob",
     "borough": "Nogob",
-    "district": "Sagag"
+    "district": "Sagag",
+    "image": "/members/Hon_Ato_Usame_Muhumad.webp"
   },
   {
     "region": "Somali",
@@ -7316,7 +7775,8 @@
     "county": "Sitti",
     "municipality": "Sitti",
     "borough": "Sitti",
-    "district": "Shinile"
+    "district": "Shinile",
+    "image": "/members/Hon_W_ro_Ayan_Ali_Mussa.webp"
   },
   {
     "region": "Somali",
@@ -7332,7 +7792,8 @@
     "county": "Dollo",
     "municipality": "Dollo",
     "borough": "Dollo",
-    "district": "Galadi"
+    "district": "Galadi",
+    "image": "/members/Hon_Ato_Mohamud_Yusuf_Mealin.webp"
   },
   {
     "region": "Harari",
@@ -7348,7 +7809,8 @@
     "county": "Harari",
     "municipality": "Harari",
     "borough": "Harari",
-    "district": "Abadir"
+    "district": "Abadir",
+    "image": "/members/Hon_Dr_Fathi_Mahdi_Wezir.webp"
   },
   {
     "region": "Harari",
@@ -7364,7 +7826,8 @@
     "county": "Harari",
     "municipality": "Harari",
     "borough": "Harari",
-    "district": "Abadir"
+    "district": "Abadir",
+    "image": "/members/Hon_W_r_Samira_Yusuf_Ibro.webp"
   },
   {
     "region": "Benishangul Gumuz",
@@ -7380,7 +7843,8 @@
     "county": "Asosa",
     "municipality": "Asosa",
     "borough": "Asosa",
-    "district": "Sherkole"
+    "district": "Sherkole",
+    "image": "/members/Hon_Ato_Mubarek_Elias_Mustefa.webp"
   },
   {
     "region": "Benishangul Gumuz",
@@ -7396,7 +7860,8 @@
     "county": "Mao-Komo",
     "municipality": "Mao-Komo",
     "borough": "Mao-Komo",
-    "district": "Maokomo Special"
+    "district": "Maokomo Special",
+    "image": null
   },
   {
     "region": "Benishangul Gumuz",
@@ -7412,7 +7877,8 @@
     "county": "Asosa",
     "municipality": "Asosa",
     "borough": "Asosa",
-    "district": "Bambasi"
+    "district": "Bambasi",
+    "image": null
   },
   {
     "region": "Dire Dawa",
@@ -7428,7 +7894,8 @@
     "county": "Dire Dawa rural",
     "municipality": "Dire Dawa rural",
     "borough": "Dire Dawa rural",
-    "district": "Wahil"
+    "district": "Wahil",
+    "image": "/members/Hon_Ato_ABDULJEWAD_MOHAMMED_AHMED.webp"
   },
   {
     "region": "Dire Dawa",
@@ -7444,7 +7911,8 @@
     "county": "Dire Dawa urban",
     "municipality": "Dire Dawa urban",
     "borough": "Dire Dawa urban",
-    "district": "Kazira"
+    "district": "Kazira",
+    "image": null
   },
   {
     "region": "Gambella",
@@ -7460,7 +7928,8 @@
     "county": "Agniwak",
     "municipality": "Agniwak",
     "borough": "Agniwak",
-    "district": "Gambela town"
+    "district": "Gambela town",
+    "image": "/members/Hon_W_r_ALEMITU_UMED_UJULU.webp"
   },
   {
     "region": "Gambella",
@@ -7476,7 +7945,8 @@
     "county": "Majang",
     "municipality": "Majang",
     "borough": "Majang",
-    "district": "Godere"
+    "district": "Godere",
+    "image": "/members/Hon_Ato_Ashinie_Astin_Titoyik.webp"
   },
   {
     "region": "Gambella",
@@ -7492,6 +7962,7 @@
     "county": "Nuer",
     "municipality": "Nuer",
     "borough": "Nuer",
-    "district": "Lare"
+    "district": "Lare",
+    "image": "/members/Hon_Ato_Thomas_Tut_Pok.webp"
   }
 ]
