@@ -3481,10 +3481,14 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 65791,
-    "lat": 8.73833,
-    "lng": 38.71667,
+    "lat": 7.19,
+    "lng": 38.6,
     "geocode_source": "nominatim",
-    "province": "Oromia"
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Shashemene town"
   },
   {
     "region": "Oromia",
@@ -4333,10 +4337,14 @@
     "party": "Prosperity Party",
     "gender": "Male",
     "votes": 143836,
-    "lat": 8.82833,
-    "lng": 38.71667,
+    "lat": 7.2,
+    "lng": 38.59,
     "geocode_source": "nominatim",
-    "province": "Oromia"
+    "province": "Oromia",
+    "county": "West Arsi",
+    "municipality": "West Arsi",
+    "borough": "West Arsi",
+    "district": "Shashemene town"
   },
   {
     "region": "Oromia",

@@ -9110,18 +9110,18 @@
       }
     }
   },
-  "8.73833,38.71667": {
-    "lat": 8.73833,
-    "lng": 38.71667,
+  "7.19,38.6": {
+    "lat": 7.19,
+    "lng": 38.6,
     "response": {
       "data": {
         "id": {
           "country": "et",
           "province": "oromia",
-          "county": "",
-          "municipality": "",
-          "borough": "",
-          "district": ""
+          "county": "west_arsi",
+          "municipality": "west_arsi",
+          "borough": "west_arsi",
+          "district": "shashemene_town"
         },
         "name": {
           "country": {
@@ -9132,10 +9132,22 @@
             "AM": "ኦሮሚያ",
             "EN": "Oromia"
           },
-          "county": null,
-          "municipality": null,
-          "borough": null,
-          "district": null
+          "county": {
+            "AM": "ዌስትኣርሲ",
+            "EN": "West Arsi"
+          },
+          "municipality": {
+            "AM": "ዌስትኣርሲ",
+            "EN": "West Arsi"
+          },
+          "borough": {
+            "AM": "ዌስትኣርሲ",
+            "EN": "West Arsi"
+          },
+          "district": {
+            "AM": "ሻሼሜኔቶውን",
+            "EN": "Shashemene town"
+          }
         }
       }
     }
@@ -11342,18 +11354,18 @@
       }
     }
   },
-  "8.82833,38.71667": {
-    "lat": 8.82833,
-    "lng": 38.71667,
+  "7.2,38.59": {
+    "lat": 7.2,
+    "lng": 38.59,
     "response": {
       "data": {
         "id": {
           "country": "et",
           "province": "oromia",
-          "county": "",
-          "municipality": "",
-          "borough": "",
-          "district": ""
+          "county": "west_arsi",
+          "municipality": "west_arsi",
+          "borough": "west_arsi",
+          "district": "shashemene_town"
         },
         "name": {
           "country": {
@@ -11364,10 +11376,22 @@
             "AM": "ኦሮሚያ",
             "EN": "Oromia"
           },
-          "county": null,
-          "municipality": null,
-          "borough": null,
-          "district": null
+          "county": {
+            "AM": "ዌስትኣርሲ",
+            "EN": "West Arsi"
+          },
+          "municipality": {
+            "AM": "ዌስትኣርሲ",
+            "EN": "West Arsi"
+          },
+          "borough": {
+            "AM": "ዌስትኣርሲ",
+            "EN": "West Arsi"
+          },
+          "district": {
+            "AM": "ሻሼሜኔቶውን",
+            "EN": "Shashemene town"
+          }
         }
       }
     }
