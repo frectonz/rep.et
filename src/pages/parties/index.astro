@@ -26,7 +26,6 @@ const totalSeats = representatives.length;
         <div id="seat-chart-container" class="w-full max-w-[550px]"></div>
       </div>
 
-      <div class="bg-callout-bg rounded-lg p-4 border border-border">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm" id="party-legend">
           {stats.map((p) => {
             const colors = {
@@ -42,28 +41,27 @@ const totalSeats = representatives.length;
             return (
               <button
                 type="button"
-                class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-card cursor-pointer border border-transparent hover:border-border text-left"
+                class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
                 data-party={p.name}
                 data-slug={slug}
               >
                 <span class="w-4 h-4 rounded-sm shrink-0 mt-0.5" style={`background-color: ${color};`}></span>
                 <span class="font-medium">{p.name}</span>
-                <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">({p.seats})</span>
+                <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">{p.seats}</span>
               </button>
             );
           })}
-          <button type="button" class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-card cursor-pointer border border-transparent hover:border-border text-left" data-party="unoccupied">
+          <button type="button" class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left" data-party="unoccupied">
             <span class="w-4 h-4 rounded-sm shrink-0 mt-0.5" style="background-color: #78909C;"></span>
             <span class="font-medium text-text-muted">Unoccupied</span>
-            <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">(76)</span>
+            <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">76</span>
           </button>
-          <button type="button" class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-card cursor-pointer border border-transparent hover:border-border text-left" data-party="reserve">
+          <button type="button" class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left" data-party="reserve">
             <span class="w-4 h-4 rounded-sm shrink-0 mt-0.5" style="background-color: #9E9E9E;"></span>
             <span class="font-medium text-text-muted">Reserve</span>
-            <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">(39)</span>
+            <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">39</span>
           </button>
         </div>
-      </div>
     </div>
 
     <div class="space-y-4">
