@@ -13,7 +13,18 @@ import {
 } from "@lucide/astro";
 ---
 
-<Layout>
+<Layout jsonLd={{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "rep.et",
+  "url": "https://rep.et",
+  "description": "Find your representative in Ethiopia's House of Peoples' Representatives (HOPR). Search 471 elected members of parliament by name, region, party, or location.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://rep.et/representatives?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}}>
   <section class="max-w-3xl mx-auto px-4 pt-12 pb-8">
     <div class="text-center mb-10">
       <p class="text-5xl opacity-10 select-none mb-2" aria-hidden="true">ኢ</p>

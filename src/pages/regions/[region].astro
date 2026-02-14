@@ -29,9 +29,24 @@ const stats = getRegionStats(regionName);
 const coordsJson = JSON.stringify(
   reps.map((r) => ({ lat: r.lat, lng: r.lng, name: r.location, slug: r.slug })),
 );
+
+const siteUrl = "https://rep.et";
+const regionUrl = `${siteUrl}/regions/${regionParam}`;
+const description = `${regionName} region has ${stats.seats} seats in Ethiopia's House of Peoples' Representatives. Browse all elected members, party breakdown, and constituency map.`;
+const regionJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AdministrativeArea",
+  name: regionName,
+  url: regionUrl,
+  description: description,
+  containedInPlace: {
+    "@type": "Country",
+    name: "Ethiopia",
+  },
+};
 ---
 
-<Layout title={`${regionName}`} description={`Representatives and constituencies in ${regionName}. ${stats.seats} seats in Ethiopia's House of Peoples' Representatives.`}>
+<Layout title={`${regionName}`} description={description} jsonLd={regionJsonLd}>
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Regions", href: "/regions" }, { label: regionName }]} />
 

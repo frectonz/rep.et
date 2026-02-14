@@ -11,6 +11,18 @@ interface Props {
 }
 
 const { crumbs } = Astro.props;
+
+const siteUrl = "https://rep.et";
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: crumbs.map((crumb, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: crumb.label,
+    ...(crumb.href ? { item: new URL(crumb.href, siteUrl).href } : {}),
+  })),
+};
 ---
 
 <nav class="text-sm text-text-muted mb-6 flex items-center flex-wrap gap-1">
@@ -25,3 +37,4 @@ const { crumbs } = Astro.props;
     </>
   ))}
 </nav>
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />

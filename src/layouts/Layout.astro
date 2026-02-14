@@ -8,12 +8,16 @@ interface Props {
   title?: string;
   description?: string;
   canonicalPath?: string;
+  ogType?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
   title = "Find Your Representative",
-  description = "Find your HOPR representative in Ethiopia. Browse 471 elected members by region, party, or location.",
+  description = "Find your representative in Ethiopia's House of Peoples' Representatives (HOPR). Search 471 elected members of parliament by name, region, party, or location.",
   canonicalPath,
+  ogType = "website",
+  jsonLd,
 } = Astro.props;
 
 const siteUrl = "https://rep.et";
@@ -41,7 +45,7 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content="rep.et" />
     <meta property="og:locale" content="en_ET" />
     <meta property="og:image" content={ogImageUrl} />
@@ -59,6 +63,7 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
       rel="stylesheet"
     />
     <title>{title}</title>
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />

@@ -30,9 +30,20 @@ const stats = getPartyStats(partyName);
 const coordsJson = JSON.stringify(
   reps.map((r) => ({ lat: r.lat, lng: r.lng, name: r.location, slug: r.slug })),
 );
+
+const siteUrl = "https://rep.et";
+const partyUrl = `${siteUrl}/parties/${partyParam}`;
+const description = `${partyName} holds ${stats.seats} seats across ${stats.regions.length} regions in Ethiopia's House of Peoples' Representatives (HOPR). View all representatives and constituency details.`;
+const partyJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: partyName,
+  url: partyUrl,
+  description: description,
+};
 ---
 
-<Layout title={`${partyName}`} description={`${stats.seats} seats across ${stats.regions.length} regions in Ethiopia's House of Peoples' Representatives.`}>
+<Layout title={`${partyName}`} description={description} jsonLd={partyJsonLd}>
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Parties", href: "/parties" }, { label: partyName }]} />
 

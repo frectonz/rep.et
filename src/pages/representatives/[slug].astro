@@ -32,9 +32,31 @@ if (!rep) {
 }
 
 const place = formatPlace(rep);
+
+const siteUrl = "https://rep.et";
+const canonicalUrl = `${siteUrl}/representatives/${rep.slug}`;
+const description = `${rep.candidate} is the elected representative for ${rep.location} in ${rep.region}, Ethiopia's House of Peoples' Representatives. ${rep.party} member elected with ${rep.votes.toLocaleString()} votes.`;
+const personJsonLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: rep.candidate,
+  jobTitle: "Member of Parliament",
+  memberOf: {
+    "@type": "Organization",
+    name: rep.party,
+  },
+  workLocation: {
+    "@type": "Place",
+    name: `${rep.location}, ${rep.region}`,
+  },
+  url: canonicalUrl,
+};
+if (rep.image) {
+  personJsonLd.image = rep.image;
+}
 ---
 
-<Layout title={`${rep.candidate}`} description={`${rep.candidate}, representative for ${rep.location} in ${rep.region}. ${rep.party}.`}>
+<Layout title={`${rep.candidate}`} description={description} ogType="profile" jsonLd={personJsonLd}>
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: rep.candidate }]} />
 
