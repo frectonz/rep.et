@@ -5,8 +5,8 @@
 | | Seats |
 |---|---|
 | Total HPR Seats | 509 |
-| Candidates on Record | 471 |
-| Missing | 38 |
+| Candidates on Record | 477 |
+| Missing | 32 |
 
 ## Per-Region Breakdown
 
@@ -20,7 +20,7 @@
 | SNNPR | 104 | 101 | 3 | 3 complaints from Sep 30 election |
 | Somali | 23 | 23 | 0 | - |
 | Harari | 2 | 2 | 0 | - |
-| Benishangul Gumuz | 9 | 3 | 6 | 6 constituencies not yet elected |
+| Benishangul Gumuz | 9 | 9 | 0 | - |
 | Gambella | 3 | 3 | 0 | - |
 | Dire Dawa | 2 | 2 | 0 | - |
-| **Total** | **509** | **471** | **38** | |
+| **Total** | **509** | **477** | **32** | |

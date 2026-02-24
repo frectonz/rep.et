@@ -19,5 +19,47 @@
     "candidate": "Nefisa Almahid Alaqib",
     "gender": "Female",
     "votes": 12269
+  },
+  {
+    "location": "Kamashi",
+    "party": "Gumuz People's Democratic Movement",
+    "candidate": "Doctor Mekonen Gulasa Bejets",
+    "gender": "Male",
+    "votes": 12913
+  },
+  {
+    "location": "Asosa Hoha",
+    "party": "Prosperity Party",
+    "candidate": "Musa Ahmed Babeker",
+    "gender": "Male",
+    "votes": 9887
+  },
+  {
+    "location": "Daleti",
+    "party": "Prosperity Party",
+    "candidate": "Tsedale Abera Negere",
+    "gender": "Female",
+    "votes": 17753
+  },
+  {
+    "location": "Asosa Megale",
+    "party": "Prosperity Party",
+    "candidate": "Menahel Ameran Endris",
+    "gender": "Male",
+    "votes": 6310
+  },
+  {
+    "location": "Shinasha",
+    "party": "Boro Democratic Party",
+    "candidate": "Doctor Mebratu Alemu Senbeta",
+    "gender": "Male",
+    "votes": 1953
+  },
+  {
+    "location": "Metekel",
+    "party": "Prosperity Party",
+    "candidate": "Bahita Bawde Zegef",
+    "gender": "Male",
+    "votes": 24813
   }
 ]

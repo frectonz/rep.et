@@ -4,12 +4,12 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Constituencies | 471 |
-| Total Votes Cast | 30,339,665 |
-| Mean Votes per Constituency | 64,415 |
+| Total Constituencies | 477 |
+| Total Votes Cast | 30,413,294 |
+| Mean Votes per Constituency | 63,761 |
 | Median Votes per Constituency | 49,341 |
 | Highest Votes | 572,697 |
-| Lowest Votes | 3,680 |
+| Lowest Votes | 1,953 |
 
 ## Top 10 Highest Vote Counts
 
@@ -30,29 +30,31 @@
 
 | Rank | Constituency | Region | Candidate | Party | Votes |
 |------|-------------|--------|-----------|-------|------:|
-| 471 | Zeyse Liyu | SNNPR | Tsegaye Chama Chilo | Ethiopian Citizens for Social Justice | 3,680 |
-| 470 | Dita | SNNPR | Gizachew Girma | Prosperity Party | 5,218 |
-| 469 | Mierab Eshitie | Amhara | Aschenaki Damtie | National Movement of Amhara | 5,500 |
-| 468 | Lasta | Amhara | Tesfahun Abi Yibeltal | National Movement of Amhara | 5,860 |
-| 467 | Wadla | Amhara | Desu Agegn | National Movement of Amhara | 5,962 |
-| 466 | Lay Gaint | Amhara | Mulat Bezabeh | National Movement of Amhara | 6,400 |
-| 465 | Kucha | SNNPR | Aman Mathewos Argamo | Kucha People Democratic Party | 19,816 |
-| 464 | Boreda | SNNPR | Tariku Tadesse Dabaro | Prosperity Party | 7,320 |
-| 463 | Dawuro Liyu | SNNPR | Getachew Gamo Gatiso | Prosperity Party | 7,578 |
-| 462 | Basketo Liyu | SNNPR | Haymanot Ayele Arba | Prosperity Party | 8,176 |
+| 477 | Shinasha | Benishangul Gumuz | Doctor Mebratu Alemu Senbeta | Boro Democratic Party | 1,953 |
+| 476 | Zeyse Liyu | SNNPR | Tsegaye Chama Chilo | Ethiopian Citizens for Social Justice | 3,680 |
+| 475 | Dita | SNNPR | Gizachew Girma | Prosperity Party | 5,218 |
+| 474 | Mierab Eshitie | Amhara | Aschenaki Damtie | National Movement of Amhara | 5,500 |
+| 473 | Lasta | Amhara | Tesfahun Abi Yibeltal | National Movement of Amhara | 5,860 |
+| 472 | Wadla | Amhara | Desu Agegn | National Movement of Amhara | 5,962 |
+| 471 | Asosa Megale | Benishangul Gumuz | Menahel Ameran Endris | Prosperity Party | 6,310 |
+| 470 | Lay Gaint | Amhara | Mulat Bezabeh | National Movement of Amhara | 6,400 |
+| 469 | Boreda | SNNPR | Tariku Tadesse Dabaro | Prosperity Party | 7,320 |
+| 468 | Dawuro Liyu | SNNPR | Getachew Gamo Gatiso | Prosperity Party | 7,578 |
 
 ## Results by Party
 
 | Party | Seats | Total Votes | Avg Votes per Seat |
 |-------|------:|------------:|-------------------:|
-| Prosperity Party | 455 | 29,703,573 | 65,283 |
+| Prosperity Party | 459 | 29,762,336 | 64,842 |
 | Independent | 4 | 391,347 | 97,837 |
 | Gedio People Democratic Organization | 2 | 84,312 | 42,156 |
 | National Movement of Amhara | 5 | 81,200 | 16,240 |
 | Ethiopian Citizens for Social Justice | 4 | 59,417 | 14,854 |
 | Kucha People Democratic Party | 1 | 19,816 | 19,816 |
+| Gumuz People's Democratic Movement | 1 | 12,913 | 12,913 |
+| Boro Democratic Party | 1 | 1,953 | 1,953 |
 
-Prosperity Party won 455 out of 471 seats (96.6%).
+Prosperity Party won 459 out of 477 seats (96.2%).
 
 ## Results by Region
 
@@ -68,28 +70,28 @@ Prosperity Party won 455 out of 471 seats (96.6%).
 | Gambella | 3 | 155,044 | 51,681 |
 | Amhara | 133 | 6,283,741 | 47,247 |
 | SNNPR | 112 | 5,159,498 | 46,067 |
-| Benishangul Gumuz | 9 | 165,503 | 18,389 |
+| Benishangul Gumuz | 9 | 128,797 | 14,311 |
 
 ## Gender Breakdown
 
 | Gender | Candidates | Total Votes | Avg Votes |
 |--------|----------:|------------:|----------:|
-| Male | 282 | 18,717,453 | 66,374 |
-| Female | 189 | 11,622,212 | 61,494 |
+| Male | 287 | 18,773,329 | 65,411 |
+| Female | 190 | 11,639,965 | 61,263 |
 
-Women make up 40.1% of elected representatives.
+Women make up 39.8% of elected representatives.
 
 ## Vote Distribution
 
 | Vote Range | Constituencies |
 |------------|---------------:|
-| 0 - 10,000 | 19 |
-| 10,000 - 20,000 | 30 |
-| 20,000 - 30,000 | 55 |
+| 0 - 10,000 | 22 |
+| 10,000 - 20,000 | 32 |
+| 20,000 - 30,000 | 56 |
 | 30,000 - 50,000 | 97 |
 | 50,000 - 75,000 | 101 |
 | 75,000 - 100,000 | 80 |
 | 100,000 - 150,000 | 56 |
 | 150,000+ | 33 |
 
-The majority of constituencies (198 out of 471) fall in the 30,000-75,000 vote range.
+The majority of constituencies (198 out of 477) fall in the 30,000-75,000 vote range.

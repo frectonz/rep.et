@@ -548,12 +548,12 @@
     <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="192" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="192" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
     <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="208" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="208" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
     <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="224" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="224" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
-    <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="270" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="270" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
-    <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="286" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="286" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
-    <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="302" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="302" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
-    <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="318" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="318" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
-    <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="334" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="334" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
-    <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="350" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="350" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
+    <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="270" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="270" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>
+    <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="286" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="286" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>
+    <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="302" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="302" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>
+    <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="318" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="318" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>
+    <g class="seat seat-boro-democratic-party" data-party="Boro Democratic Party"><rect x="334" y="18" width="12" height="5" rx="2" fill="#8e3a5e"/><rect x="334" y="24" width="12" height="8" rx="2" fill="#a84573"/></g>
+    <g class="seat seat-gumuz-peoples-democratic-movement" data-party="Gumuz People's Democratic Movement"><rect x="350" y="18" width="12" height="5" rx="2" fill="#b5421a"/><rect x="350" y="24" width="12" height="8" rx="2" fill="#d44e22"/></g>
     <g class="seat seat-reserve" data-party="reserve"><rect x="366" y="18" width="12" height="5" rx="2" fill="#7E7E7E"/><rect x="366" y="24" width="12" height="8" rx="2" fill="#9E9E9E"/></g>
     <g class="seat seat-reserve" data-party="reserve"><rect x="382" y="18" width="12" height="5" rx="2" fill="#7E7E7E"/><rect x="382" y="24" width="12" height="8" rx="2" fill="#9E9E9E"/></g>
     <g class="seat seat-reserve" data-party="reserve"><rect x="398" y="18" width="12" height="5" rx="2" fill="#7E7E7E"/><rect x="398" y="24" width="12" height="8" rx="2" fill="#9E9E9E"/></g>
