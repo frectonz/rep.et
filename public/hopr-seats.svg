@@ -545,7 +545,7 @@
     <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="144" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="144" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
     <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="160" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="160" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
     <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="176" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="176" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
-    <g class="seat seat-unoccupied" data-party="unoccupied"><rect x="192" y="18" width="12" height="5" rx="2" fill="#546E7A"/><rect x="192" y="24" width="12" height="8" rx="2" fill="#78909C"/></g>
+    <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="192" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="192" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>
     <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="208" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="208" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>
     <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="224" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="224" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>
     <g class="seat seat-prosperity-party" data-party="Prosperity Party"><rect x="270" y="18" width="12" height="5" rx="2" fill="#3a6347"/><rect x="270" y="24" width="12" height="8" rx="2" fill="#4a7c59"/></g>

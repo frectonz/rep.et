@@ -5,8 +5,8 @@
 | | Seats |
 |---|---|
 | Total HPR Seats | 509 |
-| Candidates on Record | 479 |
-| Missing | 30 |
+| Candidates on Record | 480 |
+| Missing | 29 |
 
 ## Per-Region Breakdown
 
@@ -21,6 +21,7 @@
 | Somali | 23 | 23 | 0 | - |
 | Harari | 2 | 2 | 0 | - |
 | Benishangul Gumuz | 9 | 9 | 0 | - |
+| Central Ethiopia | - | 1 | - | New region |
 | Gambella | 3 | 3 | 0 | - |
 | Dire Dawa | 2 | 2 | 0 | - |
-| **Total** | **509** | **479** | **30** | |
+| **Total** | **509** | **480** | **29** | |

@@ -8017,6 +8017,23 @@
     "image": null
   },
   {
+    "region": "Central Ethiopia",
+    "location": "Meskanena Mareko 2",
+    "candidate": "Doctor Melese Tumiso Asham",
+    "party": "Prosperity Party",
+    "gender": "Male",
+    "votes": 50123,
+    "lat": 7.97672,
+    "lng": 38.51292,
+    "geocode_source": null,
+    "province": null,
+    "county": null,
+    "municipality": null,
+    "borough": null,
+    "district": null,
+    "image": null
+  },
+  {
     "region": "Dire Dawa",
     "location": "Dire Dawa 1",
     "candidate": "Abduljewad Mohammed Ahmed",
