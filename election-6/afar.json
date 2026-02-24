@@ -40,5 +40,19 @@
     "candidate": "Cammadu Gaqas Macammad",
     "gender": "Male",
     "votes": 248204
+  },
+  {
+    "location": "Gewane",
+    "party": "Prosperity Party",
+    "candidate": "Fatuma Catte Cafilo",
+    "gender": "Female",
+    "votes": 89983
+  },
+  {
+    "location": "Dalifage",
+    "party": "Prosperity Party",
+    "candidate": "Qeysha Mohammed Adan",
+    "gender": "Female",
+    "votes": 250159
   }
 ]

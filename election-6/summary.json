@@ -27,8 +27,8 @@
     "total_seats_hopr": 8,
 
     "results_june14": {
-      "constituencies_elected": 6,
-      "results": [{ "party_or_candidate": "Prosperity Party", "seats_won": 6 }],
+      "constituencies_elected": 8,
+      "results": [{ "party_or_candidate": "Prosperity Party", "seats_won": 8 }],
       "recounting_constituencies": 0,
       "reelection_constituencies": 0
     },

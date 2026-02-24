@@ -4,9 +4,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Constituencies | 477 |
-| Total Votes Cast | 30,413,294 |
-| Mean Votes per Constituency | 63,761 |
+| Total Constituencies | 479 |
+| Total Votes Cast | 30,753,436 |
+| Mean Votes per Constituency | 64,203 |
 | Median Votes per Constituency | 49,341 |
 | Highest Votes | 572,697 |
 | Lowest Votes | 1,953 |
@@ -30,22 +30,22 @@
 
 | Rank | Constituency | Region | Candidate | Party | Votes |
 |------|-------------|--------|-----------|-------|------:|
-| 477 | Shinasha | Benishangul Gumuz | Doctor Mebratu Alemu Senbeta | Boro Democratic Party | 1,953 |
-| 476 | Zeyse Liyu | SNNPR | Tsegaye Chama Chilo | Ethiopian Citizens for Social Justice | 3,680 |
-| 475 | Dita | SNNPR | Gizachew Girma | Prosperity Party | 5,218 |
-| 474 | Mierab Eshitie | Amhara | Aschenaki Damtie | National Movement of Amhara | 5,500 |
-| 473 | Lasta | Amhara | Tesfahun Abi Yibeltal | National Movement of Amhara | 5,860 |
-| 472 | Wadla | Amhara | Desu Agegn | National Movement of Amhara | 5,962 |
-| 471 | Asosa Megale | Benishangul Gumuz | Menahel Ameran Endris | Prosperity Party | 6,310 |
-| 470 | Lay Gaint | Amhara | Mulat Bezabeh | National Movement of Amhara | 6,400 |
-| 469 | Boreda | SNNPR | Tariku Tadesse Dabaro | Prosperity Party | 7,320 |
-| 468 | Dawuro Liyu | SNNPR | Getachew Gamo Gatiso | Prosperity Party | 7,578 |
+| 479 | Shinasha | Benishangul Gumuz | Doctor Mebratu Alemu Senbeta | Boro Democratic Party | 1,953 |
+| 478 | Zeyse Liyu | SNNPR | Tsegaye Chama Chilo | Ethiopian Citizens for Social Justice | 3,680 |
+| 477 | Dita | SNNPR | Gizachew Girma | Prosperity Party | 5,218 |
+| 476 | Mierab Eshitie | Amhara | Aschenaki Damtie | National Movement of Amhara | 5,500 |
+| 475 | Lasta | Amhara | Tesfahun Abi Yibeltal | National Movement of Amhara | 5,860 |
+| 474 | Wadla | Amhara | Desu Agegn | National Movement of Amhara | 5,962 |
+| 473 | Asosa Megale | Benishangul Gumuz | Menahel Ameran Endris | Prosperity Party | 6,310 |
+| 472 | Lay Gaint | Amhara | Mulat Bezabeh | National Movement of Amhara | 6,400 |
+| 471 | Boreda | SNNPR | Tariku Tadesse Dabaro | Prosperity Party | 7,320 |
+| 470 | Dawuro Liyu | SNNPR | Getachew Gamo Gatiso | Prosperity Party | 7,578 |
 
 ## Results by Party
 
 | Party | Seats | Total Votes | Avg Votes per Seat |
 |-------|------:|------------:|-------------------:|
-| Prosperity Party | 459 | 29,762,336 | 64,842 |
+| Prosperity Party | 461 | 30,102,478 | 65,298 |
 | Independent | 4 | 391,347 | 97,837 |
 | Gedio People Democratic Organization | 2 | 84,312 | 42,156 |
 | National Movement of Amhara | 5 | 81,200 | 16,240 |
@@ -54,7 +54,7 @@
 | Gumuz People's Democratic Movement | 1 | 12,913 | 12,913 |
 | Boro Democratic Party | 1 | 1,953 | 1,953 |
 
-Prosperity Party won 459 out of 477 seats (96.2%).
+Prosperity Party won 461 out of 479 seats (96.2%).
 
 ## Results by Region
 
@@ -77,9 +77,9 @@ Prosperity Party won 459 out of 477 seats (96.2%).
 | Gender | Candidates | Total Votes | Avg Votes |
 |--------|----------:|------------:|----------:|
 | Male | 287 | 18,773,329 | 65,411 |
-| Female | 190 | 11,639,965 | 61,263 |
+| Female | 192 | 11,980,107 | 62,396 |
 
-Women make up 39.8% of elected representatives.
+Women make up 40.1% of elected representatives.
 
 ## Vote Distribution
 
@@ -90,8 +90,8 @@ Women make up 39.8% of elected representatives.
 | 20,000 - 30,000 | 56 |
 | 30,000 - 50,000 | 97 |
 | 50,000 - 75,000 | 101 |
-| 75,000 - 100,000 | 80 |
+| 75,000 - 100,000 | 81 |
 | 100,000 - 150,000 | 56 |
-| 150,000+ | 33 |
+| 150,000+ | 34 |
 
-The majority of constituencies (198 out of 477) fall in the 30,000-75,000 vote range.
+The majority of constituencies (198 out of 479) fall in the 30,000-75,000 vote range.
