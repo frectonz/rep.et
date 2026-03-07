@@ -966,7 +966,8 @@
     "municipality": "Awi",
     "borough": "Awi",
     "district": "Fagta Lakoma",
-    "image": null
+    "image": null,
+    "ministerPosition": "Minister of Mines and Petroleum"
   },
   {
     "region": "Amhara",
@@ -3389,7 +3390,8 @@
     "municipality": "Jimma",
     "borough": "Jimma",
     "district": "Gumay",
-    "image": null
+    "image": null,
+    "ministerPosition": "Prime Minister"
   },
   {
     "region": "Oromia",
@@ -5566,7 +5568,8 @@
     "municipality": "Sidama",
     "borough": "Sidama",
     "district": "Aleta Chuko",
-    "image": null
+    "image": null,
+    "ministerPosition": "Minister of Planning and Development"
   },
   {
     "region": "Sidama",
@@ -6076,7 +6079,8 @@
     "municipality": "Silltie",
     "borough": "Silltie",
     "district": "Kibet town",
-    "image": null
+    "image": null,
+    "ministerPosition": "Minister of Labour and Skills Development"
   },
   {
     "region": "SNNPR",
@@ -6943,7 +6947,8 @@
     "municipality": "Hadiya",
     "borough": "Hadiya",
     "district": "Gombora",
-    "image": null
+    "image": null,
+    "ministerPosition": "Minister of Women and Social Affairs"
   },
   {
     "region": "SNNPR",
@@ -7147,7 +7152,8 @@
     "municipality": "Wolayita",
     "borough": "Wolayita",
     "district": "Boloso Sore",
-    "image": "/members/Hon_W_O_Shewit_Shanka.webp"
+    "image": "/members/Hon_W_O_Shewit_Shanka.webp",
+    "ministerPosition": "Minister of Culture and Sport"
   },
   {
     "region": "SNNPR",
@@ -7521,7 +7527,8 @@
     "municipality": "Afder",
     "borough": "Afder",
     "district": "Charati",
-    "image": null
+    "image": null,
+    "ministerPosition": "Minister of Finance"
   },
   {
     "region": "Somali",

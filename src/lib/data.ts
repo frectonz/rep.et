@@ -16,6 +16,7 @@ export interface Representative {
   borough?: string;
   district?: string;
   image?: string;
+  ministerPosition?: string;
 }
 
 export function formatPlace(rep: Representative): string | null {
