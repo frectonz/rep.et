@@ -22,7 +22,7 @@ const coordsJson = JSON.stringify(
   Use My Location
 </button>
 
-<script define:vars={{ coordsJson }}>
+<script is:inline define:vars={{ coordsJson }}>
   document.addEventListener("DOMContentLoaded", function () {
     const reps = JSON.parse(coordsJson);
     const btn = document.getElementById("locate-btn");

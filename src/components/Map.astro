@@ -30,7 +30,6 @@ const PARTY_COLORS: Record<string, string> = {
   "Gumuz People's Democratic Movement": "#d44e22",
   Independent: "#8a7d72",
 };
-const partyColorsJson = JSON.stringify(PARTY_COLORS);
 ---
 
 <link
@@ -151,9 +150,8 @@ const partyColorsJson = JSON.stringify(PARTY_COLORS);
 
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline
 ></script>
-<script is:inline define:vars={{ geojson, partyColorsJson }}>
+<script is:inline define:vars={{ geojson, PARTY_COLORS }}>
   const DATA = JSON.parse(geojson);
-  const PARTY_COLORS = JSON.parse(partyColorsJson);
 
   const map = new maplibregl.Map({
     container: "full-map",
