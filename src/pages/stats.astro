@@ -2,21 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import {
-  Users,
-  Vote,
-  UserRound,
-  TrendingUp,
-  Trophy,
   ArrowDown,
   Hash,
-  Globe,
+  TrendingUp,
+  Trophy,
+  UserRound,
+  Users,
+  Vote,
 } from "@lucide/astro";
-import {
-  representatives,
-  getOverallStats,
-  regionSlug,
-  partySlug,
-} from "../lib/data";
+import { getOverallStats, representatives } from "../lib/data";
 
 const stats = getOverallStats();
 const femalePercent = ((stats.totalFemale / stats.totalSeats) * 100).toFixed(1);
@@ -36,7 +30,10 @@ const partyReach = stats.partyStats
 const totalRegions = stats.regionStats.length;
 ---
 
-<Layout title="Statistics" description="Statistics and data on Ethiopia's House of Peoples' Representatives (HOPR) — seats by region, party breakdown, gender representation, and vote analysis.">
+<Layout
+  title="Statistics"
+  description="Statistics and data on Ethiopia's House of Peoples' Representatives (HOPR) — seats by region, party breakdown, gender representation, and vote analysis."
+>
   <div class="max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Stats" }]} />
 
@@ -46,22 +43,30 @@ const totalRegions = stats.regionStats.length;
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Users class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.totalSeats}</p>
+        <p class="text-xl font-bold font-heading text-primary">
+          {stats.totalSeats}
+        </p>
         <p class="text-xs text-text-muted">Representatives</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Vote class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.totalVotes.toLocaleString()}</p>
+        <p class="text-xl font-bold font-heading text-primary">
+          {stats.totalVotes.toLocaleString()}
+        </p>
         <p class="text-xs text-text-muted">Total Votes</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <UserRound class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.totalFemale}</p>
+        <p class="text-xl font-bold font-heading text-primary">
+          {stats.totalFemale}
+        </p>
         <p class="text-xs text-text-muted">Women ({femalePercent}%)</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <TrendingUp class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.avgVotesPerSeat.toLocaleString()}</p>
+        <p class="text-xl font-bold font-heading text-primary">
+          {stats.avgVotesPerSeat.toLocaleString()}
+        </p>
         <p class="text-xs text-text-muted">Avg Votes / Seat</p>
       </div>
     </div>
@@ -70,18 +75,25 @@ const totalRegions = stats.regionStats.length;
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
       <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {stats.regionStats.map((r) => (
-          <>
-            <a href={`/regions/${r.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{r.name}</a>
-            <div class="h-5 bg-callout-bg rounded overflow-hidden">
-              <div
-                class="h-full bg-olive rounded"
-                style={`width: ${(r.seats / stats.totalSeats) * 100}%`}
-              ></div>
-            </div>
-            <span class="text-sm text-text-muted text-right">{r.seats}</span>
-          </>
-        ))}
+        {
+          stats.regionStats.map((r) => (
+            <>
+              <a
+                href={`/regions/${r.slug}`}
+                class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+              >
+                {r.name}
+              </a>
+              <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                <div
+                  class="h-full bg-olive rounded"
+                  style={`width: ${(r.seats / stats.totalSeats) * 100}%`}
+                />
+              </div>
+              <span class="text-sm text-text-muted text-right">{r.seats}</span>
+            </>
+          ))
+        }
       </div>
     </div>
 
@@ -89,18 +101,25 @@ const totalRegions = stats.regionStats.length;
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
       <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {stats.partyStats.map((p) => (
-          <>
-            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{p.name}</a>
-            <div class="h-5 bg-callout-bg rounded overflow-hidden">
-              <div
-                class="h-full bg-olive rounded"
-                style={`width: ${(p.seats / stats.totalSeats) * 100}%`}
-              ></div>
-            </div>
-            <span class="text-sm text-text-muted text-right">{p.seats}</span>
-          </>
-        ))}
+        {
+          stats.partyStats.map((p) => (
+            <>
+              <a
+                href={`/parties/${p.slug}`}
+                class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+              >
+                {p.name}
+              </a>
+              <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                <div
+                  class="h-full bg-olive rounded"
+                  style={`width: ${(p.seats / stats.totalSeats) * 100}%`}
+                />
+              </div>
+              <span class="text-sm text-text-muted text-right">{p.seats}</span>
+            </>
+          ))
+        }
       </div>
     </div>
 
@@ -110,40 +129,58 @@ const totalRegions = stats.regionStats.length;
 
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Party</h3>
       <div class="grid items-center gap-x-3 gap-y-2 mb-6 progress-grid">
-        {stats.femaleByParty.map((p) => {
-          const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
-          return (
-            <>
-              <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{p.name}</a>
-              <div class="h-5 bg-callout-bg rounded overflow-hidden">
-                <div
-                  class="h-full bg-accent rounded"
-                  style={`width: ${pct}%`}
-                ></div>
-              </div>
-              <span class="text-sm text-text-muted text-right">{p.female}/{p.total}</span>
-            </>
-          );
-        })}
+        {
+          stats.femaleByParty.map((p) => {
+            const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
+            return (
+              <>
+                <a
+                  href={`/parties/${p.slug}`}
+                  class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+                >
+                  {p.name}
+                </a>
+                <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                  <div
+                    class="h-full bg-accent rounded"
+                    style={`width: ${pct}%`}
+                  />
+                </div>
+                <span class="text-sm text-text-muted text-right">
+                  {p.female}/{p.total}
+                </span>
+              </>
+            );
+          })
+        }
       </div>
 
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Region</h3>
       <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {stats.femaleByRegion.map((r) => {
-          const pct = r.total > 0 ? (r.female / r.total) * 100 : 0;
-          return (
-            <>
-              <a href={`/regions/${r.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{r.name}</a>
-              <div class="h-5 bg-callout-bg rounded overflow-hidden">
-                <div
-                  class="h-full bg-accent rounded"
-                  style={`width: ${pct}%`}
-                ></div>
-              </div>
-              <span class="text-sm text-text-muted text-right">{r.female}/{r.total}</span>
-            </>
-          );
-        })}
+        {
+          stats.femaleByRegion.map((r) => {
+            const pct = r.total > 0 ? (r.female / r.total) * 100 : 0;
+            return (
+              <>
+                <a
+                  href={`/regions/${r.slug}`}
+                  class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+                >
+                  {r.name}
+                </a>
+                <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                  <div
+                    class="h-full bg-accent rounded"
+                    style={`width: ${pct}%`}
+                  />
+                </div>
+                <span class="text-sm text-text-muted text-right">
+                  {r.female}/{r.total}
+                </span>
+              </>
+            );
+          })
+        }
       </div>
     </div>
 
@@ -154,55 +191,93 @@ const totalRegions = stats.regionStats.length;
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <Trophy class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">{stats.highestVote.votes.toLocaleString()}</p>
+          <p class="text-lg font-bold font-heading text-primary">
+            {stats.highestVote.votes.toLocaleString()}
+          </p>
           <p class="text-xs text-text-muted">Highest Vote</p>
         </div>
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <ArrowDown class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">{stats.lowestVote.votes.toLocaleString()}</p>
+          <p class="text-lg font-bold font-heading text-primary">
+            {stats.lowestVote.votes.toLocaleString()}
+          </p>
           <p class="text-xs text-text-muted">Lowest Vote</p>
         </div>
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <Hash class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">{stats.medianVotes.toLocaleString()}</p>
+          <p class="text-lg font-bold font-heading text-primary">
+            {stats.medianVotes.toLocaleString()}
+          </p>
           <p class="text-xs text-text-muted">Median Vote</p>
         </div>
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <TrendingUp class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">{stats.avgVotesPerSeat.toLocaleString()}</p>
+          <p class="text-lg font-bold font-heading text-primary">
+            {stats.avgVotesPerSeat.toLocaleString()}
+          </p>
           <p class="text-xs text-text-muted">Average Vote</p>
         </div>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <h3 class="text-sm font-semibold text-text-muted mb-2">Top 5 Highest Votes</h3>
+          <h3 class="text-sm font-semibold text-text-muted mb-2">
+            Top 5 Highest Votes
+          </h3>
           <ol class="space-y-2">
-            {top5.map((rep, i) => (
-              <li class="flex items-start gap-2">
-                <span class="text-xs font-bold text-accent mt-0.5">{i + 1}.</span>
-                <div class="min-w-0">
-                  <a href={`/representatives/${rep.slug}`} class="text-sm font-medium hover:text-accent transition-colors truncate block">{rep.candidate}</a>
-                  <p class="text-xs text-text-muted">{rep.location}, {rep.region}</p>
-                  <p class="text-xs font-semibold text-primary">{rep.votes.toLocaleString()} votes</p>
-                </div>
-              </li>
-            ))}
+            {
+              top5.map((rep, i) => (
+                <li class="flex items-start gap-2">
+                  <span class="text-xs font-bold text-accent mt-0.5">
+                    {i + 1}.
+                  </span>
+                  <div class="min-w-0">
+                    <a
+                      href={`/representatives/${rep.slug}`}
+                      class="text-sm font-medium hover:text-accent transition-colors truncate block"
+                    >
+                      {rep.candidate}
+                    </a>
+                    <p class="text-xs text-text-muted">
+                      {rep.location}, {rep.region}
+                    </p>
+                    <p class="text-xs font-semibold text-primary">
+                      {rep.votes.toLocaleString()} votes
+                    </p>
+                  </div>
+                </li>
+              ))
+            }
           </ol>
         </div>
         <div>
-          <h3 class="text-sm font-semibold text-text-muted mb-2">Bottom 5 Lowest Votes</h3>
+          <h3 class="text-sm font-semibold text-text-muted mb-2">
+            Bottom 5 Lowest Votes
+          </h3>
           <ol class="space-y-2">
-            {bottom5.map((rep, i) => (
-              <li class="flex items-start gap-2">
-                <span class="text-xs font-bold text-accent mt-0.5">{i + 1}.</span>
-                <div class="min-w-0">
-                  <a href={`/representatives/${rep.slug}`} class="text-sm font-medium hover:text-accent transition-colors truncate block">{rep.candidate}</a>
-                  <p class="text-xs text-text-muted">{rep.location}, {rep.region}</p>
-                  <p class="text-xs font-semibold text-primary">{rep.votes.toLocaleString()} votes</p>
-                </div>
-              </li>
-            ))}
+            {
+              bottom5.map((rep, i) => (
+                <li class="flex items-start gap-2">
+                  <span class="text-xs font-bold text-accent mt-0.5">
+                    {i + 1}.
+                  </span>
+                  <div class="min-w-0">
+                    <a
+                      href={`/representatives/${rep.slug}`}
+                      class="text-sm font-medium hover:text-accent transition-colors truncate block"
+                    >
+                      {rep.candidate}
+                    </a>
+                    <p class="text-xs text-text-muted">
+                      {rep.location}, {rep.region}
+                    </p>
+                    <p class="text-xs font-semibold text-primary">
+                      {rep.votes.toLocaleString()} votes
+                    </p>
+                  </div>
+                </li>
+              ))
+            }
           </ol>
         </div>
       </div>
@@ -211,20 +286,31 @@ const totalRegions = stats.regionStats.length;
     <!-- Section 6: Party Reach -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-3">Party Reach</h2>
-      <p class="text-sm text-text-muted mb-3">Regions where each party holds seats (out of {totalRegions})</p>
+      <p class="text-sm text-text-muted mb-3">
+        Regions where each party holds seats (out of {totalRegions})
+      </p>
       <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {partyReach.map((p) => (
-          <>
-            <a href={`/parties/${p.slug}`} class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label">{p.name}</a>
-            <div class="h-5 bg-callout-bg rounded overflow-hidden">
-              <div
-                class="h-full bg-olive rounded"
-                style={`width: ${(p.regionCount / totalRegions) * 100}%`}
-              ></div>
-            </div>
-            <span class="text-sm text-text-muted text-right">{p.regionCount}/{totalRegions}</span>
-          </>
-        ))}
+        {
+          partyReach.map((p) => (
+            <>
+              <a
+                href={`/parties/${p.slug}`}
+                class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+              >
+                {p.name}
+              </a>
+              <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                <div
+                  class="h-full bg-olive rounded"
+                  style={`width: ${(p.regionCount / totalRegions) * 100}%`}
+                />
+              </div>
+              <span class="text-sm text-text-muted text-right">
+                {p.regionCount}/{totalRegions}
+              </span>
+            </>
+          ))
+        }
       </div>
     </div>
   </div>

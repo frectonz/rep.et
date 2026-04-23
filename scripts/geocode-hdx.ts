@@ -21,6 +21,16 @@ interface HdxWoreda {
   lng: number;
 }
 
+interface HdxFeature {
+  properties: {
+    adm1_name: string;
+    adm2_name: string;
+    adm3_name: string;
+    center_lat: number | null;
+    center_lon: number | null;
+  };
+}
+
 function normalize(s: string): string {
   return s
     .toLowerCase()
@@ -104,8 +114,10 @@ async function main() {
   // Load HDX woreda data
   const geojson = await Bun.file(hdxPath).json();
   const woredas: HdxWoreda[] = geojson.features
-    .filter((f: any) => f.properties.center_lat && f.properties.center_lon)
-    .map((f: any) => ({
+    .filter(
+      (f: HdxFeature) => f.properties.center_lat && f.properties.center_lon,
+    )
+    .map((f: HdxFeature) => ({
       name: f.properties.adm3_name,
       region: f.properties.adm1_name,
       zone: f.properties.adm2_name,

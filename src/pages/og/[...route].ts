@@ -1,15 +1,20 @@
 import { OGImageRoute } from "astro-og-canvas";
 import {
-  representatives,
-  regions,
-  regionSlug,
   getByRegion,
+  getPartyStats,
   parties,
   partySlug,
-  getPartyStats,
+  regions,
+  regionSlug,
+  representatives,
 } from "../../lib/data";
 
-const pages = Object.fromEntries([
+interface OgPage {
+  title: string;
+  description: string;
+}
+
+const pages: Record<string, OgPage> = Object.fromEntries([
   // Static pages
   [
     "index",

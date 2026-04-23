@@ -56,12 +56,29 @@ if (rep.image) {
 }
 ---
 
-<Layout title={`${rep.candidate}`} description={description} ogType="profile" jsonLd={personJsonLd}>
+<Layout
+  title={`${rep.candidate}`}
+  description={description}
+  ogType="profile"
+  jsonLd={personJsonLd}
+>
   <div class="max-w-3xl mx-auto px-4 py-8">
-    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Representatives", href: "/representatives" }, { label: rep.candidate }]} />
+    <Breadcrumbs
+      crumbs={[
+        { label: "Home", href: "/" },
+        { label: "Representatives", href: "/representatives" },
+        { label: rep.candidate },
+      ]}
+    />
 
-    <div id="share-card" class="relative bg-callout-bg rounded-lg border border-callout-border px-4 py-4 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-      <button id="share-dismiss" class="absolute -top-2 -right-2 bg-callout-bg border border-callout-border rounded-full text-text-muted hover:text-text cursor-pointer p-0.5">
+    <div
+      id="share-card"
+      class="relative bg-callout-bg rounded-lg border border-callout-border px-4 py-4 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+    >
+      <button
+        id="share-dismiss"
+        class="absolute -top-2 -right-2 bg-callout-bg border border-callout-border rounded-full text-text-muted hover:text-text cursor-pointer p-0.5"
+      >
         <X class="w-3.5 h-3.5" />
       </button>
       <div>
@@ -82,24 +99,28 @@ if (rep.image) {
 
     <div class="bg-card rounded-lg border border-border p-6 md:p-8">
       <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-        {rep.image && (
-          <img
-            src={rep.image}
-            alt={rep.candidate}
-            width={80}
-            height={80}
-            fetchpriority="high"
-            decoding="async"
-            class="w-20 h-20 rounded-full object-cover border-2 border-border shrink-0"
-          />
-        )}
+        {
+          rep.image && (
+            <img
+              src={rep.image}
+              alt={rep.candidate}
+              width={80}
+              height={80}
+              fetchpriority="high"
+              decoding="async"
+              class="w-20 h-20 rounded-full object-cover border-2 border-border shrink-0"
+            />
+          )
+        }
         <div>
           <h1 class="text-2xl md:text-3xl font-bold">{rep.candidate}</h1>
-          {rep.ministerPosition && (
-            <span class="inline-block mt-2 px-3 py-1 text-sm font-medium bg-accent/15 text-accent rounded-full">
-              {rep.ministerPosition}
-            </span>
-          )}
+          {
+            rep.ministerPosition && (
+              <span class="inline-block mt-2 px-3 py-1 text-sm font-medium bg-accent/15 text-accent rounded-full">
+                {rep.ministerPosition}
+              </span>
+            )
+          }
         </div>
       </div>
 
@@ -107,7 +128,9 @@ if (rep.image) {
         <div>
           <div class="flex items-center gap-2">
             <MapPinned class="w-4 h-4 text-accent shrink-0" />
-            <span class="text-xs uppercase tracking-wider text-text-muted">Constituency</span>
+            <span class="text-xs uppercase tracking-wider text-text-muted"
+              >Constituency</span
+            >
           </div>
           <p class="font-medium pl-6">{rep.location}</p>
         </div>
@@ -115,10 +138,15 @@ if (rep.image) {
         <div>
           <div class="flex items-center gap-2">
             <Globe class="w-4 h-4 text-accent shrink-0" />
-            <span class="text-xs uppercase tracking-wider text-text-muted">Region</span>
+            <span class="text-xs uppercase tracking-wider text-text-muted"
+              >Region</span
+            >
           </div>
           <p class="pl-6">
-            <a href={`/regions/${regionSlug(rep.region)}`} class="font-medium hover:text-accent">
+            <a
+              href={`/regions/${regionSlug(rep.region)}`}
+              class="font-medium hover:text-accent"
+            >
               {rep.region}
             </a>
           </p>
@@ -127,7 +155,9 @@ if (rep.image) {
         <div>
           <div class="flex items-center gap-2">
             <Landmark class="w-4 h-4 text-accent shrink-0" />
-            <span class="text-xs uppercase tracking-wider text-text-muted">Party</span>
+            <span class="text-xs uppercase tracking-wider text-text-muted"
+              >Party</span
+            >
           </div>
           <p class="font-medium pl-6">{rep.party}</p>
         </div>
@@ -135,7 +165,9 @@ if (rep.image) {
         <div>
           <div class="flex items-center gap-2">
             <User class="w-4 h-4 text-accent shrink-0" />
-            <span class="text-xs uppercase tracking-wider text-text-muted">Gender</span>
+            <span class="text-xs uppercase tracking-wider text-text-muted"
+              >Gender</span
+            >
           </div>
           <p class="font-medium pl-6">{rep.gender}</p>
         </div>
@@ -143,20 +175,26 @@ if (rep.image) {
         <div>
           <div class="flex items-center gap-2">
             <Vote class="w-4 h-4 text-accent shrink-0" />
-            <span class="text-xs uppercase tracking-wider text-text-muted">Votes</span>
+            <span class="text-xs uppercase tracking-wider text-text-muted"
+              >Votes</span
+            >
           </div>
           <p class="font-medium text-lg pl-6">{rep.votes.toLocaleString()}</p>
         </div>
 
-        {place && (
-          <div>
-            <div class="flex items-center gap-2">
-              <MapPin class="w-4 h-4 text-accent shrink-0" />
-              <span class="text-xs uppercase tracking-wider text-text-muted">Location</span>
+        {
+          place && (
+            <div>
+              <div class="flex items-center gap-2">
+                <MapPin class="w-4 h-4 text-accent shrink-0" />
+                <span class="text-xs uppercase tracking-wider text-text-muted">
+                  Location
+                </span>
+              </div>
+              <p class="font-medium pl-6">{place}</p>
             </div>
-            <p class="font-medium pl-6">{place}</p>
-          </div>
-        )}
+          )
+        }
       </div>
     </div>
 
@@ -170,72 +208,85 @@ if (rep.image) {
         data-lat={rep.lat}
         data-lng={rep.lng}
         data-name={rep.location}
-      ></div>
+      >
+      </div>
     </div>
   </div>
 </Layout>
 
 <script is:inline>
-  (function() {
-    var card = document.getElementById('share-card');
-    var btn = document.getElementById('share-btn');
-    var dismiss = document.getElementById('share-dismiss');
+  (function () {
+    const card = document.getElementById("share-card");
+    const btn = document.getElementById("share-btn");
+    const dismiss = document.getElementById("share-dismiss");
     if (!card || !btn) return;
 
     if (!navigator.share) {
-      card.style.display = 'none';
+      card.style.display = "none";
       return;
     }
 
-    dismiss.addEventListener('click', function() {
+    dismiss.addEventListener("click", function () {
       card.remove();
     });
 
-    btn.addEventListener('click', function() {
-      var name = btn.dataset.name;
-      var location = btn.dataset.location;
-      var region = btn.dataset.region;
+    btn.addEventListener("click", function () {
+      const name = btn.dataset.name;
+      const location = btn.dataset.location;
+      const region = btn.dataset.region;
 
       navigator.share({
         title: name,
-        text: 'I just found out that my representative in the HoPR is ' + name + ' from ' + location + ', ' + region + '!\n\nFind yours at rep.et\n\n' + window.location.href
+        text:
+          "I just found out that my representative in the HoPR is " +
+          name +
+          " from " +
+          location +
+          ", " +
+          region +
+          "!\n\nFind yours at rep.et\n\n" +
+          window.location.href,
       });
     });
   })();
 </script>
 
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
-<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+/>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline
+></script>
 <script is:inline>
-  (function() {
-    var container = document.getElementById('rep-map');
+  (function () {
+    const container = document.getElementById("rep-map");
     if (!container) return;
-    var lat = parseFloat(container.dataset.lat);
-    var lng = parseFloat(container.dataset.lng);
-    var name = container.dataset.name;
+    const lat = parseFloat(container.dataset.lat);
+    const lng = parseFloat(container.dataset.lng);
 
-    var map = new maplibregl.Map({
+    const map = new maplibregl.Map({
       container: container,
       style: {
         version: 8,
         sources: {
           osm: {
-            type: 'raster',
-            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            type: "raster",
+            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
             tileSize: 256,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          }
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          },
         },
-        layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+        layers: [{ id: "osm", type: "raster", source: "osm" }],
       },
       center: [lng, lat],
-      zoom: 10
+      zoom: 10,
     });
 
-    new maplibregl.Marker({ color: '#c8962d' })
+    new maplibregl.Marker({ color: "#c8962d" })
       .setLngLat([lng, lat])
       .addTo(map);
 
-    map.addControl(new maplibregl.NavigationControl(), 'top-right');
+    map.addControl(new maplibregl.NavigationControl(), "top-right");
   })();
 </script>

@@ -63,7 +63,11 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
       rel="stylesheet"
     />
     <title>{title}</title>
-    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    {
+      jsonLd && (
+        <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+      )
+    }
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />

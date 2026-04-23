@@ -12,9 +12,14 @@ const stats = parties.map(getPartyStats).sort((a, b) => b.seats - a.seats);
 const totalSeats = representatives.length;
 ---
 
-<Layout title="Parties" description="See how seats are distributed among political parties in Ethiopia's House of Peoples' Representatives (HOPR). View party statistics and member lists.">
+<Layout
+  title="Parties"
+  description="See how seats are distributed among political parties in Ethiopia's House of Peoples' Representatives (HOPR). View party statistics and member lists."
+>
   <div class="max-w-3xl mx-auto px-4 py-8">
-    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Parties" }]} />
+    <Breadcrumbs
+      crumbs={[{ label: "Home", href: "/" }, { label: "Parties" }]}
+    />
 
     <h1 class="text-2xl md:text-3xl font-bold mb-6">Party Breakdown</h1>
 
@@ -26,8 +31,12 @@ const totalSeats = representatives.length;
         <div id="seat-chart-container" class="w-full max-w-[550px]"></div>
       </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm" id="party-legend">
-          {stats.map((p) => {
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm"
+        id="party-legend"
+      >
+        {
+          stats.map((p) => {
             const colors = {
               "Prosperity Party": "#4a7c59",
               "National Movement of Amhara": "#d4a84b",
@@ -36,10 +45,13 @@ const totalSeats = representatives.length;
               "Kucha People Democratic Party": "#c4854c",
               "Boro Democratic Party": "#a84573",
               "Gumuz People's Democratic Movement": "#d44e22",
-              "Independent": "#2d5a7b",
+              Independent: "#2d5a7b",
             };
             const color = colors[p.name as keyof typeof colors] || "#78909C";
-            const slug = p.name.toLowerCase().replace(/ /g, "-").replace(/'/g, "");
+            const slug = p.name
+              .toLowerCase()
+              .replace(/ /g, "-")
+              .replace(/'/g, "");
             return (
               <button
                 type="button"
@@ -47,103 +59,143 @@ const totalSeats = representatives.length;
                 data-party={p.name}
                 data-slug={slug}
               >
-                <span class="w-4 h-4 rounded-sm shrink-0 mt-0.5" style={`background-color: ${color};`}></span>
+                <span
+                  class="w-4 h-4 rounded-sm shrink-0 mt-0.5"
+                  style={`background-color: ${color};`}
+                />
                 <span class="font-medium">{p.name}</span>
-                <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">{p.seats}</span>
+                <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">
+                  {p.seats}
+                </span>
               </button>
             );
-          })}
-          <button type="button" class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left" data-party="unoccupied">
-            <span class="w-4 h-4 rounded-sm shrink-0 mt-0.5" style="background-color: #78909C;"></span>
-            <span class="font-medium text-text-muted">Unoccupied</span>
-            <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">76</span>
-          </button>
-          <button type="button" class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left" data-party="reserve">
-            <span class="w-4 h-4 rounded-sm shrink-0 mt-0.5" style="background-color: #9E9E9E;"></span>
-            <span class="font-medium text-text-muted">Reserve</span>
-            <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">39</span>
-          </button>
-        </div>
+          })
+        }
+        <button
+          type="button"
+          class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+          data-party="unoccupied"
+        >
+          <span
+            class="w-4 h-4 rounded-sm shrink-0 mt-0.5"
+            style="background-color: #78909C;"></span>
+          <span class="font-medium text-text-muted">Unoccupied</span>
+          <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
+            >76</span
+          >
+        </button>
+        <button
+          type="button"
+          class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+          data-party="reserve"
+        >
+          <span
+            class="w-4 h-4 rounded-sm shrink-0 mt-0.5"
+            style="background-color: #9E9E9E;"></span>
+          <span class="font-medium text-text-muted">Reserve</span>
+          <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
+            >39</span
+          >
+        </button>
+      </div>
     </div>
 
     <div class="space-y-4">
-      {stats.map((p) => (
-        <div class="bg-card rounded-lg border border-border p-5">
-          <div class="flex items-start justify-between gap-4 mb-3">
-            <div>
-              <h2 class="text-lg font-bold text-primary"><a href={`/parties/${partySlug(p.name)}`} class="hover:text-accent transition-colors">{p.name}</a></h2>
-              <div class="flex gap-4 mt-1 text-sm text-text-muted">
-                <span>{p.seats} seats ({((p.seats / totalSeats) * 100).toFixed(1)}%)</span>
-                <span>{p.totalVotes.toLocaleString()} votes</span>
+      {
+        stats.map((p) => (
+          <div class="bg-card rounded-lg border border-border p-5">
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div>
+                <h2 class="text-lg font-bold text-primary">
+                  <a
+                    href={`/parties/${partySlug(p.name)}`}
+                    class="hover:text-accent transition-colors"
+                  >
+                    {p.name}
+                  </a>
+                </h2>
+                <div class="flex gap-4 mt-1 text-sm text-text-muted">
+                  <span>
+                    {p.seats} seats ({((p.seats / totalSeats) * 100).toFixed(1)}
+                    %)
+                  </span>
+                  <span>{p.totalVotes.toLocaleString()} votes</span>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-2xl font-bold font-heading text-primary">
+                  {p.seats}
+                </span>
               </div>
             </div>
-            <div class="text-right">
-              <span class="text-2xl font-bold font-heading text-primary">{p.seats}</span>
+
+            <div class="flex items-center gap-3 mb-3">
+              <div class="flex-1 h-4 bg-callout-bg rounded overflow-hidden">
+                <div
+                  class="h-full bg-olive rounded"
+                  style={`width: ${(p.seats / totalSeats) * 100}%`}
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3 text-xs text-text-muted">
+              <span>Women: {p.genderSplit.female}</span>
+              <span>Men: {p.genderSplit.male}</span>
+              <span>Regions: {p.regions.length}</span>
             </div>
           </div>
-
-          <div class="flex items-center gap-3 mb-3">
-            <div class="flex-1 h-4 bg-callout-bg rounded overflow-hidden">
-              <div
-                class="h-full bg-olive rounded"
-                style={`width: ${(p.seats / totalSeats) * 100}%`}
-              ></div>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap gap-3 text-xs text-text-muted">
-            <span>Women: {p.genderSplit.female}</span>
-            <span>Men: {p.genderSplit.male}</span>
-            <span>Regions: {p.regions.length}</span>
-          </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </Layout>
 
 <script is:inline>
-  (function() {
-    var container = document.getElementById('seat-chart-container');
+  (function () {
+    const container = document.getElementById("seat-chart-container");
     if (!container) return;
 
-    fetch('/hopr-seats.svg').then(function(r) { return r.text(); }).then(function(svgText) {
-      container.innerHTML = svgText;
-      var svg = container.querySelector('svg');
-      if (!svg) return;
+    fetch("/hopr-seats.svg")
+      .then(function (r) {
+        return r.text();
+      })
+      .then(function (svgText) {
+        container.innerHTML = svgText;
+        const svg = container.querySelector("svg");
+        if (!svg) return;
 
-      svg.setAttribute('width', '100%');
-      svg.setAttribute('height', 'auto');
-      svg.style.display = 'block';
+        svg.setAttribute("width", "100%");
+        svg.setAttribute("height", "auto");
+        svg.style.display = "block";
 
-      var legendItems = document.querySelectorAll('.party-legend-item');
-      var allSeats = svg.querySelectorAll('.seat');
+        const legendItems = document.querySelectorAll(".party-legend-item");
+        const allSeats = svg.querySelectorAll(".seat");
 
-      legendItems.forEach(function(item) {
-        var partyName = item.getAttribute('data-party');
+        legendItems.forEach(function (item) {
+          const partyName = item.getAttribute("data-party");
 
-        item.addEventListener('mouseenter', function() {
-          allSeats.forEach(function(seat) {
-            if (seat.getAttribute('data-party') === partyName) {
-              seat.classList.add('highlighted');
-              seat.classList.remove('dimmed');
-            } else {
-              seat.classList.add('dimmed');
-              seat.classList.remove('highlighted');
-            }
+          item.addEventListener("mouseenter", function () {
+            allSeats.forEach(function (seat) {
+              if (seat.getAttribute("data-party") === partyName) {
+                seat.classList.add("highlighted");
+                seat.classList.remove("dimmed");
+              } else {
+                seat.classList.add("dimmed");
+                seat.classList.remove("highlighted");
+              }
+            });
+            const countEl = item.querySelector(".seat-count");
+            if (countEl) countEl.classList.add("font-bold", "text-primary");
           });
-          var countEl = item.querySelector('.seat-count');
-          if (countEl) countEl.classList.add('font-bold', 'text-primary');
-        });
 
-        item.addEventListener('mouseleave', function() {
-          allSeats.forEach(function(seat) {
-            seat.classList.remove('highlighted', 'dimmed');
+          item.addEventListener("mouseleave", function () {
+            allSeats.forEach(function (seat) {
+              seat.classList.remove("highlighted", "dimmed");
+            });
+            const countEl = item.querySelector(".seat-count");
+            if (countEl) countEl.classList.remove("font-bold", "text-primary");
           });
-          var countEl = item.querySelector('.seat-count');
-          if (countEl) countEl.classList.remove('font-bold', 'text-primary');
         });
       });
-    });
   })();
 </script>

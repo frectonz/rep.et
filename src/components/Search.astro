@@ -27,19 +27,22 @@ const partiesJson = JSON.stringify(parties);
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
       <select
         id="filter-region"
-        class="px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent" style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237a6b60' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
+        class="px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent"
+        style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237a6b60' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
       >
         <option value="">All Regions</option>
       </select>
       <select
         id="filter-party"
-        class="px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent" style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237a6b60' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
+        class="px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent"
+        style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237a6b60' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
       >
         <option value="">All Parties</option>
       </select>
       <select
         id="filter-gender"
-        class="col-span-2 sm:col-span-1 px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent" style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237a6b60' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
+        class="col-span-2 sm:col-span-1 px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent"
+        style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237a6b60' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
       >
         <option value="">All Genders</option>
         <option value="Male">Male</option>
@@ -87,7 +90,12 @@ const partiesJson = JSON.stringify(parties);
     const gender = filterGender.value;
 
     const filtered = reps.filter((r) => {
-      if (query && !r.candidate.toLowerCase().includes(query) && !r.location.toLowerCase().includes(query)) return false;
+      if (
+        query &&
+        !r.candidate.toLowerCase().includes(query) &&
+        !r.location.toLowerCase().includes(query)
+      )
+        return false;
       if (region && r.region !== region) return false;
       if (party && r.party !== party) return false;
       if (gender && r.gender !== gender) return false;
@@ -115,7 +123,7 @@ const partiesJson = JSON.stringify(parties);
               <span class="block text-xs text-[#7a6b60]">votes</span>
             </div>
           </div>
-        </a>`
+        </a>`,
       )
       .join("");
   }

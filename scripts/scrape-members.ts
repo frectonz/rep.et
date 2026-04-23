@@ -1,5 +1,5 @@
-import { mkdirSync, existsSync, readdirSync } from "node:fs";
-import { basename, extname } from "node:path";
+import { existsSync, mkdirSync, readdirSync } from "node:fs";
+import { extname } from "node:path";
 
 const BASE_URL = "https://www.hopr.gov.et/web/guest/members";
 const PORTLET_ID =
@@ -13,7 +13,6 @@ const PAGE_DELAY_MS = 5_000;
 const CACHE_DIR = `${import.meta.dir}/../.cache/members`;
 const IMAGES_DIR = `${import.meta.dir}/../.cache/members/images`;
 const DETAILS_DIR = `${import.meta.dir}/../.cache/members/details`;
-const OUTPUT_DIR = `${import.meta.dir}/../election-6`;
 
 function archiveUrl(originalUrl: string): string {
   return `https://web.archive.org/web/20250814054056id_/${originalUrl}`;

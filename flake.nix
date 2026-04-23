@@ -39,7 +39,6 @@
         default = pkgs.mkShell {
           buildInputs = [
             pkgs.pnpm
-            pkgs.biome
             pkgs.nodejs
           ];
         };

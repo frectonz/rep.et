@@ -33,7 +33,10 @@ const PARTY_COLORS: Record<string, string> = {
 const partyColorsJson = JSON.stringify(PARTY_COLORS);
 ---
 
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+/>
 
 <style is:global>
   .maplibregl-popup-content {
@@ -47,7 +50,7 @@ const partyColorsJson = JSON.stringify(PARTY_COLORS);
   }
   .maplibregl-popup-close-button {
     font-size: 20px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     padding: 4px 10px;
     right: 0;
     top: 0;
@@ -71,7 +74,7 @@ const partyColorsJson = JSON.stringify(PARTY_COLORS);
     display: flex;
     align-items: center;
     gap: 5px;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 12px;
   }
   .popup-location-line svg {
@@ -133,100 +136,137 @@ const partyColorsJson = JSON.stringify(PARTY_COLORS);
   }
 </style>
 
-<div id="map-wrapper" style="position:relative;width:100%;height:calc(100vh - 56px);">
-  <div id="full-map" style="position:absolute;top:0;left:0;right:0;bottom:0;"></div>
-  <div id="legend" style="position:absolute;bottom:45px;right:10px;background:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,0.3);font-size:13px;line-height:1.6;z-index:1;"></div>
+<div
+  id="map-wrapper"
+  style="position:relative;width:100%;height:calc(100vh - 56px);"
+>
+  <div id="full-map" style="position:absolute;top:0;left:0;right:0;bottom:0;">
+  </div>
+  <div
+    id="legend"
+    style="position:absolute;bottom:45px;right:10px;background:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,0.3);font-size:13px;line-height:1.6;z-index:1;"
+  >
+  </div>
 </div>
 
-<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline></script>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline
+></script>
 <script is:inline define:vars={{ geojson, partyColorsJson }}>
-  var DATA = JSON.parse(geojson);
-  var PARTY_COLORS = JSON.parse(partyColorsJson);
+  const DATA = JSON.parse(geojson);
+  const PARTY_COLORS = JSON.parse(partyColorsJson);
 
-  var map = new maplibregl.Map({
-    container: 'full-map',
+  const map = new maplibregl.Map({
+    container: "full-map",
     style: {
       version: 8,
       sources: {
         osm: {
-          type: 'raster',
-          tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+          type: "raster",
+          tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
           tileSize: 256,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        },
       },
-      layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+      layers: [{ id: "osm", type: "raster", source: "osm" }],
     },
     center: [39.5, 9.0],
-    zoom: 5.5
+    zoom: 5.5,
   });
 
-  map.addControl(new maplibregl.NavigationControl(), 'top-right');
+  map.addControl(new maplibregl.NavigationControl(), "top-right");
 
-  map.on('load', function() {
-    map.addSource('constituencies', { type: 'geojson', data: DATA });
+  map.on("load", function () {
+    map.addSource("constituencies", { type: "geojson", data: DATA });
 
-    var colorMatch = ['match', ['get', 'party']];
-    Object.keys(PARTY_COLORS).forEach(function(party) {
+    const colorMatch = ["match", ["get", "party"]];
+    Object.keys(PARTY_COLORS).forEach(function (party) {
       colorMatch.push(party, PARTY_COLORS[party]);
     });
-    colorMatch.push('#9e9e9e');
+    colorMatch.push("#9e9e9e");
 
     map.addLayer({
-      id: 'constituency-dots',
-      type: 'circle',
-      source: 'constituencies',
+      id: "constituency-dots",
+      type: "circle",
+      source: "constituencies",
       paint: {
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 5, 5, 10, 9],
-        'circle-color': colorMatch,
-        'circle-stroke-color': '#fff',
-        'circle-stroke-width': 1.5,
-        'circle-opacity': 0.85
-      }
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 5, 10, 9],
+        "circle-color": colorMatch,
+        "circle-stroke-color": "#fff",
+        "circle-stroke-width": 1.5,
+        "circle-opacity": 0.85,
+      },
     });
 
-    map.on('click', 'constituency-dots', function(e) {
-      var f = e.features[0];
-      var p = f.properties;
-      var color = PARTY_COLORS[p.party] || '#9e9e9e';
-      var votes = p.votes != null ? Number(p.votes).toLocaleString() : 'N/A';
-      var iconPin = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>';
-      var iconGlobe = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>';
-      var iconLandmark = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>';
-      var iconVote = '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"/><path d="M22 19H2"/></svg>';
+    map.on("click", "constituency-dots", function (e) {
+      const f = e.features[0];
+      const p = f.properties;
+      const color = PARTY_COLORS[p.party] || "#9e9e9e";
+      const votes = p.votes != null ? Number(p.votes).toLocaleString() : "N/A";
+      const iconPin =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>';
+      const iconLandmark =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>';
+      const iconVote =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"/><path d="M22 19H2"/></svg>';
 
-      new maplibregl.Popup({ offset: 14, maxWidth: '320px' })
+      new maplibregl.Popup({ offset: 14, maxWidth: "320px" })
         .setLngLat(f.geometry.coordinates)
         .setHTML(
           '<div class="popup-header">' +
-            '<div class="popup-candidate">' + p.candidate + '</div>' +
-            '<div class="popup-location-line">' + iconPin + ' ' + p.location + ' &middot; ' + p.region + '</div>' +
-          '</div>' +
-          '<div class="popup-body">' +
-            '<div class="popup-row">' + iconLandmark + ' <span class="popup-party-dot" style="background:' + color + '"></span> <span class="popup-row-value">' + p.party + '</span></div>' +
-            '<div class="popup-row">' + iconVote + ' <span class="popup-row-label">Votes</span> <span class="popup-row-value">' + votes + '</span></div>' +
-          '</div>' +
-          '<div class="popup-footer">' +
-            '<a href="/representatives/' + p.slug + '" class="popup-link">View profile &rarr;</a>' +
-          '</div>'
+            '<div class="popup-candidate">' +
+            p.candidate +
+            "</div>" +
+            '<div class="popup-location-line">' +
+            iconPin +
+            " " +
+            p.location +
+            " &middot; " +
+            p.region +
+            "</div>" +
+            "</div>" +
+            '<div class="popup-body">' +
+            '<div class="popup-row">' +
+            iconLandmark +
+            ' <span class="popup-party-dot" style="background:' +
+            color +
+            '"></span> <span class="popup-row-value">' +
+            p.party +
+            "</span></div>" +
+            '<div class="popup-row">' +
+            iconVote +
+            ' <span class="popup-row-label">Votes</span> <span class="popup-row-value">' +
+            votes +
+            "</span></div>" +
+            "</div>" +
+            '<div class="popup-footer">' +
+            '<a href="/representatives/' +
+            p.slug +
+            '" class="popup-link">View profile &rarr;</a>' +
+            "</div>",
         )
         .addTo(map);
     });
 
-    map.on('mouseenter', 'constituency-dots', function() {
-      map.getCanvas().style.cursor = 'pointer';
+    map.on("mouseenter", "constituency-dots", function () {
+      map.getCanvas().style.cursor = "pointer";
     });
-    map.on('mouseleave', 'constituency-dots', function() {
-      map.getCanvas().style.cursor = '';
+    map.on("mouseleave", "constituency-dots", function () {
+      map.getCanvas().style.cursor = "";
     });
   });
 
-  var legendEl = document.getElementById('legend');
-  legendEl.innerHTML = '<h4 style="margin:0 0 6px;font-weight:bold;color:#3d2b1f;">Parties</h4>';
-  Object.keys(PARTY_COLORS).forEach(function(party) {
+  const legendEl = document.getElementById("legend");
+  legendEl.innerHTML =
+    '<h4 style="margin:0 0 6px;font-weight:bold;color:#3d2b1f;">Parties</h4>';
+  Object.keys(PARTY_COLORS).forEach(function (party) {
     legendEl.innerHTML +=
       '<div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;">' +
-      '<span style="width:12px;height:12px;border-radius:50%;background:' + PARTY_COLORS[party] + ';flex-shrink:0;"></span>' +
-      '<span style="color:#2c1810;">' + party + '</span></div>';
+      '<span style="width:12px;height:12px;border-radius:50%;background:' +
+      PARTY_COLORS[party] +
+      ';flex-shrink:0;"></span>' +
+      '<span style="color:#2c1810;">' +
+      party +
+      "</span></div>";
   });
 </script>

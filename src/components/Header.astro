@@ -23,9 +23,15 @@ const currentPath = Astro.url.pathname;
 
 <header class="bg-primary text-white sticky top-0 z-50">
   <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-    <a href="/" class="flex flex-col leading-tight text-white hover:text-accent">
+    <a
+      href="/"
+      class="flex flex-col leading-tight text-white hover:text-accent"
+    >
       <span class="text-xl font-bold font-heading tracking-tight">rep.et</span>
-      <span class="text-xs opacity-60 -mt-1" style="font-family: 'Nyala', serif;">ተወካዮች</span>
+      <span
+        class="text-xs opacity-60 -mt-1"
+        style="font-family: 'Nyala', serif;">ተወካዮች</span
+      >
     </a>
 
     <button
@@ -38,39 +44,43 @@ const currentPath = Astro.url.pathname;
     </button>
 
     <nav id="nav-menu" class="hidden md:flex items-center gap-6">
-      {navLinks.map((link) => (
-        <a
-          href={link.href}
-          class:list={[
-            "text-sm transition-colors inline-flex items-center gap-1.5",
-            currentPath.startsWith(link.href)
-              ? "text-accent font-semibold"
-              : "text-white/80 hover:text-white",
-          ]}
-        >
-          <link.icon class="w-4 h-4" />
-          {link.label}
-        </a>
-      ))}
+      {
+        navLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "text-sm transition-colors inline-flex items-center gap-1.5",
+              currentPath.startsWith(link.href)
+                ? "text-accent font-semibold"
+                : "text-white/80 hover:text-white",
+            ]}
+          >
+            <link.icon class="w-4 h-4" />
+            {link.label}
+          </a>
+        ))
+      }
     </nav>
   </div>
 
   <nav id="mobile-menu" class="hidden md:hidden border-t border-white/10">
     <div class="max-w-5xl mx-auto px-4 py-2 flex flex-col gap-2">
-      {navLinks.map((link) => (
-        <a
-          href={link.href}
-          class:list={[
-            "text-sm py-2 transition-colors inline-flex items-center gap-2",
-            currentPath.startsWith(link.href)
-              ? "text-accent font-semibold"
-              : "text-white/80 hover:text-white",
-          ]}
-        >
-          <link.icon class="w-4 h-4" />
-          {link.label}
-        </a>
-      ))}
+      {
+        navLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "text-sm py-2 transition-colors inline-flex items-center gap-2",
+              currentPath.startsWith(link.href)
+                ? "text-accent font-semibold"
+                : "text-white/80 hover:text-white",
+            ]}
+          >
+            <link.icon class="w-4 h-4" />
+            {link.label}
+          </a>
+        ))
+      }
     </div>
   </nav>
 </header>

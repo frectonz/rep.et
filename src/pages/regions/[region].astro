@@ -48,7 +48,13 @@ const regionJsonLd = {
 
 <Layout title={`${regionName}`} description={description} jsonLd={regionJsonLd}>
   <div class="max-w-3xl mx-auto px-4 py-8">
-    <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Regions", href: "/regions" }, { label: regionName }]} />
+    <Breadcrumbs
+      crumbs={[
+        { label: "Home", href: "/" },
+        { label: "Regions", href: "/regions" },
+        { label: regionName },
+      ]}
+    />
 
     <h1 class="text-2xl md:text-3xl font-bold mb-6">{regionName}</h1>
 
@@ -60,40 +66,52 @@ const regionJsonLd = {
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Vote class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.totalVotes.toLocaleString()}</p>
+        <p class="text-xl font-bold font-heading text-primary">
+          {stats.totalVotes.toLocaleString()}
+        </p>
         <p class="text-xs text-text-muted">Total Votes</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <UserRound class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.genderSplit.female}</p>
+        <p class="text-xl font-bold font-heading text-primary">
+          {stats.genderSplit.female}
+        </p>
         <p class="text-xs text-text-muted">Women</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Landmark class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.parties.length}</p>
+        <p class="text-xl font-bold font-heading text-primary">
+          {stats.parties.length}
+        </p>
         <p class="text-xs text-text-muted">Parties</p>
       </div>
     </div>
 
-    {stats.parties.length > 1 && (
-      <div class="bg-card rounded-lg border border-border p-5 mb-8">
-        <h2 class="text-lg font-bold mb-3">Party Breakdown</h2>
-        <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-          {stats.parties.map((p) => (
-            <>
-              <span class="text-sm whitespace-nowrap progress-label">{p.name}</span>
-              <div class="h-5 bg-callout-bg rounded overflow-hidden">
-                <div
-                  class="h-full bg-olive rounded"
-                  style={`width: ${(p.seats / stats.seats) * 100}%`}
-                ></div>
-              </div>
-              <span class="text-sm text-text-muted text-right">{p.seats}</span>
-            </>
-          ))}
+    {
+      stats.parties.length > 1 && (
+        <div class="bg-card rounded-lg border border-border p-5 mb-8">
+          <h2 class="text-lg font-bold mb-3">Party Breakdown</h2>
+          <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
+            {stats.parties.map((p) => (
+              <>
+                <span class="text-sm whitespace-nowrap progress-label">
+                  {p.name}
+                </span>
+                <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                  <div
+                    class="h-full bg-olive rounded"
+                    style={`width: ${(p.seats / stats.seats) * 100}%`}
+                  />
+                </div>
+                <span class="text-sm text-text-muted text-right">
+                  {p.seats}
+                </span>
+              </>
+            ))}
+          </div>
         </div>
-      </div>
-    )}
+      )
+    }
 
     <div class="bg-card rounded-lg border border-border overflow-hidden mb-8">
       <div class="p-4 border-b border-border">
@@ -103,58 +121,67 @@ const regionJsonLd = {
     </div>
 
     <h2 class="text-lg font-bold mb-4">
-      Constituencies <span class="text-text-muted font-normal">({reps.length})</span>
+      Constituencies <span class="text-text-muted font-normal"
+        >({reps.length})</span
+      >
     </h2>
     <div class="space-y-3">
-      {reps
-        .sort((a, b) => a.location.localeCompare(b.location))
-        .map((rep) => (
-          <RepCard rep={rep} />
-        ))}
+      {
+        reps
+          .sort((a, b) => a.location.localeCompare(b.location))
+          .map((rep) => <RepCard rep={rep} />)
+      }
     </div>
   </div>
 </Layout>
 
-<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
-<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+/>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" is:inline
+></script>
 <script is:inline>
-  (function() {
-    var container = document.getElementById('region-map');
+  (function () {
+    const container = document.getElementById("region-map");
     if (!container) return;
-    var coords = JSON.parse(container.dataset.coords);
+    const coords = JSON.parse(container.dataset.coords);
 
-    var bounds = new maplibregl.LngLatBounds();
-    coords.forEach(function(c) { bounds.extend([c.lng, c.lat]); });
+    const bounds = new maplibregl.LngLatBounds();
+    coords.forEach(function (c) {
+      bounds.extend([c.lng, c.lat]);
+    });
 
-    var map = new maplibregl.Map({
+    const map = new maplibregl.Map({
       container: container,
       style: {
         version: 8,
         sources: {
           osm: {
-            type: 'raster',
-            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            type: "raster",
+            tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
             tileSize: 256,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          }
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          },
         },
-        layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+        layers: [{ id: "osm", type: "raster", source: "osm" }],
       },
       bounds: bounds,
-      fitBoundsOptions: { padding: 40 }
+      fitBoundsOptions: { padding: 40 },
     });
 
-    map.addControl(new maplibregl.NavigationControl(), 'top-right');
+    map.addControl(new maplibregl.NavigationControl(), "top-right");
 
-    map.on('load', function() {
-      coords.forEach(function(c) {
-        var marker = new maplibregl.Marker({ color: '#c8962d', scale: 0.7 })
+    map.on("load", function () {
+      coords.forEach(function (c) {
+        const marker = new maplibregl.Marker({ color: "#c8962d", scale: 0.7 })
           .setLngLat([c.lng, c.lat])
           .addTo(map);
 
-        marker.getElement().style.cursor = 'pointer';
-        marker.getElement().addEventListener('click', function() {
-          window.location.href = '/representatives/' + c.slug;
+        marker.getElement().style.cursor = "pointer";
+        marker.getElement().addEventListener("click", function () {
+          window.location.href = "/representatives/" + c.slug;
         });
       });
     });

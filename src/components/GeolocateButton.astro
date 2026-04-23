@@ -23,28 +23,35 @@ const coordsJson = JSON.stringify(
 </button>
 
 <script define:vars={{ coordsJson }}>
-  document.addEventListener("DOMContentLoaded", function() {
-    var reps = JSON.parse(coordsJson);
-    var btn = document.getElementById("locate-btn");
-    var status = document.getElementById("geo-status");
-    var fallback = document.getElementById("geo-fallback");
-    var searchInput = document.getElementById("fallback-search");
-    var resultsDiv = document.getElementById("fallback-results");
+  document.addEventListener("DOMContentLoaded", function () {
+    const reps = JSON.parse(coordsJson);
+    const btn = document.getElementById("locate-btn");
+    const status = document.getElementById("geo-status");
+    const fallback = document.getElementById("geo-fallback");
+    const searchInput = document.getElementById("fallback-search");
+    const resultsDiv = document.getElementById("fallback-results");
 
     function haversine(lat1, lng1, lat2, lng2) {
-      var R = 6371;
-      var toRad = function(d) { return (d * Math.PI) / 180; };
-      var dLat = toRad(lat2 - lat1);
-      var dLng = toRad(lng2 - lng1);
-      var a =
+      const R = 6371;
+      const toRad = function (d) {
+        return (d * Math.PI) / 180;
+      };
+      const dLat = toRad(lat2 - lat1);
+      const dLng = toRad(lng2 - lng1);
+      const a =
         Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+        Math.cos(toRad(lat1)) *
+          Math.cos(toRad(lat2)) *
+          Math.sin(dLng / 2) *
+          Math.sin(dLng / 2);
       return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     }
 
     function showStatus(msg, isError) {
       status.textContent = msg;
-      status.className = "mt-4 text-sm text-center " + (isError ? "text-red-700" : "text-text-muted");
+      status.className =
+        "mt-4 text-sm text-center " +
+        (isError ? "text-red-700" : "text-text-muted");
       status.classList.remove("hidden");
     }
 
@@ -52,7 +59,7 @@ const coordsJson = JSON.stringify(
       fallback.classList.remove("hidden");
     }
 
-    btn.addEventListener("click", function() {
+    btn.addEventListener("click", function () {
       if (!navigator.geolocation) {
         showStatus("Geolocation is not supported by your browser.", true);
         showFallback();
@@ -64,15 +71,15 @@ const coordsJson = JSON.stringify(
       showStatus("Requesting your location...", false);
 
       navigator.geolocation.getCurrentPosition(
-        function(pos) {
-          var userLat = pos.coords.latitude;
-          var userLng = pos.coords.longitude;
+        function (pos) {
+          const userLat = pos.coords.latitude;
+          const userLng = pos.coords.longitude;
 
-          var minDist = Infinity;
-          var nearest = null;
-          for (var i = 0; i < reps.length; i++) {
-            var c = reps[i];
-            var d = haversine(userLat, userLng, c.lat, c.lng);
+          let minDist = Infinity;
+          let nearest = null;
+          for (let i = 0; i < reps.length; i++) {
+            const c = reps[i];
+            const d = haversine(userLat, userLng, c.lat, c.lng);
             if (d < minDist) {
               minDist = d;
               nearest = c;
@@ -81,49 +88,63 @@ const coordsJson = JSON.stringify(
 
           if (nearest) {
             showStatus(
-              "Found nearest constituency (" + Math.round(minDist) + " km away). Redirecting...",
-              false
+              "Found nearest constituency (" +
+                Math.round(minDist) +
+                " km away). Redirecting...",
+              false,
             );
             window.location.href = "/representatives/" + nearest.slug;
           }
         },
-        function(err) {
+        function (err) {
           btn.textContent = "Use My Location";
           btn.disabled = false;
-          var msg = "Could not get your location.";
+          let msg = "Could not get your location.";
           if (err.code === 1) msg = "Location access was denied.";
           else if (err.code === 2) msg = "Location unavailable.";
           else if (err.code === 3) msg = "Location request timed out.";
           showStatus(msg, true);
           showFallback();
         },
-        { enableHighAccuracy: true, timeout: 10000 }
+        { enableHighAccuracy: true, timeout: 10000 },
       );
     });
 
     // Fallback search
     if (searchInput) {
-      searchInput.addEventListener("input", function() {
-        var query = searchInput.value.toLowerCase().trim();
+      searchInput.addEventListener("input", function () {
+        const query = searchInput.value.toLowerCase().trim();
         if (!query) {
           resultsDiv.innerHTML = "";
           return;
         }
 
-        var matches = reps
-          .filter(function(r) {
-            return r.location.toLowerCase().indexOf(query) !== -1 ||
+        const matches = reps
+          .filter(function (r) {
+            return (
+              r.location.toLowerCase().indexOf(query) !== -1 ||
               r.region.toLowerCase().indexOf(query) !== -1 ||
-              r.candidate.toLowerCase().indexOf(query) !== -1;
+              r.candidate.toLowerCase().indexOf(query) !== -1
+            );
           })
           .slice(0, 8);
 
         resultsDiv.innerHTML = matches
-          .map(function(r) {
-            return '<a href="/representatives/' + r.slug + '" class="block px-3 py-2 rounded text-sm hover:bg-[#f0e8de] transition-colors">' +
-              '<span class="font-medium text-[#3d2b1f]">' + r.candidate + '</span>' +
-              '<span class="text-[#7a6b60]"> — ' + r.location + ', ' + r.region + '</span>' +
-              '</a>';
+          .map(function (r) {
+            return (
+              '<a href="/representatives/' +
+              r.slug +
+              '" class="block px-3 py-2 rounded text-sm hover:bg-[#f0e8de] transition-colors">' +
+              '<span class="font-medium text-[#3d2b1f]">' +
+              r.candidate +
+              "</span>" +
+              '<span class="text-[#7a6b60]"> — ' +
+              r.location +
+              ", " +
+              r.region +
+              "</span>" +
+              "</a>"
+            );
           })
           .join("");
       });

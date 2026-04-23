@@ -1,6 +1,5 @@
 ---
 import type { Representative } from "../lib/data";
-import { regionSlug } from "../lib/data";
 
 interface Props {
   rep: Representative;
@@ -18,13 +17,19 @@ const { rep } = Astro.props;
       <h3 class="font-semibold text-primary truncate">{rep.candidate}</h3>
       <p class="text-sm text-text-muted mt-0.5">{rep.location}</p>
       <div class="flex flex-wrap gap-2 mt-2">
-        <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-callout-bg text-earth">
+        <span
+          class="inline-block text-xs px-2 py-0.5 rounded-full bg-callout-bg text-earth"
+        >
           {rep.region}
         </span>
-        <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-callout-bg text-olive">
+        <span
+          class="inline-block text-xs px-2 py-0.5 rounded-full bg-callout-bg text-olive"
+        >
           {rep.party}
         </span>
-        <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-callout-bg text-text-muted">
+        <span
+          class="inline-block text-xs px-2 py-0.5 rounded-full bg-callout-bg text-text-muted"
+        >
           {rep.gender}
         </span>
       </div>

@@ -166,8 +166,18 @@ export interface OverallStats {
   lowestVote: Representative;
   regionStats: RegionStats[];
   partyStats: PartyStats[];
-  femaleByParty: { name: string; female: number; total: number }[];
-  femaleByRegion: { name: string; female: number; total: number }[];
+  femaleByParty: {
+    name: string;
+    slug: string;
+    female: number;
+    total: number;
+  }[];
+  femaleByRegion: {
+    name: string;
+    slug: string;
+    female: number;
+    total: number;
+  }[];
 }
 
 export function getOverallStats(): OverallStats {
@@ -204,11 +214,13 @@ export function getOverallStats(): OverallStats {
     partyStats: allPartyStats,
     femaleByParty: allPartyStats.map((p) => ({
       name: p.name,
+      slug: p.slug,
       female: p.genderSplit.female,
       total: p.seats,
     })),
     femaleByRegion: allRegionStats.map((r) => ({
       name: r.name,
+      slug: r.slug,
       female: r.genderSplit.female,
       total: r.seats,
     })),
