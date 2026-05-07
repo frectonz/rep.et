@@ -1,0 +1,56 @@
+{
+  "id": "/",
+  "name": "rep.et — Find Your Representative",
+  "short_name": "rep.et",
+  "description": "Find your representative in Ethiopia's House of Peoples' Representatives (HOPR). Search 471 elected members of parliament by name, region, party, or location.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#3d2b1f",
+  "theme_color": "#3d2b1f",
+  "lang": "en",
+  "categories": ["government", "education", "reference"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "type": "image/png",
+      "sizes": "1280x800",
+      "form_factor": "wide",
+      "label": "rep.et home page on desktop"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "type": "image/png",
+      "sizes": "540x1170",
+      "form_factor": "narrow",
+      "label": "rep.et home page on mobile"
+    }
+  ]
+}

@@ -36,10 +36,19 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="canonical" href={canonicalUrl} />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#3d2b1f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="rep.et" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
@@ -72,6 +81,18 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
         />
       )
     }
+    <script is:inline>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          // updateViaCache: "none" forces the browser to bypass HTTP cache
+          // when checking /sw.js for updates — critical kill-switch for
+          // prod, otherwise a broken SW can stay cached for hours.
+          navigator.serviceWorker
+            .register("/sw.js", { scope: "/", updateViaCache: "none" })
+            .catch(() => {});
+        });
+      }
+    </script>
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />

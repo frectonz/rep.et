@@ -1,0 +1,9 @@
+# Service worker must never be HTTP-cached — otherwise a broken /sw.js
+# can stay pinned at the CDN edge for hours and brick repeat visitors.
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Manifest changes should propagate quickly too.
+/manifest.webmanifest
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: application/manifest+json
