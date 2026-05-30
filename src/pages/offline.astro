@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { House, WifiOff } from "@lucide/astro";
+---
+
+<Layout title="Offline · rep.et" description="You are offline." centerContent>
+  <meta slot="head" name="robots" content="noindex" />
+
+  <section
+    class="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex-1 text-center flex flex-col items-center justify-center"
+  >
+    <div
+      class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6"
+    >
+      <WifiOff class="w-7 h-7 text-primary" />
+    </div>
+    <h1 class="font-heading text-4xl sm:text-5xl text-text mb-3">
+      You&rsquo;re offline
+    </h1>
+    <p class="text-text-muted text-lg max-w-md mb-8">
+      This page hasn&rsquo;t been cached for offline use. Reconnect to load it,
+      or head back to a page you&rsquo;ve already visited.
+    </p>
+    <div class="flex items-center gap-3">
+      <a
+        href="/"
+        class="inline-flex items-center gap-1.5 bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-primary-light transition-colors"
+      >
+        <House class="w-4 h-4" /> Home
+      </a>
+      <button
+        type="button"
+        onclick="location.reload()"
+        class="inline-flex items-center gap-1.5 border border-border text-text px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-card transition-colors"
+      >
+        Retry
+      </button>
+    </div>
+  </section>
+</Layout>

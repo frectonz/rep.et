@@ -1,3 +1,4 @@
+import { createRequire } from "node:module";
 import { OGImageRoute } from "astro-og-canvas";
 import {
   getByRegion,
@@ -13,6 +14,13 @@ interface OgPage {
   title: string;
   description: string;
 }
+
+// Fonts: read from the @fontsource package at build time (no CDN fetch).
+const require = createRequire(import.meta.url);
+const playfairRegular =
+  require.resolve("@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff");
+const playfairBold =
+  require.resolve("@fontsource/playfair-display/files/playfair-display-latin-700-normal.woff");
 
 const pages: Record<string, OgPage> = Object.fromEntries([
   // Static pages
@@ -70,6 +78,20 @@ const pages: Record<string, OgPage> = Object.fromEntries([
         "Charts and statistics about Ethiopia's House of Peoples' Representatives.",
     },
   ],
+  [
+    "offline",
+    {
+      title: "Offline",
+      description: "You are offline.",
+    },
+  ],
+  [
+    "404",
+    {
+      title: "Page not found",
+      description: "That page doesn't exist, or it may have moved.",
+    },
+  ],
 
   // Dynamic: each representative
   ...representatives.map((r) => [
@@ -117,10 +139,7 @@ export const { getStaticPaths, GET } = await OGImageRoute({
       size: [80],
     },
     padding: 70,
-    fonts: [
-      "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-400-normal.ttf",
-      "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-700-normal.ttf",
-    ],
+    fonts: [playfairRegular, playfairBold],
     font: {
       title: {
         color: [200, 150, 45],

@@ -1,8 +1,9 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import EthiopicBg from "../components/EthiopicBg.astro";
-import "../styles/global.css";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import EthiopicBg from "@/components/EthiopicBg.astro";
+import { pwaInfo } from "virtual:pwa-info";
+import "@/styles/global.css";
 
 interface Props {
   title?: string;
@@ -10,6 +11,7 @@ interface Props {
   canonicalPath?: string;
   ogType?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  centerContent?: boolean;
 }
 
 const {
@@ -18,6 +20,7 @@ const {
   canonicalPath,
   ogType = "website",
   jsonLd,
+  centerContent = false,
 } = Astro.props;
 
 const siteUrl = "https://rep.et";
@@ -37,7 +40,7 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     <link rel="canonical" href={canonicalUrl} />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
@@ -65,12 +68,6 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageUrl} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <title>{title}</title>
     {
       jsonLd && (
@@ -81,24 +78,16 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
         />
       )
     }
-    <script is:inline>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          // updateViaCache: "none" forces the browser to bypass HTTP cache
-          // when checking /sw.js for updates — critical kill-switch for
-          // prod, otherwise a broken SW can stay cached for hours.
-          navigator.serviceWorker
-            .register("/sw.js", { scope: "/", updateViaCache: "none" })
-            .catch(() => {});
-        });
-      }
-    </script>
+    <slot name="head" />
+    {import.meta.env.PROD && <script is:inline src="/registerSW.js" />}
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />
-    <main class="flex-1 relative bg-bg">
+    <main
+      class:list={["flex-1 relative bg-bg", centerContent && "flex flex-col"]}
+    >
       <EthiopicBg />
-      <div class="relative">
+      <div class:list={["relative", centerContent && "flex-1 flex flex-col"]}>
         <slot />
       </div>
     </main>

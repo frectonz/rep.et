@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@import "@fontsource-variable/playfair-display";
 
 @theme {
-  --font-heading: "Playfair Display", Georgia, serif;
+  --font-heading: "Playfair Display Variable", Georgia, serif;
   --font-body:
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
