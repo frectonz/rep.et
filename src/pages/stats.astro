@@ -34,7 +34,7 @@ const totalRegions = stats.regionStats.length;
   title="Statistics"
   description="Statistics and data on Ethiopia's House of Peoples' Representatives (HOPR) — seats by region, party breakdown, gender representation, and vote analysis."
 >
-  <div class="max-w-3xl mx-auto px-4 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Stats" }]} />
 
     <h1 class="text-2xl md:text-3xl font-bold mb-6">Statistics</h1>
@@ -71,8 +71,9 @@ const totalRegions = stats.regionStats.length;
       </div>
     </div>
 
-    <!-- Section 2: Seats by Region -->
-    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+    <!-- Sections 2 & 3: Seats by Region / Party -->
+    <div class="grid lg:grid-cols-2 gap-6 mb-8 items-start">
+      <div class="bg-card rounded-lg border border-border p-5">
       <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
       <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {
@@ -97,8 +98,7 @@ const totalRegions = stats.regionStats.length;
       </div>
     </div>
 
-    <!-- Section 3: Seats by Party -->
-    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <div class="bg-card rounded-lg border border-border p-5">
       <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
       <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {
@@ -121,14 +121,17 @@ const totalRegions = stats.regionStats.length;
           ))
         }
       </div>
+      </div>
     </div>
 
     <!-- Section 4: Gender Representation -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-4">Gender Representation</h2>
 
+      <div class="grid lg:grid-cols-2 gap-x-8 gap-y-6">
+        <div>
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Party</h3>
-      <div class="grid items-center gap-x-3 gap-y-2 mb-6 progress-grid">
+      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {
           stats.femaleByParty.map((p) => {
             const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
@@ -154,7 +157,9 @@ const totalRegions = stats.regionStats.length;
           })
         }
       </div>
+        </div>
 
+        <div>
       <h3 class="text-sm font-semibold text-text-muted mb-2">By Region</h3>
       <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
         {
@@ -181,6 +186,8 @@ const totalRegions = stats.regionStats.length;
             );
           })
         }
+      </div>
+        </div>
       </div>
     </div>
 

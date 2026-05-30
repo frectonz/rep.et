@@ -47,7 +47,7 @@ const regionJsonLd = {
 ---
 
 <Layout title={`${regionName}`} description={description} jsonLd={regionJsonLd}>
-  <div class="max-w-3xl mx-auto px-4 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <Breadcrumbs
       crumbs={[
         { label: "Home", href: "/" },
@@ -87,37 +87,48 @@ const regionJsonLd = {
       </div>
     </div>
 
-    {
-      stats.parties.length > 1 && (
-        <div class="bg-card rounded-lg border border-border p-5 mb-8">
-          <h2 class="text-lg font-bold mb-3">Party Breakdown</h2>
-          <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-            {stats.parties.map((p) => (
-              <>
-                <span class="text-sm whitespace-nowrap progress-label">
-                  {p.name}
-                </span>
-                <div class="h-5 bg-callout-bg rounded overflow-hidden">
-                  <div
-                    class="h-full bg-olive rounded"
-                    style={`width: ${(p.seats / stats.seats) * 100}%`}
-                  />
-                </div>
-                <span class="text-sm text-text-muted text-right">
-                  {p.seats}
-                </span>
-              </>
-            ))}
+    <div
+      class={`grid gap-6 mb-8 items-start ${stats.parties.length > 1 ? "lg:grid-cols-3" : ""}`}
+    >
+      {
+        stats.parties.length > 1 && (
+          <div class="bg-card rounded-lg border border-border p-5 lg:col-span-1">
+            <h2 class="text-lg font-bold mb-3">Party Breakdown</h2>
+            <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
+              {stats.parties.map((p) => (
+                <>
+                  <span class="text-sm whitespace-nowrap progress-label">
+                    {p.name}
+                  </span>
+                  <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                    <div
+                      class="h-full bg-olive rounded"
+                      style={`width: ${(p.seats / stats.seats) * 100}%`}
+                    />
+                  </div>
+                  <span class="text-sm text-text-muted text-right">
+                    {p.seats}
+                  </span>
+                </>
+              ))}
+            </div>
           </div>
-        </div>
-      )
-    }
+        )
+      }
 
-    <div class="bg-card rounded-lg border border-border overflow-hidden mb-8">
-      <div class="p-4 border-b border-border">
-        <h2 class="text-lg font-bold">Map</h2>
+      <div
+        class={`bg-card rounded-lg border border-border overflow-hidden ${stats.parties.length > 1 ? "lg:col-span-2" : ""}`}
+      >
+        <div class="p-4 border-b border-border">
+          <h2 class="text-lg font-bold">Map</h2>
+        </div>
+        <div
+          id="region-map"
+          class="h-64 md:h-80 lg:h-96"
+          data-coords={coordsJson}
+        >
+        </div>
       </div>
-      <div id="region-map" class="h-64 md:h-80" data-coords={coordsJson}></div>
     </div>
 
     <h2 class="text-lg font-bold mb-4">
@@ -125,7 +136,7 @@ const regionJsonLd = {
         >({reps.length})</span
       >
     </h2>
-    <div class="space-y-3">
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {
         reps
           .sort((a, b) => a.location.localeCompare(b.location))

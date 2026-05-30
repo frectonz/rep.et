@@ -16,7 +16,7 @@ const totalSeats = representatives.length;
   title="Parties"
   description="See how seats are distributed among political parties in Ethiopia's House of Peoples' Representatives (HOPR). View party statistics and member lists."
 >
-  <div class="max-w-3xl mx-auto px-4 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <Breadcrumbs
       crumbs={[{ label: "Home", href: "/" }, { label: "Parties" }]}
     />
@@ -26,15 +26,16 @@ const totalSeats = representatives.length;
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
       <h2 class="text-lg font-bold mb-4">Seat Distribution</h2>
 
-      <!-- SVG Seat Chart -->
-      <div class="flex justify-center mb-6">
-        <div id="seat-chart-container" class="w-full max-w-[550px]"></div>
-      </div>
+      <div class="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+        <!-- SVG Seat Chart -->
+        <div class="flex justify-center">
+          <div id="seat-chart-container" class="w-full max-w-[550px]"></div>
+        </div>
 
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm"
-        id="party-legend"
-      >
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1.5 text-sm"
+          id="party-legend"
+        >
         {
           stats.map((p) => {
             const colors = {
@@ -55,12 +56,12 @@ const totalSeats = representatives.length;
             return (
               <button
                 type="button"
-                class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+                class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
                 data-party={p.name}
                 data-slug={slug}
               >
                 <span
-                  class="w-4 h-4 rounded-sm shrink-0 mt-0.5"
+                  class="w-4 h-4 rounded-sm shrink-0"
                   style={`background-color: ${color};`}
                 />
                 <span class="font-medium">{p.name}</span>
@@ -73,11 +74,11 @@ const totalSeats = representatives.length;
         }
         <button
           type="button"
-          class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+          class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
           data-party="unoccupied"
         >
           <span
-            class="w-4 h-4 rounded-sm shrink-0 mt-0.5"
+            class="w-4 h-4 rounded-sm shrink-0"
             style="background-color: #78909C;"></span>
           <span class="font-medium text-text-muted">Unoccupied</span>
           <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
@@ -86,21 +87,22 @@ const totalSeats = representatives.length;
         </button>
         <button
           type="button"
-          class="party-legend-item flex items-start gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+          class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
           data-party="reserve"
         >
           <span
-            class="w-4 h-4 rounded-sm shrink-0 mt-0.5"
+            class="w-4 h-4 rounded-sm shrink-0"
             style="background-color: #9E9E9E;"></span>
           <span class="font-medium text-text-muted">Reserve</span>
           <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
             >39</span
           >
         </button>
+        </div>
       </div>
     </div>
 
-    <div class="space-y-4">
+    <div class="grid gap-4 lg:grid-cols-2">
       {
         stats.map((p) => (
           <div class="bg-card rounded-lg border border-border p-5">
