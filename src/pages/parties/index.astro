@@ -36,68 +36,70 @@ const totalSeats = representatives.length;
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-1.5 text-sm"
           id="party-legend"
         >
-        {
-          stats.map((p) => {
-            const colors = {
-              "Prosperity Party": "#4a7c59",
-              "National Movement of Amhara": "#d4a84b",
-              "Ethiopian Citizens for Social Justice": "#7b68a6",
-              "Gedio People Democratic Organization": "#3d8b8b",
-              "Kucha People Democratic Party": "#c4854c",
-              "Boro Democratic Party": "#a84573",
-              "Gumuz People's Democratic Movement": "#d44e22",
-              Independent: "#2d5a7b",
-            };
-            const color = colors[p.name as keyof typeof colors] || "#78909C";
-            const slug = p.name
-              .toLowerCase()
-              .replace(/ /g, "-")
-              .replace(/'/g, "");
-            return (
-              <button
-                type="button"
-                class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
-                data-party={p.name}
-                data-slug={slug}
-              >
-                <span
-                  class="w-4 h-4 rounded-sm shrink-0"
-                  style={`background-color: ${color};`}
-                />
-                <span class="font-medium">{p.name}</span>
-                <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">
-                  {p.seats}
-                </span>
-              </button>
-            );
-          })
-        }
-        <button
-          type="button"
-          class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
-          data-party="unoccupied"
-        >
-          <span
-            class="w-4 h-4 rounded-sm shrink-0"
-            style="background-color: #78909C;"></span>
-          <span class="font-medium text-text-muted">Unoccupied</span>
-          <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
-            >76</span
+          {
+            stats.map((p) => {
+              const colors = {
+                "Prosperity Party": "#4a7c59",
+                "National Movement of Amhara": "#d4a84b",
+                "Ethiopian Citizens for Social Justice": "#7b68a6",
+                "Gedio People Democratic Organization": "#3d8b8b",
+                "Kucha People Democratic Party": "#c4854c",
+                "Boro Democratic Party": "#a84573",
+                "Gumuz People's Democratic Movement": "#d44e22",
+                Independent: "#2d5a7b",
+              };
+              const color = colors[p.name as keyof typeof colors] || "#78909C";
+              const slug = p.name
+                .toLowerCase()
+                .replace(/ /g, "-")
+                .replace(/'/g, "");
+              return (
+                <button
+                  type="button"
+                  class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+                  data-party={p.name}
+                  data-slug={slug}
+                >
+                  <span
+                    class="w-4 h-4 rounded-sm shrink-0"
+                    style={`background-color: ${color};`}
+                  />
+                  <span class="font-medium">{p.name}</span>
+                  <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto">
+                    {p.seats}
+                  </span>
+                </button>
+              );
+            })
+          }
+          <button
+            type="button"
+            class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+            data-party="unoccupied"
           >
-        </button>
-        <button
-          type="button"
-          class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
-          data-party="reserve"
-        >
-          <span
-            class="w-4 h-4 rounded-sm shrink-0"
-            style="background-color: #9E9E9E;"></span>
-          <span class="font-medium text-text-muted">Reserve</span>
-          <span class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
-            >39</span
+            <span
+              class="w-4 h-4 rounded-sm shrink-0"
+              style="background-color: #78909C;"></span>
+            <span class="font-medium text-text-muted">Unoccupied</span>
+            <span
+              class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
+              >76</span
+            >
+          </button>
+          <button
+            type="button"
+            class="party-legend-item flex items-center gap-2 px-3 py-2 rounded-lg transition-all hover:bg-callout-bg cursor-pointer border border-transparent hover:border-border text-left"
+            data-party="reserve"
           >
-        </button>
+            <span
+              class="w-4 h-4 rounded-sm shrink-0"
+              style="background-color: #9E9E9E;"></span>
+            <span class="font-medium text-text-muted">Reserve</span>
+            <span
+              class="seat-count text-text-muted tabular-nums shrink-0 ml-auto"
+              >39</span
+            >
+          </button>
         </div>
       </div>
     </div>

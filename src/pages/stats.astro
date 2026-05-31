@@ -74,98 +74,10 @@ const totalRegions = stats.regionStats.length;
     <!-- Sections 2 & 3: Seats by Region / Party -->
     <div class="grid lg:grid-cols-2 gap-6 mb-8 items-start">
       <div class="bg-card rounded-lg border border-border p-5">
-      <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
-      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {
-          stats.regionStats.map((r) => (
-            <>
-              <a
-                href={`/regions/${r.slug}`}
-                class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
-              >
-                {r.name}
-              </a>
-              <div class="h-5 bg-callout-bg rounded overflow-hidden">
-                <div
-                  class="h-full bg-olive rounded"
-                  style={`width: ${(r.seats / stats.totalSeats) * 100}%`}
-                />
-              </div>
-              <span class="text-sm text-text-muted text-right">{r.seats}</span>
-            </>
-          ))
-        }
-      </div>
-    </div>
-
-      <div class="bg-card rounded-lg border border-border p-5">
-      <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
-      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {
-          stats.partyStats.map((p) => (
-            <>
-              <a
-                href={`/parties/${p.slug}`}
-                class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
-              >
-                {p.name}
-              </a>
-              <div class="h-5 bg-callout-bg rounded overflow-hidden">
-                <div
-                  class="h-full bg-olive rounded"
-                  style={`width: ${(p.seats / stats.totalSeats) * 100}%`}
-                />
-              </div>
-              <span class="text-sm text-text-muted text-right">{p.seats}</span>
-            </>
-          ))
-        }
-      </div>
-      </div>
-    </div>
-
-    <!-- Section 4: Gender Representation -->
-    <div class="bg-card rounded-lg border border-border p-5 mb-8">
-      <h2 class="text-lg font-bold mb-4">Gender Representation</h2>
-
-      <div class="grid lg:grid-cols-2 gap-x-8 gap-y-6">
-        <div>
-      <h3 class="text-sm font-semibold text-text-muted mb-2">By Party</h3>
-      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {
-          stats.femaleByParty.map((p) => {
-            const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
-            return (
-              <>
-                <a
-                  href={`/parties/${p.slug}`}
-                  class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
-                >
-                  {p.name}
-                </a>
-                <div class="h-5 bg-callout-bg rounded overflow-hidden">
-                  <div
-                    class="h-full bg-accent rounded"
-                    style={`width: ${pct}%`}
-                  />
-                </div>
-                <span class="text-sm text-text-muted text-right">
-                  {p.female}/{p.total}
-                </span>
-              </>
-            );
-          })
-        }
-      </div>
-        </div>
-
-        <div>
-      <h3 class="text-sm font-semibold text-text-muted mb-2">By Region</h3>
-      <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
-        {
-          stats.femaleByRegion.map((r) => {
-            const pct = r.total > 0 ? (r.female / r.total) * 100 : 0;
-            return (
+        <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
+        <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
+          {
+            stats.regionStats.map((r) => (
               <>
                 <a
                   href={`/regions/${r.slug}`}
@@ -175,18 +87,110 @@ const totalRegions = stats.regionStats.length;
                 </a>
                 <div class="h-5 bg-callout-bg rounded overflow-hidden">
                   <div
-                    class="h-full bg-accent rounded"
-                    style={`width: ${pct}%`}
+                    class="h-full bg-olive rounded"
+                    style={`width: ${(r.seats / stats.totalSeats) * 100}%`}
                   />
                 </div>
                 <span class="text-sm text-text-muted text-right">
-                  {r.female}/{r.total}
+                  {r.seats}
                 </span>
               </>
-            );
-          })
-        }
+            ))
+          }
+        </div>
       </div>
+
+      <div class="bg-card rounded-lg border border-border p-5">
+        <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
+        <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
+          {
+            stats.partyStats.map((p) => (
+              <>
+                <a
+                  href={`/parties/${p.slug}`}
+                  class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+                >
+                  {p.name}
+                </a>
+                <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                  <div
+                    class="h-full bg-olive rounded"
+                    style={`width: ${(p.seats / stats.totalSeats) * 100}%`}
+                  />
+                </div>
+                <span class="text-sm text-text-muted text-right">
+                  {p.seats}
+                </span>
+              </>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Gender Representation -->
+    <div class="bg-card rounded-lg border border-border p-5 mb-8">
+      <h2 class="text-lg font-bold mb-4">Gender Representation</h2>
+
+      <div class="grid lg:grid-cols-2 gap-x-8 gap-y-6">
+        <div>
+          <h3 class="text-sm font-semibold text-text-muted mb-2">By Party</h3>
+          <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
+            {
+              stats.femaleByParty.map((p) => {
+                const pct = p.total > 0 ? (p.female / p.total) * 100 : 0;
+                return (
+                  <>
+                    <a
+                      href={`/parties/${p.slug}`}
+                      class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+                    >
+                      {p.name}
+                    </a>
+                    <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                      <div
+                        class="h-full bg-accent rounded"
+                        style={`width: ${pct}%`}
+                      />
+                    </div>
+                    <span class="text-sm text-text-muted text-right">
+                      {p.female}/{p.total}
+                    </span>
+                  </>
+                );
+              })
+            }
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold text-text-muted mb-2">By Region</h3>
+          <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
+            {
+              stats.femaleByRegion.map((r) => {
+                const pct = r.total > 0 ? (r.female / r.total) * 100 : 0;
+                return (
+                  <>
+                    <a
+                      href={`/regions/${r.slug}`}
+                      class="text-sm whitespace-nowrap hover:text-accent transition-colors progress-label"
+                    >
+                      {r.name}
+                    </a>
+                    <div class="h-5 bg-callout-bg rounded overflow-hidden">
+                      <div
+                        class="h-full bg-accent rounded"
+                        style={`width: ${pct}%`}
+                      />
+                    </div>
+                    <span class="text-sm text-text-muted text-right">
+                      {r.female}/{r.total}
+                    </span>
+                  </>
+                );
+              })
+            }
+          </div>
         </div>
       </div>
     </div>
