@@ -107,7 +107,7 @@ const partiesJson = JSON.stringify(parties);
     resultsList.innerHTML = filtered
       .map(
         (r) => `
-        <a href="/representatives/${r.slug}" class="block bg-white rounded-lg border border-[#d9cfc5] hover:border-[#c8962d] transition-colors p-4 border-l-4 border-l-[#8b5e3c]">
+        <a href="/representatives/${r.slug}" class="block bg-white rounded-lg border border-[#d9cfc5] hover:border-[#c8962d] transition-colors p-4">
           <div class="flex items-start justify-between gap-4">
             <div class="min-w-0">
               <h3 class="font-semibold text-[#3d2b1f] truncate">${r.candidate}</h3>
