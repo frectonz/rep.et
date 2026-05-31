@@ -175,7 +175,8 @@ const partyJsonLd = {
         layers: [{ id: "osm", type: "raster", source: "osm" }],
       },
       bounds: bounds,
-      fitBoundsOptions: { padding: 40 },
+      fitBoundsOptions: { padding: 40, maxZoom: 14 },
+      maxZoom: 18,
     });
 
     map.addControl(new maplibregl.NavigationControl(), "top-right");
