@@ -79,7 +79,7 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
       )
     }
     <slot name="head" />
-    {import.meta.env.PROD && <script is:inline src="/registerSW.js" />}
+    {import.meta.env.PROD && <script is:inline defer src="/registerSW.js" />}
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />
