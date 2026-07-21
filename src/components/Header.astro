@@ -1,13 +1,6 @@
 ---
-import {
-  ChartColumn,
-  Globe,
-  Info,
-  Landmark,
-  Map,
-  Menu,
-  Users,
-} from "@lucide/astro";
+import { ChartColumn, Globe, Info, Landmark, Map, Users } from "@lucide/astro";
+import { Icon } from "astro-icon/components";
 
 const navLinks = [
   { href: "/representatives", label: "Representatives", icon: Users },
@@ -19,11 +12,16 @@ const navLinks = [
 ];
 
 const currentPath = Astro.url.pathname;
+
+const navLink = (href: string) =>
+  currentPath.startsWith(href)
+    ? "text-accent font-semibold flex items-center gap-1.5"
+    : "text-white/80 hover:text-accent transition-colors flex items-center gap-1.5";
 ---
 
 <header class="bg-primary text-white sticky top-0 z-50">
   <div
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between"
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
   >
     <a
       href="/"
@@ -36,65 +34,25 @@ const currentPath = Astro.url.pathname;
       >
     </a>
 
-    <button
-      id="menu-toggle"
-      class="md:hidden p-2 text-white"
-      aria-label="Toggle menu"
-      aria-expanded="false"
-    >
-      <Menu class="w-6 h-6" />
-    </button>
-
-    <nav id="nav-menu" class="hidden md:flex items-center gap-6">
+    <nav class="flex items-center gap-3 sm:gap-4 lg:gap-6 text-sm">
       {
         navLinks.map((link) => (
-          <a
-            href={link.href}
-            class:list={[
-              "text-sm transition-colors inline-flex items-center gap-1.5",
-              currentPath.startsWith(link.href)
-                ? "text-accent font-semibold"
-                : "text-white/80 hover:text-white",
-            ]}
-          >
+          <a href={link.href} class={navLink(link.href)}>
             <link.icon class="w-4 h-4" />
-            {link.label}
+            <span class="sr-only lg:not-sr-only">{link.label}</span>
           </a>
         ))
       }
+      <a
+        href="https://github.com/frectonz/rep.et"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-white/80 hover:text-accent transition-colors flex items-center gap-1.5"
+        aria-label="Source code on GitHub"
+      >
+        <Icon name="simple-icons:github" class="w-4 h-4" />
+        <span class="sr-only lg:not-sr-only">GitHub</span>
+      </a>
     </nav>
   </div>
-
-  <nav id="mobile-menu" class="hidden md:hidden border-t border-white/10">
-    <div
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col gap-2"
-    >
-      {
-        navLinks.map((link) => (
-          <a
-            href={link.href}
-            class:list={[
-              "text-sm py-2 transition-colors inline-flex items-center gap-2",
-              currentPath.startsWith(link.href)
-                ? "text-accent font-semibold"
-                : "text-white/80 hover:text-white",
-            ]}
-          >
-            <link.icon class="w-4 h-4" />
-            {link.label}
-          </a>
-        ))
-      }
-    </div>
-  </nav>
 </header>
-
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("mobile-menu");
-  toggle?.addEventListener("click", () => {
-    const expanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!expanded));
-    menu?.classList.toggle("hidden");
-  });
-</script>

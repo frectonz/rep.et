@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import { fileURLToPath } from "node:url";
+import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import AstroPWA from "@vite-pwa/astro";
@@ -150,6 +151,7 @@ function pwa() {
 export default defineConfig({
   site: "https://rep.et",
   integrations: [
+    icon(),
     sitemap({ filter: (page) => !/\/(offline|404)\/?$/.test(page) }),
     pwa(),
   ],
