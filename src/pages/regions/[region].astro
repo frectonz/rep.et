@@ -56,31 +56,31 @@ const regionJsonLd = {
       ]}
     />
 
-    <h1 class="text-2xl md:text-3xl font-bold mb-6">{regionName}</h1>
+    <h1 class="text-2xl md:text-3xl mb-6">{regionName}</h1>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Users class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">{stats.seats}</p>
+        <p class="text-xl font-heading text-primary">{stats.seats}</p>
         <p class="text-xs text-text-muted">Seats</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Vote class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">
+        <p class="text-xl font-heading text-primary">
           {stats.totalVotes.toLocaleString()}
         </p>
         <p class="text-xs text-text-muted">Total Votes</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <UserRound class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">
+        <p class="text-xl font-heading text-primary">
           {stats.genderSplit.female}
         </p>
         <p class="text-xs text-text-muted">Women</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Landmark class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">
+        <p class="text-xl font-heading text-primary">
           {stats.parties.length}
         </p>
         <p class="text-xs text-text-muted">Parties</p>
@@ -93,7 +93,7 @@ const regionJsonLd = {
       {
         stats.parties.length > 1 && (
           <div class="bg-card rounded-lg border border-border p-5 lg:col-span-1">
-            <h2 class="text-lg font-bold mb-3">Party Breakdown</h2>
+            <h2 class="text-lg mb-3">Party Breakdown</h2>
             <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
               {stats.parties.map((p) => (
                 <>
@@ -120,7 +120,7 @@ const regionJsonLd = {
         class={`bg-card rounded-lg border border-border overflow-hidden ${stats.parties.length > 1 ? "lg:col-span-2" : ""}`}
       >
         <div class="p-4 border-b border-border">
-          <h2 class="text-lg font-bold">Map</h2>
+          <h2 class="text-lg">Map</h2>
         </div>
         <div
           id="region-map"
@@ -131,7 +131,7 @@ const regionJsonLd = {
       </div>
     </div>
 
-    <h2 class="text-lg font-bold mb-4">
+    <h2 class="text-lg mb-4">
       Constituencies <span class="text-text-muted font-normal"
         >({reps.length})</span
       >

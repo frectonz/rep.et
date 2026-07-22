@@ -17,10 +17,10 @@ interface OgPage {
 
 // Fonts: read from the @fontsource package at build time (no CDN fetch).
 const require = createRequire(import.meta.url);
-const playfairRegular =
-  require.resolve("@fontsource/playfair-display/files/playfair-display-latin-400-normal.woff");
-const playfairBold =
-  require.resolve("@fontsource/playfair-display/files/playfair-display-latin-700-normal.woff");
+const gelasioRegular =
+  require.resolve("@fontsource/gelasio/files/gelasio-latin-400-normal.woff");
+const gelasioBold =
+  require.resolve("@fontsource/gelasio/files/gelasio-latin-700-normal.woff");
 
 const pages: Record<string, OgPage> = Object.fromEntries([
   // Static pages
@@ -139,16 +139,16 @@ export const { getStaticPaths, GET } = await OGImageRoute({
       size: [80],
     },
     padding: 70,
-    fonts: [playfairRegular, playfairBold],
+    fonts: [gelasioRegular, gelasioBold],
     font: {
       title: {
         color: [200, 150, 45],
-        families: ["Playfair Display"],
+        families: ["Gelasio"],
         weight: "Bold",
       },
       description: {
         color: [245, 240, 235],
-        families: ["Playfair Display"],
+        families: ["Gelasio"],
       },
     },
     border: {

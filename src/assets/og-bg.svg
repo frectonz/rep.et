@@ -142,7 +142,7 @@
   </g>
 
   <!-- Bottom branding -->
-  <text x="1140" y="605" text-anchor="end" font-family="Georgia, 'Playfair Display', serif" font-size="26" fill="#c8962d" opacity="0.45" font-weight="bold" letter-spacing="2">rep.et</text>
+  <text x="1140" y="605" text-anchor="end" font-family="Georgia, 'Gelasio', serif" font-size="26" fill="#c8962d" opacity="0.45" font-weight="bold" letter-spacing="2">rep.et</text>
   <text x="1042" y="605" text-anchor="end" font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" font-size="18" fill="#a08060" opacity="0.35">ተወካዮች</text>
 
   <!-- Corner bracket decorations -->

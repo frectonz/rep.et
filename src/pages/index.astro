@@ -23,9 +23,7 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
     <div class="text-center mb-10">
       <p class="text-5xl opacity-10 select-none mb-2" aria-hidden="true">ኢ</p>
-      <h1 class="text-3xl md:text-4xl font-bold mb-3">
-        Find Your Representative
-      </h1>
+      <h1 class="text-3xl md:text-4xl mb-3">Find Your Representative</h1>
       <p class="text-text-muted text-lg">
         Discover who represents your constituency in the<br />
         House of Peoples' Representatives.
@@ -36,7 +34,7 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
       <GeolocateButton />
       <a
         href="/map"
-        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-primary hover:bg-primary-light text-white font-semibold rounded-lg transition-colors text-lg"
+        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-primary hover:bg-primary-light text-white rounded-lg transition-colors text-lg"
       >
         <Map class="w-5 h-5" />
         Explore the Map
@@ -66,21 +64,21 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
       <div class="bg-card rounded-lg border border-border p-4">
         <Users class="w-5 h-5 mx-auto mb-1 text-accent" />
-        <p class="text-xl md:text-3xl font-bold font-heading text-primary">
+        <p class="text-xl md:text-3xl font-heading text-primary">
           {representatives.length}
         </p>
         <p class="text-xs md:text-sm text-text-muted">Representatives</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4">
         <Globe class="w-5 h-5 mx-auto mb-1 text-accent" />
-        <p class="text-xl md:text-3xl font-bold font-heading text-primary">
+        <p class="text-xl md:text-3xl font-heading text-primary">
           {regions.length}
         </p>
         <p class="text-xs md:text-sm text-text-muted">Regions</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4">
         <Vote class="w-5 h-5 mx-auto mb-1 text-accent" />
-        <p class="text-xl md:text-3xl font-bold font-heading text-primary">
+        <p class="text-xl md:text-3xl font-heading text-primary">
           {(totalVotes / 1_000_000).toFixed(1)}M
         </p>
         <p class="text-xs md:text-sm text-text-muted">Total Votes</p>
@@ -89,7 +87,7 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
   </section>
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h2 class="text-xl font-bold mb-4">Browse</h2>
+    <h2 class="text-xl mb-4">Browse</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <a
         href="/representatives"
@@ -97,7 +95,7 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
       >
         <Search class="w-5 h-5 text-accent mb-2" />
         <h3
-          class="font-semibold text-primary group-hover:text-accent transition-colors"
+          class="text-lg text-primary group-hover:text-accent transition-colors"
         >
           All Representatives
         </h3>
@@ -111,7 +109,7 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
       >
         <Globe class="w-5 h-5 text-accent mb-2" />
         <h3
-          class="font-semibold text-primary group-hover:text-accent transition-colors"
+          class="text-lg text-primary group-hover:text-accent transition-colors"
         >
           Browse by Region
         </h3>
@@ -125,7 +123,7 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
       >
         <Landmark class="w-5 h-5 text-accent mb-2" />
         <h3
-          class="font-semibold text-primary group-hover:text-accent transition-colors"
+          class="text-lg text-primary group-hover:text-accent transition-colors"
         >
           Party Breakdown
         </h3>
@@ -139,7 +137,7 @@ import { Globe, Landmark, Map, Search, Users, Vote } from "@lucide/astro";
       >
         <Map class="w-5 h-5 text-accent mb-2" />
         <h3
-          class="font-semibold text-primary group-hover:text-accent transition-colors"
+          class="text-lg text-primary group-hover:text-accent transition-colors"
         >
           Interactive Map
         </h3>

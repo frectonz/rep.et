@@ -1,21 +1,20 @@
 @import "tailwindcss";
-@import "@fontsource-variable/playfair-display";
 
 @theme {
-  --font-heading: "Playfair Display Variable", Georgia, serif;
-  --font-body:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: Georgia, "Times New Roman", serif;
 
   --color-primary: #3d2b1f;
   --color-primary-light: #5c4033;
   --color-accent: #c8962d;
   --color-accent-hover: #a87b24;
+  --color-accent-deep: #7d5c14;
   --color-earth: #8b5e3c;
   --color-olive: #5a6e3c;
   --color-bg: #f5f0eb;
   --color-card: #ffffff;
   --color-text: #2c1810;
-  --color-text-muted: #7a6b60;
+  --color-text-muted: #6b5d52;
   --color-border: #d9cfc5;
   --color-callout-bg: #f0e8de;
   --color-callout-border: #c8962d;
@@ -27,6 +26,7 @@
 
 @layer base {
   html {
+    scrollbar-gutter: stable;
     font-family: var(--font-heading);
     color: var(--color-text);
     background-color: var(--color-primary);
@@ -50,7 +50,7 @@
   }
 
   a {
-    color: var(--color-accent);
+    color: var(--color-accent-deep);
     text-decoration: none;
     transition: color 0.15s;
   }

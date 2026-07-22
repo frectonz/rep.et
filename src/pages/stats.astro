@@ -37,34 +37,34 @@ const totalRegions = stats.regionStats.length;
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <Breadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Stats" }]} />
 
-    <h1 class="text-2xl md:text-3xl font-bold mb-6">Statistics</h1>
+    <h1 class="text-2xl md:text-3xl mb-6">Statistics</h1>
 
     <!-- Section 1: Summary Cards -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Users class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">
+        <p class="text-xl font-heading text-primary">
           {stats.totalSeats}
         </p>
         <p class="text-xs text-text-muted">Representatives</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <Vote class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">
+        <p class="text-xl font-heading text-primary">
           {stats.totalVotes.toLocaleString()}
         </p>
         <p class="text-xs text-text-muted">Total Votes</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <UserRound class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">
+        <p class="text-xl font-heading text-primary">
           {stats.totalFemale}
         </p>
         <p class="text-xs text-text-muted">Women ({femalePercent}%)</p>
       </div>
       <div class="bg-card rounded-lg border border-border p-4 text-center">
         <TrendingUp class="w-4 h-4 mx-auto mb-1 text-accent" />
-        <p class="text-xl font-bold font-heading text-primary">
+        <p class="text-xl font-heading text-primary">
           {stats.avgVotesPerSeat.toLocaleString()}
         </p>
         <p class="text-xs text-text-muted">Avg Votes / Seat</p>
@@ -74,7 +74,7 @@ const totalRegions = stats.regionStats.length;
     <!-- Sections 2 & 3: Seats by Region / Party -->
     <div class="grid lg:grid-cols-2 gap-6 mb-8 items-start">
       <div class="bg-card rounded-lg border border-border p-5">
-        <h2 class="text-lg font-bold mb-3">Seats by Region</h2>
+        <h2 class="text-lg mb-3">Seats by Region</h2>
         <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
           {
             stats.regionStats.map((r) => (
@@ -101,7 +101,7 @@ const totalRegions = stats.regionStats.length;
       </div>
 
       <div class="bg-card rounded-lg border border-border p-5">
-        <h2 class="text-lg font-bold mb-3">Seats by Party</h2>
+        <h2 class="text-lg mb-3">Seats by Party</h2>
         <div class="grid items-center gap-x-3 gap-y-2 progress-grid">
           {
             stats.partyStats.map((p) => (
@@ -130,7 +130,7 @@ const totalRegions = stats.regionStats.length;
 
     <!-- Section 4: Gender Representation -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
-      <h2 class="text-lg font-bold mb-4">Gender Representation</h2>
+      <h2 class="text-lg mb-4">Gender Representation</h2>
 
       <div class="grid lg:grid-cols-2 gap-x-8 gap-y-6">
         <div>
@@ -197,33 +197,33 @@ const totalRegions = stats.regionStats.length;
 
     <!-- Section 5: Vote Statistics -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
-      <h2 class="text-lg font-bold mb-3">Vote Statistics</h2>
+      <h2 class="text-lg mb-3">Vote Statistics</h2>
 
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <Trophy class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">
+          <p class="text-lg font-heading text-primary">
             {stats.highestVote.votes.toLocaleString()}
           </p>
           <p class="text-xs text-text-muted">Highest Vote</p>
         </div>
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <ArrowDown class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">
+          <p class="text-lg font-heading text-primary">
             {stats.lowestVote.votes.toLocaleString()}
           </p>
           <p class="text-xs text-text-muted">Lowest Vote</p>
         </div>
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <Hash class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">
+          <p class="text-lg font-heading text-primary">
             {stats.medianVotes.toLocaleString()}
           </p>
           <p class="text-xs text-text-muted">Median Vote</p>
         </div>
         <div class="bg-callout-bg rounded-lg p-3 text-center">
           <TrendingUp class="w-4 h-4 mx-auto mb-1 text-accent" />
-          <p class="text-lg font-bold font-heading text-primary">
+          <p class="text-lg font-heading text-primary">
             {stats.avgVotesPerSeat.toLocaleString()}
           </p>
           <p class="text-xs text-text-muted">Average Vote</p>
@@ -239,7 +239,7 @@ const totalRegions = stats.regionStats.length;
             {
               top5.map((rep, i) => (
                 <li class="flex items-start gap-2">
-                  <span class="text-xs font-bold text-accent mt-0.5">
+                  <span class="text-xs font-bold text-accent-deep mt-0.5">
                     {i + 1}.
                   </span>
                   <div class="min-w-0">
@@ -269,7 +269,7 @@ const totalRegions = stats.regionStats.length;
             {
               bottom5.map((rep, i) => (
                 <li class="flex items-start gap-2">
-                  <span class="text-xs font-bold text-accent mt-0.5">
+                  <span class="text-xs font-bold text-accent-deep mt-0.5">
                     {i + 1}.
                   </span>
                   <div class="min-w-0">
@@ -296,7 +296,7 @@ const totalRegions = stats.regionStats.length;
 
     <!-- Section 6: Party Reach -->
     <div class="bg-card rounded-lg border border-border p-5 mb-8">
-      <h2 class="text-lg font-bold mb-3">Party Reach</h2>
+      <h2 class="text-lg mb-3">Party Reach</h2>
       <p class="text-sm text-text-muted mb-3">
         Regions where each party holds seats (out of {totalRegions})
       </p>

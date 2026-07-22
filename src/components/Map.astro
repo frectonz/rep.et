@@ -39,7 +39,7 @@ const PARTY_COLORS: Record<string, string> = {
 
 <style is:global>
   .maplibregl-popup-content {
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
     min-width: 280px;
     padding: 0 !important;
     border-radius: 12px !important;
@@ -99,7 +99,7 @@ const PARTY_COLORS: Record<string, string> = {
     align-self: center;
   }
   .popup-row-label {
-    color: #7a6b60;
+    color: #6b5d52;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -145,6 +145,17 @@ const PARTY_COLORS: Record<string, string> = {
     id="legend"
     style="position:absolute;bottom:45px;right:10px;background:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 1px 5px rgba(0,0,0,0.3);font-size:13px;line-height:1.6;z-index:1;"
   >
+    <h4 style="margin:0 0 6px;font-weight:bold;color:#3d2b1f;">Parties</h4>
+    {
+      Object.keys(PARTY_COLORS).map((party) => (
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;">
+          <span
+            style={`width:12px;height:12px;border-radius:50%;background:${PARTY_COLORS[party]};flex-shrink:0;`}
+          />
+          <span style="color:#2c1810;">{party}</span>
+        </div>
+      ))
+    }
   </div>
 </div>
 
@@ -253,19 +264,5 @@ const PARTY_COLORS: Record<string, string> = {
     map.on("mouseleave", "constituency-dots", function () {
       map.getCanvas().style.cursor = "";
     });
-  });
-
-  const legendEl = document.getElementById("legend");
-  legendEl.innerHTML =
-    '<h4 style="margin:0 0 6px;font-weight:bold;color:#3d2b1f;">Parties</h4>';
-  Object.keys(PARTY_COLORS).forEach(function (party) {
-    legendEl.innerHTML +=
-      '<div style="display:flex;align-items:center;gap:6px;margin-bottom:2px;">' +
-      '<span style="width:12px;height:12px;border-radius:50%;background:' +
-      PARTY_COLORS[party] +
-      ';flex-shrink:0;"></span>' +
-      '<span style="color:#2c1810;">' +
-      party +
-      "</span></div>";
   });
 </script>
