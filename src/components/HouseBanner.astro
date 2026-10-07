@@ -1,0 +1,43 @@
+---
+import { ArrowRight, X } from "@lucide/astro";
+import { currentHouse, type House } from "@/lib/houses";
+
+interface Props {
+  house: House;
+}
+
+const { house } = Astro.props;
+---
+
+<div
+  id="house-banner"
+  class="relative bg-callout-bg border-b border-callout-border/40 text-sm"
+>
+  <p class="max-w-7xl mx-auto px-12 py-2.5 text-center text-text-muted">
+    You are viewing the {house.fullName} ({house.term}), which has been
+    dissolved.
+    <a
+      href="/"
+      class="inline-flex items-center gap-1 ml-1 font-medium text-accent-deep hover:text-accent-hover whitespace-nowrap"
+    >
+      Go to the {currentHouse.name}
+      <ArrowRight class="w-3.5 h-3.5" />
+    </a>
+  </p>
+  <button
+    type="button"
+    id="house-banner-dismiss"
+    class="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded text-text-muted/70 hover:text-text transition-colors cursor-pointer"
+    aria-label="Dismiss"
+  >
+    <X class="w-4 h-4" />
+  </button>
+</div>
+
+<script>
+  document
+    .getElementById("house-banner-dismiss")
+    ?.addEventListener("click", () => {
+      document.getElementById("house-banner")?.remove();
+    });
+</script>

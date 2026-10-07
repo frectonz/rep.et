@@ -58,27 +58,22 @@ async function tryGeocode(query: string): Promise<[number, number] | null> {
   return null;
 }
 
-// Strip trailing numbers and common suffixes for retry variations
 function locationVariants(location: string, region: string): string[] {
   const queries: string[] = [];
 
-  // 1. Just location + Ethiopia (no region)
   queries.push(`${location}, Ethiopia`);
 
-  // 2. Strip trailing number: "Goma 1" → "Goma"
   const noNum = location.replace(/[\s-]+\d+$/, "").trim();
   if (noNum !== location) {
     queries.push(`${noNum}, ${region}, Ethiopia`);
     queries.push(`${noNum}, Ethiopia`);
   }
 
-  // 3. Strip leading zero numbers: "Soro 02" → "Soro 2" → "Soro"
   const noLeadingZero = location.replace(/\b0(\d)/, "$1");
   if (noLeadingZero !== location) {
     queries.push(`${noLeadingZero}, Ethiopia`);
   }
 
-  // 4. Strip suffixes like "Ketema", "Liyu", "Zuria", "Medebegna", "medebenga"
   const noSuffix = location
     .replace(
       /\s+(Ketema|Liyu|lyu|Zuria|Medebegna|medebenga|Medebegna|Special)\b/gi,
@@ -90,7 +85,6 @@ function locationVariants(location: string, region: string): string[] {
     queries.push(`${noSuffix}, Ethiopia`);
   }
 
-  // 5. Split compound names on "/" or " And " or "ena" and try first part
   const parts = location.split(/\s*[\/]\s*|\s+And\s+|\s+ina\s+|\s+ena\s+/i);
   if (parts.length > 1) {
     const firstPart = parts[0].replace(/[\s-]+\d+$/, "").trim();
@@ -100,7 +94,6 @@ function locationVariants(location: string, region: string): string[] {
     }
   }
 
-  // Dedupe while preserving order
   return [...new Set(queries)];
 }
 
@@ -147,7 +140,6 @@ async function main() {
       stillFailed++;
     }
 
-    // Progress every 25
     if ((i + 1) % 25 === 0) {
       const elapsed = ((Date.now() - startTime) / 1000).toFixed(0);
       console.log(

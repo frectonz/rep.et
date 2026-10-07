@@ -1,12 +1,18 @@
 ---
-import { representatives } from "../lib/data";
+import type { House } from "@/lib/houses";
 import { MapPin } from "@lucide/astro";
 
+interface Props {
+  house: House;
+}
+
+const { house } = Astro.props;
+
 const coordsJson = JSON.stringify(
-  representatives.map((r) => ({
+  house.representatives.map((r) => ({
     lat: r.lat,
     lng: r.lng,
-    slug: r.slug,
+    href: r.href,
     candidate: r.candidate,
     location: r.location,
     region: r.region,
@@ -16,138 +22,124 @@ const coordsJson = JSON.stringify(
 
 <button
   id="locate-btn"
-  class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white rounded-lg transition-colors text-lg cursor-pointer"
+  data-reps={coordsJson}
+  class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-hover text-white rounded-lg transition-colors cursor-pointer"
 >
-  <MapPin class="w-5 h-5" />
+  <MapPin class="w-4 h-4" />
   Use My Location
 </button>
 
-<script is:inline define:vars={{ coordsJson }}>
-  document.addEventListener("DOMContentLoaded", function () {
-    const reps = JSON.parse(coordsJson);
-    const btn = document.getElementById("locate-btn");
-    const status = document.getElementById("geo-status");
-    const fallback = document.getElementById("geo-fallback");
-    const searchInput = document.getElementById("fallback-search");
-    const resultsDiv = document.getElementById("fallback-results");
+<script>
+  import { escapeHtml } from "@/lib/html";
 
-    function haversine(lat1, lng1, lat2, lng2) {
-      const R = 6371;
-      const toRad = function (d) {
-        return (d * Math.PI) / 180;
-      };
-      const dLat = toRad(lat2 - lat1);
-      const dLng = toRad(lng2 - lng1);
-      const a =
-        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(toRad(lat1)) *
-          Math.cos(toRad(lat2)) *
-          Math.sin(dLng / 2) *
-          Math.sin(dLng / 2);
-      return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    }
+  interface Rep {
+    lat: number;
+    lng: number;
+    href: string;
+    candidate: string;
+    location: string;
+    region: string;
+  }
 
-    function showStatus(msg, isError) {
-      status.textContent = msg;
-      status.className =
-        "mt-4 text-sm text-center " +
-        (isError ? "text-red-700" : "text-text-muted");
-      status.classList.remove("hidden");
-    }
+  const EARTH_RADIUS_KM = 6371;
 
-    function showFallback() {
-      fallback.classList.remove("hidden");
-    }
+  const button = document.getElementById("locate-btn") as HTMLButtonElement;
+  const status = document.getElementById("geo-status")!;
+  const fallback = document.getElementById("geo-fallback")!;
+  const searchInput = document.getElementById(
+    "fallback-search",
+  ) as HTMLInputElement | null;
+  const results = document.getElementById("fallback-results")!;
+  const reps: Rep[] = JSON.parse(button.dataset.reps ?? "[]");
+  const label = button.innerHTML;
 
-    btn.addEventListener("click", function () {
-      if (!navigator.geolocation) {
-        showStatus("Geolocation is not supported by your browser.", true);
-        showFallback();
-        return;
+  function distanceKm(lat1: number, lng1: number, lat2: number, lng2: number) {
+    const rad = (deg: number) => (deg * Math.PI) / 180;
+    const dLat = rad(lat2 - lat1);
+    const dLng = rad(lng2 - lng1);
+    const a =
+      Math.sin(dLat / 2) ** 2 +
+      Math.cos(rad(lat1)) * Math.cos(rad(lat2)) * Math.sin(dLng / 2) ** 2;
+    return EARTH_RADIUS_KM * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function nearest(lat: number, lng: number) {
+    let best = reps[0];
+    let bestDistance = Infinity;
+    for (const rep of reps) {
+      const d = distanceKm(lat, lng, rep.lat, rep.lng);
+      if (d < bestDistance) {
+        best = rep;
+        bestDistance = d;
       }
-
-      btn.textContent = "Locating...";
-      btn.disabled = true;
-      showStatus("Requesting your location...", false);
-
-      navigator.geolocation.getCurrentPosition(
-        function (pos) {
-          const userLat = pos.coords.latitude;
-          const userLng = pos.coords.longitude;
-
-          let minDist = Infinity;
-          let nearest = null;
-          for (let i = 0; i < reps.length; i++) {
-            const c = reps[i];
-            const d = haversine(userLat, userLng, c.lat, c.lng);
-            if (d < minDist) {
-              minDist = d;
-              nearest = c;
-            }
-          }
-
-          if (nearest) {
-            showStatus(
-              "Found nearest constituency (" +
-                Math.round(minDist) +
-                " km away). Redirecting...",
-              false,
-            );
-            window.location.href = "/representatives/" + nearest.slug;
-          }
-        },
-        function (err) {
-          btn.textContent = "Use My Location";
-          btn.disabled = false;
-          let msg = "Could not get your location.";
-          if (err.code === 1) msg = "Location access was denied.";
-          else if (err.code === 2) msg = "Location unavailable.";
-          else if (err.code === 3) msg = "Location request timed out.";
-          showStatus(msg, true);
-          showFallback();
-        },
-        { enableHighAccuracy: true, timeout: 10000 },
-      );
-    });
-
-    // Fallback search
-    if (searchInput) {
-      searchInput.addEventListener("input", function () {
-        const query = searchInput.value.toLowerCase().trim();
-        if (!query) {
-          resultsDiv.innerHTML = "";
-          return;
-        }
-
-        const matches = reps
-          .filter(function (r) {
-            return (
-              r.location.toLowerCase().indexOf(query) !== -1 ||
-              r.region.toLowerCase().indexOf(query) !== -1 ||
-              r.candidate.toLowerCase().indexOf(query) !== -1
-            );
-          })
-          .slice(0, 8);
-
-        resultsDiv.innerHTML = matches
-          .map(function (r) {
-            return (
-              '<a href="/representatives/' +
-              r.slug +
-              '" class="block px-3 py-2 rounded text-sm hover:bg-[#f0e8de] transition-colors">' +
-              '<span class="font-medium text-[#3d2b1f]">' +
-              r.candidate +
-              "</span>" +
-              '<span class="text-[#6b5d52]"> — ' +
-              r.location +
-              ", " +
-              r.region +
-              "</span>" +
-              "</a>"
-            );
-          })
-          .join("");
-      });
     }
+    return { rep: best, distance: bestDistance };
+  }
+
+  function showStatus(message: string, isError: boolean) {
+    status.textContent = message;
+    status.className = `mt-4 text-sm ${isError ? "text-red-700" : "text-text-muted"}`;
+  }
+
+  const ERRORS: Record<number, string> = {
+    1: "Location access was denied.",
+    2: "Location unavailable.",
+    3: "Location request timed out.",
+  };
+
+  button.addEventListener("click", () => {
+    if (!navigator.geolocation) {
+      showStatus("Geolocation is not supported by your browser.", true);
+      fallback.classList.remove("hidden");
+      return;
+    }
+
+    button.textContent = "Locating...";
+    button.disabled = true;
+    showStatus("Requesting your location...", false);
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { rep, distance } = nearest(
+          position.coords.latitude,
+          position.coords.longitude,
+        );
+        showStatus(
+          `Found nearest constituency (${Math.round(distance)} km away). Redirecting...`,
+          false,
+        );
+        window.location.href = rep.href;
+      },
+      (error) => {
+        button.innerHTML = label;
+        button.disabled = false;
+        showStatus(ERRORS[error.code] ?? "Could not get your location.", true);
+        fallback.classList.remove("hidden");
+      },
+      { enableHighAccuracy: true, timeout: 10000 },
+    );
+  });
+
+  searchInput?.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase().trim();
+    if (!query) {
+      results.innerHTML = "";
+      return;
+    }
+    results.innerHTML = reps
+      .filter((rep) =>
+        [rep.location, rep.region, rep.candidate].some((field) =>
+          field.toLowerCase().includes(query),
+        ),
+      )
+      .slice(0, 8)
+      .map(
+        (rep) => `
+          <a href="${rep.href}" class="block px-3 py-2 rounded text-sm hover:bg-callout-bg transition-colors">
+            <span class="font-medium text-primary">${escapeHtml(rep.candidate)}</span>
+            <span class="text-text-muted"> · ${escapeHtml(rep.location)}, ${escapeHtml(rep.region)}</span>
+          </a>`,
+      )
+      .join("");
   });
 </script>

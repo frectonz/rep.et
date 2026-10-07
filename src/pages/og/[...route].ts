@@ -1,81 +1,26 @@
 import { createRequire } from "node:module";
 import { OGImageRoute } from "astro-og-canvas";
-import {
-  getByRegion,
-  getPartyStats,
-  parties,
-  partySlug,
-  regions,
-  regionSlug,
-  representatives,
-} from "../../lib/data";
+import { partySlug } from "../../lib/data";
+import { houses } from "../../lib/houses";
 
 interface OgPage {
   title: string;
   description: string;
 }
 
-// Fonts: read from the @fontsource package at build time (no CDN fetch).
 const require = createRequire(import.meta.url);
 const gelasioRegular =
   require.resolve("@fontsource/gelasio/files/gelasio-latin-400-normal.woff");
 const gelasioBold =
   require.resolve("@fontsource/gelasio/files/gelasio-latin-700-normal.woff");
 
-const pages: Record<string, OgPage> = Object.fromEntries([
-  // Static pages
-  [
-    "index",
-    {
-      title: "Find Your Representative",
-      description:
-        "Find your HOPR representative in Ethiopia. Browse 471 elected members by region, party, or location.",
-    },
-  ],
+const entries: [string, OgPage][] = [
   [
     "about",
     {
       title: "About",
       description:
         "Your guide to Ethiopia's House of Peoples' Representatives.",
-    },
-  ],
-  [
-    "map",
-    {
-      title: "Map",
-      description: "Interactive map of Ethiopia's 471 elected representatives.",
-    },
-  ],
-  [
-    "parties",
-    {
-      title: "Parties",
-      description:
-        "Political parties in Ethiopia's House of Peoples' Representatives.",
-    },
-  ],
-  [
-    "regions",
-    {
-      title: "Regions",
-      description: "Browse representatives by region across Ethiopia.",
-    },
-  ],
-  [
-    "representatives",
-    {
-      title: "All Representatives",
-      description:
-        "All 471 elected members of Ethiopia's House of Peoples' Representatives.",
-    },
-  ],
-  [
-    "stats",
-    {
-      title: "Statistics",
-      description:
-        "Charts and statistics about Ethiopia's House of Peoples' Representatives.",
     },
   ],
   [
@@ -92,37 +37,64 @@ const pages: Record<string, OgPage> = Object.fromEntries([
       description: "That page doesn't exist, or it may have moved.",
     },
   ],
+];
 
-  // Dynamic: each representative
-  ...representatives.map((r) => [
-    `representatives/${r.slug}`,
-    {
-      title: r.candidate,
-      description: `${r.location} · ${r.region} · ${r.party}`,
-    },
-  ]),
+for (const house of houses) {
+  const prefix = house.prefix ? `${house.prefix.slice(1)}/` : "";
+  const key = (path: string) =>
+    path === "" ? house.prefix.slice(1) || "index" : `${prefix}${path}`;
+  const count = house.representatives.length;
 
-  // Dynamic: each region
-  ...regions.map((region) => [
-    `regions/${regionSlug(region)}`,
-    {
-      title: region,
-      description: `${getByRegion(region).length} seats in ${region}`,
-    },
-  ]),
-
-  // Dynamic: each party
-  ...parties.map((party) => {
-    const stats = getPartyStats(party);
-    return [
-      `parties/${partySlug(party)}`,
+  entries.push(
+    [
+      key(""),
       {
-        title: party,
-        description: `${stats.seats} seats across ${stats.regions.length} regions`,
+        title: `Find Your Representative · ${house.name}`,
+        description: `Find your HOPR representative in Ethiopia. Browse ${count} members of the ${house.fullName} (${house.term}).`,
       },
-    ];
-  }),
-]);
+    ],
+    [
+      key("map"),
+      {
+        title: `Map · ${house.name}`,
+        description: `Interactive map of the ${count} constituencies of the ${house.fullName}.`,
+      },
+    ],
+    [
+      key("parties"),
+      {
+        title: `Parties · ${house.name}`,
+        description: `Political parties in the ${house.fullName} (${house.term}).`,
+      },
+    ],
+    [
+      key("representatives"),
+      {
+        title: `All Representatives · ${house.name}`,
+        description: `All ${count} elected members of the ${house.fullName}.`,
+      },
+    ],
+    ...house.representatives.map((r): [string, OgPage] => [
+      key(`representatives/${r.slug}`),
+      {
+        title: r.candidate,
+        description: `${r.location} · ${r.region} · ${r.party} · ${house.name}`,
+      },
+    ]),
+    ...house.parties.map((party): [string, OgPage] => {
+      const stats = house.getPartyStats(party);
+      return [
+        key(`parties/${partySlug(party)}`),
+        {
+          title: party,
+          description: `${stats.seats} seats across ${stats.regions.length} regions · ${house.fullName}`,
+        },
+      ];
+    }),
+  );
+}
+
+const pages: Record<string, OgPage> = Object.fromEntries(entries);
 
 export const { getStaticPaths, GET } = await OGImageRoute({
   param: "route",

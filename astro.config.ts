@@ -33,7 +33,7 @@ function pwa() {
       name: "rep.et — Find Your Representative",
       short_name: "rep.et",
       description:
-        "Find your representative in Ethiopia's House of Peoples' Representatives (HOPR). Search 471 elected members of parliament by name, region, party, or location.",
+        "Find your representative in Ethiopia's House of Peoples' Representatives (HOPR). Search elected members of parliament by name, region, party, or location.",
       start_url: "/",
       scope: "/",
       display: "standalone",
@@ -88,21 +88,7 @@ function pwa() {
           type: "image/png",
           sizes: "1280x800",
           form_factor: "wide",
-          label: "Search and filter all 480 representatives",
-        },
-        {
-          src: "/screenshots/desktop-stats.png",
-          type: "image/png",
-          sizes: "1280x800",
-          form_factor: "wide",
-          label: "Statistics and seats by region",
-        },
-        {
-          src: "/screenshots/desktop-regions.png",
-          type: "image/png",
-          sizes: "1280x800",
-          form_factor: "wide",
-          label: "Browse representatives by region",
+          label: "Search and filter all representatives",
         },
         {
           src: "/screenshots/mobile.png",
@@ -123,21 +109,7 @@ function pwa() {
           type: "image/png",
           sizes: "540x1170",
           form_factor: "narrow",
-          label: "Search and filter all 480 representatives",
-        },
-        {
-          src: "/screenshots/mobile-stats.png",
-          type: "image/png",
-          sizes: "540x1170",
-          form_factor: "narrow",
-          label: "Statistics and seats by region",
-        },
-        {
-          src: "/screenshots/mobile-regions.png",
-          type: "image/png",
-          sizes: "540x1170",
-          form_factor: "narrow",
-          label: "Browse representatives by region",
+          label: "Search and filter all representatives",
         },
       ],
     },
@@ -147,12 +119,36 @@ function pwa() {
   });
 }
 
-// https://astro.build/config
+const representatives = (region: string, prefix = "") =>
+  `${prefix}/representatives?region=${encodeURIComponent(region)}`;
+
+const redirects = {
+  "/stats": "/",
+  "/regions": "/representatives",
+  "/regions/addis-ababa": representatives("Addis Ababa"),
+  "/regions/afar": representatives("Afar"),
+  "/regions/amhara": representatives("Amhara"),
+  "/regions/benishangul-gumuz": representatives("Benishangul-Gumuz"),
+  "/regions/central-ethiopia": representatives("Central Ethiopia"),
+  "/regions/dire-dawa": representatives("Dire Dawa"),
+  "/regions/gambella": representatives("Gambella"),
+  "/regions/harari": representatives("Harari"),
+  "/regions/oromia": representatives("Oromia"),
+  "/regions/sidama": representatives("Sidama"),
+  "/regions/snnpr": representatives("SNNPR", "/6th"),
+  "/regions/somali": representatives("Somali"),
+};
+
 export default defineConfig({
   site: "https://rep.et",
+  redirects,
   integrations: [
     icon(),
-    sitemap({ filter: (page) => !/\/(offline|404)\/?$/.test(page) }),
+    sitemap({
+      filter: (page) =>
+        !/\/(offline|404)\/?$/.test(page) &&
+        !/\/(stats|regions)(\/|$)/.test(new URL(page).pathname),
+    }),
     pwa(),
   ],
   vite: {

@@ -1,0 +1,122 @@
+---
+import type { House } from "@/lib/houses";
+
+interface Props {
+  house: House;
+  class?: string;
+}
+
+const { house, class: cls = "" } = Astro.props;
+
+const stats = house.parties
+  .map((p) => house.getPartyStats(p))
+  .sort((a, b) => b.seats - a.seats || a.name.localeCompare(b.name));
+
+const blocks = stats.map((p) => ({
+  party: p.name,
+  color: house.partyColors[p.name] ?? "#78909C",
+  seats: p.seats,
+}));
+const unfilled = Math.max(
+  0,
+  house.councilSeats - blocks.reduce((n, b) => n + b.seats, 0),
+);
+if (unfilled > 0)
+  blocks.push({
+    party: "No result published",
+    color: "#b9b0a7",
+    seats: unfilled,
+  });
+
+const banks: { party: string; color: string }[][] = [[], []];
+blocks.forEach((block, i) => {
+  const first = i % 2;
+  const toFirst = Math.ceil(block.seats / 2);
+  for (let n = 0; n < block.seats; n++) {
+    banks[n < toFirst ? first : 1 - first].push(block);
+  }
+});
+const seats = [...banks[0], ...banks[1]];
+
+const COLUMNS_PER_BANK = 18;
+const COL_PITCH = 16;
+const ROW_PITCH = 18;
+const SEAT_W = 12;
+const AISLE = 28;
+const PADDING = 12;
+
+const rows = Math.ceil(
+  Math.max(banks[0].length, banks[1].length) / COLUMNS_PER_BANK,
+);
+const bankWidth = COLUMNS_PER_BANK * COL_PITCH - (COL_PITCH - SEAT_W);
+const positions = seats.map((_, i) => {
+  const bank = i < banks[0].length ? 0 : 1;
+  const index = bank === 0 ? i : i - banks[0].length;
+  const row = Math.floor(index / COLUMNS_PER_BANK);
+  const col = index % COLUMNS_PER_BANK;
+  const bankStart = PADDING + bank * (bankWidth + AISLE);
+  const x =
+    bank === 0
+      ? bankStart + col * COL_PITCH
+      : bankStart + (COLUMNS_PER_BANK - 1 - col) * COL_PITCH;
+  return { x, y: PADDING + row * ROW_PITCH };
+});
+
+const width = PADDING * 2 + bankWidth * 2 + AISLE;
+const height = PADDING * 2 + rows * ROW_PITCH - (ROW_PITCH - 14);
+
+function darken(hex: string): string {
+  const n = parseInt(hex.slice(1), 16);
+  const r = Math.round(((n >> 16) & 255) * 0.78);
+  const g = Math.round(((n >> 8) & 255) * 0.78);
+  const b = Math.round((n & 255) * 0.78);
+  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, "0")}`;
+}
+---
+
+<svg
+  viewBox={`0 0 ${width} ${height}`}
+  xmlns="http://www.w3.org/2000/svg"
+  class:list={["seat-chart block w-full h-auto", cls]}
+  role="img"
+  aria-label={`${seats.length - unfilled} of ${house.councilSeats} seats in the ${house.fullName}, by party`}
+>
+  {
+    seats.map((seat, i) => (
+      <g class="seat" data-party={seat.party}>
+        <rect
+          x={positions[i].x}
+          y={positions[i].y}
+          width={SEAT_W}
+          height={5}
+          rx={2}
+          fill={darken(seat.color)}
+        />
+        <rect
+          x={positions[i].x}
+          y={positions[i].y + 6}
+          width={SEAT_W}
+          height={8}
+          rx={2}
+          fill={seat.color}
+        />
+      </g>
+    ))
+  }
+</svg>
+
+<style>
+  .seat {
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .seat.dimmed {
+    opacity: 0.25;
+  }
+  .seat.highlighted {
+    transform: scale(1.15);
+  }
+</style>

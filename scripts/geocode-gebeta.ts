@@ -24,7 +24,7 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const DELAY_MS = 200; // throttle between requests
+const DELAY_MS = 200;
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -59,7 +59,6 @@ async function main() {
     `${dir}/coordinates.json`,
   ).json();
 
-  // Load existing addresses if present (for re-runs)
   let addresses: Record<string, AddressEntry> = {};
   const addressesFile = Bun.file(`${dir}/addresses.json`);
   if (await addressesFile.exists()) {
@@ -77,7 +76,6 @@ async function main() {
   for (let i = 0; i < entries.length; i++) {
     const entry = entries[i];
 
-    // Skip entries without coordinates
     if (entry.lat === null || entry.lng === null) {
       noCoords++;
       continue;
@@ -85,7 +83,6 @@ async function main() {
 
     const k = key(entry.lat, entry.lng);
 
-    // Skip entries already in addresses.json
     if (addresses[k]) {
       skipped++;
       continue;

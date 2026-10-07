@@ -27,6 +27,7 @@
     "astro-icon": "^1.1.5",
     "astro-og-canvas": "^0.10.1",
     "canvaskit-wasm": "^0.40.0",
+    "maplibre-gl": "^6.13.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {

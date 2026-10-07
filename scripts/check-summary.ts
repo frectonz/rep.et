@@ -68,13 +68,11 @@ function check(description: string, condition: boolean, detail?: string) {
 
 const summary: SummaryEntry[] = await Bun.file(`${dir}/summary.json`).json();
 
-// Collect all regional JSON files (everything except summary.json)
 const allFiles = await readdir(dir);
 const regionalFiles = allFiles.filter(
   (f) => f.endsWith(".json") && f !== "summary.json",
 );
 
-// Check: every regional file has a mapping
 console.log("=== Regional file coverage ===");
 for (const file of regionalFiles) {
   const regionName = Object.entries(regionToFile).find(
@@ -83,7 +81,6 @@ for (const file of regionalFiles) {
   check(`${file} has a known region mapping`, regionName !== undefined);
 }
 
-// Check: every summary region has a regional file
 for (const entry of summary) {
   const file = regionToFile[entry.region];
   check(
@@ -92,7 +89,6 @@ for (const entry of summary) {
   );
 }
 
-// Check: regions in regional files but missing from summary
 const summaryRegions = new Set(summary.map((e) => e.region));
 for (const file of regionalFiles) {
   const regionName = Object.entries(regionToFile).find(
@@ -103,7 +99,6 @@ for (const file of regionalFiles) {
   }
 }
 
-// Validate each summary entry
 for (const entry of summary) {
   console.log(`\n=== ${entry.region} ===`);
 
@@ -112,17 +107,13 @@ for (const entry of summary) {
 
   const candidates: Candidate[] = await Bun.file(`${dir}/${file}`).json();
 
-  // Count candidates by party
   const seatsByParty = new Map<string, number>();
   for (const c of candidates) {
-    const key = c.party ?? c.candidate; // independents keyed by name
+    const key = c.party ?? c.candidate;
     seatsByParty.set(key, (seatsByParty.get(key) ?? 0) + 1);
   }
 
-  // Total candidates in file
   const totalCandidates = candidates.length;
-
-  // --- Internal summary consistency checks ---
 
   if (entry.results_june14) {
     const r = entry.results_june14;
@@ -149,11 +140,6 @@ for (const entry of summary) {
     );
   }
 
-  // --- Cross-check: regional file vs summary ---
-
-  // Total candidates should match constituencies_elected from the relevant round(s)
-  // Some regions only have june14, some only sep30, some both.
-  // The regional file contains the winners from whichever round(s) completed.
   const june14Seats = entry.results_june14
     ? entry.results_june14.results.reduce((s, x) => s + x.seats_won, 0)
     : 0;
@@ -168,13 +154,10 @@ for (const entry of summary) {
     `file has ${totalCandidates}, summary has ${expectedCandidates}`,
   );
 
-  // Check per-party seat counts
-  // Collect all results from both rounds, grouped by party
   const summaryByParty = new Map<string, number>();
   for (const round of [entry.results_june14, entry.results_sep30]) {
     if (!round) continue;
     for (const r of round.results) {
-      // Normalize: "(Independent)" suffix means it's keyed by candidate name in the file
       let key = r.party_or_candidate;
       const indMatch = key.match(/^(.+?)\s*\(Independent\)$/);
       if (indMatch) {
@@ -192,7 +175,6 @@ for (const entry of summary) {
     );
   }
 
-  // Check for parties in summary but not in file
   for (const [party, count] of summaryByParty) {
     if (!seatsByParty.has(party)) {
       check(
@@ -203,7 +185,6 @@ for (const entry of summary) {
   }
 }
 
-// Final report
 console.log(`\n=== Results ===`);
 console.log(`Passed: ${passed}`);
 console.log(`Failed: ${failed}`);

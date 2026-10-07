@@ -1,140 +1,321 @@
 ---
-import { representatives, regions, parties } from "../lib/data";
+import type { House } from "@/lib/houses";
+import { houses } from "@/lib/houses";
+
+interface Props {
+  house: House;
+  party?: string;
+}
+
+const { house, party } = Astro.props;
+
+const pool = party
+  ? house.representatives.filter((r) => r.party === party)
+  : house.representatives;
+const regions = [...new Set(pool.map((r) => r.region))].sort();
 
 const repsJson = JSON.stringify(
-  representatives.map((r) => ({
+  pool.map((r) => ({
     candidate: r.candidate,
     location: r.location,
     region: r.region,
     party: r.party,
     gender: r.gender,
+    education: r.education ?? "",
     votes: r.votes,
-    slug: r.slug,
+    office: Boolean(r.position),
+    position: r.position ?? "",
+    returning: Boolean(r.predecessorSlug),
+    href: r.href,
   })),
 );
-const regionsJson = JSON.stringify(regions);
-const partiesJson = JSON.stringify(parties);
+
+const educations = [
+  ...new Set(pool.map((r) => r.education).filter(Boolean)),
+].sort() as string[];
+const hasOffices = pool.some((r) => r.position);
+const hasReturning = pool.some((r) => r.predecessorSlug);
+const previousHouse = houses.find((h) => h.number === house.number - 1);
+
+const selectClass =
+  "w-full px-3 pr-9 h-11 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent";
+const chevron =
+  "background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b5d52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)";
+const inputClass =
+  "w-full px-3 h-11 rounded-lg border border-border bg-card text-text placeholder-text-muted focus:outline-none focus:border-accent";
+const labelClass =
+  "block text-xs uppercase tracking-wider text-text-muted mb-1";
 ---
 
-<div id="search-app">
-  <div class="space-y-3 mb-6">
-    <input
-      type="text"
-      id="search-input"
-      placeholder="Search by name or constituency..."
-      class="w-full px-4 py-4 rounded-lg border border-border bg-card text-text placeholder-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
-    />
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-      <select
-        id="filter-region"
-        aria-label="Filter by region"
-        class="px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent"
-        style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b5d52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
-      >
-        <option value="">All Regions</option>
+<form id="search-form" class="mb-6" novalidate data-reps={repsJson}>
+  <input
+    type="search"
+    name="q"
+    id="search-input"
+    placeholder="Search by name or constituency..."
+    class="w-full px-4 py-4 rounded-lg border border-border bg-card text-text placeholder-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent mb-3"
+  />
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+    <label>
+      <span class={labelClass}>Region</span>
+      <select name="region" class={selectClass} style={chevron}>
+        <option value="">All regions</option>
+        {regions.map((r) => <option value={r}>{r}</option>)}
       </select>
-      <select
-        id="filter-party"
-        aria-label="Filter by party"
-        class="px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent"
-        style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b5d52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
-      >
-        <option value="">All Parties</option>
-      </select>
-      <select
-        id="filter-gender"
-        aria-label="Filter by gender"
-        class="col-span-2 sm:col-span-1 px-3 pr-9 h-12 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent"
-        style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b5d52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)"
-      >
-        <option value="">All Genders</option>
-        <option value="Male">Male</option>
+    </label>
+    {
+      !party && (
+        <label>
+          <span class={labelClass}>Party</span>
+          <select name="party" class={selectClass} style={chevron}>
+            <option value="">All parties</option>
+            {house.parties.map((p) => (
+              <option value={p}>{p}</option>
+            ))}
+          </select>
+        </label>
+      )
+    }
+    <label>
+      <span class={labelClass}>Gender</span>
+      <select name="gender" class={selectClass} style={chevron}>
+        <option value="">All</option>
         <option value="Female">Female</option>
+        <option value="Male">Male</option>
       </select>
-    </div>
+    </label>
+    {
+      educations.length > 0 && (
+        <label>
+          <span class={labelClass}>Education</span>
+          <select name="education" class={selectClass} style={chevron}>
+            <option value="">Any</option>
+            {educations.map((e) => (
+              <option value={e}>{e}</option>
+            ))}
+          </select>
+        </label>
+      )
+    }
+    <label>
+      <span class={labelClass}>Votes from</span>
+      <input
+        type="number"
+        name="votesMin"
+        min="0"
+        step="1"
+        inputmode="numeric"
+        placeholder="0"
+        class={inputClass}
+      />
+    </label>
+    <label>
+      <span class={labelClass}>Votes up to</span>
+      <input
+        type="number"
+        name="votesMax"
+        min="0"
+        step="1"
+        inputmode="numeric"
+        placeholder="Any"
+        class={inputClass}
+      />
+    </label>
   </div>
 
-  <p id="result-count" class="text-sm text-text-muted mb-4"></p>
+  {
+    (hasOffices || hasReturning) && (
+      <div class="flex flex-wrap gap-x-6 gap-y-2 mt-3 text-sm">
+        {hasOffices && (
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              name="office"
+              value="1"
+              class="w-4 h-4 accent-accent"
+            />
+            Holds an office
+          </label>
+        )}
+        {hasReturning && previousHouse && (
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              name="returning"
+              value="1"
+              class="w-4 h-4 accent-accent"
+            />
+            Also served in the {previousHouse.name}
+          </label>
+        )}
+      </div>
+    )
+  }
+</form>
 
-  <div id="results-list" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+<div class="flex items-center justify-between gap-4 mb-4">
+  <p id="result-count" class="text-sm text-text-muted"></p>
+  <button
+    type="button"
+    id="clear-filters"
+    class="text-sm text-accent-deep hover:text-accent-hover cursor-pointer"
+    hidden
+  >
+    Clear filters
+  </button>
 </div>
 
-<script is:inline define:vars={{ repsJson, regionsJson, partiesJson }}>
-  const reps = JSON.parse(repsJson);
-  const regions = JSON.parse(regionsJson);
-  const parties = JSON.parse(partiesJson);
+<div id="results-list" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
 
-  const searchInput = document.getElementById("search-input");
-  const filterRegion = document.getElementById("filter-region");
-  const filterParty = document.getElementById("filter-party");
-  const filterGender = document.getElementById("filter-gender");
-  const resultCount = document.getElementById("result-count");
-  const resultsList = document.getElementById("results-list");
+<script>
+  import { escapeHtml } from "@/lib/html";
 
-  // Populate dropdowns
-  regions.forEach((r) => {
-    const opt = document.createElement("option");
-    opt.value = r;
-    opt.textContent = r;
-    filterRegion.appendChild(opt);
-  });
-
-  parties.forEach((p) => {
-    const opt = document.createElement("option");
-    opt.value = p;
-    opt.textContent = p;
-    filterParty.appendChild(opt);
-  });
-
-  function render() {
-    const query = searchInput.value.toLowerCase().trim();
-    const region = filterRegion.value;
-    const party = filterParty.value;
-    const gender = filterGender.value;
-
-    const filtered = reps.filter((r) => {
-      if (
-        query &&
-        !r.candidate.toLowerCase().includes(query) &&
-        !r.location.toLowerCase().includes(query)
-      )
-        return false;
-      if (region && r.region !== region) return false;
-      if (party && r.party !== party) return false;
-      if (gender && r.gender !== gender) return false;
-      return true;
-    });
-
-    resultCount.textContent = `Showing ${filtered.length} of ${reps.length} representatives`;
-
-    resultsList.innerHTML = filtered
-      .map(
-        (r) => `
-        <a href="/representatives/${r.slug}" class="block bg-white rounded-lg border border-[#d9cfc5] hover:border-[#c8962d] transition-colors p-4">
-          <div class="flex items-start justify-between gap-4">
-            <div class="min-w-0">
-              <h2 class="text-[#3d2b1f] truncate">${r.candidate}</h2>
-              <p class="text-sm text-[#6b5d52] mt-0.5">${r.location}</p>
-              <div class="flex flex-wrap gap-2 mt-2">
-                <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-[#f0e8de] text-[#8b5e3c]">${r.region}</span>
-                <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-[#f0e8de] text-[#5a6e3c]">${r.party}</span>
-                <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-[#f0e8de] text-[#6b5d52]">${r.gender}</span>
-              </div>
-            </div>
-            <div class="text-right shrink-0">
-              <span class="text-sm font-medium text-[#6b5d52]">${r.votes.toLocaleString()}</span>
-              <span class="block text-xs text-[#6b5d52]">votes</span>
-            </div>
-          </div>
-        </a>`,
-      )
-      .join("");
+  interface Rep {
+    candidate: string;
+    location: string;
+    region: string;
+    party: string;
+    gender: string;
+    education: string;
+    votes: number | null;
+    office: boolean;
+    position: string;
+    returning: boolean;
+    href: string;
   }
 
-  searchInput.addEventListener("input", render);
-  filterRegion.addEventListener("change", render);
-  filterParty.addEventListener("change", render);
-  filterGender.addEventListener("change", render);
+  type Filters = Partial<Record<string, string>>;
 
+  const FIELDS = [
+    "q",
+    "region",
+    "party",
+    "gender",
+    "education",
+    "votesMin",
+    "votesMax",
+  ];
+  const FLAGS = ["office", "returning"];
+
+  const form = document.getElementById("search-form") as HTMLFormElement;
+  const resultCount = document.getElementById("result-count")!;
+  const resultsList = document.getElementById("results-list")!;
+  const clearButton = document.getElementById("clear-filters")!;
+  const reps: Rep[] = JSON.parse(form.dataset.reps ?? "[]");
+
+  const control = (name: string) =>
+    form.elements.namedItem(name) as HTMLInputElement | null;
+
+  function readFilters(): Filters {
+    const data = new FormData(form);
+    const filters: Filters = {};
+    for (const name of FIELDS) {
+      const value = (data.get(name) ?? "").toString().trim();
+      if (value) filters[name] = value;
+    }
+    for (const name of FLAGS) {
+      if (data.get(name)) filters[name] = "1";
+    }
+    return filters;
+  }
+
+  function hydrate() {
+    const params = new URLSearchParams(window.location.search);
+    for (const name of FIELDS) {
+      const input = control(name);
+      const value = params.get(name);
+      if (input && value !== null) input.value = value;
+    }
+    for (const name of FLAGS) {
+      const input = control(name);
+      if (input) input.checked = params.get(name) === "1";
+    }
+  }
+
+  function syncUrl(filters: Filters) {
+    const query = new URLSearchParams(
+      filters as Record<string, string>,
+    ).toString();
+    window.history.replaceState(
+      null,
+      "",
+      window.location.pathname + (query ? `?${query}` : ""),
+    );
+  }
+
+  function matches(rep: Rep, f: Filters): boolean {
+    if (f.q) {
+      const query = f.q.toLowerCase();
+      const hit =
+        rep.candidate.toLowerCase().includes(query) ||
+        rep.location.toLowerCase().includes(query);
+      if (!hit) return false;
+    }
+    if (f.region && rep.region !== f.region) return false;
+    if (f.party && rep.party !== f.party) return false;
+    if (f.gender && rep.gender !== f.gender) return false;
+    if (f.education && rep.education !== f.education) return false;
+    if (f.votesMin && (rep.votes === null || rep.votes < Number(f.votesMin)))
+      return false;
+    if (f.votesMax && (rep.votes === null || rep.votes > Number(f.votesMax)))
+      return false;
+    if (f.office && !rep.office) return false;
+    if (f.returning && !rep.returning) return false;
+    return true;
+  }
+
+  const tag = (text: string, color: string) =>
+    `<span class="inline-block text-xs px-2 py-0.5 rounded-full bg-callout-bg ${color}">${escapeHtml(text)}</span>`;
+
+  function card(rep: Rep): string {
+    const tags = [
+      tag(rep.region, "text-earth"),
+      tag(rep.party, "text-olive"),
+      tag(rep.gender, "text-text-muted"),
+      rep.education ? tag(rep.education, "text-text-muted") : "",
+    ].join("");
+    const position = rep.position
+      ? `<p class="text-xs text-accent-deep mt-0.5">${escapeHtml(rep.position)}</p>`
+      : "";
+    const votes = rep.votes === null ? "—" : rep.votes.toLocaleString();
+    return `
+      <a href="${rep.href}" class="block bg-card rounded-lg border border-border hover:border-accent transition-colors p-4">
+        <div class="flex items-start justify-between gap-4">
+          <div class="min-w-0">
+            <h2 class="text-primary truncate">${escapeHtml(rep.candidate)}</h2>
+            <p class="text-sm text-text-muted mt-0.5">${escapeHtml(rep.location)}</p>
+            ${position}
+            <div class="flex flex-wrap gap-2 mt-2">${tags}</div>
+          </div>
+          <div class="text-right shrink-0">
+            <span class="text-sm font-medium text-text-muted">${votes}</span>
+            <span class="block text-xs text-text-muted">votes</span>
+          </div>
+        </div>
+      </a>`;
+  }
+
+  function render() {
+    const filters = readFilters();
+    const filtered = reps.filter((rep) => matches(rep, filters));
+    const active = Object.keys(filters).length > 0;
+    resultCount.textContent = active
+      ? `Showing ${filtered.length} of ${reps.length} representatives`
+      : `${reps.length} representatives`;
+    clearButton.hidden = !active;
+    resultsList.innerHTML = filtered.map(card).join("");
+    syncUrl(filters);
+  }
+
+  form.addEventListener("input", render);
+  form.addEventListener("change", render);
+  form.addEventListener("submit", (event) => event.preventDefault());
+  clearButton.addEventListener("click", () => {
+    form.reset();
+    render();
+  });
+
+  hydrate();
   render();
 </script>

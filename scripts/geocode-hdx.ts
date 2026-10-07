@@ -44,38 +44,29 @@ function normalize(s: string): string {
     .trim();
 }
 
-// Generate matching variants for a constituency name
 function nameVariants(s: string): string[] {
   const norm = normalize(s);
   const variants = new Set<string>([norm]);
 
-  // Q/K swap
   variants.add(norm.replace(/q/g, "k"));
   variants.add(norm.replace(/k/g, "q"));
 
-  // Ch/Tch/C
   variants.add(norm.replace(/ch/g, "tch"));
   variants.add(norm.replace(/tch/g, "ch"));
 
-  // W/U
   variants.add(norm.replace(/w/g, "u"));
 
-  // Ts/Z
   variants.add(norm.replace(/ts/g, "z"));
   variants.add(norm.replace(/tz/g, "z"));
 
-  // Double → single consonant
   variants.add(norm.replace(/(.)\1/g, "$1"));
 
-  // E/I swap
   variants.add(norm.replace(/e/g, "i"));
   variants.add(norm.replace(/i/g, "e"));
 
-  // Ey/Ay swap
   variants.add(norm.replace(/ey/g, "ay"));
   variants.add(norm.replace(/ay/g, "ey"));
 
-  // First word only
   const words = norm.split(" ").filter((w) => w.length > 2);
   for (const w of words) {
     variants.add(w);
@@ -88,7 +79,6 @@ function nameVariants(s: string): string[] {
   return [...variants];
 }
 
-// Map election region names to HDX adm1 names
 const regionMap: Record<string, string[]> = {
   Amhara: ["Amhara"],
   Oromia: ["Oromia"],
@@ -111,7 +101,6 @@ const regionMap: Record<string, string[]> = {
 };
 
 async function main() {
-  // Load HDX woreda data
   const geojson = await Bun.file(hdxPath).json();
   const woredas: HdxWoreda[] = geojson.features
     .filter(
@@ -127,14 +116,12 @@ async function main() {
 
   console.log(`Loaded ${woredas.length} woredas from HDX\n`);
 
-  // Build normalized index: norm_name → woreda[]
   const index = new Map<string, HdxWoreda[]>();
   for (const w of woredas) {
     const norm = normalize(w.name);
     if (!index.has(norm)) index.set(norm, []);
     index.get(norm)!.push(w);
 
-    // Also index individual words for compound names
     const words = norm.split(" ").filter((word) => word.length > 2);
     for (const word of words) {
       if (!index.has(word)) index.set(word, []);
@@ -144,7 +131,6 @@ async function main() {
 
   console.log(`Index has ${index.size} entries\n`);
 
-  // Load coordinates.json
   const entries: GeocodedEntry[] = await Bun.file(
     `${dir}/coordinates.json`,
   ).json();
@@ -160,12 +146,10 @@ async function main() {
 
     let bestMatch: HdxWoreda | null = null;
 
-    // Try each variant, prefer matches in the correct region
     for (const variant of variants) {
       const candidates = index.get(variant);
       if (!candidates) continue;
 
-      // First try same region
       const regionMatch = candidates.find((c) =>
         allowedRegions.some((r) => r.toLowerCase() === c.region.toLowerCase()),
       );
@@ -174,7 +158,6 @@ async function main() {
         break;
       }
 
-      // Fall back to any region if no region match yet
       if (!bestMatch && candidates.length > 0) {
         bestMatch = candidates[0];
       }

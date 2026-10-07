@@ -1,0 +1,89 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Search from "@/components/Search.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import MarkerMap from "@/components/MarkerMap.astro";
+import StatTile from "@/components/StatTile.astro";
+import PartyChips from "@/components/PartyChips.astro";
+import { partySlug } from "@/lib/data";
+import { getHouse, housePaths, representativesHref } from "@/lib/houses";
+
+export function getStaticPaths() {
+  return housePaths((house) =>
+    house.parties.map((party) => ({ party: partySlug(party) })),
+  );
+}
+
+const house = getHouse(Astro.params.house);
+const { party: partyParam } = Astro.params;
+const partyName = house.getPartyBySlug(partyParam!);
+
+if (!partyName) {
+  return Astro.redirect(`${house.prefix}/parties`);
+}
+
+const reps = house.getByParty(partyName);
+const stats = house.getPartyStats(partyName);
+const color = house.partyColors[partyName];
+const link = (filters: Parameters<typeof representativesHref>[1]) =>
+  representativesHref(house, { party: partyName, ...filters });
+const points = reps.map((r) => ({ lat: r.lat, lng: r.lng, href: r.href }));
+
+const regionChips = stats.regions.map((region) => ({
+  name: region.name,
+  color,
+  count: region.seats,
+  href: link({ region: region.name }),
+}));
+
+const siteUrl = "https://rep.et";
+const partyUrl = `${siteUrl}${house.prefix}/parties/${partyParam}`;
+const description = `${partyName} holds ${stats.seats} seats across ${stats.regions.length} regions in Ethiopia's ${house.fullName} (HOPR). View all representatives and constituency details.`;
+const partyJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: partyName,
+  url: partyUrl,
+  description: description,
+};
+---
+
+<Layout
+  house={house}
+  title={`${partyName}`}
+  description={description}
+  jsonLd={partyJsonLd}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Breadcrumbs
+      crumbs={[
+        { label: "Home", href: house.prefix || "/" },
+        { label: "Parties", href: `${house.prefix}/parties` },
+        { label: partyName },
+      ]}
+    />
+
+    <h1 class="text-2xl md:text-3xl mb-6">{partyName}</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+      <StatTile value={stats.seats} label="Seats" href={link({})} />
+      <StatTile value={stats.totalVotes.toLocaleString()} label="Votes" />
+      <StatTile
+        value={stats.genderSplit.female}
+        label="Women"
+        href={link({ gender: "Female" })}
+      />
+      <StatTile value={stats.regions.length} label="Regions" />
+    </div>
+
+    <h2 class="text-lg mb-3">Seats by region</h2>
+    <PartyChips chips={regionChips} class="mb-8" />
+
+    <div class="bg-card rounded-xl border border-border overflow-hidden mb-8">
+      <MarkerMap points={points} class="h-64 md:h-80 lg:h-96" />
+    </div>
+
+    <h2 class="text-lg mb-4">Representatives</h2>
+    <Search house={house} party={partyName} />
+  </div>
+</Layout>

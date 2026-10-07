@@ -1,0 +1,28 @@
+---
+interface Props {
+  seats: { party: string; color: string }[];
+  label: string;
+  class?: string;
+}
+
+const { seats, label, class: cls = "" } = Astro.props;
+---
+
+<div
+  class:list={[
+    "grid gap-[2px] [grid-template-columns:repeat(auto-fill,minmax(7px,1fr))]",
+    cls,
+  ]}
+  role="img"
+  aria-label={label}
+>
+  {
+    seats.map((seat) => (
+      <span
+        class="aspect-square rounded-[1.5px]"
+        style={`background:${seat.color}`}
+        title={seat.party}
+      />
+    ))
+  }
+</div>

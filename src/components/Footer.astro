@@ -1,93 +1,136 @@
 ---
+import { houses, type House } from "@/lib/houses";
 
+interface Props {
+  house: House;
+}
+
+const { house } = Astro.props;
+
+const navLinks = [
+  { href: `${house.prefix}/representatives`, label: "Representatives" },
+  { href: `${house.prefix}/parties`, label: "Parties" },
+  { href: `${house.prefix}/map`, label: "Map" },
+  { href: "/about", label: "About" },
+];
 ---
 
 <footer class="bg-primary text-white/80 mt-16 relative">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <div
-      class="flex flex-col md:flex-row md:items-start md:justify-between gap-6"
+      class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6"
     >
       <div>
-        <a href="/" class="text-white hover:text-accent">
+        <a href={house.prefix || "/"} class="text-white hover:text-accent">
           <span class="text-lg font-heading">rep.et</span>
         </a>
         <p class="text-sm mt-1 text-white/50">Find your representative</p>
       </div>
-
       <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-        <a href="/representatives" class="text-white/70 hover:text-white"
-          >Representatives</a
-        >
-        <a href="/regions" class="text-white/70 hover:text-white">Regions</a>
-        <a href="/parties" class="text-white/70 hover:text-white">Parties</a>
-        <a href="/map" class="text-white/70 hover:text-white">Map</a>
-        <a href="/stats" class="text-white/70 hover:text-white">Stats</a>
-        <a href="/about" class="text-white/70 hover:text-white">About</a>
+        {
+          navLinks.map((link) => (
+            <a href={link.href} class="text-white/70 hover:text-white">
+              {link.label}
+            </a>
+          ))
+        }
       </nav>
     </div>
 
     <div
-      class="mt-8 pt-6 border-t border-white/10 text-xs text-white/50 leading-relaxed space-y-2"
+      class="mt-8 pt-8 border-t border-white/10 grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr]"
     >
-      <p>
-        The code and data for this website are publicly available and open
-        source on <a
-          href="https://github.com/frectonz/rep.et"
-          class="text-white/70 hover:text-white underline">GitHub</a
-        >.
-      </p>
-      <p>
-        This is an independent, unofficial project. It is not affiliated with or
-        endorsed by the Ethiopian government, <a
-          href="https://nebe.org.et/"
-          class="text-white/70 hover:text-white underline"
-          target="_blank"
-          rel="noopener noreferrer">NEBE</a
-        >, or any political party. Data collected from the 6th National Election
-        results published by the <a
-          href="https://nebe.org.et/"
-          class="text-white/70 hover:text-white underline"
-          target="_blank"
-          rel="noopener noreferrer"
-          >National Election Board of Ethiopia (NEBE)</a
-        >.
-      </p>
-      <p>
-        If you find any inaccuracies or want to contact the creators of this
-        site, reach out to <a
-          href="https://t.me/frectonz"
-          class="text-white/70 hover:text-white underline">@frectonz</a
-        > on Telegram.
-      </p>
-    </div>
+      <div class="space-y-8">
+        <div class="text-xs text-white/50 leading-relaxed space-y-2">
+          <p>
+            The code and data for this website are publicly available and open
+            source on <a
+              href="https://github.com/frectonz/rep.et"
+              class="text-white/70 hover:text-white underline">GitHub</a
+            >.
+          </p>
+          <p>
+            This is an independent, unofficial project. It is not affiliated
+            with or endorsed by the Ethiopian government, <a
+              href="https://nebe.org.et/"
+              class="text-white/70 hover:text-white underline"
+              target="_blank"
+              rel="noopener noreferrer">NEBE</a
+            >, or any political party.
+          </p>
+          <p>
+            If you find any inaccuracies or want to contact the creators of this
+            site, reach out to <a
+              href="https://t.me/frectonz"
+              class="text-white/70 hover:text-white underline">@frectonz</a
+            > on Telegram.
+          </p>
+        </div>
 
-    <div class="mt-8 pt-6 border-t border-white/10">
-      <h2
-        class="text-white/70 text-xs font-semibold mb-3 uppercase tracking-wider"
-      >
-        Sister projects
-      </h2>
-      <div class="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
-        <a
-          href="https://electionwatch.et"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex flex-col leading-tight rounded-lg px-5 py-3 sm:min-w-[220px] transition-opacity hover:opacity-80"
-          style="background-color:#1f2455"
+        <div>
+          <h2
+            class="text-white/70 text-xs font-semibold mb-3 uppercase tracking-wider"
+          >
+            Sister projects
+          </h2>
+          <div class="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
+            <a
+              href="https://electionwatch.et"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-col leading-tight rounded-lg px-5 py-3 sm:min-w-[220px] transition-opacity hover:opacity-80"
+              style="background-color:#1f2455"
+            >
+              <span class="text-lg font-heading text-white"
+                >electionwatch.et</span
+              >
+              <span class="text-white/60 text-xs -mt-0.5">ምርጫ</span>
+            </a>
+            <a
+              href="https://audit.et"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-col leading-tight rounded-lg px-5 py-3 sm:min-w-[220px] transition-opacity hover:opacity-80"
+              style="background-color:#1b3b34"
+            >
+              <span class="text-lg font-heading text-white">audit.et</span>
+              <span class="text-white/60 text-xs -mt-0.5">ኦዲት</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2
+          class="text-white/70 text-xs font-semibold mb-3 uppercase tracking-wider"
         >
-          <span class="text-lg font-heading text-white">electionwatch.et</span>
-          <span class="text-white/60 text-xs -mt-0.5">ምርጫ</span>
-        </a>
-        <a
-          href="https://audit.et"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex flex-col leading-tight rounded-lg px-5 py-3 sm:min-w-[220px] transition-opacity hover:opacity-80"
-          style="background-color:#1b3b34"
-        >
-          <span class="text-lg font-heading text-white">audit.et</span>
-          <span class="text-white/60 text-xs -mt-0.5">ኦዲት</span>
-        </a>
+          Houses
+        </h2>
+        <div class="space-y-3">
+          {
+            houses.map((h) => (
+              <a
+                href={h.prefix || "/"}
+                class="group block"
+                aria-current={h.id === house.id ? "page" : undefined}
+              >
+                <span
+                  class:list={[
+                    "block font-heading transition-colors",
+                    h.id === house.id
+                      ? "text-accent"
+                      : "text-white/80 group-hover:text-white",
+                  ]}
+                >
+                  {h.fullName}
+                </span>
+                <span class="block text-white/50 text-xs">
+                  {h.term} · {h.representatives.length} members
+                </span>
+              </a>
+            ))
+          }
+        </div>
       </div>
     </div>
   </div>

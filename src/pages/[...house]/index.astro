@@ -1,0 +1,368 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import GeolocateButton from "@/components/GeolocateButton.astro";
+import SeatChart from "@/components/SeatChart.astro";
+import SeatTiles from "@/components/SeatTiles.astro";
+import StatTile from "@/components/StatTile.astro";
+import PartyChips from "@/components/PartyChips.astro";
+import { partySlug } from "@/lib/data";
+import { getHouse, housePaths, representativesHref } from "@/lib/houses";
+import { ArrowRight, Landmark, Map, Search } from "@lucide/astro";
+
+export function getStaticPaths() {
+  return housePaths(() => [{}]);
+}
+
+const house = getHouse(Astro.params.house);
+const { representatives, parties } = house;
+const p = house.prefix;
+const reps = (filters: Parameters<typeof representativesHref>[1]) =>
+  representativesHref(house, filters);
+
+const stats = house.getOverallStats();
+const pending = house.councilSeats - representatives.length;
+const femalePercent = ((stats.totalFemale / stats.totalSeats) * 100).toFixed(1);
+
+const withVotes = representatives.filter(
+  (r): r is typeof r & { votes: number } => r.votes !== null,
+);
+const sortedByVotes = [...withVotes].sort((a, b) => b.votes - a.votes);
+const top5 = sortedByVotes.slice(0, 5);
+const bottom5 = sortedByVotes.slice(-5).reverse();
+
+const partyChips = stats.partyStats.map((party) => ({
+  name: party.name,
+  color: house.partyColors[party.name],
+  count: party.seats,
+  href: `${p}/parties/${partySlug(party.name)}`,
+}));
+
+const regionRows = stats.regionStats.map((region) => ({
+  ...region,
+  tiles: house
+    .getByRegion(region.name)
+    .sort((a, b) => a.party.localeCompare(b.party))
+    .map((r) => ({ party: r.party, color: house.partyColors[r.party] })),
+}));
+---
+
+<Layout
+  house={house}
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "rep.et",
+    url: "https://rep.et",
+    description: `Find your representative in Ethiopia's ${house.fullName} (HOPR). Search ${representatives.length} elected members of parliament by name, region, party, or location.`,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `https://rep.et${p}/representatives?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  }}
+>
+  <section class="border-b border-border overflow-x-clip">
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 grid lg:grid-cols-[5fr_7fr] gap-10 lg:gap-12 items-center"
+    >
+      <div>
+        <p class="text-sm uppercase tracking-wider text-accent-deep mb-3">
+          {house.fullName} · {house.term}
+        </p>
+        <h1 class="text-4xl md:text-5xl mb-4">Find Your Representative</h1>
+        <p class="text-text-muted text-lg mb-8">
+          Discover who represents your constituency in Ethiopia's federal
+          parliament, elected in the {house.election}.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <GeolocateButton house={house} />
+          <a
+            href={`${p}/map`}
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary hover:bg-primary-light text-white rounded-lg transition-colors"
+          >
+            <Map class="w-4 h-4" />
+            Explore the Map
+          </a>
+        </div>
+
+        <div id="geo-status" class="mt-4 text-sm hidden"></div>
+
+        <div id="geo-fallback" class="hidden mt-6 max-w-lg">
+          <div
+            class="bg-callout-bg border border-callout-border rounded-lg p-4"
+          >
+            <p class="text-sm text-text-muted mb-3">
+              Could not access your location. You can search for your
+              constituency or region instead.
+            </p>
+            <input
+              type="text"
+              id="fallback-search"
+              placeholder="Search constituency or region..."
+              class="w-full px-4 py-2.5 rounded-lg border border-border bg-card text-text placeholder-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
+            />
+            <div id="fallback-results" class="mt-2 space-y-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="min-w-0 [perspective:800px]">
+        <div
+          class="bg-card border border-border rounded-xl p-4 sm:p-5 [transform:rotateY(-8deg)_rotateX(4deg)] shadow-[8px_12px_28px_rgba(44,24,16,0.18),2px_4px_8px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.7)]"
+        >
+          <SeatChart house={house} class="pointer-events-none" />
+          <p class="mt-3 text-xs text-text-muted">
+            {representatives.length} seats across {parties.length} parties{
+              pending > 0 && `, ${pending} without a published result`
+            }
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <StatTile
+        value={representatives.length}
+        label="Representatives"
+        href={reps({})}
+      />
+      <StatTile value={parties.length} label="Parties" href={`${p}/parties`} />
+      <StatTile
+        value={stats.totalFemale}
+        label={`Women (${femalePercent}%)`}
+        href={reps({ gender: "Female" })}
+      />
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex items-baseline justify-between gap-4 mb-4">
+      <h2 class="text-xl">Parties</h2>
+      <a
+        href={`${p}/parties`}
+        class="text-sm text-accent-deep hover:text-accent-hover inline-flex items-center gap-1"
+      >
+        Party breakdown <ArrowRight class="w-4 h-4" />
+      </a>
+    </div>
+    <PartyChips chips={partyChips} />
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h2 class="text-xl mb-1">Regions</h2>
+    <p class="text-sm text-text-muted mb-4">
+      One tile per seat, coloured by party. Counts link to the members.
+    </p>
+    <div class="bg-card rounded-xl border border-border overflow-hidden">
+      <table class="w-full text-sm">
+        <thead class="text-xs uppercase tracking-wider text-text-muted">
+          <tr class="border-b border-border">
+            <th class="text-left font-medium px-4 py-3">Region</th>
+            <th
+              class="text-left font-medium px-4 py-3 w-full hidden sm:table-cell"
+            >
+              Seats
+            </th>
+            <th class="text-right font-medium px-4 py-3">Seats</th>
+            <th class="text-right font-medium px-4 py-3">Women</th>
+            <th class="text-right font-medium px-4 py-3 hidden md:table-cell">
+              Parties
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            regionRows.map((region) => (
+              <tr class="border-b border-border last:border-0">
+                <td class="px-4 py-3 whitespace-nowrap">
+                  <a
+                    href={reps({ region: region.name })}
+                    class="font-medium text-text hover:text-accent"
+                  >
+                    {region.name}
+                  </a>
+                </td>
+                <td class="px-4 py-3 hidden sm:table-cell">
+                  <SeatTiles
+                    seats={region.tiles}
+                    label={`${region.tiles.length} seats in ${region.name}`}
+                    class="max-w-md"
+                  />
+                </td>
+                <td class="px-4 py-3 text-right tabular-nums">
+                  <a
+                    href={reps({ region: region.name })}
+                    class="hover:text-accent"
+                  >
+                    {region.tiles.length}
+                  </a>
+                </td>
+                <td class="px-4 py-3 text-right tabular-nums">
+                  <a
+                    href={reps({ region: region.name, gender: "Female" })}
+                    class="hover:text-accent"
+                  >
+                    {region.genderSplit.female}
+                  </a>
+                </td>
+                <td class="px-4 py-3 text-right tabular-nums hidden md:table-cell">
+                  {region.parties.length}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  {
+    stats.education.length > 0 && (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h2 class="text-xl mb-1">Education</h2>
+        <p class="text-sm text-text-muted mb-4">
+          Highest qualification declared on the NEBE candidate list.
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          {stats.education.map((level) => (
+            <StatTile
+              value={level.count}
+              label={level.name}
+              href={reps({ education: level.name })}
+            />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h2 class="text-xl mb-1">Votes</h2>
+    <p class="text-sm text-text-muted mb-4">
+      {
+        withVotes.length < representatives.length
+          ? `NEBE's vote sheets omit ${representatives.length - withVotes.length} of the ${representatives.length} members; figures cover the other ${withVotes.length}.`
+          : `Votes received by each winning candidate.`
+      }
+    </p>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+      <StatTile
+        value={stats.highestVote.votes!.toLocaleString()}
+        label={`Highest · ${stats.highestVote.candidate}`}
+        href={stats.highestVote.href}
+      />
+      <StatTile
+        value={stats.lowestVote.votes!.toLocaleString()}
+        label={`Lowest · ${stats.lowestVote.candidate}`}
+        href={stats.lowestVote.href}
+      />
+      <StatTile value={stats.medianVotes.toLocaleString()} label="Median" />
+      <StatTile
+        value={stats.avgVotesPerSeat.toLocaleString()}
+        label="Average"
+      />
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-4">
+      {
+        [
+          {
+            title: "Winners with the most votes",
+            list: top5,
+            href: reps({ votesMin: top5[top5.length - 1].votes }),
+          },
+          {
+            title: "Winners with the fewest votes",
+            list: bottom5,
+            href: reps({ votesMax: bottom5[bottom5.length - 1].votes }),
+          },
+        ].map((group) => (
+          <div class="bg-card rounded-xl border border-border p-5">
+            <div class="flex items-baseline justify-between gap-4 mb-3">
+              <h3 class="text-sm font-semibold text-text-muted">
+                {group.title}
+              </h3>
+              <a
+                href={group.href}
+                class="text-xs text-accent-deep hover:text-accent-hover"
+              >
+                Filter the list
+              </a>
+            </div>
+            <ol class="divide-y divide-border">
+              {group.list.map((rep) => (
+                <li class="flex items-center justify-between gap-4 py-2">
+                  <div class="min-w-0">
+                    <a
+                      href={rep.href}
+                      class="font-medium hover:text-accent transition-colors truncate block"
+                    >
+                      {rep.candidate}
+                    </a>
+                    <p class="text-xs text-text-muted truncate">
+                      {rep.location}, {rep.region} · {rep.party}
+                    </p>
+                  </div>
+                  <span class="text-sm tabular-nums text-primary shrink-0">
+                    {rep.votes.toLocaleString()}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h2 class="text-xl mb-4">Browse</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <a
+        href={reps({})}
+        class="bg-card rounded-xl border border-border p-5 hover:border-accent transition-colors group"
+      >
+        <Search class="w-5 h-5 text-accent mb-2" />
+        <h3
+          class="text-lg text-primary group-hover:text-accent transition-colors"
+        >
+          All Representatives
+        </h3>
+        <p class="text-sm text-text-muted mt-1">
+          Search and filter all {representatives.length} elected members
+        </p>
+      </a>
+      <a
+        href={`${p}/parties`}
+        class="bg-card rounded-xl border border-border p-5 hover:border-accent transition-colors group"
+      >
+        <Landmark class="w-5 h-5 text-accent mb-2" />
+        <h3
+          class="text-lg text-primary group-hover:text-accent transition-colors"
+        >
+          Party Breakdown
+        </h3>
+        <p class="text-sm text-text-muted mt-1">
+          See seat distribution among {parties.length} parties
+        </p>
+      </a>
+      <a
+        href={`${p}/map`}
+        class="bg-card rounded-xl border border-border p-5 hover:border-accent transition-colors group"
+      >
+        <Map class="w-5 h-5 text-accent mb-2" />
+        <h3
+          class="text-lg text-primary group-hover:text-accent transition-colors"
+        >
+          Interactive Map
+        </h3>
+        <p class="text-sm text-text-muted mt-1">
+          View all constituencies on a map of Ethiopia
+        </p>
+      </a>
+    </div>
+  </section>
+</Layout>

@@ -4,4 +4,5 @@ node_modules/
 pnpm-lock.yaml
 analysis/
 election-6/
+election-7/
 public/

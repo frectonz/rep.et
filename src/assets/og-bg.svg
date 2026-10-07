@@ -10,11 +10,9 @@
     </radialGradient>
   </defs>
 
-  <!-- Base -->
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
 
-  <!-- Large Ethiopic characters - top area (subtler for text readability) -->
   <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#5c4033">
     <text x="60" y="110" font-size="90" opacity="0.13">ተ</text>
     <text x="380" y="85" font-size="70" opacity="0.11">ወ</text>
@@ -22,7 +20,6 @@
     <text x="1020" y="95" font-size="75" opacity="0.11">ዮ</text>
   </g>
 
-  <!-- Large Ethiopic characters - middle area (more visible) -->
   <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#5c4033">
     <text x="120" y="310" font-size="100" opacity="0.2">ሕ</text>
     <text x="480" y="270" font-size="85" opacity="0.18">ዝ</text>
@@ -30,7 +27,6 @@
     <text x="1060" y="290" font-size="75" opacity="0.17">ች</text>
   </g>
 
-  <!-- Large Ethiopic characters - bottom area (most visible) -->
   <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#6b4e3a">
     <text x="60" y="490" font-size="110" opacity="0.25">ኢ</text>
     <text x="320" y="540" font-size="95" opacity="0.23">ት</text>
@@ -39,7 +35,6 @@
     <text x="1060" y="490" font-size="100" opacity="0.23">ያ</text>
   </g>
 
-  <!-- Smaller accent characters scattered -->
   <g font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" fill="#5c4033">
     <text x="240" y="195" font-size="40" opacity="0.16">ሀ</text>
     <text x="560" y="175" font-size="36" opacity="0.14">ለ</text>
@@ -55,37 +50,31 @@
     <text x="960" y="595" font-size="38" opacity="0.2">ከ</text>
   </g>
 
-  <!-- Ethiopian cross-inspired motifs -->
   <g fill="none" stroke="#c8962d">
-    <!-- Cross 1 - right side upper -->
     <g transform="translate(1100, 240)" opacity="0.2" stroke-width="1.5">
       <circle r="12"/>
       <circle r="20"/>
       <line x1="0" y1="-26" x2="0" y2="26"/>
       <line x1="-26" y1="0" x2="26" y2="0"/>
     </g>
-    <!-- Cross 2 - center bottom -->
     <g transform="translate(520, 460)" opacity="0.16" stroke-width="1">
       <circle r="10"/>
       <circle r="16"/>
       <line x1="0" y1="-22" x2="0" y2="22"/>
       <line x1="-22" y1="0" x2="22" y2="0"/>
     </g>
-    <!-- Cross 3 - left bottom -->
     <g transform="translate(280, 510)" opacity="0.18" stroke-width="1.5">
       <circle r="8"/>
       <circle r="14"/>
       <line x1="0" y1="-18" x2="0" y2="18"/>
       <line x1="-18" y1="0" x2="18" y2="0"/>
     </g>
-    <!-- Cross 4 - right bottom -->
     <g transform="translate(940, 370)" opacity="0.14" stroke-width="1">
       <circle r="14"/>
       <circle r="22"/>
       <line x1="0" y1="-28" x2="0" y2="28"/>
       <line x1="-28" y1="0" x2="28" y2="0"/>
     </g>
-    <!-- Cross 5 - top area (subtle) -->
     <g transform="translate(650, 150)" opacity="0.1" stroke-width="1">
       <circle r="8"/>
       <circle r="13"/>
@@ -94,7 +83,6 @@
     </g>
   </g>
 
-  <!-- Diamond/rhombus shapes -->
   <g fill="none" stroke="#c8962d" stroke-width="1.2">
     <path d="M750,490 l16,-16 l16,16 l-16,16 z" opacity="0.16"/>
     <path d="M1000,160 l11,-11 l11,11 l-11,11 z" opacity="0.12"/>
@@ -105,7 +93,6 @@
     <path d="M850,280 l8,-8 l8,8 l-8,8 z" opacity="0.1"/>
   </g>
 
-  <!-- Scattered gold dots -->
   <g fill="#c8962d">
     <circle cx="100" cy="350" r="2.5" opacity="0.2"/>
     <circle cx="270" cy="395" r="2" opacity="0.17"/>
@@ -124,10 +111,8 @@
     <circle cx="1080" cy="150" r="2" opacity="0.08"/>
   </g>
 
-  <!-- Bottom gold accent line -->
   <line x1="60" y1="565" x2="1140" y2="565" stroke="#c8962d" stroke-width="1.5" opacity="0.3"/>
 
-  <!-- Small decorative triangles along the accent line -->
   <g fill="#c8962d" opacity="0.18">
     <polygon points="60,565 67,555 74,565"/>
     <polygon points="180,565 187,555 194,565"/>
@@ -141,11 +126,9 @@
     <polygon points="1134,565 1141,555 1148,565"/>
   </g>
 
-  <!-- Bottom branding -->
   <text x="1140" y="605" text-anchor="end" font-family="Georgia, 'Gelasio', serif" font-size="26" fill="#c8962d" opacity="0.45" font-weight="bold" letter-spacing="2">rep.et</text>
   <text x="1042" y="605" text-anchor="end" font-family="Kefa, Nyala, 'Noto Sans Ethiopic', sans-serif" font-size="18" fill="#a08060" opacity="0.35">ተወካዮች</text>
 
-  <!-- Corner bracket decorations -->
   <g stroke="#c8962d" stroke-width="1.5" fill="none" opacity="0.18">
     <path d="M1158,48 L1158,28 L1138,28"/>
     <path d="M1168,58 L1168,18 L1128,18"/>

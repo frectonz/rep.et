@@ -34,37 +34,34 @@ const regionToFile: Record<string, string> = {
   Gambella: "gambella.json",
 };
 
-// Addis Ababa constituency approximate centroids derived from
-// the NEBE electoral constituency map (WGS 1984 Web Mercator).
-// Positioned relative to known sub-city boundaries.
 const addisAbabaCoords: Record<string, [number, number]> = {
-  "Constituency 1 and 9": [9.065, 38.735], // Gulele, northwest
-  "Constituency 2 and 14": [9.03, 38.765], // Arada
-  "Constituency 3": [9.025, 38.75], // Arada / Lideta
-  "Constituency 4": [9.02, 38.755], // Lideta / Kirkos
-  "Constituency 5": [9.035, 38.76], // Arada
-  "Constituency 6": [9.035, 38.755], // Arada / Addis Ketema
-  "Constituency 7": [9.035, 38.745], // Addis Ketema
-  "Constituency 8": [9.05, 38.76], // Gulele / Yeka border, north
-  "Constituency 10": [9.055, 38.79], // Yeka, north-central
-  "Constituency 11": [9.06, 38.815], // Yeka, northeast
-  "Constituency 12 and 13": [9.05, 38.8], // Yeka, north-central/east
-  "Constituency 15": [9.03, 38.81], // Bole, north
-  "Constituency 16": [9.025, 38.79], // Kirkos / Bole border
-  "Constituency 17": [9.01, 38.82], // Bole, large eastern area
-  "Constituency 18": [9.015, 38.765], // Nifas Silk / Kirkos
-  "Constituency 19": [8.93, 38.77], // Akaki Kality, large southern area
-  "Constituency 20": [8.98, 38.755], // Nifas Silk / Akaki border
-  "Constituency 21 and 22": [9.02, 38.77], // Kirkos
-  "Constituency 23": [8.995, 38.755], // Nifas Silk, south-central
-  "Constituency 24": [9.0, 38.73], // Nifas Silk / Kolfe, southwest
-  "Constituency 25": [9.035, 38.725], // Addis Ketema / Kolfe, west
-  "Constituency 26 and 27": [8.92, 38.81], // Akaki Kality, southeast
-  "Constituency 28": [9.03, 38.84], // Bole, far east
+  "Constituency 1 and 9": [9.065, 38.735],
+  "Constituency 2 and 14": [9.03, 38.765],
+  "Constituency 3": [9.025, 38.75],
+  "Constituency 4": [9.02, 38.755],
+  "Constituency 5": [9.035, 38.76],
+  "Constituency 6": [9.035, 38.755],
+  "Constituency 7": [9.035, 38.745],
+  "Constituency 8": [9.05, 38.76],
+  "Constituency 10": [9.055, 38.79],
+  "Constituency 11": [9.06, 38.815],
+  "Constituency 12 and 13": [9.05, 38.8],
+  "Constituency 15": [9.03, 38.81],
+  "Constituency 16": [9.025, 38.79],
+  "Constituency 17": [9.01, 38.82],
+  "Constituency 18": [9.015, 38.765],
+  "Constituency 19": [8.93, 38.77],
+  "Constituency 20": [8.98, 38.755],
+  "Constituency 21 and 22": [9.02, 38.77],
+  "Constituency 23": [8.995, 38.755],
+  "Constituency 24": [9.0, 38.73],
+  "Constituency 25": [9.035, 38.725],
+  "Constituency 26 and 27": [8.92, 38.81],
+  "Constituency 28": [9.03, 38.84],
 };
 
-const FETCH_TIMEOUT = 10_000; // 10 second timeout per request
-const RATE_LIMIT_MS = 1100; // Nominatim: max 1 req/sec
+const FETCH_TIMEOUT = 10_000;
+const RATE_LIMIT_MS = 1100;
 
 function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -114,7 +111,6 @@ async function geocodeNominatim(
     );
   }
 
-  // Retry: strip trailing numbers ("Goma 1" → "Goma")
   const baseName = location.replace(/\s+\d+$/, "");
   if (baseName !== location) {
     const retryQuery = `${baseName}, ${region}, Ethiopia`;
@@ -144,7 +140,7 @@ async function main() {
   let success = 0;
   let failed = 0;
   let totalProcessed = 0;
-  const totalCandidates = 471; // known total
+  const totalCandidates = 471;
 
   console.log(`[${timestamp()}] Starting geocoding...`);
 
@@ -160,7 +156,6 @@ async function main() {
 
       const progress = `[${totalProcessed}/${totalCandidates}]`;
 
-      // Addis Ababa: use map-derived coordinates
       if (region === "Addis Ababa") {
         const coords = addisAbabaCoords[c.location];
         if (coords) {
@@ -197,7 +192,6 @@ async function main() {
         continue;
       }
 
-      // All other regions: geocode via Nominatim
       await sleep(RATE_LIMIT_MS);
       const coords = await geocodeNominatim(c.location, region);
 
@@ -234,7 +228,6 @@ async function main() {
       }
     }
 
-    // Progress summary after each region
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(0);
     console.log(
       `[${timestamp()}] Region done. Progress: ${totalProcessed}/${totalCandidates} | Success: ${success} | Failed: ${failed} | Elapsed: ${elapsed}s`,

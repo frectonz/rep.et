@@ -1,0 +1,318 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import MarkerMap from "@/components/MarkerMap.astro";
+import {
+  ArrowLeftRight,
+  GraduationCap,
+  Globe,
+  Landmark,
+  MapPin,
+  MapPinned,
+  Percent,
+  Users,
+  Medal,
+  User,
+  Vote,
+} from "@lucide/astro";
+import { formatPlace } from "@/lib/data";
+import {
+  getHouse,
+  housePaths,
+  houses,
+  representativesHref,
+} from "@/lib/houses";
+
+export function getStaticPaths() {
+  return housePaths((house) =>
+    house.representatives.map((rep) => ({ slug: rep.slug })),
+  );
+}
+
+const house = getHouse(Astro.params.house);
+const { slug } = Astro.params;
+const rep = house.getBySlug(slug!);
+
+if (!rep) {
+  return Astro.redirect(`${house.prefix}/representatives`);
+}
+
+const place = formatPlace(rep);
+
+const related = houses
+  .filter((h) => h.id !== house.id)
+  .flatMap((h) =>
+    h.representatives
+      .filter((other) =>
+        house.number < h.number
+          ? other.predecessorSlug === rep.slug
+          : rep.predecessorSlug === other.slug,
+      )
+      .map((other) => ({ house: h, rep: other })),
+  );
+
+const votesText =
+  rep.votes === null
+    ? "an unpublished vote count"
+    : `${rep.votes.toLocaleString()} votes`;
+
+const siteUrl = "https://rep.et";
+const canonicalUrl = `${siteUrl}${rep.href}`;
+const description = `${rep.candidate} is the elected representative for ${rep.location} in ${rep.region}, Ethiopia's ${house.fullName}. ${rep.party} member elected with ${votesText}.`;
+const personJsonLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: rep.candidate,
+  alternateName: rep.candidateNative,
+  jobTitle: rep.position ?? "Member of Parliament",
+  memberOf: {
+    "@type": "Organization",
+    name: rep.party,
+  },
+  workLocation: {
+    "@type": "Place",
+    name: `${rep.location}, ${rep.region}`,
+  },
+  url: canonicalUrl,
+};
+if (rep.image) {
+  personJsonLd.image = rep.image;
+}
+---
+
+<Layout
+  house={house}
+  title={`${rep.candidate}`}
+  description={description}
+  ogType="profile"
+  jsonLd={personJsonLd}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Breadcrumbs
+      crumbs={[
+        { label: "Home", href: house.prefix || "/" },
+        { label: "Representatives", href: `${house.prefix}/representatives` },
+        { label: rep.candidate },
+      ]}
+    />
+
+    <div class="grid lg:grid-cols-2 gap-6 items-start">
+      <div class="space-y-6">
+        <div class="bg-card rounded-lg border border-border p-6 md:p-8">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
+            {
+              rep.image && (
+                <img
+                  src={rep.image}
+                  alt={rep.candidate}
+                  width={80}
+                  height={80}
+                  fetchpriority="high"
+                  decoding="async"
+                  class="w-20 h-20 rounded-full object-cover border-2 border-border shrink-0"
+                />
+              )
+            }
+            <div>
+              <h1 class="text-2xl md:text-3xl">{rep.candidate}</h1>
+              {
+                rep.candidateNative && (
+                  <p class="text-lg text-text-muted" lang="am">
+                    {rep.candidateNative}
+                  </p>
+                )
+              }
+              {
+                rep.position && (
+                  <span class="inline-block mt-2 px-3 py-1 text-sm font-medium bg-accent/15 text-accent rounded-full">
+                    {rep.position}
+                  </span>
+                )
+              }
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <div class="flex items-center gap-2">
+                <MapPinned class="w-4 h-4 text-accent shrink-0" />
+                <span class="text-xs uppercase tracking-wider text-text-muted"
+                  >Constituency</span
+                >
+              </div>
+              <p class="font-medium pl-6">{rep.location}</p>
+              {
+                rep.locationNative && rep.locationNative !== rep.location && (
+                  <p class="text-sm text-text-muted pl-6" lang="am">
+                    {rep.locationNative}
+                  </p>
+                )
+              }
+            </div>
+
+            <div>
+              <div class="flex items-center gap-2">
+                <Globe class="w-4 h-4 text-accent shrink-0" />
+                <span class="text-xs uppercase tracking-wider text-text-muted"
+                  >Region</span
+                >
+              </div>
+              <p class="pl-6">
+                <a
+                  href={representativesHref(house, { region: rep.region })}
+                  class="font-medium hover:text-accent"
+                >
+                  {rep.region}
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-2">
+                <Landmark class="w-4 h-4 text-accent shrink-0" />
+                <span class="text-xs uppercase tracking-wider text-text-muted"
+                  >Party</span
+                >
+              </div>
+              <p class="font-medium pl-6">{rep.party}</p>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-2">
+                <User class="w-4 h-4 text-accent shrink-0" />
+                <span class="text-xs uppercase tracking-wider text-text-muted"
+                  >Gender</span
+                >
+              </div>
+              <p class="font-medium pl-6">{rep.gender}</p>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-2">
+                <Vote class="w-4 h-4 text-accent shrink-0" />
+                <span class="text-xs uppercase tracking-wider text-text-muted"
+                  >Votes</span
+                >
+              </div>
+              <p class="font-medium text-lg pl-6">
+                {
+                  rep.votes === null
+                    ? "Not published"
+                    : rep.votes.toLocaleString()
+                }
+              </p>
+            </div>
+
+            {
+              rep.voteShare != null && (
+                <div>
+                  <div class="flex items-center gap-2">
+                    <Percent class="w-4 h-4 text-accent shrink-0" />
+                    <span class="text-xs uppercase tracking-wider text-text-muted">
+                      Vote share
+                    </span>
+                  </div>
+                  <p class="font-medium text-lg pl-6">{rep.voteShare}%</p>
+                </div>
+              )
+            }
+
+            {
+              rep.candidates != null && rep.candidates > 1 && (
+                <div>
+                  <div class="flex items-center gap-2">
+                    <Users class="w-4 h-4 text-accent shrink-0" />
+                    <span class="text-xs uppercase tracking-wider text-text-muted">
+                      Other candidates
+                    </span>
+                  </div>
+                  <p class="font-medium text-lg pl-6">{rep.candidates - 1}</p>
+                </div>
+              )
+            }
+
+            {
+              rep.education && (
+                <div>
+                  <div class="flex items-center gap-2">
+                    <GraduationCap class="w-4 h-4 text-accent shrink-0" />
+                    <span class="text-xs uppercase tracking-wider text-text-muted">
+                      Education
+                    </span>
+                  </div>
+                  <p class="font-medium pl-6">{rep.education}</p>
+                </div>
+              )
+            }
+
+            {
+              place && (
+                <div>
+                  <div class="flex items-center gap-2">
+                    <MapPin class="w-4 h-4 text-accent shrink-0" />
+                    <span class="text-xs uppercase tracking-wider text-text-muted">
+                      Location
+                    </span>
+                  </div>
+                  <p class="font-medium pl-6">{place}</p>
+                </div>
+              )
+            }
+          </div>
+
+          {
+            rep.runnerUp && rep.votes !== null && (
+              <div class="mt-6 pt-4 border-t border-border">
+                <div class="flex items-center gap-2">
+                  <Medal class="w-4 h-4 text-accent shrink-0" />
+                  <span class="text-xs uppercase tracking-wider text-text-muted">
+                    Runner-up
+                  </span>
+                </div>
+                <p class="font-medium pl-6">{rep.runnerUp.candidate}</p>
+                <p class="text-sm text-text-muted pl-6">
+                  {rep.runnerUp.party} · {rep.runnerUp.votes.toLocaleString()}{" "}
+                  votes · margin of{" "}
+                  {(rep.votes - rep.runnerUp.votes).toLocaleString()}
+                </p>
+              </div>
+            )
+          }
+        </div>
+
+        {
+          related.length > 0 && (
+            <div class="bg-card rounded-lg border border-border p-5 space-y-3">
+              {related.map(({ house: otherHouse, rep: other }) => (
+                <a href={other.href} class="flex items-start gap-3 group">
+                  <ArrowLeftRight class="w-4 h-4 text-accent shrink-0 mt-1" />
+                  <span>
+                    <span class="block font-medium group-hover:text-accent transition-colors">
+                      Also served in the {otherHouse.fullName}
+                    </span>
+                    <span class="block text-sm text-text-muted">
+                      {other.candidate} · {other.location}, {other.region} ·{" "}
+                      {otherHouse.term}
+                    </span>
+                  </span>
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
+
+      <div
+        class="bg-card rounded-lg border border-border overflow-hidden lg:sticky lg:top-4"
+      >
+        <div class="p-4 border-b border-border">
+          <h2 class="text-lg">Location</h2>
+        </div>
+        <MarkerMap
+          points={[{ lat: rep.lat, lng: rep.lng }]}
+          class="h-64 md:h-80 lg:h-[28rem]"
+        />
+      </div>
+    </div>
+  </div>
+</Layout>

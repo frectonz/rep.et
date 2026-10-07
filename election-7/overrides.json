@@ -1,0 +1,54 @@
+{
+  "candidate": {},
+  "location": {},
+  "stations": {
+    "amhara-hopr-107": [
+      "95"
+    ],
+    "amhara-hopr-46": [
+      "166"
+    ],
+    "afar-hopr-6": [
+      "46"
+    ],
+    "oromia-hopr-121": [
+      "360"
+    ],
+    "oromia-hopr-2": [
+      "302"
+    ],
+    "oromia-hopr-24": [
+      "301"
+    ],
+    "oromia-hopr-31": [
+      "346"
+    ],
+    "oromia-hopr-67": [
+      "206"
+    ],
+    "oromia-hopr-10": [
+      "279"
+    ],
+    "oromia-hopr-11": [
+      "280"
+    ],
+    "diredawa-hopr-0": [
+      "546"
+    ],
+    "diredawa-hopr-1": [
+      "547"
+    ],
+    "central_ethiopia-hopr-3": [
+      "470"
+    ],
+    "central_ethiopia-hopr-4": [
+      "471"
+    ],
+    "central_ethiopia-hopr-15": [
+      "441"
+    ],
+    "central_ethiopia-hopr-16": [
+      "442"
+    ]
+  }
+}

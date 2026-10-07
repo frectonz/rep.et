@@ -1,13 +1,22 @@
 ---
-import { ChartColumn, Globe, Info, Landmark, Map, Users } from "@lucide/astro";
+import { Info, Landmark, Map, Users } from "@lucide/astro";
 import { Icon } from "astro-icon/components";
+import type { House } from "@/lib/houses";
+
+interface Props {
+  house: House;
+}
+
+const { house } = Astro.props;
 
 const navLinks = [
-  { href: "/representatives", label: "Representatives", icon: Users },
-  { href: "/regions", label: "Regions", icon: Globe },
-  { href: "/parties", label: "Parties", icon: Landmark },
-  { href: "/map", label: "Map", icon: Map },
-  { href: "/stats", label: "Stats", icon: ChartColumn },
+  {
+    href: `${house.prefix}/representatives`,
+    label: "Representatives",
+    icon: Users,
+  },
+  { href: `${house.prefix}/parties`, label: "Parties", icon: Landmark },
+  { href: `${house.prefix}/map`, label: "Map", icon: Map },
   { href: "/about", label: "About", icon: Info },
 ];
 
@@ -15,16 +24,16 @@ const currentPath = Astro.url.pathname;
 
 const navLink = (href: string) =>
   currentPath.startsWith(href)
-    ? "text-accent font-semibold flex items-center gap-1.5"
+    ? "text-accent flex items-center gap-1.5"
     : "text-white/80 hover:text-accent transition-colors flex items-center gap-1.5";
 ---
 
 <header class="bg-primary text-white sticky top-0 z-50">
   <div
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4"
   >
     <a
-      href="/"
+      href={house.prefix || "/"}
       class="flex flex-col leading-tight text-white hover:opacity-80 transition-opacity"
     >
       <span class="text-xl font-heading tracking-tight">rep.et</span>

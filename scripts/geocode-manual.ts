@@ -12,39 +12,21 @@ interface GeocodedEntry {
   geocode_source: string;
 }
 
-// Approximate coordinates for the last 15 entries that couldn't be found
-// in any data source. These are best-effort placements based on
-// regional context and transliteration analysis.
 const approxMap: Record<string, [number, number, string]> = {
-  // Gerchech - likely small woreda in North Shewa, Amhara
   Gerchech: [10.59, 39.6, "Gishe Rabel area, North Shewa"],
-  // Kui - possibly around East Gojam
   Kui: [10.87, 37.73, "Bibugn area, East Gojam"],
-  // Yeed Wha - unknown, placing in Wag Hamra based on naming pattern
   "Yeed Wha": [12.44, 38.67, "Dehana area, Wag Hamra"],
-  // Rebel - possibly related to Gishe Rabel, North Shewa
   Rebel: [10.59, 39.6, "Gishe Rabel area, North Shewa"],
-  // Qilaj - placing near Kalu, South Wello
   Qilaj: [11.1, 39.89, "Kalu area, South Wello"],
-  // Yechereqa - likely in East Gojam
   Yechereqa: [10.2, 37.34, "Debre Elias area, East Gojam"],
-  // Yejuba - likely in West Gojam
   Yejuba: [10.66, 37.17, "Jabi Tehnan area, West Gojam"],
-  // Merawi, West Gojam
   Merawi: [11.42, 37.16, "Merawi, West Gojam"],
-  // Degwa Tsyon - placing near Tenta, South Wello
   "Degwa Tsyon": [11.21, 39.23, "Tenta area, South Wello"],
-  // Agulicho - placing in Arsi zone
   Agulicho: [7.59, 39.54, "Shirka/Arsi area"],
-  // Harewecha - likely West Hararge
   Harewecha: [9.08, 40.75, "Chiro Zuria area, West Hararge"],
-  // Wolen Chiti - likely Wuchale + Enchini compound, West Shewa
   "Wolen Chiti": [8.79, 37.66, "Tikur Enchini area, West Shewa"],
-  // Lemon - possibly Limu area, Jimma
   Lemon: [8.39, 36.91, "Limu Seka area, Jimma"],
-  // Belela - small area in Sidama
   Belela: [6.55, 38.4, "central Sidama area"],
-  // Birber - SNNPR, possibly Azenet Berbere area, Siltie
   Birber: [7.8, 38.01, "Misrak Azenet Berbere area, Siltie"],
 };
 

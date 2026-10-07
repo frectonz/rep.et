@@ -84,8 +84,6 @@ async function fetchTextWithRetry(
   return resp.text();
 }
 
-// ─── Phase 1: Download list pages ─────────────────────────────────────────────
-
 async function download() {
   mkdirSync(CACHE_DIR, { recursive: true });
 
@@ -123,8 +121,6 @@ async function download() {
   console.log("\nDownload complete.");
 }
 
-// ─── Phase 2: Parse member cards ──────────────────────────────────────────────
-
 interface Member {
   name: string;
   party: string;
@@ -152,21 +148,11 @@ function cleanText(text: string): string {
 function parseMembersFromPage(html: string): Member[] {
   const members: Member[] = [];
 
-  // Each member card is a <div class="card-flyer border-light"> inside an <a> tag
-  // Pattern: <a href="..."><div class="card-flyer border-light">...<div class="text-container">
-  //   <h6>Name</h6>
-  //   <hr>
-  //   <p>Party</p>
-  //   <p>Region</p>
-  //   <p>Constituency</p>
-
-  // Find the MEMBERS OF THE PARLIAMENT section (portlet dyyw)
   const portletStart = html.indexOf(
     'id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dyyw_"',
   );
   if (portletStart === -1) return members;
 
-  // Also parse the featured sections (speaker, deputy speaker, gov whip)
   const sections = [
     { id: "speaker_current", defaultRole: "" },
     { id: "member_govwhip", defaultRole: "" },
@@ -181,10 +167,8 @@ function parseMembersFromPage(html: string): Member[] {
     members.push(...sectionMembers);
   }
 
-  // Parse the main paginated member list
   const memberSectionStart = html.indexOf("MEMBERS OF THE PARLIAMENT");
   if (memberSectionStart !== -1) {
-    // Find the end of the member grid (before the pagination)
     const paginationStart = html.indexOf(
       "taglib-page-iterator",
       memberSectionStart,
@@ -208,7 +192,6 @@ function parseMembersFromPage(html: string): Member[] {
 function extractCards(html: string): Member[] {
   const members: Member[] = [];
 
-  // Match each card-flyer block with its parent <a> link
   const cardPattern =
     /<a\s+href="([^"]+)"[^>]*>\s*<div class="card-flyer border-light">([\s\S]*?)<\/div>\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/a>/gi;
 
@@ -217,12 +200,10 @@ function extractCards(html: string): Member[] {
     const detailUrl = decodeHtmlEntities(match[1]);
     const cardHtml = match[2];
 
-    // Extract image
     const imgMatch = cardHtml.match(/<img\s+src="([^"]+)"\s+alt="([^"]+)"/i);
     const imageUrl = imgMatch ? decodeHtmlEntities(imgMatch[1]) : "";
     const altName = imgMatch ? cleanText(imgMatch[2]) : "";
 
-    // Extract text-container content
     const containerMatch = cardHtml.match(
       /<div class="text-container">([\s\S]*?)<\/div>/i,
     );
@@ -230,17 +211,14 @@ function extractCards(html: string): Member[] {
 
     const container = containerMatch[1];
 
-    // Extract role from <h4> if present (for featured members)
     const roleMatch = container.match(/<h4[^>]*>([\s\S]*?)<\/h4>/i);
     const role = roleMatch ? cleanText(roleMatch[1]) : "";
 
-    // Extract name from <h6>
     const nameMatch = container.match(/<h6>([\s\S]*?)<\/h6>/i);
     const name = nameMatch ? cleanText(nameMatch[1]) : altName;
 
     if (!name) continue;
 
-    // Extract <p> tags (party, region, constituency)
     const paragraphs = [...container.matchAll(/<p>([\s\S]*?)<\/p>/gi)].map(
       (m) => cleanText(m[1]),
     );
@@ -303,7 +281,6 @@ async function parse() {
   await Bun.write(outputPath, JSON.stringify(allMembers, null, 2));
   console.log(`Written to ${outputPath}`);
 
-  // Print summary by region
   const byRegion = new Map<string, number>();
   for (const m of allMembers) {
     byRegion.set(m.region, (byRegion.get(m.region) || 0) + 1);
@@ -315,8 +292,6 @@ async function parse() {
     console.log(`  ${region || "(no region)"}: ${count}`);
   }
 }
-
-// ─── Phase 3: Download images ─────────────────────────────────────────────────
 
 async function downloadImages() {
   mkdirSync(IMAGES_DIR, { recursive: true });
@@ -341,13 +316,11 @@ async function downloadImages() {
       continue;
     }
 
-    // Create a safe filename from the member name
     const safeName = member.name
       .replace(/[^a-zA-Z0-9\u1200-\u137F]/g, "_")
       .replace(/_+/g, "_")
       .replace(/^_|_$/g, "");
 
-    // Get the file extension from the URL
     const urlPath = new URL(member.image_url).pathname;
     const ext = extname(urlPath).split("?")[0] || ".jpg";
     const filename = `${safeName}${ext}`;
@@ -367,26 +340,21 @@ async function downloadImages() {
       await Bun.write(filePath, buffer);
       downloaded++;
 
-      // Update member with local image path
       member.image_url = `images/${filename}`;
     } catch (err) {
       console.error(`    Failed: ${err}`);
       failed++;
     }
 
-    // Small delay between image downloads
     await sleep(1_000);
   }
 
-  // Save updated members with local image paths
   await Bun.write(membersPath, JSON.stringify(members, null, 2));
 
   console.log(
     `\nImages: ${downloaded} downloaded, ${skipped} skipped, ${failed} failed`,
   );
 }
-
-// ─── Phase 4: Download and parse detail pages ─────────────────────────────────
 
 async function downloadDetails() {
   mkdirSync(DETAILS_DIR, { recursive: true });
@@ -464,7 +432,6 @@ async function parseDetails() {
 
   console.log(`Parsing ${detailFiles.length} detail pages for extra data...\n`);
 
-  // Build a lookup from safe name to member
   const nameToMember = new Map<string, Member>();
   for (const member of members) {
     const safeName = member.name
@@ -482,8 +449,6 @@ async function parseDetails() {
 
     const html = await Bun.file(`${DETAILS_DIR}/${file}`).text();
 
-    // Extract additional info from the detail page
-    // Look for a profile section with more details
     const extraData = parseDetailPage(html);
     if (extraData) {
       Object.assign(member, extraData);
@@ -500,8 +465,6 @@ async function parseDetails() {
 function parseDetailPage(html: string): Record<string, string> | null {
   const data: Record<string, string> = {};
 
-  // Look for the detail content area
-  // The detail page likely has a similar card-flyer structure but with more info
   const containerMatch = html.match(
     /<div class="text-container">([\s\S]*?)<\/div>/i,
   );
@@ -509,13 +472,10 @@ function parseDetailPage(html: string): Record<string, string> | null {
 
   const container = containerMatch[1];
 
-  // Extract all paragraphs as key-value pairs or just values
   const paragraphs = [...container.matchAll(/<p>([\s\S]*?)<\/p>/gi)].map((m) =>
     cleanText(m[1]),
   );
 
-  // Try to extract structured data from the detail page
-  // Common patterns: "Label: Value" or just values in order
   for (const p of paragraphs) {
     const kvMatch = p.match(/^(.+?):\s*(.+)$/);
     if (kvMatch) {
@@ -524,7 +484,6 @@ function parseDetailPage(html: string): Record<string, string> | null {
     }
   }
 
-  // Also look for any additional structured content outside text-container
   const bioMatch = html.match(
     /<div[^>]*class="[^"]*bio[^"]*"[^>]*>([\s\S]*?)<\/div>/i,
   );
@@ -532,7 +491,6 @@ function parseDetailPage(html: string): Record<string, string> | null {
     data.bio = cleanText(bioMatch[1]);
   }
 
-  // Look for any additional text blocks
   const contentMatch = html.match(
     /<div[^>]*class="[^"]*journal-content-article[^"]*"[^>]*>([\s\S]*?)<\/div>/i,
   );
@@ -542,8 +500,6 @@ function parseDetailPage(html: string): Record<string, string> | null {
 
   return Object.keys(data).length > 0 ? data : null;
 }
-
-// ─── CLI ──────────────────────────────────────────────────────────────────────
 
 const command = process.argv[2] || "help";
 

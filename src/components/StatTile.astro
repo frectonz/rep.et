@@ -1,0 +1,32 @@
+---
+interface Props {
+  value: string | number;
+  label: string;
+  href?: string;
+  class?: string;
+}
+
+const { value, label, href, class: cls = "" } = Astro.props;
+const Tag = href ? "a" : "div";
+---
+
+<Tag
+  href={href}
+  class:list={[
+    "block bg-card rounded-xl border border-border px-4 py-4",
+    href && "hover:border-accent transition-colors group",
+    cls,
+  ]}
+>
+  <p class="text-2xl md:text-3xl font-heading text-primary tabular-nums">
+    {value}
+  </p>
+  <p
+    class:list={[
+      "text-xs md:text-sm text-text-muted mt-0.5",
+      href && "group-hover:text-accent transition-colors",
+    ]}
+  >
+    {label}
+  </p>
+</Tag>

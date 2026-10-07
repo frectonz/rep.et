@@ -1,0 +1,31 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Search from "@/components/Search.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { getHouse, housePaths } from "@/lib/houses";
+
+export function getStaticPaths() {
+  return housePaths(() => [{}]);
+}
+
+const house = getHouse(Astro.params.house);
+---
+
+<Layout
+  house={house}
+  title="All Representatives"
+  description={`Search and filter all ${house.representatives.length} elected members of Ethiopia's ${house.fullName} (HOPR) by name, region, party, or gender.`}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <Breadcrumbs
+      crumbs={[
+        { label: "Home", href: house.prefix || "/" },
+        { label: "Representatives" },
+      ]}
+    />
+
+    <h1 class="text-2xl md:text-3xl mb-6">Representatives</h1>
+
+    <Search house={house} />
+  </div>
+</Layout>

@@ -1,0 +1,47 @@
+---
+interface Props {
+  points: { lat: number; lng: number; href?: string }[];
+  class?: string;
+}
+
+const { points, class: cls = "" } = Astro.props;
+---
+
+<div class:list={["marker-map", cls]} data-points={JSON.stringify(points)}>
+</div>
+
+<script>
+  import { createMap, maplibregl } from "@/lib/map";
+
+  interface Point {
+    lat: number;
+    lng: number;
+    href?: string;
+  }
+
+  document.querySelectorAll<HTMLElement>(".marker-map").forEach((container) => {
+    const points: Point[] = JSON.parse(container.dataset.points ?? "[]");
+    const bounds = new maplibregl.LngLatBounds();
+    points.forEach((p) => bounds.extend([p.lng, p.lat]));
+
+    const map = createMap(container, {
+      bounds,
+      fitBoundsOptions: { padding: 40, maxZoom: 10 },
+    });
+
+    points.forEach((p) => {
+      const marker = new maplibregl.Marker({
+        color: "#c8962d",
+        scale: points.length === 1 ? 1 : 0.7,
+      })
+        .setLngLat([p.lng, p.lat])
+        .addTo(map);
+      if (!p.href) return;
+      const href = p.href;
+      marker.getElement().style.cursor = "pointer";
+      marker.getElement().addEventListener("click", () => {
+        window.location.href = href;
+      });
+    });
+  });
+</script>

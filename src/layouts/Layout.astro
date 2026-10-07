@@ -2,6 +2,8 @@
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import EthiopicBg from "@/components/EthiopicBg.astro";
+import HouseBanner from "@/components/HouseBanner.astro";
+import { currentHouse, type House } from "@/lib/houses";
 import { pwaInfo } from "virtual:pwa-info";
 import "@/styles/global.css";
 
@@ -12,11 +14,13 @@ interface Props {
   ogType?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   centerContent?: boolean;
+  house?: House;
 }
 
 const {
   title = "Find Your Representative",
-  description = "Find your representative in Ethiopia's House of Peoples' Representatives (HOPR). Search 471 elected members of parliament by name, region, party, or location.",
+  house = currentHouse,
+  description = `Find your representative in Ethiopia's ${house.fullName} (HOPR). Search ${house.representatives.length} elected members of parliament by name, region, party, or location.`,
   canonicalPath,
   ogType = "website",
   jsonLd,
@@ -53,7 +57,6 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
       content="black-translucent"
     />
 
-    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -62,7 +65,6 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
     <meta property="og:locale" content="en_ET" />
     <meta property="og:image" content={ogImageUrl} />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -82,15 +84,16 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
     {import.meta.env.PROD && <script is:inline defer src="/registerSW.js" />}
   </head>
   <body class="min-h-screen flex flex-col">
-    <Header />
+    <Header house={house} />
     <main
       class:list={["flex-1 relative bg-bg", centerContent && "flex flex-col"]}
     >
       <EthiopicBg />
       <div class:list={["relative", centerContent && "flex-1 flex flex-col"]}>
+        {!house.current && <HouseBanner house={house} />}
         <slot />
       </div>
     </main>
-    <Footer />
+    <Footer house={house} />
   </body>
 </html>
