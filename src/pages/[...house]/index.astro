@@ -66,8 +66,8 @@ const regionRows = stats.regionStats.map((region) => ({
       class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 grid lg:grid-cols-[5fr_7fr] gap-10 lg:gap-12 items-center"
     >
       <div>
-        <p class="text-sm uppercase tracking-wider text-accent-deep mb-3">
-          {house.fullName} · {house.term}
+        <p class="text-sm tracking-wider text-accent-deep mb-3">
+          {house.id} HoPR · {house.term}
         </p>
         <h1 class="text-4xl md:text-5xl mb-4">Find Your Representative</h1>
         <p class="text-text-muted text-lg mb-8">
@@ -107,9 +107,9 @@ const regionRows = stats.regionStats.map((region) => ({
         </div>
       </div>
 
-      <div class="min-w-0 [perspective:800px]">
+      <div class="min-w-0">
         <div
-          class="bg-card border border-border rounded-xl p-4 sm:p-5 [transform:rotateY(-8deg)_rotateX(4deg)] shadow-[8px_12px_28px_rgba(44,24,16,0.18),2px_4px_8px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.7)]"
+          class="bg-card border border-border rounded-xl p-4 sm:p-5 [transform:perspective(800px)_rotateY(-8deg)_rotateX(4deg)] shadow-[8px_12px_28px_rgba(44,24,16,0.18),2px_4px_8px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.7)]"
         >
           <SeatChart house={house} class="pointer-events-none" />
           <p class="mt-3 text-xs text-text-muted">
@@ -152,10 +152,7 @@ const regionRows = stats.regionStats.map((region) => ({
   </section>
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h2 class="text-xl mb-1">Regions</h2>
-    <p class="text-sm text-text-muted mb-4">
-      One tile per seat, coloured by party. Counts link to the members.
-    </p>
+    <h2 class="text-xl mb-4">Regions</h2>
     <div class="bg-card rounded-xl border border-border overflow-hidden">
       <table class="w-full text-sm">
         <thead class="text-xs uppercase tracking-wider text-text-muted">
@@ -222,10 +219,7 @@ const regionRows = stats.regionStats.map((region) => ({
   {
     stats.education.length > 0 && (
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h2 class="text-xl mb-1">Education</h2>
-        <p class="text-sm text-text-muted mb-4">
-          Highest qualification declared on the NEBE candidate list.
-        </p>
+        <h2 class="text-xl mb-4">Education</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {stats.education.map((level) => (
             <StatTile
@@ -240,14 +234,7 @@ const regionRows = stats.regionStats.map((region) => ({
   }
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <h2 class="text-xl mb-1">Votes</h2>
-    <p class="text-sm text-text-muted mb-4">
-      {
-        withVotes.length < representatives.length
-          ? `NEBE's vote sheets omit ${representatives.length - withVotes.length} of the ${representatives.length} members; figures cover the other ${withVotes.length}.`
-          : `Votes received by each winning candidate.`
-      }
-    </p>
+    <h2 class="text-xl mb-4">Votes</h2>
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
       <StatTile
         value={stats.highestVote.votes!.toLocaleString()}
@@ -280,7 +267,7 @@ const regionRows = stats.regionStats.map((region) => ({
             href: reps({ votesMax: bottom5[bottom5.length - 1].votes }),
           },
         ].map((group) => (
-          <div class="bg-card rounded-xl border border-border p-5">
+          <div class="bg-card rounded-xl border border-border p-5 min-w-0">
             <div class="flex items-baseline justify-between gap-4 mb-3">
               <h3 class="text-sm font-semibold text-text-muted">
                 {group.title}

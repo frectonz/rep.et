@@ -14,47 +14,66 @@ interface Props {
 
 const { chips, interactive = false, class: cls = "" } = Astro.props;
 
+function splitInTwo(items: Chip[]): Chip[][] {
+  const width = (chip: Chip) => chip.name.length + 6;
+  const half = items.reduce((sum, chip) => sum + width(chip), 0) / 2;
+  let filled = 0;
+  let index = 0;
+  while (index < items.length && filled < half) {
+    filled += width(items[index++]);
+  }
+  return [items.slice(0, index), items.slice(index)];
+}
+
+const rows = splitInTwo(chips);
+
 const base =
   "inline-flex shrink-0 items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-sm text-text transition-all hover:border-accent";
 ---
 
 <div
   class:list={[
-    "flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible",
+    "overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible",
     cls,
   ]}
 >
-  {
-    chips.map((chip) =>
-      interactive ? (
-        <button
-          type="button"
-          class:list={[
-            base,
-            "party-chip cursor-pointer aria-pressed:bg-primary aria-pressed:border-primary aria-pressed:text-white",
-          ]}
-          data-party={chip.name}
-          aria-pressed="false"
-        >
-          <span
-            class="w-2.5 h-2.5 rounded-full shrink-0"
-            style={`background:${chip.color}`}
-          />
-          {chip.name}
-          <span class="chip-count text-text-muted tabular-nums">
-            {chip.count}
-          </span>
-        </button>
-      ) : (
-        <a href={chip.href} class={base}>
-          <span
-            class="w-2.5 h-2.5 rounded-full shrink-0"
-            style={`background:${chip.color}`}
-          />
-          {chip.name}
-          <span class="text-text-muted tabular-nums">{chip.count}</span>
-        </a>
-      ),
-    )
-  }
+  <div class="flex flex-col gap-2 w-max sm:w-auto sm:flex-row sm:flex-wrap">
+    {
+      rows.map((row) => (
+        <div class="flex gap-2 sm:contents">
+          {row.map((chip) =>
+            interactive ? (
+              <button
+                type="button"
+                class:list={[
+                  base,
+                  "party-chip cursor-pointer aria-pressed:bg-primary aria-pressed:border-primary aria-pressed:text-white",
+                ]}
+                data-party={chip.name}
+                aria-pressed="false"
+              >
+                <span
+                  class="w-2.5 h-2.5 rounded-full shrink-0"
+                  style={`background:${chip.color}`}
+                />
+                {chip.name}
+                <span class="chip-count text-text-muted tabular-nums">
+                  {chip.count}
+                </span>
+              </button>
+            ) : (
+              <a href={chip.href} class={base}>
+                <span
+                  class="w-2.5 h-2.5 rounded-full shrink-0"
+                  style={`background:${chip.color}`}
+                />
+                {chip.name}
+                <span class="text-text-muted tabular-nums">{chip.count}</span>
+              </a>
+            ),
+          )}
+        </div>
+      ))
+    }
+  </div>
 </div>
