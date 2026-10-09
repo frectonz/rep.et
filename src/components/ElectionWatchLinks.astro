@@ -1,0 +1,44 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import type { ExternalLink } from "@/lib/electionwatch";
+
+interface Props {
+  links: ExternalLink[];
+  class?: string;
+}
+
+const { links, class: cls = "" } = Astro.props;
+
+const columns: Record<number, string> = {
+  2: "sm:grid-cols-2",
+  3: "md:grid-cols-3",
+};
+---
+
+{
+  links.length > 0 && (
+    <section class={cls}>
+      <h2 class="text-lg mb-3">On electionwatch.et</h2>
+      <div class:list={["grid gap-3 sm:gap-4", columns[links.length]]}>
+        {links.map((link) => (
+          <a
+            href={link.href}
+            target="_blank"
+            rel="noopener"
+            class="bg-card rounded-xl border border-border p-4 sm:p-5 hover:border-accent transition-colors group"
+          >
+            <span class="flex items-start justify-between gap-3">
+              <span class="sm:text-lg leading-snug text-primary group-hover:text-accent transition-colors">
+                {link.label}
+              </span>
+              <ArrowUpRight class="w-5 h-5 text-accent shrink-0 mt-0.5" />
+            </span>
+            <span class="block text-sm text-text-muted mt-1">
+              {link.detail}
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

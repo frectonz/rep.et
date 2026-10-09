@@ -5,7 +5,9 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import MarkerMap from "@/components/MarkerMap.astro";
 import StatTile from "@/components/StatTile.astro";
 import PartyChips from "@/components/PartyChips.astro";
+import ElectionWatchLinks from "@/components/ElectionWatchLinks.astro";
 import { partySlug } from "@/lib/data";
+import { partyLinks } from "@/lib/electionwatch";
 import { getHouse, housePaths, representativesHref } from "@/lib/houses";
 
 export function getStaticPaths() {
@@ -27,6 +29,7 @@ const stats = house.getPartyStats(partyName);
 const color = house.partyColors[partyName];
 const link = (filters: Parameters<typeof representativesHref>[1]) =>
   representativesHref(house, { party: partyName, ...filters });
+const electionWatch = house.current ? partyLinks(partyName) : [];
 const points = reps.map((r) => ({ lat: r.lat, lng: r.lng, href: r.href }));
 
 const regionChips = stats.regions.map((region) => ({
@@ -82,6 +85,8 @@ const partyJsonLd = {
     <div class="bg-card rounded-xl border border-border overflow-hidden mb-8">
       <MarkerMap points={points} class="h-64 md:h-80 lg:h-96" />
     </div>
+
+    <ElectionWatchLinks links={electionWatch} class="mb-8" />
 
     <h2 class="text-lg mb-4">Representatives</h2>
     <Search house={house} party={partyName} />

@@ -3,7 +3,9 @@ import Layout from "@/layouts/Layout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import SeatChart from "@/components/SeatChart.astro";
 import PartyChips from "@/components/PartyChips.astro";
+import ElectionWatchLinks from "@/components/ElectionWatchLinks.astro";
 import { partySlug } from "@/lib/data";
+import { positionsLink, resultsLink } from "@/lib/electionwatch";
 import { getHouse, housePaths, representativesHref } from "@/lib/houses";
 import { ArrowRight } from "@lucide/astro";
 
@@ -130,13 +132,18 @@ const share = (seats: number) => ((seats / totalSeats) * 100).toFixed(1);
               href={reps({ party: party.name })}
               class="mt-auto inline-flex items-center gap-1 text-sm text-accent-deep hover:text-accent-hover"
             >
-              All {party.seats === 1 ? "member" : "members"}
+              {party.seats === 1 ? "The member" : "All members"}
               <ArrowRight class="w-4 h-4" />
             </a>
           </div>
         ))
       }
     </div>
+
+    <ElectionWatchLinks
+      links={house.current ? [resultsLink, positionsLink] : []}
+      class="mt-8"
+    />
   </div>
 </Layout>
 

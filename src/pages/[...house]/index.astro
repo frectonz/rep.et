@@ -7,7 +7,8 @@ import StatTile from "@/components/StatTile.astro";
 import PartyChips from "@/components/PartyChips.astro";
 import { partySlug } from "@/lib/data";
 import { getHouse, housePaths, representativesHref } from "@/lib/houses";
-import { ArrowRight, Landmark, Map, Search } from "@lucide/astro";
+import { resultsLink } from "@/lib/electionwatch";
+import { ArrowRight, ExternalLink, Landmark, Map, Search } from "@lucide/astro";
 
 export function getStaticPaths() {
   return housePaths(() => [{}]);
@@ -307,7 +308,12 @@ const regionRows = stats.regionStats.map((region) => ({
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <h2 class="text-xl mb-4">Browse</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div
+      class:list={[
+        "grid grid-cols-1 gap-4",
+        house.current ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3",
+      ]}
+    >
       <a
         href={reps({})}
         class="bg-card rounded-xl border border-border p-5 hover:border-accent transition-colors group"
@@ -350,6 +356,24 @@ const regionRows = stats.regionStats.map((region) => ({
           View all constituencies on a map of Ethiopia
         </p>
       </a>
+      {
+        house.current && (
+          <a
+            href={resultsLink.href}
+            target="_blank"
+            rel="noopener"
+            class="bg-card rounded-xl border border-border p-5 hover:border-accent transition-colors group"
+          >
+            <ExternalLink class="w-5 h-5 text-accent mb-2" />
+            <h3 class="text-lg text-primary group-hover:text-accent transition-colors">
+              Election Results
+            </h3>
+            <p class="text-sm text-text-muted mt-1">
+              Seats, winners and the closest races on electionwatch.et
+            </p>
+          </a>
+        )
+      }
     </div>
   </section>
 </Layout>

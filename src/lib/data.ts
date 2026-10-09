@@ -24,6 +24,7 @@ export interface Representative {
   image?: string | null;
   position?: string;
   predecessorSlug?: string | null;
+  constituencySlug?: string;
 }
 
 export function formatPlace(rep: Representative): string | null {

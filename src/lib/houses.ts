@@ -49,6 +49,7 @@ interface Raw7 {
   candidate: string;
   candidateNative: string;
   candidateId: string;
+  constituencySlug: string;
   party: string;
   gender: string;
   education: string | null;
@@ -153,6 +154,7 @@ function make7(): House {
       image: entry.image,
       position: positionById.get(entry.candidateId),
       predecessorSlug: entry.predecessorSlug,
+      constituencySlug: entry.constituencySlug,
     };
   });
   return { ...info7, ...buildHouseData(reps) };

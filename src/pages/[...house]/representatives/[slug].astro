@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import MarkerMap from "@/components/MarkerMap.astro";
+import ElectionWatchLinks from "@/components/ElectionWatchLinks.astro";
 import {
   ArrowLeftRight,
   GraduationCap,
@@ -15,7 +16,8 @@ import {
   User,
   Vote,
 } from "@lucide/astro";
-import { formatPlace } from "@/lib/data";
+import { formatPlace, partySlug } from "@/lib/data";
+import { representativeLinks } from "@/lib/electionwatch";
 import {
   getHouse,
   housePaths,
@@ -38,6 +40,7 @@ if (!rep) {
 }
 
 const place = formatPlace(rep);
+const electionWatch = representativeLinks(rep);
 
 const related = houses
   .filter((h) => h.id !== house.id)
@@ -174,7 +177,14 @@ if (rep.image) {
                   >Party</span
                 >
               </div>
-              <p class="font-medium pl-6">{rep.party}</p>
+              <p class="pl-6">
+                <a
+                  href={`${house.prefix}/parties/${partySlug(rep.party)}`}
+                  class="font-medium hover:text-accent"
+                >
+                  {rep.party}
+                </a>
+              </p>
             </div>
 
             <div>
@@ -314,5 +324,7 @@ if (rep.image) {
         />
       </div>
     </div>
+
+    <ElectionWatchLinks links={electionWatch} class="mt-6" />
   </div>
 </Layout>
