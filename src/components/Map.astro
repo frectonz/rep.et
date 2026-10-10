@@ -40,7 +40,8 @@ const chips = house.parties
 <style is:global>
   .maplibregl-popup-content {
     font-family: Georgia, "Times New Roman", serif;
-    min-width: 280px;
+    width: min(380px, calc(100vw - 64px));
+    box-sizing: border-box;
     padding: 0 !important;
     border-radius: 12px !important;
     overflow: hidden;
@@ -61,7 +62,7 @@ const chips = house.parties
   }
   .popup-header {
     background: #3d2b1f;
-    padding: 14px 16px;
+    padding: 14px 36px 14px 16px;
   }
   .popup-candidate {
     font-weight: bold;
@@ -219,7 +220,7 @@ const chips = house.parties
         </div>
       </div>
       <div class="popup-footer">
-        <a href="${p.href}" class="popup-link">View profile &rarr;</a>
+        <a href="${p.href}" class="popup-link">View profile</a>
       </div>`;
   }
 
@@ -251,17 +252,33 @@ const chips = house.parties
       },
     });
 
+    const pinned = new Set<string>();
+    const shown = (e: MapLayerMouseEvent) =>
+      e.features?.find(
+        (f) => pinned.size === 0 || pinned.has(f.properties.party),
+      );
+
     map.on("click", "constituency-dots", (e: MapLayerMouseEvent) => {
-      const feature = e.features?.[0];
+      const feature = shown(e);
       if (!feature || feature.geometry.type !== "Point") return;
-      new maplibregl.Popup({ offset: 14, maxWidth: "320px" })
+      const popup = new maplibregl.Popup({ offset: 14, maxWidth: "none" })
         .setLngLat(feature.geometry.coordinates as [number, number])
         .setHTML(popupHtml(feature.properties as Props))
         .addTo(map);
+      const bounds = container.getBoundingClientRect();
+      const box = popup.getElement().getBoundingClientRect();
+      const margin = 12;
+      const dx =
+        Math.min(0, box.left - bounds.left - margin) ||
+        Math.max(0, box.right - bounds.right + margin);
+      const dy =
+        Math.min(0, box.top - bounds.top - margin) ||
+        Math.max(0, box.bottom - bounds.bottom + margin);
+      if (dx || dy) map.panBy([dx, dy]);
     });
 
-    map.on("mouseenter", "constituency-dots", () => {
-      map.getCanvas().style.cursor = "pointer";
+    map.on("mousemove", "constituency-dots", (e: MapLayerMouseEvent) => {
+      map.getCanvas().style.cursor = shown(e) ? "pointer" : "";
     });
     map.on("mouseleave", "constituency-dots", () => {
       map.getCanvas().style.cursor = "";
@@ -271,7 +288,6 @@ const chips = house.parties
       document.querySelectorAll<HTMLButtonElement>(".party-chip"),
     );
     const reset = document.getElementById("legend-reset")!;
-    const pinned = new Set<string>();
     let hovered: string | null = null;
 
     function paint() {
