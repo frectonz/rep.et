@@ -49,6 +49,32 @@ const ogImageUrl = new URL(ogPath, siteUrl).href;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#3d2b1f" />
+    <script is:inline>
+      (() => {
+        const root = document.documentElement;
+
+        const updateThemeMeta = (isDark) => {
+          document
+            .querySelectorAll('meta[name="theme-color"]:not([media])')
+            .forEach((meta) => {
+              meta.setAttribute("content", isDark ? "#16110e" : "#3d2b1f");
+            });
+        };
+
+        const updateTheme = (isDark) => {
+          root.classList.toggle("dark", isDark);
+          updateThemeMeta(isDark);
+        };
+
+        function applyTheme() {
+          const stored = localStorage.getItem("theme");
+          updateTheme(stored === "dark");
+        }
+
+        applyTheme();
+        document.addEventListener("astro:after-swap", applyTheme);
+      })();
+    </script>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="rep.et" />

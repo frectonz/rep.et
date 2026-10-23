@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-heading: Georgia, "Times New Roman", serif;
   --font-body: Georgia, "Times New Roman", serif;
@@ -18,6 +20,29 @@
   --color-border: #d9cfc5;
   --color-callout-bg: #f0e8de;
   --color-callout-border: #c8962d;
+  --color-header-bg: #3d2b1f;
+}
+
+:root {
+  --color-header-bg: #3d2b1f;
+}
+
+:root.dark {
+  --color-primary: #f5ede4;
+  --color-primary-light: #e8ded4;
+  --color-accent: #d8a438;
+  --color-accent-hover: #e8b750;
+  --color-accent-deep: #e5b448;
+  --color-earth: #c98f65;
+  --color-olive: #9ab76e;
+  --color-bg: #181310;
+  --color-card: #231c17;
+  --color-text: #e6ded5;
+  --color-text-muted: #a69587;
+  --color-border: #3d3027;
+  --color-callout-bg: #2a2019;
+  --color-callout-border: #d8a438;
+  --color-header-bg: #16110e;
 }
 
 @view-transition {
@@ -29,7 +54,7 @@
     scrollbar-gutter: stable;
     font-family: var(--font-heading);
     color: var(--color-text);
-    background-color: var(--color-primary);
+    background-color: var(--color-header-bg);
     line-height: 1.6;
     font-size: 16px;
   }

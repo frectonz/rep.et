@@ -1,5 +1,5 @@
 ---
-import { Info, Landmark, Map, Users } from "@lucide/astro";
+import { Info, Landmark, Map, Moon, Sun, Users } from "@lucide/astro";
 import { Icon } from "astro-icon/components";
 import type { House } from "@/lib/houses";
 
@@ -28,7 +28,9 @@ const navLink = (href: string) =>
     : "text-white/80 hover:text-accent transition-colors flex items-center gap-1.5";
 ---
 
-<header class="bg-primary text-white sticky top-0 z-50">
+<header
+  class="bg-header-bg text-white sticky top-0 z-50 border-b border-border/20"
+>
   <div
     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4"
   >
@@ -62,6 +64,62 @@ const navLink = (href: string) =>
         <Icon name="simple-icons:github" class="w-4 h-4" />
         <span class="sr-only lg:not-sr-only">GitHub</span>
       </a>
+      <button
+        type="button"
+        id="theme-toggle"
+        class="text-white/80 hover:text-accent transition-colors flex items-center gap-1.5 cursor-pointer"
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+        title="Switch to dark mode"
+      >
+        <Sun class="w-4 h-4 hidden dark:block" />
+        <Moon class="w-4 h-4 block dark:hidden" />
+        <span id="theme-toggle-label" class="hidden lg:inline">Dark mode</span>
+        <span class="sr-only">Switch to dark mode</span>
+      </button>
     </nav>
   </div>
 </header>
+
+<script>
+  function setupThemeToggle() {
+    const toggle = document.getElementById("theme-toggle");
+    if (!(toggle instanceof HTMLButtonElement) || toggle.dataset.ready) return;
+    toggle.dataset.ready = "true";
+
+    const updateThemeMeta = (isDark: boolean) => {
+      document
+        .querySelectorAll('meta[name="theme-color"]:not([media])')
+        .forEach((meta) => {
+          meta.setAttribute("content", isDark ? "#16110e" : "#3d2b1f");
+        });
+    };
+
+    const updateButton = () => {
+      const isDark = document.documentElement.classList.contains("dark");
+      const label = isDark ? "Switch to light mode" : "Switch to dark mode";
+      toggle.setAttribute("aria-label", label);
+      toggle.setAttribute("aria-pressed", isDark ? "true" : "false");
+      toggle.title = label;
+      const visibleLabel = toggle.querySelector("#theme-toggle-label");
+      if (visibleLabel) {
+        visibleLabel.textContent = isDark ? "Light mode" : "Dark mode";
+      }
+      const text = toggle.querySelector(".sr-only");
+      if (text) text.textContent = label;
+    };
+
+    updateButton();
+    toggle.addEventListener("click", () => {
+      const isDark = !document.documentElement.classList.contains("dark");
+      document.documentElement.classList.toggle("dark", isDark);
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      updateThemeMeta(isDark);
+      updateButton();
+      window.dispatchEvent(new CustomEvent("theme-change"));
+    });
+  }
+
+  setupThemeToggle();
+  document.addEventListener("astro:after-swap", setupThemeToggle);
+</script>

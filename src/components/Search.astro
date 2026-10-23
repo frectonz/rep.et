@@ -38,14 +38,21 @@ const hasReturning = pool.some((r) => r.predecessorSlug);
 const previousHouse = houses.find((h) => h.number === house.number - 1);
 
 const selectClass =
-  "w-full px-3 pr-9 h-11 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent";
-const chevron =
-  "background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b5d52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E&quot;)";
+  "select-custom w-full px-3 pr-9 h-11 rounded-lg border border-border bg-card text-text appearance-none bg-[length:16px_16px] bg-[position:right_0.75rem_center] bg-no-repeat focus:outline-none focus:border-accent";
 const inputClass =
   "w-full px-3 h-11 rounded-lg border border-border bg-card text-text placeholder-text-muted focus:outline-none focus:border-accent";
 const labelClass =
   "block text-xs uppercase tracking-wider text-text-muted mb-1";
 ---
+
+<style>
+  .select-custom {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b5d52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  }
+  :global(.dark) .select-custom {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a69587' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  }
+</style>
 
 <form id="search-form" class="mb-6" novalidate data-reps={repsJson}>
   <input
@@ -59,7 +66,7 @@ const labelClass =
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
     <label>
       <span class={labelClass}>Region</span>
-      <select name="region" class={selectClass} style={chevron}>
+      <select name="region" class={selectClass}>
         <option value="">All regions</option>
         {regions.map((r) => <option value={r}>{r}</option>)}
       </select>
@@ -68,7 +75,7 @@ const labelClass =
       !party && (
         <label>
           <span class={labelClass}>Party</span>
-          <select name="party" class={selectClass} style={chevron}>
+          <select name="party" class={selectClass}>
             <option value="">All parties</option>
             {house.parties.map((p) => (
               <option value={p}>{p}</option>
@@ -79,7 +86,7 @@ const labelClass =
     }
     <label>
       <span class={labelClass}>Gender</span>
-      <select name="gender" class={selectClass} style={chevron}>
+      <select name="gender" class={selectClass}>
         <option value="">All</option>
         <option value="Female">Female</option>
         <option value="Male">Male</option>
@@ -89,7 +96,7 @@ const labelClass =
       educations.length > 0 && (
         <label>
           <span class={labelClass}>Education</span>
-          <select name="education" class={selectClass} style={chevron}>
+          <select name="education" class={selectClass}>
             <option value="">Any</option>
             {educations.map((e) => (
               <option value={e}>{e}</option>

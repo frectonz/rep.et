@@ -46,7 +46,12 @@ const chips = house.parties
     border-radius: 12px !important;
     overflow: hidden;
     box-shadow: 0 6px 24px rgba(44, 24, 16, 0.18);
-    border: 1px solid #d9cfc5;
+    border: 1px solid var(--color-border);
+    background: var(--color-card) !important;
+  }
+  .maplibregl-popup-tip {
+    border-top-color: var(--color-card) !important;
+    border-bottom-color: var(--color-card) !important;
   }
   .maplibregl-popup-close-button {
     font-size: 20px;
@@ -61,7 +66,7 @@ const chips = house.parties
     background: transparent;
   }
   .popup-header {
-    background: #3d2b1f;
+    background: var(--color-header-bg, #3d2b1f);
     padding: 14px 36px 14px 16px;
   }
   .popup-candidate {
@@ -86,28 +91,29 @@ const chips = house.parties
     display: flex;
     flex-direction: column;
     gap: 8px;
+    background: var(--color-card);
   }
   .popup-row {
     display: flex;
     align-items: baseline;
     gap: 8px;
     font-size: 13px;
-    color: #2c1810;
+    color: var(--color-text);
   }
   .popup-row svg {
     flex-shrink: 0;
-    color: #c8962d;
+    color: var(--color-accent);
     align-self: center;
   }
   .popup-row-label {
-    color: #6b5d52;
+    color: var(--color-text-muted);
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
   .popup-row-value {
     font-weight: 600;
-    color: #3d2b1f;
+    color: var(--color-primary);
   }
   .popup-party-dot {
     display: inline-block;
@@ -118,11 +124,12 @@ const chips = house.parties
   }
   .popup-footer {
     padding: 0 16px 14px;
+    background: var(--color-card);
   }
   .popup-link {
     display: block;
     text-align: center;
-    background: #c8962d;
+    background: var(--color-accent);
     color: #fff;
     font-weight: 600;
     font-size: 13px;
@@ -132,7 +139,25 @@ const chips = house.parties
     transition: background 0.15s;
   }
   .popup-link:hover {
-    background: #a87b24;
+    background: var(--color-accent-hover);
+  }
+
+  .dark .maplibregl-ctrl-group {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+  }
+  .dark .maplibregl-ctrl-group button {
+    border-color: var(--color-border);
+  }
+  .dark .maplibregl-ctrl-icon {
+    filter: invert(1) brightness(1.2);
+  }
+  .dark .maplibregl-ctrl-attrib {
+    background-color: rgba(35, 28, 23, 0.85);
+    color: var(--color-text-muted);
+  }
+  .dark .maplibregl-ctrl-attrib a {
+    color: var(--color-accent);
   }
 </style>
 
@@ -246,10 +271,29 @@ const chips = house.parties
       paint: {
         "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 5, 10, 9],
         "circle-color": colorMatch,
-        "circle-stroke-color": "#fff",
+        "circle-stroke-color": document.documentElement.classList.contains(
+          "dark",
+        )
+          ? "#231c17"
+          : "#fff",
         "circle-stroke-width": 1.5,
         "circle-opacity": 0.85,
       },
+    });
+
+    const onThemeChange = () => {
+      const isDark = document.documentElement.classList.contains("dark");
+      if (map.getLayer("constituency-dots")) {
+        map.setPaintProperty(
+          "constituency-dots",
+          "circle-stroke-color",
+          isDark ? "#231c17" : "#fff",
+        );
+      }
+    };
+    window.addEventListener("theme-change", onThemeChange);
+    map.on("remove", () => {
+      window.removeEventListener("theme-change", onThemeChange);
     });
 
     const pinned = new Set<string>();
